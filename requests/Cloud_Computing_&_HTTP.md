@@ -1,6 +1,6 @@
 # *HTTP & REST*
 
-En este [recorrido](https://github.com/AJVelezRueda/http-tutorial/tree/master/tutorial/es) abordaremos los contenidos relativos a HTTP y REST. Para ello vas a necesitar instalarte [requests] (https://pypi.org/project/requests/):
+En este [recorrido](https://github.com/flbulgarelli/recursos-python/blob/master/requests/Intro_HTTP.md) abordaremos los contenidos relativos a HTTP y REST. Para ello vas a necesitar instalarte [requests] (https://pypi.org/project/requests/):
 
 ```bash
 pip install requests
