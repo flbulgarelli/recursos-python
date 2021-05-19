@@ -47,7 +47,7 @@ Nos permite obtener un nuevo `DataFrame` con únicamente las primeras `n` filas.
 
 ```python
 # nos da los primeros 10 elementos
-arbolado_valido.head(10)
+arbolado.head(10)
 ```
 
 :warning: Head no ordena al `DataFrame`, solo nos dan los primeros o últimos
@@ -123,6 +123,29 @@ Nos permite obtener todos los valores de una columna, sin repetidos. Ejemplo:
 
 ## `describe`
 
+Nos sirve como un atajao para para obtener varias medidas estadísticas que nos sirven para caracterizar un dataset:
+
+* Cantidad de elementos
+* Media
+* Desviación estándar
+* Valores máximos y mínimos
+* Cuantiles 25% (Q1), 50% (Q2, que se corresponde con la Mediana) y 75% (Q3)
+
+Ejemplo:
+
+```python
+>>> arbolado.describe()
+ 	      altura_tot |	diametro |	inclinacio
+count |	372699.0   |	372699.0 |	372699.0
+mean  |	8.473044   |	31.941234 |	3.069783
+std   |	4.576818   |	20.207216 |	6.029910
+min   |	0.0        |	0.0 |	0.0
+25%   |	5.0        |	17.0 |	0.0
+50%   |	8.0        |	28.0 |	0.0
+75%   |	11.0       |	43.0 |	5.0
+max   |	60.0       |	426.0 |	60.0
+```
+
 # Agregaciones
 
 ## `mean`
@@ -164,6 +187,17 @@ arbolado.diametro.max() == arbolado.diametro.iloc[arbolado.diametro.idxmax()]
 
 ## `+`, `-`
 ## `str`
+
+```python
+# así se pueden buscar valores que contengan un string
+>>> arbolado[arbolado.calle.str.contains("Santa")]
+
+# ojo que si usamos filtros del estilo str con una columna numérica se va a romper
+# esto por ejemplo no anda:
+>>> arbolado_floresta[arbolado_floresta.altura_tot.str.contains('3')]
+AttributeError: Can only use .str accessor with string values! # ¡ups!
+```
+
 ## `dt`
 
 # Creación y actualización de columnas
@@ -171,7 +205,22 @@ arbolado.diametro.max() == arbolado.diametro.iloc[arbolado.diametro.idxmax()]
 # Filtrado
 
 ## `&`, `|` y `~`
+
+```python
+# los arboles que están en flores o versalles
+arbolado[(arbolado.barrio == 'FLORES') | (arbolado.barrio == 'VERSALLES')]
+
+# los árboles que no están NI en constitución NI en belgrano
+arbolado[(arbolado.barrio != 'CONSTITUCION') & (arbolado.barrio != 'BELGRANO')]
+```
+
+
 ## `isin`
+
+```python
+arbolado[arbolado.barrio.isin(['CONSTITUCION', 'FLORES', 'VERSALLES'])]
+```
+
 ## `isna`, `notna`
 
 
@@ -190,6 +239,21 @@ bibliotecas.groupby(bibliotecas.barrio, as_index = False).biblioteca.agg()
 
 ## `value_counts`
 
+```python
+>>> pd.value_counts(arbolado.nombre_com)
+Fresno americano    141825
+Plátano              34786
+Paraíso              24558
+Ficus                24076
+Tilo                 17477
+                     ...
+Mataojos                 1
+Nolina                   1
+Boj cepillo              1
+Taxodium                 1
+Ciprés funerario         1
+```
+
 # Combinación
 
 ## `merge`
@@ -206,3 +270,4 @@ cantidad_de_bibliotecas_por_barrio.plot.bar(figsize=(20, 10))
 ## `plot.hist`
 ## `plot.line`
 ## `plot.scatter`
+## `boxplot`
