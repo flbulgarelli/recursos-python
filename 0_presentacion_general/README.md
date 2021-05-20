@@ -1,8 +1,9 @@
+> Recorrido basado en las guías del Proyecto de Extensión [La Bioinformática Va a La Escuela](http://ufq.unq.edu.ar/sbg/education.html)
+
+
 # *Introducción a Python*
 
 En este recorrido aprenderemos los conceptos básicos de programación y la sintáxis de [Python](https://www.python.org.ar/). Para ello vas a necesitar instalarte [Python](http://ufq.unq.edu.ar/sbg/archivos/guias_talleres/Guia_Instalacion_Python_2020.pdf) y algún [editor de código](https://code.visualstudio.com/) (IDE) que te sea útil para programar.
-
-¡Para este recorrido tomaremos como base las presentes guías del Proyecto de Extensión [La Bioinformática Va a La Escuela](http://ufq.unq.edu.ar/sbg/education.html) del cual soy creadora! 🤗
 
 
 # Guias de Trabajo
