@@ -18,13 +18,13 @@ Saber programar nos da un gran poder: en lugar de hacer tareas repetitivas y ted
 
 > ¿Cuáles de estos problemas crees que se pueden resolver con programación?
 
-1. ☐ La contabilidad de una empresa.
-1. ☐ La reserva de un turno.
-1. ☐ Corregir un examen.
-1. ☐ La creación de un videojuego.
-1. ☐ Realizar videollamadas.
-1. ☐ Reconocer imágenes
-1. ☐ Conducir un robot en Marte.
+1. 🔲 La contabilidad de una empresa.
+1. 🔲 La reserva de un turno.
+1. 🔲 Corregir un examen.
+1. 🔲 La creación de un videojuego.
+1. 🔲 Realizar videollamadas.
+1. 🔲 Reconocer imágenes
+1. 🔲 Conducir un robot en Marte.
 
 ### Respuesta
 
@@ -50,16 +50,16 @@ Mmm, en realidad no... :disappointed:
 
 > ¿Cuáles de estos problemas crees que se pueden resolver con programación?
 
-1. ☐ Resolver una discusión.
-1. ☐ Determinar si un cuadro es bello.
-1. ☐ Empatizar con otras personas.
-1. ☐ Ninguno de los anteriores
+1. 🔲 Resolver una discusión.
+1. 🔲 Determinar si un cuadro es bello.
+1. 🔲 Empatizar con otras personas.
+1. 🔲 Ninguno de los anteriores
 
 ### Respuesta
 
-1. ☒ Resolver una discusión.
-1. ☒ Determinar si un cuadro es bello.
-1. ☒ Empatizar con otras personas.
+1. ❎ Resolver una discusión.
+1. ❎ Determinar si un cuadro es bello.
+1. ❎ Empatizar con otras personas.
 1. ☑️ Ninguno de los anteriores
 
 ### Para pensar
@@ -75,20 +75,20 @@ Un montón de objetos son computadoras aunque no lo creas. Los teléfonos inteli
 
 > ¿Cuáles de los siguientes dispositivos se pueden programar?
 
-1. ☐ Licuadora antigua.
-1. ☐ Consola de videojuegos.
-1. ☐ Navegador GPS.
-1. ☐ Teléfono celular.
-1. ☐ Una mesa de madera.
-1. ☐ Cajero automático.
+1. 🔲 Licuadora antigua.
+1. 🔲 Consola de videojuegos.
+1. 🔲 Navegador GPS.
+1. 🔲 Teléfono celular.
+1. 🔲 Una mesa de madera.
+1. 🔲 Cajero automático.
 
 ### Respuesta
 
-1. ☒ Licuadora antigua.
+1. ❎ Licuadora antigua.
 1. ☑️ Consola de videojuegos.
 1. ☑️ Navegador GPS.
 1. ☑️ Teléfono celular.
-1. ☒ Una mesa de madera.
+1. ❎ Una mesa de madera.
 1. ☑️ Cajero automático.
 
 ### Para pensar
@@ -108,28 +108,28 @@ Si bien muchas veces utilizamos el término aplicación para hablar tanto de una
 > Si no conocés alguno de estos nombres, podés darles click.
 
 
-1. ☐ [Bloc de notas](https://es.wikipedia.org/wiki/Bloc_de_notas)
-1. ☐ [AFIP](https://www.afip.gob.ar/sitio/externos/default.asp)
-1. ☐ [Instagram](https://www.instagram.com)
-1. ☐ [Mercado Libre](https://www.mercadolibre.com.ar)
-1. ☐ [Despegar](https://www.despegar.com.ar)
-1. ☐ [Buscaminas](https://es.wikipedia.org/wiki/Buscaminas)
-1. ☐ [Fortnite](https://www.epicgames.com/fortnite/es-ES/home)
-1. ☐ [Minecraft](https://www.minecraft.net/es-es)
-1. ☐ [Solitario](https://es.wikipedia.org/wiki/Solitario_Microsoft)
-1. ☐ [Mumuki](https://mumuki.io/home)
+1. 🔲 [Bloc de notas](https://es.wikipedia.org/wiki/Bloc_de_notas)
+1. 🔲 [AFIP](https://www.afip.gob.ar/sitio/externos/default.asp)
+1. 🔲 [Instagram](https://www.instagram.com)
+1. 🔲 [Mercado Libre](https://www.mercadolibre.com.ar)
+1. 🔲 [Despegar](https://www.despegar.com.ar)
+1. 🔲 [Buscaminas](https://es.wikipedia.org/wiki/Buscaminas)
+1. 🔲 [Fortnite](https://www.epicgames.com/fortnite/es-ES/home)
+1. 🔲 [Minecraft](https://www.minecraft.net/es-es)
+1. 🔲 [Solitario](https://es.wikipedia.org/wiki/Solitario_Microsoft)
+1. 🔲 [Mumuki](https://mumuki.io/home)
 
 ### Respuesta
 
-1. ☒ [Bloc de notas](https://es.wikipedia.org/wiki/Bloc_de_notas)
+1. ❎ [Bloc de notas](https://es.wikipedia.org/wiki/Bloc_de_notas)
 1. ☑️ [AFIP](https://www.afip.gob.ar/sitio/externos/default.asp)
 1. ☑️ [Instagram](https://www.instagram.com)
 1. ☑️ [Mercado Libre](https://www.mercadolibre.com.ar)
 1. ☑️ [Despegar](https://www.despegar.com.ar)
-1. ☒ [Buscaminas](https://es.wikipedia.org/wiki/Buscaminas)
+1. ❎ [Buscaminas](https://es.wikipedia.org/wiki/Buscaminas)
 1. ☑️ [Fortnite](https://www.epicgames.com/fortnite/es-ES/home)
 1. ☑️ [Minecraft](https://www.minecraft.net/es-es)
-1. ☒ [Solitario](https://es.wikipedia.org/wiki/Solitario_Microsoft)
+1. ❎ [Solitario](https://es.wikipedia.org/wiki/Solitario_Microsoft)
 1. ☑️ [Mumuki](https://mumuki.io/home)
 
 ### Para pensar
@@ -146,18 +146,18 @@ Un algoritmo es una secuencia de pasos ordenados para la resolución de un probl
 
 > ¿Cuáles de estos crees que son algoritmos? :thinking:
 
-1. ☐ Una receta de cocina.
-1. ☐ Las instrucciones para hacer un origami.
-1. ☐ Los pasos para resolver un cubo Rubik.
-1. ☐ La lógica que siguen las redes sociales para sugerirte contactos.
-1. ☐ Todas las anteriores.
+1. 🔲 Una receta de cocina.
+1. 🔲 Las instrucciones para hacer un origami.
+1. 🔲 Los pasos para resolver un cubo Rubik.
+1. 🔲 La lógica que siguen las redes sociales para sugerirte contactos.
+1. 🔲 Todas las anteriores.
 
 ### Respuesta
 
-1. ☒ Una receta de cocina.
-1. ☒ Las instrucciones para hacer un origami.
-1. ☒ Los pasos para resolver un cubo Rubik.
-1. ☒ La lógica que siguen las redes sociales para sugerirte contactos.
+1. ❎ Una receta de cocina.
+1. ❎ Las instrucciones para hacer un origami.
+1. ❎ Los pasos para resolver un cubo Rubik.
+1. ❎ La lógica que siguen las redes sociales para sugerirte contactos.
 1. ☑️ Todas las anteriores.
 
 ### Para pensar
@@ -190,19 +190,19 @@ Al comunicarnos los seres humanos debemos seguir una serie de lineamientos pero 
 
 > Si bien todas estas frases tienen la misma intención, ¿cuál está correctamente escrita?
 
-1. ☐ ola k asé?
-1. ☐ hola, ¿qué haces?
-1. ☐ ?hola qué hacés¿
-1. ☐ hola, que? haces
-1. ☐ hoal, ¿qéu haecs?
+1. 🔲 ola k asé?
+1. 🔲 hola, ¿qué haces?
+1. 🔲 ?hola qué hacés¿
+1. 🔲 hola, que? haces
+1. 🔲 hoal, ¿qéu haecs?
 
 ### Respuesta
 
-1. ☒ ola k asé?
+1. ❎ ola k asé?
 1. ☑️ hola, ¿qué haces?
-1. ☒ ?hola qué hacés¿
-1. ☒ hola, que? haces
-1. ☒ hoal, ¿qéu haecs?
+1. ❎ ?hola qué hacés¿
+1. ❎ hola, que? haces
+1. ❎ hoal, ¿qéu haecs?
 
 ### Para pensar
 
@@ -256,25 +256,25 @@ Si no cumplimos con estos principios, a los cuales llamaremos _sintaxis_, la com
 >    return numero * 2
 > ```
 
-☐
+🔲
 ```python
 def doble(número):
   return número * 2
 ```
 
-☐
+🔲
 ```python
 def doble(numero):
   return numero + numero
 ```
 
-☐
+🔲
 ```python
 def doble(numero):
   return numero * 2
 ```
 
-☐
+🔲
 ```python
 def doble(numero)
   return numero * 2
@@ -283,13 +283,13 @@ def doble(numero)
 
 ### Respuesta
 
-☒
+❎
 ```python
 def doble(número):
   return número * 2
 ```
 
-☒
+❎
 ```python
 def doble(numero):
   return numero + numero
@@ -301,7 +301,7 @@ def doble(numero):
   return numero * 2
 ```
 
-☒
+❎
 ```python
 def doble(numero)
   return numero * 2
@@ -332,20 +332,20 @@ Para formalizar un poco lo que venimos viendo, diremos que para darle órdenes a
 
 > ¿Cuáles de los siguientes crees que son lenguajes de programación?
 
-1. ☐ Español.
-1. ☐ Ruby.
-1. ☐ Mozilla Firefox.
-1. ☐ Python.
-1. ☐ Inglés.
-1. ☐ Javascript.
+1. 🔲 Español.
+1. 🔲 Ruby.
+1. 🔲 Mozilla Firefox.
+1. 🔲 Python.
+1. 🔲 Inglés.
+1. 🔲 Javascript.
 
 ### Respuesta
 
-1. ☒ Español.
+1. ❎ Español.
 1. ☑️ Ruby.
-1. ☒ Mozilla Firefox.
+1. ❎ Mozilla Firefox.
 1. ☑️ Python.
-1. ☒ Inglés.
+1. ❎ Inglés.
 1. ☑️ Javascript.
 
 ### Para pensar
@@ -386,7 +386,7 @@ end
 > ¿Cuál de los siguientes códigos crees que está escrito en Python?
 
 
-☐
+🔲
 
 ```ruby
 def saludar(nombre)
@@ -394,7 +394,7 @@ def saludar(nombre)
 end
 ```
 
-☐
+🔲
 
 ```javascript
 function saludar(nombre) {
@@ -402,7 +402,7 @@ function saludar(nombre) {
 }
 ```
 
-☐
+🔲
 
 ```python
 def saludar(nombre):
@@ -412,7 +412,7 @@ def saludar(nombre):
 
 ### Respuesta
 
-☒
+❎
 
 ```ruby
 def saludar(nombre)
@@ -420,7 +420,7 @@ def saludar(nombre)
 end
 ```
 
-☒
+❎
 
 ```javascript
 function saludar(nombre) {
@@ -461,4 +461,3 @@ Además, para desarrollar aplicaciones y sistemas más complejos, existen herram
 A lo largo de esta lección formalizamos algunos conceptos que escuchamos habitualmente: _programación_, _aplicación_, _sistema_, _computadora_, entre otros :relaxed:. Al mismo tiempo conocimos algunas herramientas que nos ayudarán a la hora de programar. :thumbsup:
 
 ¡Sigamos con la siguiente lección para sumergirnos en estas aguas! 🤿
-
