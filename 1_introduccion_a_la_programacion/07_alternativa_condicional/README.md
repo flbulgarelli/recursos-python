@@ -29,8 +29,10 @@ Acaba de empezar el día :sunrise: y ya tenemos que hacer una nueva función :sl
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEquals(saludar_a("Gus"), "Buenos días Gus")
-self.assertEquals(saludar_a("May"), "Buenos días May")
+>>> saludar_a("Gus")
+"Buenos días Gus"
+>>> saludar_a("May")
+"Buenos días May"
 ````
 
 
@@ -539,12 +541,18 @@ El jurado de un torneo nos pidió que desarrollemos una función `medalla_segun_
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEqual(medalla_segun_puesto(1), "oro")
-self.assertEqual(medalla_segun_puesto(2), "plata")
-self.assertEqual(medalla_segun_puesto(3), "bronce")
-self.assertEqual(medalla_segun_puesto(4), "nada")
-self.assertEqual(medalla_segun_puesto(5), "nada")
-self.assertEqual(medalla_segun_puesto(0), "nada")
+>>> medalla_segun_puesto(1)
+"oro"
+>>> medalla_segun_puesto(2)
+"plata"
+>>> medalla_segun_puesto(3)
+"bronce"
+>>> medalla_segun_puesto(4)
+"nada"
+>>> medalla_segun_puesto(5)
+"nada"
+>>> medalla_segun_puesto(0)
+"nada"
 ````
 
 ## 12. ¡Envido!
@@ -574,12 +582,18 @@ Queremos saber el valor de las [cartas de truco](https://es.wikipedia.org/wiki/T
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEqual(valor_envido(2), 2)
-self.assertEqual(valor_envido(1), 1)
-self.assertEqual(valor_envido(5), 5)
-self.assertEqual(valor_envido(12), 0)
-self.assertEqual(valor_envido(11), 0)
-self.assertEqual(valor_envido(10), 0)
+>>> valor_envido(2)
+2
+>>> valor_envido(1)
+1
+>>> valor_envido(5)
+5
+>>> valor_envido(12)
+0
+>>> valor_envido(11)
+0
+>>> valor_envido(10)
+0
 ````
 
 ## 13. ¡Quiero retruco!
@@ -614,10 +628,14 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ````python
 #...previousSolution...#
 
-self.assertEqual(puntos_de_envido_totales(4, "espadas", 3, "espadas"), 27)
-self.assertEqual(puntos_de_envido_totales(6, "copas", 11, "copas"), 26)
-self.assertEqual(puntos_de_envido_totales(5, "oro", 2, "bastos"), 5)
-self.assertEqual(puntos_de_envido_totales(6, "copas", 7, "espadas"), 7)
+>>> puntos_de_envido_totales(4, "espadas", 3, "espadas")
+27
+>>> puntos_de_envido_totales(6, "copas", 11, "copas")
+26
+>>> puntos_de_envido_totales(5, "oro", 2, "bastos")
+5
+>>> puntos_de_envido_totales(6, "copas", 7, "espadas")
+7
 ````
 
 ## 14. ¡Quiero vale cuatro!
@@ -641,15 +659,16 @@ Cuando se juega al truco, los equipos oponentes alternativamente pueden subir la
 > :warning: Asumí que sólo te van a pasar como argumento un string que represente un canto de truco. Por ejemplo, no vamos a probar la función para el caso `valor_canto_truco("zaraza")`
 
 
-
-
 ### Autoevaluación
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEqual(valor_canto_truco("retruco"), 3)
-self.assertEqual(valor_canto_truco("truco"), 2)
-self.assertEqual(valor_canto_truco("vale cuatro"), 4)
+>>> valor_canto_truco("retruco")
+3
+>>> valor_canto_truco("truco")
+2
+>>> valor_canto_truco("vale cuatro")
+4
 ````
 

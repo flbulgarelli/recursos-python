@@ -24,19 +24,6 @@ True
 > * `"Tierra del Fuego"` es más largo que `"Santiago del Estero"`
 
 
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-````python
->>> True
-True
-````
-
-
-
 ### Para pensar
 
 ¡Lo lograste! Pero, ¿no fue un poco tedioso y repetitivo? :sleeping: Una vez que ya nos dimos cuenta cómo resolver el problema de saber si un string es más largo que otro...

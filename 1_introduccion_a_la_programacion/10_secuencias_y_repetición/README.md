@@ -45,21 +45,6 @@ True
 > ```
 
 
-
-
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-````python
->>> True
-True
-````
-
-
-
 ### Para pensar
 
 Como vemos, las listas y los strings, si bien _no son lo mismo_, son más parecidos de lo que pensábamos: ambos tipos de datos representan _secuencias_.
@@ -249,13 +234,20 @@ En `extremos` no va a alcanzar con sólo extraer segmentos o acceder por indices
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEquals(sin_extremos([4, 5, 10, 2, 3]), [5, 10, 2])
-self.assertEquals(sin_extremos([4, 5, 10, 2, 3, 9]), [5, 10, 2, 3])
-self.assertEquals(sin_extremos([4, 5, 10]), [5])
-self.assertEquals(sin_extremos([40, 20]), [])
-self.assertEquals(extremos([4, 5, 10, 2, 3]), [4, 3])
-self.assertEquals(extremos([4, 3]), [4, 3])
-self.assertEquals(extremos([1, 2, 5]), [1, 5])
+>>> sin_extremos([4, 5, 10, 2, 3])
+[5, 10, 2]
+>>> sin_extremos([4, 5, 10, 2, 3, 9])
+[5, 10, 2, 3]
+>>> sin_extremos([4, 5, 10])
+[5]
+>>> sin_extremos([40, 20])
+[]
+>>> extremos([4, 5, 10, 2, 3])
+[4, 3]
+>>> extremos([4, 3])
+[4, 3]
+>>> extremos([1, 2, 5])
+[1, 5]
 ````
 
 ## 4. Textos impresos
@@ -307,20 +299,6 @@ Fingiendo indiferencia
 > >>> "a la voz de aura"
 > >>> print("a la voz de aura")
 > ```
-
-
-
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-````python
->>> True
-True
-````
-
 
 
 ### Para pensar
@@ -526,12 +504,18 @@ def sumatoria(numeros):
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEquals(productoria([10, 2, 3]), 60)
-self.assertEquals(productoria([3, 3, 2, 4]), 72)
-self.assertEquals(productoria([8]), 8)
-self.assertEquals(productoria(range(1, 10)), 362880)
-self.assertEquals(productoria([6]), 6)
-self.assertEquals(productoria([]), 1)
+>>> productoria([10, 2, 3])
+60
+>>> productoria([3, 3, 2, 4])
+72
+>>> productoria([8])
+8
+>>> productoria(range(1, 10))
+362880
+>>> productoria([6])
+6
+>>> productoria([])
+1
 ````
 
 
@@ -727,8 +711,10 @@ En otras palabras: en cada iteración, si la condición `duracion < 3` se cumple
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEquals(cuantas_veces_entreno_lo_suficiente([35, 40, 32, 60]), 4)
-self.assertEquals(cuantas_veces_entreno_lo_suficiente([15, 45, 90, 0]), 2)
+>>> cuantas_veces_entreno_lo_suficiente([35, 40, 32, 60])
+4
+>>> cuantas_veces_entreno_lo_suficiente([15, 45, 90, 0])
+2
 ````
 
 ## 12. ¿Dónde están las llaves?
@@ -770,8 +756,10 @@ False
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ````python
-self.assertEquals(donde_estan_las_llaves("🔑🔥👓"), 1)
-self.assertEquals(donde_estan_las_llaves("👓🔑🔥"), 2)
+>>> donde_estan_las_llaves("🔑🔥👓")
+1
+>>> donde_estan_las_llaves("👓🔑🔥")
+2
 ````
 
 

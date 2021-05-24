@@ -75,8 +75,6 @@ Un montón de objetos son computadoras aunque no lo creas. Los teléfonos inteli
 
 > ¿Cuáles de los siguientes dispositivos se pueden programar?
 
-
-
 1. ☐ Licuadora antigua.
 1. ☐ Consola de videojuegos.
 1. ☐ Navegador GPS.
@@ -148,8 +146,6 @@ Un algoritmo es una secuencia de pasos ordenados para la resolución de un probl
 
 > ¿Cuáles de estos crees que son algoritmos? :thinking:
 
-
-
 1. ☐ Una receta de cocina.
 1. ☐ Las instrucciones para hacer un origami.
 1. ☐ Los pasos para resolver un cubo Rubik.
@@ -180,22 +176,13 @@ Ahora que ya sabemos bien lo que es un algoritmo...
 * Alrededor del centro dibujá círculos que tengan igual tamaño pegados entre ellos. Estos serán los pétalos.
 
 
+### Respuesta
 
+El orden debería ser el siguiente:
 
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-````text
-- name: Los pasos se ordenaron correctamente
-keys:
-primer_paso:
-equal: "Empezá con un círculo. Este será el centro de la flor."
-segundo_paso:
-equal: "Alrededor del centro dibujá círculos que tengan igual tamaño pegados entre ellos. Estos serán los pétalos."
-tercer_paso:
-equal: "Dibujá el tallo pegado a uno de los pétalos."
-````
+1. Empezá con un círculo. Este será el centro de la flor.
+1. Alrededor del centro dibujá círculos que tengan igual tamaño pegados entre ellos. Estos serán los pétalos.
+1. Dibujá el tallo pegado a uno de los pétalos.
 
 ## 7. ¿Qué decís?
 
@@ -263,10 +250,11 @@ Si no cumplimos con estos principios, a los cuales llamaremos _sintaxis_, la com
 
 > Seleccioná qué porción de código es idéntica a:
 >
-```python
-def doble(numero):
-   return numero * 2
-```
+>
+> ```python
+> def doble(numero):
+>    return numero * 2
+> ```
 
 ☐
 ```python
