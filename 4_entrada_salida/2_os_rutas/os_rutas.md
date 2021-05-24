@@ -1,4 +1,4 @@
-Basado en el material de [Fundamentos de Informática](https://github.com/AJVelezRueda/Fundamentos_de_informatica)
+> Basado en el material de [Fundamentos de Informática](https://github.com/AJVelezRueda/Fundamentos_de_informatica)
 
 [Rutas, absolutas y relativas](#os)
 
