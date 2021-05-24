@@ -1,4 +1,4 @@
-> Recorrido basado en las guías del Proyecto de Extensión [La Bioinformática Va a La Escuela](http://ufq.unq.edu.ar/sbg/education.html)
+> Recorrido basado en las guías del Proyecto de Extensión [La Bioinformática Va a La Escuela](http://ufq.unq.edu.ar/sbg/education.html) y en [Material de Fundamentos de Informática](https://github.com/AJVelezRueda/UCEMA_Fundamentos_de_informatica)
 
 
 # *Introducción a Python*
