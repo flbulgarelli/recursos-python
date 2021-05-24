@@ -1,5 +1,7 @@
 > Ejercicios basados en https://github.com/MumukiProject/mumuki-guia-javascript-ejercitacion-bucles
 
+# Práctica Repetición
+
 ### `obtener_indice(valor, lista)`
 
 Definí una función `obtener_indice` que tome como argumento un valor cualquiera `valor` y un lista cualquiera `lista` y devuelva el índice del _primer ítem_ con dicho valor en la lista, o -1 si no hay ninguno.

@@ -1,4 +1,4 @@
-# Condicionales y operadores lógicos
+# Práctica lógica booleana
 
 ## Ejercicios con operadores lógicos
 

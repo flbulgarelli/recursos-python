@@ -1,6 +1,6 @@
-# Funciones
-
 > Basado en https://github.com/MumukiProject/mumuki-guia-javascript-ejercitacion-funciones
+
+# Práctica Funciones
 
 ## Ejercicios
 
