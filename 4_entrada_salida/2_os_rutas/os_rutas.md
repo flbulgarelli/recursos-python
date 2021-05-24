@@ -1,6 +1,9 @@
-[Rutas, absolutas y relativas](os)
+Basado en el material de [Fundamentos de Informática](https://github.com/AJVelezRueda/Fundamentos_de_informatica)
+
+[Rutas, absolutas y relativas](#os)
 
 Como ya hemos visto, para acceder a los archivos necesitamos saber cuál es la ruta (o path) dónde se encuentran. En este punto surge el inconveniente de los distintos sistemas operativos, ya que hay una diferencia en cómo se arman estas rutas. Para solucionar esto se puede utilizar las bibliotecas **os** y **pathlib** las cuales ya vienen incorporadas en python (built-in modules), de manera de poder armar las rutas necesarias y poder usarlas independientemente del sistema operativo. Veamos como funcionan.
+
 Supongamos que un grupo de alumnos trabajan con los sitemas operativos macOS y Windows y uno de ellos tiene un archivo en la carpeta _/home/usuario/Documentos/UCEMA/Fundamentos/Práctica4/archivo.txt_, a la hora de acceder al archivo podemos enfocarlo de manera de acceder al archivo con la ruta absoluta (completa) o la ruta relativa. Con la primera usamos la ruta desde la carpeta base o raíz hasta el archivo en cuestión, y con la segunda tenemos en cuenta dónde estamos parados y aclaramos la ruta desde allí. En este caso la ruta absoluta es la que está mostrada más arriba y si, por ejemplo, estamos en la carpeta _/home/usuario_ la ruta relativa que deberíamos usar es: _./Documentos/UCEMA/Fundamentos/Práctica4/archivo.txt_ (recuerden que si usamos un punto, _._, estamos diciendo "a partir de esta carpeta"). Ahora bien ¿cómo armamos estas rutas para que se puedan usar en cualquier sistema operativo? (para esto consideramos que todos los alumnos lo tienen guardado en la misma carpeta, es decir, dentro de la carpeta Documentos hay una carpeta UCEMA, etc., sin importar el sistema operativo). Por un lado, si vamos a usar la ruta absoluta, hay que saber cómo se escribe en ese sistema la carpeta del usuario (home), por lo que vamos a usar la biblioteca **pathlib** de la siguiente manera:
 
 ```python
@@ -36,7 +39,7 @@ Por cuestiones de comodidad muchas veces es recomendable trabajar con rutas rela
 
 De esta manera, realizando estos pasos, el mismo código va a funcionar independientemente del sistema operativo dónde se ejecute.
 
-[os.listdir y glob](glob)
+[os.listdir y glob](#glob)
 
 Algo que resulta muy útil es poder acceder a los archivos que hayan en una determinada carpeta sin conocer sus nombres en particular, o acceder a un grupo de estos archivos que tengan algo en común (que todos tengan la misma extensión por ejemplo), más aún si son archivos que el programa genera en su ejecución, de manera de que a priori no los tenemos. Para esto podemos usar dos herramientas, el método ```listdir``` de la biblioteca ```os``` y el método ```glob``` de la biblioteca ```glob```. Con el primero obtenemos una lista de todos los archivos que se encuentran en una carpeta, mientras que con el segundo, además de esto, tenemos la posibilidad de listar archivos específicos. Es decir:
 
