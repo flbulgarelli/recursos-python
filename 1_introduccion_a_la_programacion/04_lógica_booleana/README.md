@@ -15,7 +15,6 @@ Por ejemplo, si contamos con una función `es_par`, basta con negarla para saber
 ```python
 def es_impar(numero):
   return not es_par(numero)
-
 ```
 
 > ¡Ahora te toca a vos! Definí la función `es_mayor_de_edad` y luego `es_menor_de_edad` a partir de ella.
@@ -77,9 +76,9 @@ Por ejemplo, si cuento con la función...
 >
 > ```python
 > >>> es_peripatetica("filosofía", "Grecia", 5)
-True
+> True
 > >>> es_peripatetica("ingeniería", "Uruguay", 1)
-False
+> False
 > ```
 
 
@@ -149,11 +148,11 @@ En el mundo de la lógica estas expresiones se llaman _proposiciones_. Pero… �
 > Para comprobarlo, probá en la consola tu función `es_peripatetica` con los siguientes valores y comprobá si se comporta como en la tabla:
 >
 > ```python
->>> es_peripatetica("atletismo", "Argentina", 10)
->>> es_peripatetica("filosofía", "Argentina", 3)
->>> es_peripatetica("ingeniería", "Canadá", 1)
->>> es_peripatetica("filosofía", "Grecia", 5)
-```
+> >>> es_peripatetica("atletismo", "Argentina", 10)
+> >>> es_peripatetica("filosofía", "Argentina", 3)
+> >>> es_peripatetica("ingeniería", "Canadá", 1)
+> >>> es_peripatetica("filosofía", "Grecia", 5)
+> ```
 
 
 
@@ -175,32 +174,17 @@ def gano(cumplio_objetivo_secreto, cantidad_de_paises_conquistados):
 
 > Probá en la consola las siguientes expresiones:
 >
-``` python
->>> gano(True, 25)
->>> gano(False, 30)
->>> gano(False, 20)
->>> gano(True, 31)
-```
-
+> ``` python
+> >>> gano(True, 25)
+> >>> gano(False, 30)
+> >>> gano(False, 20)
+> >>> gano(True, 31)
+> ```
+>
 > ¿Te animás a construir la tabla de verdad de la disyunción lógica?
 
 
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-```python
-def gano(cumplio_objetivo_secreto, cantidad_de_paises_conquistados):
-  return cumplio_objetivo_secreto or cantidad_de_paises_conquistados >= 30
-
-
-```
-
-
-
-### Para pensar
+### Respuesta
 
 Vamos a ver como sería la tabla de verdad de la disyunción para compararla con la tuya:
 
@@ -462,11 +446,11 @@ El booleano final resultará de operarlas mediante `son_medio_hermanos`:
 
 > Probá tu función `son_medio_hermanos` con los siguientes valores y comprobá si se comporta como la tabla:
 >
-```python
->>> son_medio_hermanos(aureliano_segundo, remedios)
->>> son_medio_hermanos(aureliano_jose, remedios)
->>> son_medio_hermanos(arcadio, aureliano_jose)
-```
+> ```python
+> >>> son_medio_hermanos(aureliano_segundo, remedios)
+> >>> son_medio_hermanos(aureliano_jose, remedios)
+> >>> son_medio_hermanos(arcadio, aureliano_jose)
+> ```
 
 
 
@@ -647,47 +631,30 @@ Al igual que en matemática, cuando usamos operadores lógicos las expresiones s
 
 ¿Cuál es ese orden? :thinking:
 
-Teniendo definida la función:
-
-```python
-def paga_con_tarjeta(se_cobra_interes, tarjeta, efectivo_disponible):
-  return not se_cobra_interes and cuotas(tarjeta) >= 3 or efectivo_disponible < 100
-```
-
-> Intentá descubrir cuál es la precedencia de las operaciones booleanas. Te damos unos ejemplos de pruebas...
+> Teniendo definidas estas funciones...
 >
-``` python
->>> paga_con_tarjeta(True, "visa", 320)
->>> paga_con_tarjeta(False, "visa", 80)
->>> paga_con_tarjeta(True, "mastercard", 215)
->>> paga_con_tarjeta(True, "mastercard", 32)
-```
+> ```python
+> def paga_con_tarjeta(se_cobra_interes, > tarjeta, efectivo_disponible):
+>   return not se_cobra_interes and cuotas(tarjeta) >= 3 or efectivo_disponible < 100
+>
+> def cuotas(tarjeta):
+>   if tarjeta == 'visa':
+>     return 6
+>   else:
+>     return 2
+> ```
+>
+> ... copiá `paga_con_tarjeta` y `cuotas` en el intérprete e ententá descubrir cuál es la precedencia de las operaciones booleanas. Te damos unos ejemplos de pruebas...
+>
+> ``` python
+> >>> paga_con_tarjeta(True, "visa", 320)
+> >>> paga_con_tarjeta(False, "visa", 80)
+> >>> paga_con_tarjeta(True, "mastercard", 215)
+> >>> paga_con_tarjeta(True, "mastercard", 32)
+> ```
 > ... pero podés probar con los que vos quieras.
-
-> Cuando termines, escribí `listo()`.
-
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-```python
-def listo():
-  pass
-
-def cuotas(tarjeta):
-  return {
-    'visa': 6,
-    'mastercard': 2,
-  }.get(tarjeta, 1)
-
-def paga_con_tarjeta(se_cobra_interes, tarjeta, efectivo_disponible):
-  return not se_cobra_interes and cuotas(tarjeta) >= 3 or efectivo_disponible < 100
-
-
-```
-
+>
+> Para poder
 
 
 ### Para pensar
@@ -760,19 +727,15 @@ Ya comprobaste que la operación con mayor precedencia es la negación, seguida 
 Al igual que en matemática, podemos usar paréntesis para agrupar las operaciones que queremos que se realicen primero.
 
 > Definí la función `puede_jubilarse` que recibe la edad y el sexo de una persona, además de los años de aportes jubilatorios que posee:
-
+>
 > ```python
 > >>> puede_jubilarse(62, 'F', 34)
 > True
 > ```
-
+>
 > El mínimo de edad para realizar el trámite para las mujeres es de 60 años, mientras que para los hombres es 65. En ambos casos, se deben contar con al menos 30 años de aportes.
-
-
+>
 > Ah, y por esta vez te vamos a pedir que no definas funciones extra para resolverlo. :see_no_evil:
-
-
-
 
 ### Autoevaluación
 
