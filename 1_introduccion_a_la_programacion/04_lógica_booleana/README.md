@@ -33,7 +33,7 @@ Tanto `es_mayor_de_edad` como `es_menor_de_edad` reciben una edad como argumento
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> es_mayor_de_edad(20)
 True
 >>> es_mayor_de_edad(18)
@@ -50,7 +50,7 @@ False
 True
 >>> es_menor_de_edad(16)
 True
-````
+```
 
 
 
@@ -95,7 +95,7 @@ False
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> es_peripatetica("filosofia", "Grecia", 3)
 False
 >>> es_peripatetica("filosofía", "Grecia", 3)
@@ -110,7 +110,7 @@ False
 False
 >>> es_peripatetica("profesor", "Colombia", 1)
 False
-````
+```
 
 ## 3. La verdad detrás de la conjunción
 
@@ -191,12 +191,12 @@ def gano(cumplio_objetivo_secreto, cantidad_de_paises_conquistados):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def gano(cumplio_objetivo_secreto, cantidad_de_paises_conquistados):
   return cumplio_objetivo_secreto or cantidad_de_paises_conquistados >= 30
 
 
-````
+```
 
 
 
@@ -252,7 +252,7 @@ Ya están definidas las funciones:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def dentro_de_horario_bancario(horario):
   return horario >= 10 and horario <= 15
 
@@ -271,7 +271,7 @@ False
 False
 >>> esta_abierto(False, "martes", 16)
 False
-````
+```
 
 ## 6. ¡Buen día!
 
@@ -308,7 +308,7 @@ Quizás te sirva definir las funciones `tienen_la_misma_madre` y `tienen_el_mism
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 maria_de_los_remedios = {
   'nombre': "María De Los Remedios"
 }
@@ -422,7 +422,7 @@ False
 False
 >>> son_medio_hermanos(felipe_perez, martin_perez)
 True
-````
+```
 
 ## 7. La verdad es que no hay una verdad
 
@@ -485,7 +485,7 @@ Recordá que en la familia Buendía:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 maria_de_los_remedios = {
   'nombre': "María De Los Remedios"
 }
@@ -577,7 +577,7 @@ def son_medio_hermanos(una, otra):
   return tienen_la_misma_madre(una, otra) and not tienen_el_mismo_padre(una, otra) or not tienen_la_misma_madre(una, otra) and tienen_el_mismo_padre(una, otra)
 
 
-````
+```
 
 ## 8. ¡Hola! Mi nombre es Xor
 
@@ -624,7 +624,7 @@ A diferencia del `and`, `or` y `not`, el `xor` no suele estar definido en los le
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> xor(True, True)
 False
 >>> xor(True, False)
@@ -633,7 +633,7 @@ True
 True
 >>> xor(False, False)
 False
-````
+```
 
 ## 9. Precedencia
 
@@ -672,7 +672,7 @@ def paga_con_tarjeta(se_cobra_interes, tarjeta, efectivo_disponible):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def listo():
   pass
 
@@ -686,7 +686,7 @@ def paga_con_tarjeta(se_cobra_interes, tarjeta, efectivo_disponible):
   return not se_cobra_interes and cuotas(tarjeta) >= 3 or efectivo_disponible < 100
 
 
-````
+```
 
 
 
@@ -778,7 +778,7 @@ Al igual que en matemática, podemos usar paréntesis para agrupar las operacion
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> puede_jubilarse(62, 'F', 40)
 True
 >>> puede_jubilarse(63, 'F', 25)
@@ -795,7 +795,7 @@ False
 False
 >>> puede_jubilarse(58, 'M', 35)
 False
-````
+```
 
 
 
@@ -834,7 +834,7 @@ En un parque de diversiones de la ciudad instalaron una nueva montaña rusa :rol
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> puede_subirse(1.5, False, False)
 True
 >>> puede_subirse(1.7, False, True)
@@ -845,5 +845,4 @@ True
 False
 >>> puede_subirse(1.1, True, False)
 False
-````
-
+```

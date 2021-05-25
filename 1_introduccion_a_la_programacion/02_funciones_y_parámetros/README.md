@@ -60,13 +60,13 @@ False # Ups ¡era para el otro lado!
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def es_mas_largo_que(un_string, otro_string):
   return len(un_string) > len(otro_string)
 
 >>> True
 True
-````
+```
 
 
 
@@ -119,12 +119,12 @@ True # si los argumentos cambian, el resultado puede ser diferente también
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> es_mas_largo_que("Rosario", "Bahía Blanca")
 False
 >>> es_mas_largo_que("Valle de Uco", "La Punta")
 True
-````
+```
 
 
 
@@ -243,13 +243,18 @@ Repasemos las reglas:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(mitad(2), 1)
-self.assertEqual(mitad(20), 10)
-self.assertEqual(mitad(10), 5)
-self.assertEqual(suma_longitudes("hola", "mundo"), 9)
-self.assertEqual(suma_longitudes("llueva", "café"), 10)
-````
+```python
+>>> mitad(2)
+1
+>>> mitad(20)
+10
+>>> mitad(10)
+5
+>>> suma_longitudes("hola", "mundo")
+9
+>>> suma_longitudes("llueva", "café")
+10
+```
 
 
 
@@ -407,14 +412,14 @@ def es_mas_largo_que(un_string, otro_string):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> es_hora_de_la_verdad(11)
 False
 >>> es_hora_de_la_verdad(14)
 False
 >>> es_hora_de_la_verdad(12)
 True
-````
+```
 
 
 
@@ -470,15 +475,22 @@ def siguiente_del_doble(numero):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(anterior(1), 0);
-self.assertEqual(anterior(10), 9)
-self.assertEqual(triple(1), 3)
-self.assertEqual(triple(3), 9)
-self.assertEqual(anterior_del_triple(1), 2)
-self.assertEqual(anterior_del_triple(3), 8)
-self.assertEqual(anterior_del_triple(10), 29)
-````
+```python
+>>> anterior(1)
+0
+>>> anterior(10)
+9
+>>> triple(1)
+3
+>>> triple(3)
+9
+>>> anterior_del_triple(1)
+2
+>>> anterior_del_triple(3)
+8
+>>> anterior_del_triple(10)
+29
+```
 
 ## 9. Libros de la buena memoria
 
@@ -525,7 +537,7 @@ Como vimos anteriormente, en Python contamos con operadores como `>=`, `>`, `<`,
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def es_dia_favorito(dia_del_mes):
   return dia_del_mes == 1
 
@@ -537,7 +549,7 @@ True
 False
 >>> le_gusta_leer(15)
 False
-````
+```
 
 
 
@@ -592,7 +604,7 @@ True
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> esta_entre(10, 1, 10)
 False
 >>> esta_entre(4, 4, 9)
@@ -615,7 +627,7 @@ True
 False
 >>> esta_fuera_de_rango(2, 0, 100)
 False
-````
+```
 
 
 
@@ -711,14 +723,14 @@ Recordá que podemos averiguar el largo de los strings mediante `len`...
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> longitud_nombre_completo("Cosme", "Fulanito")
 14
 >>> longitud_nombre_completo("John", "Snow")
 9
 >>> longitud_nombre_completo("Juana", "Azurduy")
 13
-````
+```
 
 ## 13. ¡GRITAR!
 
@@ -758,14 +770,14 @@ Por ejemplo:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> gritar("miguel")
 "¡MIGUEL!"
 >>> gritar("gritar")
 "¡GRITAR!"
 >>> gritar("minuto")
 "¡MINUTO!"
-````
+```
 
 ## 14. Terminando la semana
 
@@ -794,7 +806,7 @@ Para saber si un día es fin de semana, _ese día tiene que ser `"sábado"` o es
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> es_fin_de_semana("sábado") or es_fin_de_semana("sabado")
 True
 >>> es_fin_de_semana("domingo")
@@ -803,7 +815,7 @@ True
 False
 >>> es_fin_de_semana("viernes")
 False
-````
+```
 
 
 ### Para pensar
@@ -811,4 +823,3 @@ False
 ¡Felicitaciones! :tada:
 
 En esta lección aprendiste a definir funciones que, a partir de su reutilización, nos ayudan a evitar la repetición de lógica. También viste la diferencia entre parámetros y argumentos, elementos esenciales para poder hacer lo mismo con distintos valores. :raised_hands:
-

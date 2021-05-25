@@ -35,10 +35,10 @@ Como ves, para representar a un conjunto de strings, colocamos todos esos string
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 series_favoritas_de_ana = ["Black Mirror", "Breaking Bad", "En Terapia"]
 series_favoritas_de_hector = ["Game of Thrones", "Recordando el Show de Alejandro Molina", "House of Cards"]
-````
+```
 
 
 
@@ -91,14 +91,14 @@ Pero, pero, ¿sólo podemos crear listas de strings? ¿Y si quiero, por ejemplo,
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 numeros_de_loteria = [2, 11, 17, 32, 36, 39]
 tiradas_del_dado = [1, 6, 6, 2, 2, 4]
 salio_cara = [False, False, True, False]
 lista_de_listas = [[1, 2, 3], [4, 5, 6]]
 
 
-````
+```
 
 
 
@@ -120,20 +120,7 @@ Y no sólo eso, sino que además pueden contener cualquier cantidad de elementos
 
 ¿Podremos entonces tener listas vacías, es decir, que no tengan elementos? :face_with_monocle:
 
-> Fijate en la consola escribiendo `una_lista_vacia`.
-
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-````python
-una_lista_vacia = []
-
-
-````
-
+> ¡Cómo te imaginás que se escribirá una lista que no tiene elementos? Intentá inicializar una variable `una_lista_vacia` con, justamente, una lista sin ningún elemento.
 
 
 ### Para pensar
@@ -166,11 +153,11 @@ Empecemos por lo fácil: ¿te acordás de `len`? También funciona con listas.
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 numeros_de_loteria = [2, 11, 17, 32, 36, 39]
 
 
-````
+```
 
 
 
@@ -207,14 +194,14 @@ Como vemos, `list.append` agrega un elemento a la lista, lo cual hace que su tam
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 libros = ["Ensayo sobre la ceguera", "Socorro", "Mi planta naranja lima"]
 
 def listo():
   pass
 
 
-````
+```
 
 
 
@@ -257,7 +244,7 @@ Bueno, ya hablamos bastante; ¡es hora de la acción! :movie_camera:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 un_array = [1, 2, 3]
 otro_array = [4, 5]
 trasladar(un_array, otro_array, 3)
@@ -268,7 +255,7 @@ otro_array = [4, 5]
 trasladar(un_array, otro_array, 7)
 self.assertEqual(un_array, [9, 8])
 self.assertEqual(otro_array, [4, 5, 7])
-````
+```
 
 
 
@@ -309,11 +296,11 @@ Como ves, lo curioso de esta función es que pareciera devolver siempre uno meno
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 dias_laborales = ["lunes", "martes", "miercoles", "jueves", "viernes"]
 
 
-````
+```
 
 
 
@@ -346,7 +333,7 @@ Tenemos buenas noticias :newspaper:, ¡Python tiene una manera más fácil de ha
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> contiene([1, 6, 7, 6], 7)
 True
 >>> contiene([1, 6, 7, 6], 6)
@@ -359,7 +346,7 @@ False
 False
 >>> contiene([1, 1, 1], 1)
 True
-````
+```
 
 
 
@@ -392,7 +379,7 @@ También recordá que las posiciones en las listas comienzan en 0. :wink:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 ranking = ["Breaking bad", "Black mirror", "Better call saul", "Dr. House", "Los simpsons", "El marginal", "The walking dead", "24", "Gotham", "Epitafios"]
 
 >>> serie_no_recomendable("Stranger things")
@@ -405,7 +392,7 @@ True
 False
 >>> serie_no_recomendable("Los simpsons")
 False
-````
+```
 
 
 
@@ -444,14 +431,14 @@ Para averiguarlo podemos usar el **operador de indexación**, escribiendo despu�
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 meses_del_anio = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 
 def listo():
   pass
 
 
-````
+```
 
 
 
@@ -478,7 +465,7 @@ Como vimos, al pedir un elemento en una posición igual o mayor al tamaño de la
 >"nada"
 >>>> medalla_segun_puesto(5)
 >"nada"
-```
+> ```
 
 
 
@@ -493,15 +480,22 @@ Como vimos, al pedir un elemento en una posición igual o mayor al tamaño de la
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(medalla_segun_puesto(1), "oro")
-self.assertEqual(medalla_segun_puesto(2), "plata")
-self.assertEqual(medalla_segun_puesto(3), "bronce")
-self.assertEqual(medalla_segun_puesto(4), "nada")
-self.assertEqual(medalla_segun_puesto(5), "nada")
-self.assertEqual(medalla_segun_puesto(15), "nada")
-self.assertEqual(medalla_segun_puesto(83), "nada")
-````
+```python
+>>> medalla_segun_puesto(1)
+"oro"
+>>> medalla_segun_puesto(2)
+"plata"
+>>> medalla_segun_puesto(3)
+"bronce"
+>>> medalla_segun_puesto(4)
+"nada"
+>>> medalla_segun_puesto(5)
+"nada"
+>>> medalla_segun_puesto(15)
+"nada"
+>>> medalla_segun_puesto(83)
+"nada"
+```
 
 
 
@@ -512,4 +506,3 @@ self.assertEqual(medalla_segun_puesto(83), "nada")
 Acabas de conocer una estructura de datos que te permite agruparlos: ¡la lista! :grin:
 
 También aprendiste qué datos puede tener dentro, cómo agregarle o sacarle elementos, conocer sus posiciones, obtener su longitud y los elementos por posición. :raised_hands:
-

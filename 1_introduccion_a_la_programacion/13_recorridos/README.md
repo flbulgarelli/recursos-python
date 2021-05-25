@@ -47,7 +47,7 @@ Nuestro viejo amigo `for...in` y una variable local nos van a ayudar en esta tar
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> ganancia_total([
   { "mes": "enero", "ganancia": 2 },
   { "mes": "febrero", "ganancia": 10 },
@@ -61,7 +61,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
   { "mes":  "noviembre", "ganancia": 200 },
   { "mes": "diciembre", "ganancia": 0 }])
 1538
-````
+```
 
 ### Para pensar
 
@@ -88,14 +88,30 @@ Lo importante en este ejercicio es inicializar una variable local e incrementarl
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(cantidad_de_balances_positivos([{ "mes": "noviembre", "ganancia": 5 }]), 1)
-self.assertEqual(cantidad_de_balances_positivos([{ "mes": "marzo", "ganancia": 8 }, { "mes": "agosto", "ganancia": 10 }]), 2)
-self.assertEqual(cantidad_de_balances_positivos([]), 0)
-self.assertEqual(cantidad_de_balances_positivos([{ "mes": "marzo", "ganancia": 0 }, { "mes": "agosto", "ganancia": 0 }]), 0)
-self.assertEqual(cantidad_de_balances_positivos([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", "ganancia": -10 }, { "mes": "marzo", "ganancia": 2 }, { "mes": "abril", "ganancia": 100 }]), 3)
-self.assertEqual(cantidad_de_balances_positivos([{ "mes": "enero", "ganancia": -1 }, { "mes": "febrero", "ganancia": -2 }, { "mes": "marzo", "ganancia": -3 }]), 0)
-````
+```python
+>>> cantidad_de_balances_positivos([{ "mes": "noviembre", "ganancia": 5 }])
+1
+>>> cantidad_de_balances_positivos([
+  { "mes": "marzo", "ganancia": 8 },
+  { "mes": "agosto", "ganancia": 10 }])
+2
+>>> cantidad_de_balances_positivos([]), 0
+>>> cantidad_de_balances_positivos([
+  { "mes": "marzo", "ganancia": 0 },
+  { "mes": "agosto", "ganancia": 0 }])
+0
+>>> cantidad_de_balances_positivos([
+  { "mes": "enero", "ganancia": 10 },
+  { "mes": "febrero", "ganancia": -10 },
+  { "mes": "marzo", "ganancia": 2 },
+  { "mes": "abril", "ganancia": 100 }])
+3
+>>> cantidad_de_balances_positivos([
+  { "mes": "enero", "ganancia": -1 },
+  { "mes": "febrero", "ganancia": -2 },
+  { "mes": "marzo", "ganancia": -3 }])
+0
+```
 
 
 
@@ -133,11 +149,11 @@ En este caso te va a servir una lista vacía, ¡pero no te olvides de agregarle 
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(ganancias([{ "mes": "marzo", "ganancia": 10 }, { "mes": "agosto", "ganancia": 2 }, { "mes": "septiembre", "ganancia":0 }]), [10, 2, 0])
 self.assertEqual(ganancias([{ "mes": "marzo", "ganancia": 10 }, { "mes": "agosto", "ganancia": 2 }, { "mes": "septiembre", "ganancia":0 }, { "mes": "diciembre", "ganancia": 8 }]), [10, 2, 0, 8])
 self.assertEqual(ganancias([{ "mes": "marzo", "ganancia": 8 }, { "mes": "agosto", "ganancia": 7 }]), [8,7])
-````
+```
 
 
 
@@ -168,10 +184,10 @@ self.assertEqual(ganancias([{ "mes": "marzo", "ganancia": 8 }, { "mes": "agosto"
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(meses([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", "ganancia": 2 }, { "mes": "marzo", "ganancia": 5 }]), ["enero", "febrero", "marzo"])
 self.assertEqual(meses([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", "ganancia": 2 }, { "mes": "marzo", "ganancia": 5 }, { "mes": "abril", "ganancia": 8 }, { "mes": "mayo", "ganancia": 12 }, { "mes": "junio", "ganancia": 25 }]), ["enero", "febrero", "marzo", "abril", "mayo", "junio"])
-````
+```
 
 ## 5. Un mapa para comprender
 
@@ -202,10 +218,10 @@ def largos(palabras):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(meses([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", "ganancia": 2 }, { "mes": "marzo", "ganancia": 5 }]), ["enero", "febrero", "marzo"])
 self.assertEqual(meses([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", "ganancia": 2 }, { "mes": "marzo", "ganancia": 5 }, { "mes": "abril", "ganancia": 8 }, { "mes": "mayo", "ganancia": 12 }, { "mes": "junio", "ganancia": 25 }]), ["enero", "febrero", "marzo", "abril", "mayo", "junio"])
-````
+```
 
 
 
@@ -243,11 +259,11 @@ Como verás, si las ganancias fueran negativas ahora serán ¡doblemente negativ
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(doble_de_ganancias([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": -200 }, { "mes": "marzo", "ganancia": 500 }]), [2000, -400, 1000])
 self.assertEqual(doble_de_ganancias([{ "mes": "enero", "ganancia": -1000 }, { "mes": "febrero", "ganancia": -200 }, { "mes": "marzo", "ganancia": -500 }]), [-2000, -400, -1000])
 self.assertEqual(doble_de_ganancias([{ "mes": "enero", "ganancia": 0 }, { "mes": "febrero", "ganancia": 0 }]), [0, 0])
-````
+```
 
 
 
@@ -276,12 +292,12 @@ Acá también vas a necesitar empezar con una lista vacía, pero a diferencia de
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(balances_positivos([{ "mes": "marzo", "ganancia": 10 }, { "mes": "agosto", "ganancia": 2 }, { "mes": "septiembre", "ganancia": 8 }]), [{ "mes": "marzo", "ganancia": 10 }, { "mes": "agosto", "ganancia": 2 }, { "mes": "septiembre", "ganancia": 8 }])
 self.assertEqual(balances_positivos([{ "mes": "marzo", "ganancia": 10 }, { "mes": "agosto", "ganancia": 2 }, { "mes": "septiembre", "ganancia": 0 }]), [{ "mes": "marzo", "ganancia": 10 }, { "mes": "agosto", "ganancia": 2 }])
 self.assertEqual(balances_positivos([{ "mes": "julio", "ganancia": 12 }, { "mes": "agosto", "ganancia": -2 }]), [{ "mes": "julio", "ganancia": 12 }])
 self.assertEqual(balances_positivos([{ "mes": "agosto", "ganancia": -12 }, { "mes": "septiembre", "ganancia": 0 }]), [])
-````
+```
 
 
 
@@ -302,10 +318,10 @@ self.assertEqual(balances_positivos([{ "mes": "agosto", "ganancia": -12 }, { "me
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(afortunados([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": 2000 }, { "mes": "marzo", "ganancia": 2500 }, { "mes": "abril", "ganancia": 1001 }, { "mes": "mayo", "ganancia": 0 }, { "mes": "junio", "ganancia": -25 }]), [{ "mes": "febrero", "ganancia": 2000 }, { "mes": "marzo", "ganancia": 2500 }, { "mes": "abril", "ganancia": 1001 }])
 self.assertEqual(afortunados([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": 0 }, { "mes": "marzo", "ganancia": 200 }, { "mes": "abril", "ganancia": -30 }]), [])
-````
+```
 
 ## 9. Comprendiendo al filtro
 
@@ -337,10 +353,10 @@ def mayores_a_5(numeros):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(afortunados([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": 2000 }, { "mes": "marzo", "ganancia": 2500 }, { "mes": "abril", "ganancia": 1001 }, { "mes": "mayo", "ganancia": 0 }, { "mes": "junio", "ganancia": -25 }]), [{ "mes": "febrero", "ganancia": 2000 }, { "mes": "marzo", "ganancia": 2500 }, { "mes": "abril", "ganancia": 1001 }])
 self.assertEqual(afortunados([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": 0 }, { "mes": "marzo", "ganancia": 200 }, { "mes": "abril", "ganancia": -30 }]), [])
-````
+```
 
 
 
@@ -391,12 +407,12 @@ Por si no te acordás, los meses con 31 días son enero, marzo, mayo, julio, ago
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(balances_de_meses_largos([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": -200 }, { "mes": "marzo", "ganancia": 500 }, { "mes": "abril", "ganancia": 800 }, { "mes": "mayo", "ganancia": 770 }, { "mes": "junio", "ganancia": 870 }]), [{ "mes": "enero", "ganancia": 1000 }, { "mes": "marzo", "ganancia": 500 }, { "mes": "mayo", "ganancia": 770 }])
 self.assertEqual(balances_de_meses_largos([{ "mes": "julio", "ganancia": 500 }, { "mes": "agosto", "ganancia": 900 }, { "mes": "septiembre", "ganancia": 1800 }, { "mes": "octubre", "ganancia": 900 }, { "mes": "noviembre", "ganancia": 2300 }, { "mes": "diciembre", "ganancia": 2000 }]), [{ "mes": "julio", "ganancia": 500 }, { "mes": "agosto", "ganancia": 900 }, { "mes": "octubre", "ganancia": 900 }, { "mes": "diciembre", "ganancia": 2000 }])
 self.assertEqual(balances_de_meses_largos([{ "mes": "enero", "ganancia": 1000 }, { "mes": "febrero", "ganancia": -200 }, { "mes": "marzo", "ganancia": 500 }]), [{ "mes": "enero", "ganancia": 1000 }, { "mes": "marzo", "ganancia": 500 }])
 self.assertEqual(balances_de_meses_largos([{ "mes": "abril", "ganancia": 800 }, { "mes": "mayo", "ganancia": 770 }, { "mes": "junio", "ganancia": 870 }]), [{ "mes": "mayo", "ganancia": 770 }])
-````
+```
 
 ## 11. Los mejores meses del año
 
@@ -420,14 +436,14 @@ Pero no podes invocar `meses` ni `afortunados`. Tampoco `for...in`, ¿se te ocur
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 #...solution[5]...#
 
 #...solution[9]...#
 
 self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 1001 }, { "mes": "febrero", "ganancia": -10 }, { "mes": "marzo", "ganancia": 2300 }, { "mes": "abril", "ganancia": 800 }]), ["enero", "marzo"])
 self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 999 }, { "mes": "febrero", "ganancia": -10 }, { "mes": "marzo", "ganancia": 20 }, { "mes": "abril", "ganancia": 800 }]), [])
-````
+```
 
 
 
@@ -457,14 +473,14 @@ En este ejercicio no vas a tener que hacer un `for...in`, simplemente invocar co
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 #...solution[4]...#
 
 #...solution[8]...#
 
 self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 1001 }, { "mes": "febrero", "ganancia": -10 }, { "mes": "marzo", "ganancia": 2300 }, { "mes": "abril", "ganancia": 800 }]), ["enero", "marzo"])
 self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 999 }, { "mes": "febrero", "ganancia": -10 }, { "mes": "marzo", "ganancia": 20 }, { "mes": "abril", "ganancia": 800 }]), [])
-````
+```
 
 
 
@@ -473,4 +489,3 @@ self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 999 }, { "mes"
 En esta última lección te reencontraste con el `for...in` y resolviste problemas más complejos con él :exploding_head:. Más especificamente creaste funciones para filtrar y/o transformar los elementos de una lista.
 
 ¡Muy buen trabajo! :thumbsup:
-

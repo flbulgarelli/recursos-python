@@ -87,9 +87,6 @@ Otras operaciones que listas y strings tienen en común son los _slices_, que po
 >  3. Obtener un string con los últimos 25 caracteres de `primera_estrofa`
 >
 
-
-
-
 ### Pistas
 
 :bulb: Algunas sugerencias:
@@ -99,13 +96,11 @@ Otras operaciones que listas y strings tienen en común son los _slices_, que po
 * Si te pica la  curiosidad :honeybee:, podés ver qué contiene `primera_estrofa`, escribiendo, simplemente, `primera_estrofa`. El problema es que se verá mezclado con varios caracteres _extraños_. Probá usar entonces `print(primera_estrofa)`. No te preocupes: ya hablaremos de esto de breve.
 
 
-
-
 ### Autoevaluación
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def listo():
   pass
 
@@ -121,7 +116,7 @@ con el cantar se consuela
 
 >>> True
 True
-````
+```
 
 
 
@@ -131,7 +126,6 @@ True
 
 ```python
 primera_estrofa[len(primera_estrofa) - 25:]
-
 ```
 
 al fin y al cabo, no teníamos ninguna forma para indicar de forma más sencilla que queríamos los últimos 25 elementos.... ¿o sí? ¡Averguémoslo!
@@ -233,7 +227,7 @@ En `extremos` no va a alcanzar con sólo extraer segmentos o acceder por indices
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> sin_extremos([4, 5, 10, 2, 3])
 [5, 10, 2]
 >>> sin_extremos([4, 5, 10, 2, 3, 9])
@@ -248,7 +242,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 [4, 3]
 >>> extremos([1, 2, 5])
 [1, 5]
-````
+```
 
 ## 4. Textos impresos
 
@@ -348,7 +342,7 @@ Ah, ¿y qué hace `range`? También te lo dejamos a vos para que lo descubras :i
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def imprimir_cada_elemento(elementos):
   for elemento in elementos:
     print(elemento)
@@ -359,7 +353,7 @@ def listo():
 
 >>> True
 True
-````
+```
 
 
 
@@ -503,7 +497,7 @@ def sumatoria(numeros):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> productoria([10, 2, 3])
 60
 >>> productoria([3, 3, 2, 4])
@@ -516,7 +510,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 6
 >>> productoria([])
 1
-````
+```
 
 
 
@@ -577,12 +571,12 @@ Como vemos, acá la variable local que estamos usando de _acumulador_ es boolean
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> todos_los_dias_un_poco([35, 40, 32, 60])
 True
 >>> todos_los_dias_un_poco([15, 45, 90, 0])
 False
-````
+```
 
 ## 9. Juntando todo
 
@@ -621,11 +615,14 @@ def sumatoria(numeros):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(juntar(["super", "califragilistico", "espialidoso"]), "supercalifragilisticoespialidoso")
-self.assertEqual(juntar([]), "")
-self.assertEqual(juntar(["cuatri", "motor"]), "cuatrimotor")
-````
+```python
+>>> juntar(["super", "califragilistico", "espialidoso"])
+"supercalifragilisticoespialidoso"
+>>> juntar([])
+""
+>>> juntar(["cuatri", "motor"])
+"cuatrimotor"
+```
 
 ## 10. Juntos pero no tanto
 
@@ -658,12 +655,16 @@ Por otro lado, para hacer las cosas un poco más fáciles, no es necesario que l
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(juntar("", ["super", "califragilistico", "espialidoso"]), "supercalifragilisticoespialidoso")
-self.assertEqual(juntar("", ["cuatri", "motor"]), "cuatrimotor")
-self.assertEqual(juntar(" ", ["hola", "mundo"]), "hola mundo")
-self.assertEqual(juntar(",", ["hola", "mundo"]), "hola,mundo")
-````
+```python
+>>> juntar("", ["super", "califragilistico", "espialidoso"])
+"supercalifragilisticoespialidoso"
+>>> juntar("", ["cuatri", "motor"])
+"cuatrimotor"
+>>> juntar(" ", ["hola", "mundo"])
+"hola mundo"
+>>> juntar(",", ["hola", "mundo"])
+"hola,mundo"
+```
 
 
 
@@ -710,12 +711,12 @@ En otras palabras: en cada iteración, si la condición `duracion < 3` se cumple
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> cuantas_veces_entreno_lo_suficiente([35, 40, 32, 60])
 4
 >>> cuantas_veces_entreno_lo_suficiente([15, 45, 90, 0])
 2
-````
+```
 
 ## 12. ¿Dónde están las llaves?
 
@@ -755,12 +756,12 @@ False
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> donde_estan_las_llaves("🔑🔥👓")
 1
 >>> donde_estan_las_llaves("👓🔑🔥")
 2
-````
+```
 
 
 
@@ -771,4 +772,3 @@ En esta guía aprendiste algo muy importante: cómo hacer que la computadora rep
 Este caldero de conocimientos ya tiene todos los ingredientes de la pócima de la programación... :woman_mage::man_mage:
 
 ...pero no tan rápido, ¡aún falta uno! :crystal_ball: Acompañanos a la siguiente lección para revelar el misterio de _los diccionarios_.
-

@@ -28,12 +28,12 @@ Acaba de empezar el día :sunrise: y ya tenemos que hacer una nueva función :sl
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> saludar_a("Gus")
 "Buenos días Gus"
 >>> saludar_a("May")
 "Buenos días May"
-````
+```
 
 
 
@@ -78,7 +78,7 @@ def saludar_a(quien, horario):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def saludar_a(quien, horario):
   if horario < 19:
     return "Buenos días " + quien
@@ -87,7 +87,7 @@ def saludar_a(quien, horario):
 
 >>> True
 True
-````
+```
 
 
 
@@ -145,13 +145,18 @@ Además, a cada una de estas acciones también se las conoce como _ramas_ :decid
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(maximo(4, 10), 10)
-self.assertEqual(maximo(3, 10), 10)
-self.assertEqual(maximo(2, 10), 10)
-self.assertEqual(maximo(20, 10), 20)
-self.assertEqual(maximo(20, 15), 20)
-````
+```python
+>>> maximo(4, 10)
+10
+>>> maximo(3, 10)
+10
+>>> maximo(2, 10)
+10
+>>> maximo(20, 10)
+20
+>>> maximo(20, 15)
+20
+```
 
 
 
@@ -184,12 +189,16 @@ Es allí que tomamos una moneda y decimos: _si sale cara, comemos pizzas, si no,
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(decision_con_moneda("cara", "pizzas", "empanadas"), "pizzas")
-self.assertEqual(decision_con_moneda("cara", "asado", "empanadas"), "asado")
-self.assertEqual(decision_con_moneda("ceca", "pizzas", "empanadas"), "empanadas")
-self.assertEqual(decision_con_moneda("ceca", "pizzas", "pastas"), "pastas")
-````
+```python
+>>> decision_con_moneda("cara", "pizzas", "empanadas")
+"pizzas"
+>>> decision_con_moneda("cara", "asado", "empanadas")
+"asado"
+>>> decision_con_moneda("ceca", "pizzas", "empanadas")
+"empanadas"
+>>> decision_con_moneda("ceca", "pizzas", "pastas")
+"pastas"
+```
 
 ## 5. El retorno del booleano
 
@@ -237,7 +246,7 @@ Los números positivos son los mayores a 0. :wink:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 # positivos menores a 100 diferentes de 15
 >>> es_numero_de_la_suerte(2)
 True
@@ -262,7 +271,7 @@ False
 # el 15
 >>> es_numero_de_la_suerte(15)
 False
-````
+```
 
 
 
@@ -312,10 +321,12 @@ Por ejemplo:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(escribir_cartelito("Dra.", "Ana", "Perez"), "Dra. Ana Perez")
-self.assertEqual(escribir_cartelito("Dr.", "Julio", "Gelman"), "Dr. Julio Gelman")
-````
+```python
+>>> escribir_cartelito("Dra.", "Ana", "Perez")
+"Dra. Ana Perez"
+>>> escribir_cartelito("Dr.", "Julio", "Gelman")
+"Dr. Julio Gelman"
+```
 
 ## 7. Más Cartelitos
 
@@ -344,12 +355,16 @@ Por eso ahora nos toca mejorar nuestra función de forma que reciba 4 párámetr
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(escribir_cartelito("Dra.", "Ana", "Perez", False), "Dra. Ana Perez")
-self.assertEqual(escribir_cartelito("Dr.", "Julio", "Gelman", False), "Dr. Julio Gelman")
-self.assertEqual(escribir_cartelito("Dra.", "Ana", "Perez", True), "Dra. Perez")
-self.assertEqual(escribir_cartelito("Dr.", "Julio", "Gelman", True), "Dr. Gelman")
-````
+```python
+>>> escribir_cartelito("Dra.", "Ana", "Perez", False)
+"Dra. Ana Perez"
+>>> escribir_cartelito("Dr.", "Julio", "Gelman", False)
+"Dr. Julio Gelman"
+>>> escribir_cartelito("Dra.", "Ana", "Perez", True)
+"Dra. Perez"
+>>> escribir_cartelito("Dr.", "Julio", "Gelman", True)
+"Dr. Gelman"
+```
 
 
 
@@ -388,14 +403,18 @@ Recordá que el largo de un string lo podés saber con la función `len` y  que 
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 #...previousSolution...#
 
-self.assertEqual(escribir_cartelito_optimo("Ing.", "Carla", "Toledo"), "Ing. Carla Toledo")
-self.assertEqual(escribir_cartelito_optimo("Ing.", "Branco", "Luis"), "Ing. Branco Luis")
-self.assertEqual(escribir_cartelito_optimo("Dr.", "Estanislao", "Schwarzschild"), "Dr. Schwarzschild")
-self.assertEqual(escribir_cartelito_optimo("Ing.", "Katherine", "Boumann"), "Ing. Boumann")
-````
+>>> escribir_cartelito_optimo("Ing.", "Carla", "Toledo")
+"Ing. Carla Toledo"
+>>> escribir_cartelito_optimo("Ing.", "Branco", "Luis")
+"Ing. Branco Luis"
+>>> escribir_cartelito_optimo("Dr.", "Estanislao", "Schwarzschild"
+"Dr. Schwarzschild"
+>>> escribir_cartelito_optimo("Ing.", "Katherine", "Boumann"
+"Ing. Boumann"
+```
 
 ## 9. Un mundo de alternativas
 
@@ -449,7 +468,7 @@ Como vemos, el `elif` nos permite tomar una decisión cuando la condición anter
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def listo():
   pass
 
@@ -471,7 +490,7 @@ def saludar_a_recargado(quien, horario):
 
 >>> True
 True
-````
+```
 
 
 
@@ -506,13 +525,18 @@ Necesitamos una función `signo`, que dado un número nos devuelva:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-self.assertEqual(signo(10), 1)
-self.assertEqual(signo(1), 1)
-self.assertEqual(signo(0), 0)
-self.assertEqual(signo(-65), -1)
-self.assertEqual(signo(-87), -1)
-````
+```python
+>>> signo(10)
+1
+>>> signo(1)
+1
+>>> signo(0)
+0
+>>> signo(-65)
+-1
+>>> signo(-87)
+-1
+```
 
 ## 11. Los premios
 
@@ -540,7 +564,7 @@ El jurado de un torneo nos pidió que desarrollemos una función `medalla_segun_
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> medalla_segun_puesto(1)
 "oro"
 >>> medalla_segun_puesto(2)
@@ -553,7 +577,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 "nada"
 >>> medalla_segun_puesto(0)
 "nada"
-````
+```
 
 ## 12. ¡Envido!
 
@@ -581,7 +605,7 @@ Queremos saber el valor de las [cartas de truco](https://es.wikipedia.org/wiki/T
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> valor_envido(2)
 2
 >>> valor_envido(1)
@@ -594,7 +618,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 0
 >>> valor_envido(10)
 0
-````
+```
 
 ## 13. ¡Quiero retruco!
 
@@ -625,7 +649,7 @@ Para el caso en que las cartas sean de distinto palo te va a servir el ya conoci
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 #...previousSolution...#
 
 >>> puntos_de_envido_totales(4, "espadas", 3, "espadas")
@@ -636,7 +660,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 5
 >>> puntos_de_envido_totales(6, "copas", 7, "espadas")
 7
-````
+```
 
 ## 14. ¡Quiero vale cuatro!
 
@@ -663,12 +687,11 @@ Cuando se juega al truco, los equipos oponentes alternativamente pueden subir la
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> valor_canto_truco("retruco")
 3
 >>> valor_canto_truco("truco")
 2
 >>> valor_canto_truco("vale cuatro")
 4
-````
-
+```

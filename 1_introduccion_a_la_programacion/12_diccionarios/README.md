@@ -24,23 +24,20 @@ anio_de_construccion_cristo_redentor = "1931"
 Ahí es cuando se dio cuenta que no era conveniente :unamused:: si bien la información entre las variables estaba relacionada, la estaba almacenando por separado. Entonces pensó: ¿no existirá alguna forma de representar las distintas características o propiedades de una misma cosa de forma agrupada?
 
 > Luego de investigar un poco, encontró una mejor manera para guardar la información de los monumentos. Podés verla escribiendo en la consola:
-
 > ```python
->>> estatua_de_la_libertad
->>> cristo_redentor
->>> torre_eiffel
->>> taj_mahal
->>> coliseo
-```
-
-
+> >>> estatua_de_la_libertad
+> >>> cristo_redentor
+> >>> torre_eiffel
+> >>> taj_mahal
+> >>> coliseo
+> ```
 
 
 ### Autoevaluación
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 estatua_de_la_libertad = { "nombre": "Estatua de la Libertad", "locacion": "Nueva York, Estados Unidos de América", "anio_de_construccion": 1886 }
 cristo_redentor = { "nombre": "Cristo Redentor", "locacion": "Rio de Janeiro, Brasil", "anio_de_construccion": 1931 }
 torre_eiffel = { "nombre": "Torre Eiffel", "locacion": "París, Francia", "anio_de_construccion": 1889 }
@@ -48,7 +45,7 @@ taj_mahal = { "nombre": "Taj Mahal", "locacion": "Agra, India", "anio_de_constru
 coliseo = { "nombre": "Coliseo", "locacion": "Roma, Italia", "anio_de_construccion": 80 }
 
 
-````
+```
 
 
 
@@ -94,14 +91,14 @@ torre_eiffel = { "nombre": "Torre Eiffel", "locacion": "París, Francia", "anio_
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.assertEqual(torre_azadi["nombre"].lower(), "torre azadi")
 self.assertEqual(torre_azadi["locacion"], "Teherán, Irán")
 self.assertEqual(torre_azadi["anio_de_construccion"], 1971)
 self.assertEqual(monumento_nacional_a_la_bandera["nombre"].lower(), "monumento nacional a la bandera")
 self.assertEqual(monumento_nacional_a_la_bandera["locacion"], "Rosario, Argentina")
 self.assertEqual(monumento_nacional_a_la_bandera["anio_de_construccion"], 1957)
-````
+```
 
 
 
@@ -145,7 +142,7 @@ Esa consulta era porque estábamos viendo al diccionario `taj_mahal` completo, i
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 mercurio = { "nombre": "Mercurio", "temperatura_promedio": 67, "tiene_anillos": False }
 marte = { "nombre": "Marte", "temperatura_promedio": -63, "tiene_anillos": False }
 saturno = { "nombre": "Saturno", "temperatura_promedio": -139, "tiene_anillos": True }
@@ -154,7 +151,7 @@ def listo():
   pass
 
 
-````
+```
 
 ## 4. Temperatura de planeta
 
@@ -186,7 +183,7 @@ También recordá que para concatenar un número a un string, antes debemos conv
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 mercurio = { "nombre": "Mercurio", "temperatura_promedio": 67, "tiene_anillos": False }
 marte = { "nombre": "Marte", "temperatura_promedio": -63, "tiene_anillos": False }
 saturno = { "nombre": "Saturno", "temperatura_promedio": -139, "tiene_anillos": True }
@@ -197,7 +194,7 @@ self.assertEqual(temperatura_de_planeta(saturno), "Saturno tiene una temperatura
 self.assertEqual(temperatura_de_planeta(venus), "Venus tiene una temperatura promedio de 462 grados")
 self.assertEqual(temperatura_de_planeta(marte), "Marte tiene una temperatura promedio de -63 grados")
 self.assertEqual(temperatura_de_planeta({"nombre":"cualquier planeta", "temperatura_promedio":999}), "cualquier planeta tiene una temperatura promedio de 999 grados")
-````
+```
 
 ## 5. Moviendo archivos
 
@@ -233,17 +230,20 @@ Luego el diccionario `leeme` tendrá modificada su ruta:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-archivo = {"ruta":"/usr/miarchivo.doc", "creacion":"15/02/2019"}
-mover_archivo(archivo, "/home/miarchivo.doc")
-self.assertEqual(archivo["ruta"], "/home/miarchivo.doc")
-archivo = {"ruta":"/usr/miarchivo.doc", "creacion":"15/02/2019"}
-mover_archivo(archivo, "/usr/miarchivo.doc")
-self.assertEqual(archivo["ruta"], "/usr/miarchivo.doc")
-archivo = {"ruta":"/usr/miarchivo.doc", "creacion":"15/02/2019"}
-mover_archivo(archivo, "/home/miarchivo.doc")
-self.assertEqual(archivo["creacion"], "15/02/2019")
-````
+```python
+>>> archivo = {"ruta":"/usr/miarchivo.doc", "creacion":"15/02/2019"}
+>>> mover_archivo(archivo, "/home/miarchivo.doc")
+>>> archivo["ruta"]
+"/home/miarchivo.doc"
+>>> archivo = {"ruta":"/usr/miarchivo.doc", "creacion":"15/02/2019"}
+>>> mover_archivo(archivo, "/usr/miarchivo.doc")
+>>> archivo["ruta"]
+"/usr/miarchivo.doc"
+>>> archivo = {"ruta":"/usr/miarchivo.doc", "creacion":"15/02/2019"}
+>>> mover_archivo(archivo, "/home/miarchivo.doc")
+>>> archivo["creacion"]
+"15/02/2019"
+```
 
 ## 6. Diccionarios de dos milenios
 
@@ -252,17 +252,16 @@ En el ejercicio anterior modificamos la ruta del diccionario, pero no utilizamos
 ```python
 >>> es_del_milenio_pasado({ "ruta": "D:\fotonacimiento.jpg", "creacion": "14/09/1989" })
 True
-
 >>> es_del_milenio_pasado({ "ruta": "D:\fotocasamiento.jpg", "creacion": "25/09/2017" })
 False
 ```
 
 > Definí la función `es_del_milenio_pasado`. Te va a ser de ayuda la función `anio` que funciona así:
 >
-```python
->>> anio("04/11/1993")
-1993
-```
+> ```python
+> >>> anio("04/11/1993")
+> 1993
+> ```
 
 
 
@@ -272,7 +271,7 @@ False
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def anio(anio):
   return int(anio[-4:])
 
@@ -288,7 +287,7 @@ True
 archivo = {"ruta":"", "creacion":"23/09/1994"}
 >>> es_del_milenio_pasado(archivo)
 True
-````
+```
 
 ## 7. Postres complejos
 
@@ -322,7 +321,7 @@ Por ejemplo, una lista puede ser el campo de un diccionario. Mirá estos diccion
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 self.flan_casero = { "ingredientes": ["huevos", "leche", "azúcar", "vainilla"], "tiempo_de_coccion": 50 }
 self.cheesecake = { "ingredientes": ["queso crema", "frambuesas"], "tiempo_de_coccion": 80 }
 self.lemon_pie = { "ingredientes": ["jugo de limón", "almidón de maíz", "leche", "huevos"], "tiempo_de_coccion": 65 }
@@ -331,7 +330,7 @@ self.assertEqual(mas_dificil_de_cocinar(self.cheesecake, self.lemon_pie), self.l
 mas_dificil = mas_dificil_de_cocinar(self.flan_casero, self.lemon_pie)
 >>> mas_dificil == self.flan_casero or mas_dificil == self.lemon_pie
 True
-````
+```
 
 ## 8. Listas de diccionarios
 
@@ -345,13 +344,13 @@ En el ejercicio anterior te mostramos que un diccionario puede tener una lista e
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 monumentos_de_america = [ { "nombre": "Monumento Nacional a la Bandera", "locacion": "Rosario, Argentina", "anio_de_construccion": 1957 }, { "nombre": "Estatua de la Libertad", "locacion": "Nueva York, Estados Unidos de América", "anio_de_construccion": 1886 }, { "nombre": "Cristo Redentor", "locacion": "Rio de Janeiro, Brasil", "anio_de_construccion": 1931 } ]
 
 postres_favoritos = [ { "ingredientes": ["galletitas", "dulce de leche", "crema"], "tiempo_de_coccion": 20 }, { "ingredientes": ["huevos", "leche", "azúcar", "vainilla"], "tiempo_de_coccion": 50 }, { "ingredientes": ["queso crema", "frambuesas"], "tiempo_de_coccion": 80 }, { "ingredientes": ["jugo de limón", "almidón de maíz", "leche", "huevos"], "tiempo_de_coccion": 65 } ]
 
 
-````
+```
 
 
 
@@ -379,7 +378,7 @@ Ah, si es mayor a 60 no tenemos que hacer nada. :sweat_smile:
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 postres_rapidos = [ { "ingredientes": ["galletitas", "dulceDeLeche", "crema"], "tiempo_de_coccion": 20 }, { "ingredientes": ["huevos", "leche", "azúcar", "vainilla"], "tiempo_de_coccion": 50 } ]
 postre_de_leche = {"ingredientes":["leche"], "tiempo_de_coccion":90}
 agregar_a_postres_rapidos(postres_rapidos, postre_de_leche)
@@ -394,7 +393,7 @@ postre_de_leche = {"ingredientes":["leche"], "tiempo_de_coccion": 60}
 agregar_a_postres_rapidos(postres_rapidos, postre_de_leche)
 self.assertEqual(len(postres_rapidos), 3)
 self.assertEqual(postres_rapidos[-1], postre_de_leche)
-````
+```
 
 ## 10. Hay un diccionario en mi diccionario
 
@@ -433,7 +432,7 @@ Veamos un ejemplo. Si quisieras saber los `ingredientes` del `postre` del `menu_
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 menu_del_dia = {
   "plato_principal": "milanesas de berenjena",
   "ensalada": ["papa", "zanahoria", "arvejas"],
@@ -447,7 +446,7 @@ menu_infantil = {
 }
 
 
-````
+```
 
 
 
@@ -474,7 +473,7 @@ Recordá que cada menú tiene un `postre` y que cada postre tiene `ingredientes`
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 menu = {"plato_principal": "bife de lomo", "ensalada": ["papa", "zanahoria", "arvejas"], "postre": { "ingredientes": ["queso crema", "frambuesas"], "tiempo_de_coccion": 80 }}
 endulzar_menu(menu)
 self.assertEqual(len(menu["postre"]["ingredientes"]), 3)
@@ -485,11 +484,10 @@ endulzar_menu(menu)
 self.assertEqual(len(menu["postre"]["ingredientes"]), 4)
 >>> menu["postre"]["ingredientes"][-1] == "azúcar" or menu["postre"]["ingredientes"][-1] == "azucar"
 True
-````
+```
 
 
 
 ### Para pensar
 
 Durante la lección aprendiste cuál es la utilidad de esta estructura de datos llamada diccionario, cómo acceder a sus campos y modificarlos, y hasta viste que pueden _anidarse_ (es decir, que haya un diccionario dentro de otro). ¡Felicitaciones! :clap:
-

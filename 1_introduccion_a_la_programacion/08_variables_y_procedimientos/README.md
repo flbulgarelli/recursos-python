@@ -27,7 +27,7 @@ El perímetro se calcula como dos veces pi por el radio de un círculo. El área
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> perimetro_circulo(1)
 6.28318530717958
 >>> perimetro_circulo(2)
@@ -40,7 +40,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 12.56637061435916
 >>> area_circulo(0)
 0
-````
+```
 
 
 
@@ -68,7 +68,7 @@ primer_mes = "enero"
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> perimetro_circulo(1)
 6.28318530717958
 >>> perimetro_circulo(2)
@@ -81,7 +81,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 12.56637061435916
 >>> area_circulo(0)
 0
-````
+```
 
 
 
@@ -108,12 +108,12 @@ Ya que vas entendiendo cómo se **asignan** las variables, te traemos algo para 
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 def suma_sin_sentido():
 	return numero + 8
 
 
-````
+```
 
 
 
@@ -145,7 +145,7 @@ True
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> peso_promedio_persona_en_kilogramos = 70
 >>> ascensor_sobrecargado(4)
 False
@@ -158,7 +158,7 @@ False
 >>> peso_promedio_persona_en_kilogramos = 80
 >>> ascensor_sobrecargado(5)
 True
-````
+```
 
 
 
@@ -210,7 +210,7 @@ def puede_llevar(peso_equipaje):
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 >>> saludar_a("Gus", 11)
 "¡Buenos días Gus!"
 >>> saludar_a("May", 12)
@@ -221,7 +221,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 "¡Buenas noches Guille!"
 >>> saludar_a("Jor", 20)
 "¡Buenas noches Jor!"
-````
+```
 
 ### Para pensar
 
@@ -281,7 +281,7 @@ def pasar_un_dia_normal():
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 dias_sin_accidentes_con_velocirraptores = 0
 
 def pasar_un_dia_normal():
@@ -289,7 +289,7 @@ def pasar_un_dia_normal():
   dias_sin_accidentes_con_velocirraptores = dias_sin_accidentes_con_velocirraptores + 1
 
 
-````
+```
 
 
 
@@ -325,20 +325,19 @@ Correcto, es que en realidad `pasar_un_dia_normal()` no es una función, ¡es un
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-pesos_en_mi_billetera = 0
-
-global pesos_en_mi_billetera
-pesos_en_mi_billetera = 100
-aumentar_fortuna()
-self.assertEqual(pesos_en_mi_billetera, 200)
-global pesos_en_mi_billetera
-pesos_en_mi_billetera = 30
-aumentar_fortuna()
-aumentar_fortuna()
-aumentar_fortuna()
-self.assertEqual(pesos_en_mi_billetera, 240)
-````
+```python
+>>> pesos_en_mi_billetera = 0
+>>> pesos_en_mi_billetera = 100
+>>> aumentar_fortuna()
+>>> pesos_en_mi_billetera
+200
+>>> pesos_en_mi_billetera = 30
+>>> aumentar_fortuna()
+>>> aumentar_fortuna()
+>>> aumentar_fortuna()
+>>> pesos_en_mi_billetera
+240
+```
 
 
 
@@ -376,20 +375,19 @@ def apretar_interruptor():
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-usar_cierre()
+```python
+>>> usar_cierre()
 >>> mochila_abierta
 False
-global mochila_abierta
-mochila_abierta = False
-usar_cierre()
+>>> mochila_abierta = False
+>>> usar_cierre()
 >>> mochila_abierta
 True
-usar_cierre()
-usar_cierre()
+>>> usar_cierre()
+>>> usar_cierre()
 >>> mochila_abierta
 True
-````
+```
 
 ## 9. Tomate un mate
 
@@ -405,18 +403,18 @@ Sabiendo que al cebar un mate la cantidad de agua del termo disminuye...
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-global agua_del_termo
-agua_del_termo = 1000
-cebar_mate()
-self.assertEqual(agua_del_termo, 970)
-global agua_del_termo
-agua_del_termo = 1000
-cebar_mate()
-cebar_mate()
-cebar_mate()
-self.assertEqual(agua_del_termo, 910)
-````
+```python
+>>> agua_del_termo = 1000
+>>> cebar_mate()
+>>> agua_del_termo
+970
+>>> agua_del_termo = 1000
+>>> cebar_mate()
+>>> cebar_mate()
+>>> cebar_mate()
+>>> agua_del_termo
+910
+```
 
 ## 10. Se enfrió el agua
 
@@ -433,7 +431,7 @@ Sin importar cuan bueno sea el termo, algunas veces el agua simplemente se enfr�
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 global agua_del_termo
 agua_del_termo = 1000
 vaciar_termo()
@@ -442,7 +440,7 @@ global agua_del_termo
 agua_del_termo = 80
 llenar_termo()
 self.assertEqual(agua_del_termo, 1000)
-````
+```
 
 ## 11. No creo tomar mucho más
 
@@ -456,16 +454,16 @@ A veces no hace falta llenar tooooodo el termo, con un poco de agua quizás alca
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-global agua_del_termo
-agua_del_termo = 600
-cargar_termo(200)
-self.assertEqual(agua_del_termo, 800)
-global agua_del_termo
-agua_del_termo = 200
-cargar_termo(500)
-self.assertEqual(agua_del_termo, 700)
-````
+```python
+>>> agua_del_termo = 600
+>>> cargar_termo(200)
+>>> agua_del_termo
+800
+>>> agua_del_termo = 200
+>>> cargar_termo(500)
+>>> agua_del_termo
+700
+```
 
 
 
@@ -489,26 +487,26 @@ Ya hicimos toda la lógica relacionada con el agua del termo, pero del mate ni n
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
-global agua_del_termo
-agua_del_termo = 1000
-cebar_mate()
-self.assertEqual(agua_del_termo, 970)
-global agua_del_termo
-agua_del_termo = 1000
-cebar_mate()
-cebar_mate()
-cebar_mate()
-self.assertEqual(agua_del_termo, 910)
-global agua_del_mate
-agua_del_mate = 0
-cebar_mate()
-self.assertEqual(agua_del_mate, 30)
-global agua_del_mate
-agua_del_mate = 20
-tomar_mate()
-self.assertEqual(agua_del_mate, 0)
-````
+```python
+>>> agua_del_termo = 1000
+>>> cebar_mate()
+>>> agua_del_termo
+970
+>>> agua_del_termo = 1000
+>>> cebar_mate()
+>>> cebar_mate()
+>>> cebar_mate()
+>>> agua_del_termo
+910
+>>> agua_del_mate = 0
+>>> cebar_mate()
+>>> agua_del_mate
+30
+>>> agua_del_mate = 20
+>>> tomar_mate()
+>>> agua_del_mate
+0
+```
 
 
 
@@ -545,7 +543,7 @@ def pasar():
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
-````python
+```python
 agua_del_mate = 0
 agua_del_termo = 1000
 
@@ -563,7 +561,7 @@ def pasar():
   pass
 
 
-````
+```
 
 
 
@@ -643,4 +641,3 @@ A lo largo de esta lección hiciste muchas cosas nuevas:
 * utilizaste los dos tipos de variables, locales y globales, y aprendiste sus diferencias. :sunglasses:
 
 ¡Veamos que depara la siguiente lección! :eyes:
-
