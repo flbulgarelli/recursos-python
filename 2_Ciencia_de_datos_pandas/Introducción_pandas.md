@@ -164,6 +164,22 @@ df.groupby("seniority_level")[["persona_id"]].count()
 
 > 🧗‍♀️ Desafío V: ¿Qué resultados obtuviste en cada caso? Explicá qué hace cada linea de código
 
+Podemos operar con las columnas con los mismo operadores relacionales y matemáticos que ya hemos visto:
+
+``` python
+df['edad'] * 2
+df['edad'] + 2
+df['edad'] > 2  
+```          
+> Para pensar 🤔: ¿Qué resultado nos daría en cada caso? 
+
+Pero los operadores tambien nos sirven también para filtrar nuestro DataFrame:
+
+``` python
+df[df['edad'] > 35 ]
+```         
+ 
+> 🧗‍♀️ Desafío V: Contá cuántas personas de 30 años ingresaron al ministerio en 2011 ¿Cuántas formas de hacer este cálculo se te ocurren?
 
 
 [3. Métodos de los DataFrames](#3-metodos)
