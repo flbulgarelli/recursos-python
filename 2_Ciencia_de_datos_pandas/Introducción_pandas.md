@@ -81,3 +81,28 @@ print(df)
 🛑 Alerta: los valores asociados a las claves del diccionario deben ser listas del mismo tamaño
 
 Otra forma muy usual de generar DataFrames es mediante la lectura de archivos tabulados. :
+
+
+Podemos cargar un DataFrame **desde un archivo estructurado**. Existen muchas formas de importar la información desde archivos pero en general la diferencia radica principalmente en los parámetros por defecto que toman para definir las columnas. Por ejemplo: 
+
+- El caracter de separación de columnas por defecto del método `read_cvs` es una coma (',') 
+- El caracter de separación de columnas por defecto del método `read_fwf` es una tab ('\t').
+
+```python
+import pandas as pd
+df = pd.read_csv(path_al_erchivo)
+```
+
+>  🧗‍♀️ Desafío I: Estos métodos aceptan otros parámetros que merecen la pena ser explorados. Averiguá para qué sirven los parámetro sep, index_col, nrows y header
+
+>  🧗‍♀️ Desafío II: Descargá a tu computadora la [tabla](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/11dca5bb-9a5f-4da5-b040-28957126be18) de personas que conforman el Ministerio de Ciencia y Tecnología de Argentina, en formato csv. 
+>Cargá (lee) la tabla a un DataFrame de Pandas ¿Qué forma te lectura de archivos usarías? ¿Qué separación entre columnas posee el archivo? ¿Cómo te diste cuenta? 🤔
+>
+
+Podés averiguar la información general de tu tabla haciendo: 
+
+```python
+df.info()
+```
+
+[2. Métodos de Series y DataFrames](#2-metodos)
