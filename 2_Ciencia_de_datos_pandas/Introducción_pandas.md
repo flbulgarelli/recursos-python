@@ -27,8 +27,8 @@ Si bien no es estrictamente necesario saber a fondo la sintaxis de Python para c
 
 # Guias de Trabajo
   * [1. Un osito cariñosito](#1-pandas)
-  * [2. Métodos de los DataFrames](#2-metodos)
-  * [3. Trabajando con DataFrames](#3-dfs)
+  * [2. Trabajando con DataFrames](#2-dfs)
+  * [3. Métodos de los DataFrames](#3-metodos)
   * [4. Tratamiento de Datos con Python](#4-datos)
 
 [1. Un osito cariñosito](#1-pandas) 
@@ -83,10 +83,7 @@ print(df)
 `df` es el nombre génerico para designar DataFrame y es el nombre que utilizaremos de ahora en más para mayor simplicidad.
 
 
-Otra forma muy usual de generar DataFrames es mediante la lectura de archivos tabulados. :
-
-
-Podemos cargar un DataFrame **desde un archivo estructurado**. Existen muchas formas de importar la información desde archivos pero en general la diferencia radica principalmente en los parámetros por defecto que toman para definir las columnas. Por ejemplo: 
+Otra forma muy usual de generar DataFrames es mediante la lectura de **archivos estructurados**. Existen muchas formas de cargar/leer información desde archivos la información desde archivos pero en general la diferencia radica principalmente en los parámetros por defecto que toman para definir las columnas. Por ejemplo: 
 
 - El caracter de separación de columnas por defecto del método `read_cvs` es una coma (',') 
 - El caracter de separación de columnas por defecto del método `read_fwf` es una tab ('\t').
@@ -110,7 +107,7 @@ df.head()
 ```
 > Para pensar 🤔: ¿Qué serán esos valores `NaN`?
 
-[2. Métodos de los DataFrames](#2-metodos)
+[2. Trabajando con DataFrames](#2-dfs)
 
 Ahora que aprendiste a cargar datos en una `"tabla"` de Pandas, podés averiguar la información general de tu tabla haciendo: 
 
@@ -125,6 +122,51 @@ df.describe()
 ```
 > Para pensar 🤔: ¿Qué tipo de información nos brinda el método describe? ¿Tienen sentido estos cálculos para todas las columnas?
 >
+
+Podemos acceder a los datos de cada columna haciendo df['nombre de la columna'], en nuestro caso por ejemplo:
+
+``` python
+df[' persona_id']
+```
+
+> Para pensar 🤔: ¿Podés imprimir la columna de los `max_dedicacion_horaria_docente_id` de nuestra tabla? ¿Cómo calcularías el promedio de esta columna?
+
+Quizás nos resulte útil acceder, no a todos los datos de una columna, sino a un dato de una celda en particular. Para ello podemos utilizar _iloc_:
+
+```python
+df.loc[fila, columna] 
+```
+esto devuelve el elemento que se encuentra en la fila con nombre fila y la columna de con nombre columna del DataFrame df. Probá el siguiente código:
+
+```python
+df.loc[2, 'persona_id']
+```
+
+> Para pensar 🤔: ¿Qué resultado obtuviste? ¿Por qué? ¿Cómo obtendrías la edad de esa persona?
+
+Podemos acceder los datos de una columna del DataFrame como una lista mediante el método _tolist()_:
+
+``` python
+df['columna'].tolist()
+```
+
+>  🧗‍♀️ Desafío IV: Extrae la columna `seniority_level` y contá cuántas personas tenían expertice nivel B, C y D
+
+Seguramente tu resulación del _Desafío IV_ implicó hacer un _bucle for_ y un if, lo cual parece a priori un tanto engorroso. Para evitarnos tantas lineas de código, podemos hacer uso de los métodos _groupby()_ y _count()_, que nos permiten contar sobre una columna la frecuencia de un dato/evento en particular. Ejecutá las siguientes lineas a ver qué pasa:
+
+```python
+df["seniority_level"].count()
+
+df.groupby("seniority_level").count()
+
+df.groupby("seniority_level")[["persona_id"]].count()
+```
+
+> 🧗‍♀️ Desafío V: ¿Qué resultados obtuviste en cada caso? Explicá qué hace cada linea de código
+
+
+
+[3. Métodos de los DataFrames](#3-metodos)
 
 Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar con DataFrames: 
 
@@ -141,25 +183,14 @@ Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar c
 | pd.Series() | pd.set_index() | pd.corr() |
 | pd.DataFrame.from_dict() |  pd.tail() | pd.hist() |
 
+
 >
 >  🧗‍♀️ Desafío III: averiguá para qué sirve cada uno de los métodos y qué parámetros podés pasarseles. ¡Esta información nos será útil para más adelante!
 >
 
-Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como operar con ellos 👇  
 
-[3. Trabajando con DataFrames](#3-dfs)
+Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como cómo trabajar los datos 👇  
 
-Podemos acceder a cada columna haciendo df['nombre de la columna'], en nuestro caso por ejemplo hacemos:
-
-``` python
-df[' persona_id']
-```
-
-> Para pensar 🤔: ¿Podés imprimir la columna de los `max_dedicacion_horaria_docente_id` de nuestra tabla? ¿Cómo calcularías el promedio de esta columna?
-
-```python
-df.loc[fila, columna] 
-```
 
 [4. Tratamiento de Datos con Python](#4-datos)
 
