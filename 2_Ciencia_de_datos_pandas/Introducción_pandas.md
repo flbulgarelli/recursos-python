@@ -27,8 +27,8 @@ Si bien no es estrictamente necesario saber a fondo la sintaxis de Python para c
 
 # Guias de Trabajo
   * [1. Un osito cariñosito](#1-pandas)
-  * [2. Métodos de Series y DataFrames](#2-metodos)
-  * [3. Tratamiento de Datos con Python](#)
+  * [2. Métodos de los DataFrames](#2-metodos)
+  * [3. Tratamiento de Datos con Python](#3-datos)
 
 [1. Un osito cariñosito](#1-pandas) 
 
@@ -95,14 +95,57 @@ df = pd.read_csv(path_al_erchivo)
 
 >  🧗‍♀️ Desafío I: Estos métodos aceptan otros parámetros que merecen la pena ser explorados. Averiguá para qué sirven los parámetro sep, index_col, nrows y header
 
->  🧗‍♀️ Desafío II: Descargá a tu computadora la [tabla](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/11dca5bb-9a5f-4da5-b040-28957126be18) de personas que conforman el Ministerio de Ciencia y Tecnología de Argentina, en formato csv. 
->Cargá (lee) la tabla a un DataFrame de Pandas ¿Qué forma te lectura de archivos usarías? ¿Qué separación entre columnas posee el archivo? ¿Cómo te diste cuenta? 🤔
+>  🧗‍♀️ Desafío II: Descargá a tu computadora la [tabla](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/11dca5bb-9a5f-4da5-b040-28957126be18) de personas que conforman el Ministerio de Ciencia y Tecnología de Argentina, en formato csv.
+>
+> Cargá (lee) la tabla a un DataFrame de Pandas ¿Qué forma te lectura de archivos usarías? ¿Qué separación entre columnas posee el archivo? ¿Cómo te diste cuenta? 🤔
 >
 
-Podés averiguar la información general de tu tabla haciendo: 
+Ya tenemos nuestra tabla cargada, podeés hacer una previsualización de los datos haciendo:
+
+```python
+df.head()
+```
+> Para pensar 🤔: ¿Qué serán esos valores `NaN`?
+
+[2. Métodos de los DataFrames](#2-metodos)
+
+Ahora que aprendiste a cargar datos en una `"tabla"` de Pandas, podés averiguar la información general de tu tabla haciendo: 
 
 ```python
 df.info()
 ```
 
-[2. Métodos de Series y DataFrames](#2-metodos)
+Si bien esta información nos ayuda a saber los nombres de las columnas de nuestra tabla, o el tipo de datos que contiene cada una de ellas, quizás una descripción más informativa podría ser:
+
+```python
+df.describe()
+```
+> Para pensar 🤔: ¿Qué tipo de información nos brinda el método describe?¿Tienen sentido estos cálculos para todas las columnas?
+>
+
+Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar con DataFrames: 
+
+| Lectura/carga de datos | Limpieza de los datos | Estdistica de los datos |
+|-------------	|----------	|---	|
+| pd.read_csv() | pd.head() | pd.describe() |
+| pd.read_table() | pd.fillna() |df.sample()|
+| pd.read_excel() | pd.dropna() | pd.mean() |
+| pd.read_sql() | pd.sort_values() | pd.median() |
+| pd.read_json() | pd.groupby() | pd.std() |
+| pd.to_csv() |pd.apply() | pd.min() |
+| pd.DataFrame() | pd.append() | pd.max() |
+| pd.concat() | pd.rename()  | pd.count() |
+| pd.Series() | pd.set_index() | pd.corr() |
+| pd.DataFrame.from_dict() |  pd.tail() | pd.hist() |
+
+>
+>  🧗‍♀️ Desafío III: averigueá para qué sirve cada uno de los métodos y qué parámetros pueden pasarseles
+>
+
+[3. Tratamiento de Datos con Python](#3-datos)
+Podemos acceder a cada columna haciendo df['nombre de la columna'] (donde df es el nombre génerico para designar DataFrame, en nuestro caso por ejemplo hacemos:
+
+``` python
+df[' persona_id']
+```
+> Para pensar 🤔: ¿Podés imprimir la columna de los `max_dedicacion_horaria_docente_id` de nuestra tabla? ¿Cómo calcularías el promedio de esta columna?
