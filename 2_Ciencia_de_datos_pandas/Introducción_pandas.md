@@ -194,6 +194,11 @@ df3 = pd.merge(df, df_cat, on='categoria_conicet_id')
 
 > Para pensar 🤔: ¿Qué datos tiene df3? ¿Qué hace el método merge? 
 
+Probemos ahora el método _concat()_:
+``` python
+df3 = pd.congact([df, df_cat,])
+```
+> Para pensar 🤔: ¿Qué datos tiene df3? ¿Qué hace el método _concat()_ y qué diferencia tiene con hacer _merge()_? 
 
 [3. Métodos de los DataFrames](#3-metodos)
 
@@ -216,6 +221,5 @@ Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar c
 >
 >  🧗‍♀️ Desafío III: averiguá para qué sirve cada uno de los métodos y qué parámetros podés pasarseles. ¡Esta información nos será útil para más adelante!
 >
-
 
 Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como cómo [trabajar los datos](https://github.com/flbulgarelli/recursos-python/blob/master/2_Ciencia_de_datos_pandas/Analisis_de_datos_con_pandas.md) 🤓
