@@ -218,10 +218,4 @@ Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar c
 >
 
 
-Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como cómo trabajar los datos 👇  
-
-
-[4. Tratamiento de Datos con Python](#4-datos)
-
-El primer paso para poder analizar los datos y sacar conclusiones de ese análisis es realizar una
-limpieza de los mismos... ¡claro que no vamos a pasarle el plumero para sacarle el polvo! Limpieza de datos se refiere por ejemplo a verificar si faltan datos o si a alguna de las columnas debe hacerseles una corrección de notación o de corrección de tipo de dato, etc.
+Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como cómo trabajar los datos 
