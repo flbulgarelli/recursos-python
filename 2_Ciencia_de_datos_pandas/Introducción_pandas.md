@@ -178,8 +178,21 @@ Pero los operadores tambien nos sirven también para filtrar nuestro DataFrame:
 ``` python
 df[df['edad'] > 35 ]
 ```         
- 
+
 > 🧗‍♀️ Desafío V: Contá cuántas personas de 30 años ingresaron al ministerio en 2011 ¿Cuántas formas de hacer este cálculo se te ocurren?
+
+Ahora vamos a ver cómo podemos incorporar más información a nuestro DataFrame. En la página del ministerio podés encontrar las tablas que pueblas la tabla general...veamos por ejemplo la tabla de [categoría de conicet](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/c72c9f88-d9ef-4349-bb20-5c9a1aca5d67)
+
+> 🧗‍♀️ Desafío VI: Descargala en formato csv y cargala en un nuevo DataFrame de nombre `df_cat`
+> 🧗‍♀️ Desafío VII: Identificá si existen columnas en común con el DataFrame grande
+
+Supongamos que ahora queremos poder realizar análisis de nuestros datos filtrando por categoria de conicet, en este caso podemos combinar las dos tablas, de modo de saber qué valos de `categoria_conicet_id` se corresponde con cada categoria de conicet. Probemos haciendo:
+
+``` python
+df3 = pd.merge(df, df_cat, on='categoria_conicet_id')
+```
+
+> Para pensar 🤔: ¿Qué datos tiene df3? ¿Qué hace el método merge? 
 
 
 [3. Métodos de los DataFrames](#3-metodos)
