@@ -1,4 +1,8 @@
-*[1. Tratamiento de Datos con Python](#1-datos)
+> Este material retoma material de [Bioinfo UNQ](https://github.com/AJVelezRueda/Bioinfo_UNQ/tree/master/Trabajos_Practicos/Estadistica_con_pandas)
+
+
+# Guias de Trabajo
+ * [1. Tratamiento de Datos con Python](#1-datos)
 
 
 [1. Tratamiento de Datos con Python](#1-datos)

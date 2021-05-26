@@ -218,4 +218,4 @@ Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar c
 >
 
 
-Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como cómo trabajar los datos 
+Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como cómo [trabajar los datos](https://github.com/flbulgarelli/recursos-python/blob/master/2_Ciencia_de_datos_pandas/Analisis_de_datos_con_pandas.md) 🤓
