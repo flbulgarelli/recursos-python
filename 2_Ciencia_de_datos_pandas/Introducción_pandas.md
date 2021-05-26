@@ -142,10 +142,19 @@ Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar c
 >  🧗‍♀️ Desafío III: averigueá para qué sirve cada uno de los métodos y qué parámetros pueden pasarseles
 >
 
-[3. Tratamiento de Datos con Python](#3-datos)
 Podemos acceder a cada columna haciendo df['nombre de la columna'] (donde df es el nombre génerico para designar DataFrame, en nuestro caso por ejemplo hacemos:
 
 ``` python
 df[' persona_id']
 ```
+
 > Para pensar 🤔: ¿Podés imprimir la columna de los `max_dedicacion_horaria_docente_id` de nuestra tabla? ¿Cómo calcularías el promedio de esta columna?
+
+```python
+df.loc[fila, columna] 
+```
+
+[3. Tratamiento de Datos con Python](#3-datos)
+
+El primer paso para poder analizar los datos y sacar conclusiones de ese análisis es realizar una
+limpieza de los mismos... ¡claro que no vamos a pasarle el plumero para sacarle el polvo! Limpieza de datos se refiere por ejemplo a verificar si faltan datos o si a alguna de las columnas debe hacerseles una corrección de notación o de corrección de tipo de dato, etc.
