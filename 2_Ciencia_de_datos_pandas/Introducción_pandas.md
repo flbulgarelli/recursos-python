@@ -28,7 +28,8 @@ Si bien no es estrictamente necesario saber a fondo la sintaxis de Python para c
 # Guias de Trabajo
   * [1. Un osito cariñosito](#1-pandas)
   * [2. Métodos de los DataFrames](#2-metodos)
-  * [3. Tratamiento de Datos con Python](#3-datos)
+  * [3. Trabajando con DataFrames](#3-dfs)
+  * [4. Tratamiento de Datos con Python](#4-datos)
 
 [1. Un osito cariñosito](#1-pandas) 
 
@@ -77,8 +78,10 @@ df = pd.DataFrame(datos)
 
 print(df)
 ```
-
 🛑 Alerta: los valores asociados a las claves del diccionario deben ser listas del mismo tamaño
+
+`df` es el nombre génerico para designar DataFrame y es el nombre que utilizaremos de ahora en más para mayor simplicidad.
+
 
 Otra forma muy usual de generar DataFrames es mediante la lectura de archivos tabulados. :
 
@@ -120,7 +123,7 @@ Si bien esta información nos ayuda a saber los nombres de las columnas de nuest
 ```python
 df.describe()
 ```
-> Para pensar 🤔: ¿Qué tipo de información nos brinda el método describe?¿Tienen sentido estos cálculos para todas las columnas?
+> Para pensar 🤔: ¿Qué tipo de información nos brinda el método describe? ¿Tienen sentido estos cálculos para todas las columnas?
 >
 
 Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar con DataFrames: 
@@ -139,10 +142,14 @@ Veamos un resumen de los métodos que podés encontrar en Pandas para trabajar c
 | pd.DataFrame.from_dict() |  pd.tail() | pd.hist() |
 
 >
->  🧗‍♀️ Desafío III: averigueá para qué sirve cada uno de los métodos y qué parámetros pueden pasarseles
+>  🧗‍♀️ Desafío III: averiguá para qué sirve cada uno de los métodos y qué parámetros podés pasarseles. ¡Esta información nos será útil para más adelante!
 >
 
-Podemos acceder a cada columna haciendo df['nombre de la columna'] (donde df es el nombre génerico para designar DataFrame, en nuestro caso por ejemplo hacemos:
+Ahora que conocemos algunas de los métodos que nos permiten trabajar con DataFrames, veamos como operar con ellos 👇  
+
+[3. Trabajando con DataFrames](#3-dfs)
+
+Podemos acceder a cada columna haciendo df['nombre de la columna'], en nuestro caso por ejemplo hacemos:
 
 ``` python
 df[' persona_id']
@@ -154,7 +161,7 @@ df[' persona_id']
 df.loc[fila, columna] 
 ```
 
-[3. Tratamiento de Datos con Python](#3-datos)
+[4. Tratamiento de Datos con Python](#4-datos)
 
 El primer paso para poder analizar los datos y sacar conclusiones de ese análisis es realizar una
 limpieza de los mismos... ¡claro que no vamos a pasarle el plumero para sacarle el polvo! Limpieza de datos se refiere por ejemplo a verificar si faltan datos o si a alguna de las columnas debe hacerseles una corrección de notación o de corrección de tipo de dato, etc.
