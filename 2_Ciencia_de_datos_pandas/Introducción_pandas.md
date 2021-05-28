@@ -176,7 +176,7 @@ df['edad'] > 2
 Pero los operadores tambien nos sirven también para filtrar nuestro DataFrame:
 
 ``` python
-df[df['edad'] > 35 ]
+df[df['edad'] < 35 ]
 ```         
 
 > 🧗‍♀️ Desafío V: Contá cuántas personas de 30 años ingresaron al ministerio en 2011 ¿Cuántas formas de hacer este cálculo se te ocurren?
@@ -196,7 +196,7 @@ df3 = pd.merge(df, df_cat, on='categoria_conicet_id')
 
 Probemos ahora el método _concat()_:
 ``` python
-df3 = pd.congact([df, df_cat,])
+df3 = pd.conact([df, df_cat,])
 ```
 > Para pensar 🤔: ¿Qué datos tiene df3? ¿Qué hace el método _concat()_ y qué diferencia tiene con hacer _merge()_? 
 
