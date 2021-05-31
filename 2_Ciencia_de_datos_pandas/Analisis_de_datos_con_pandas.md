@@ -108,8 +108,12 @@ Sin embargo, nos puede interesar saber cuál es el grado de formación que tiene
 personas['maximo_grado_academico_id'].value_counts()
 ```
 
+>🧗‍♀️ Desafío I: Tomando las [tablas de referencia del MinCyT](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/11dca5bb-9a5f-4da5-b040-28957126be18) y tomando lo aprendido en el [recorrido anterior](https://github.com/flbulgarelli/recursos-python/blob/master/2_Ciencia_de_datos_pandas/Introducci%C3%B3n_pandas.md), incorporá los datos correspondientes a todas las variables categóricas de la tabla
+
 [2. Tratamiento de datos faltantes](#2-faltantes)
-No hace falta suspicacia para prever que en esta sección hablaremos de los datos faltantes. Como hemos visto nuestra tabla, muestra celdas si información. Y ya hemos visto por medio del método info() cuántos valores no nulos posee cada columna. Haro nos vamos a enfocar en el vaso medio vacío, probemos el siguiente código:
+No hace falta suspicacia para prever que en esta sección hablaremos de los datos faltantes. Obtivimos anteriormente, con el método `info()`, cuántos valores no nulos posee cada columna. 
+
+Ahora nos vamos a enfocar en el vaso medio vacío, vamos a intentar cuantificar cuántas celdas hayen nuetsra tabla sin información. Probemos el siguiente código:
 
 ```python
 personas.isnull().sum()
@@ -154,5 +158,5 @@ dtype: int64
 Los datos faltantes pueden alterar el análisis de datos ya que disminuyen el tamaño de las muestras y, por tanto, la potencia de los tests estadísticos. Por ello, resulta necesario hacer un tratamiento de los datos faltantes, previo al análisis de los datos. Existen distintos modos de trabajar con los datos faltantes, dependiendo mayormente de nuestro lote de datos y de la variable en cuestión. 
 
 > Antes de tomar cualquier decisión, cabe preguntarse algunas cosas:
->  🧗‍♀️ Desafío I: Calcular el porcentaje del total de datos, representan los datos nulos de cada columna (variable)
+>  🧗‍♀️ Desafío II: Calcular el porcentaje del total de datos, representan los datos nulos de cada columna (variable)
 > Para pensar 🤔: ¿Qué información me aporta cada una de las columnas con datos faltantes? ¿Qué tipo de datos son los pertenecientas a cada una de las columnas (categóricos o numéricos)?¿Es relevante dicha variable para el análisis global de los datos? 
