@@ -105,7 +105,7 @@ Ya tenemos nuestra tabla cargada, podeés hacer una previsualización de los dat
 ```python
 personas.head()
 ```
-> Para pensar 🤔: ¿Qué serán esos valores `NaN`?
+> Para pensar 🤔: ¿Cuántas filas se imprimen al hacer head? ¿Qué sucede si hacemos `personas.head(10)`? ¡Probalo!
 
 [2. Trabajando con DataFrames](#2-dfs)
 
