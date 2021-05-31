@@ -74,9 +74,9 @@ También, se puede crear un DataFrame a partir de un diccionario, en este caso l
 ```python
 #será DataFrame(data=diccionario, index=filas, columns=columnas, dtype=tipos)
 datos = {"Pais": ['Peru', 'Argentina', 'Bolivia', 'Uruguay', 'Brasil', 'Chile'], "Idioma oficial": ['Español', 'Español', 'Español', 'Español', 'Portugues', 'Español']}
-df = pd.DataFrame(datos)
+paises_latam = pd.DataFrame(datos)
 
-print(df)
+print(paises_latam)
 ```
 🛑 Alerta: los valores asociados a las claves del diccionario deben ser listas del mismo tamaño
 
@@ -97,13 +97,13 @@ df = pd.read_csv(path_al_erchivo)
 
 >  🧗‍♀️ Desafío II: Descargá a tu computadora la [tabla](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/11dca5bb-9a5f-4da5-b040-28957126be18) de personas que conforman el Ministerio de Ciencia y Tecnología de Argentina, en formato csv.
 >
-> Cargá (lee) la tabla a un DataFrame de Pandas ¿Qué forma te lectura de archivos usarías? ¿Qué separación entre columnas posee el archivo? ¿Cómo te diste cuenta? 🤔
+> Cargá (lee) la tabla a un DataFrame de Pandas de nombre `personas` ¿Qué forma te lectura de archivos usarías? ¿Qué separación entre columnas posee el archivo? ¿Cómo te diste cuenta? 🤔
 >
 
 Ya tenemos nuestra tabla cargada, podeés hacer una previsualización de los datos haciendo:
 
 ```python
-df.head()
+personas.head()
 ```
 > Para pensar 🤔: ¿Qué serán esos valores `NaN`?
 
@@ -112,13 +112,13 @@ df.head()
 Ahora que aprendiste a cargar datos en una `"tabla"` de Pandas, podés averiguar la información general de tu tabla haciendo: 
 
 ```python
-df.info()
+personas.info()
 ```
 
 Si bien esta información nos ayuda a saber los nombres de las columnas de nuestra tabla, o el tipo de datos que contiene cada una de ellas, quizás una descripción más informativa podría ser:
 
 ```python
-df.describe()
+personas.describe()
 ```
 > Para pensar 🤔: ¿Qué tipo de información nos brinda el método describe? ¿Tienen sentido estos cálculos para todas las columnas?
 >
@@ -126,7 +126,7 @@ df.describe()
 Podemos acceder a los datos de cada columna haciendo df['nombre de la columna'], en nuestro caso por ejemplo:
 
 ``` python
-df[' persona_id']
+personas[' persona_id']
 ```
 
 > Para pensar 🤔: ¿Podés imprimir la columna de los `max_dedicacion_horaria_docente_id` de nuestra tabla? ¿Cómo calcularías el promedio de esta columna?
@@ -139,7 +139,7 @@ df.loc[fila, columna]
 esto devuelve el elemento que se encuentra en la fila con nombre fila y la columna de con nombre columna del DataFrame df. Probá el siguiente código:
 
 ```python
-df.loc[2, 'persona_id']
+personas.loc[2, 'persona_id']
 ```
 
 > Para pensar 🤔: ¿Qué resultado obtuviste? ¿Por qué? ¿Cómo obtendrías la edad de esa persona?
@@ -155,11 +155,11 @@ df['columna'].tolist()
 Seguramente tu resulación del _Desafío IV_ implicó hacer un _bucle for_ y un if, lo cual parece a priori un tanto engorroso. Para evitarnos tantas lineas de código, podemos hacer uso de los métodos _groupby()_ y _count()_, que nos permiten contar sobre una columna la frecuencia de un dato/evento en particular. Ejecutá las siguientes lineas a ver qué pasa:
 
 ```python
-df["seniority_level"].count()
+personas["seniority_level"].count()
 
-df.groupby("seniority_level").count()
+personas.groupby("seniority_level").count()
 
-df.groupby("seniority_level")[["persona_id"]].count()
+personas.groupby("seniority_level")[["persona_id"]].count()
 ```
 
 > 🧗‍♀️ Desafío V: ¿Qué resultados obtuviste en cada caso? Explicá qué hace cada linea de código
@@ -167,36 +167,36 @@ df.groupby("seniority_level")[["persona_id"]].count()
 Podemos operar con las columnas con los mismo operadores relacionales y matemáticos que ya hemos visto:
 
 ``` python
-df['edad'] * 2
-df['edad'] + 2
-df['edad'] > 2  
+personas['edad'] * 2
+personas['edad'] + 2
+personas['edad'] > 2  
 ```          
 > Para pensar 🤔: ¿Qué resultado nos daría en cada caso? 
 
 Pero los operadores tambien nos sirven también para filtrar nuestro DataFrame:
 
 ``` python
-df[df['edad'] < 35 ]
+personas[personas['edad'] < 35 ]
 ```         
 
 > 🧗‍♀️ Desafío V: Contá cuántas personas de 30 años ingresaron al ministerio en 2011 ¿Cuántas formas de hacer este cálculo se te ocurren?
 
 Ahora vamos a ver cómo podemos incorporar más información a nuestro DataFrame. En la página del ministerio podés encontrar las tablas que pueblas la tabla general...veamos por ejemplo la tabla de [categoría de conicet](https://datasets.datos.mincyt.gob.ar/dataset/personal-de-ciencia-y-tecnologia/archivo/c72c9f88-d9ef-4349-bb20-5c9a1aca5d67)
 
-> 🧗‍♀️ Desafío VI: Descargala en formato csv y cargala en un nuevo DataFrame de nombre `df_cat`
+> 🧗‍♀️ Desafío VI: Descargala en formato csv y cargala en un nuevo DataFrame de nombre `categorias`
 > 🧗‍♀️ Desafío VII: Identificá si existen columnas en común con el DataFrame grande
 
 Supongamos que ahora queremos poder realizar análisis de nuestros datos filtrando por categoria de conicet, en este caso podemos combinar las dos tablas, de modo de saber qué valos de `categoria_conicet_id` se corresponde con cada categoria de conicet. Probemos haciendo:
 
 ``` python
-df3 = pd.merge(df, df_cat, on='categoria_conicet_id')
+personas_cat = pd.merge(personas, categorias, on='categoria_conicet_id')
 ```
 
 > Para pensar 🤔: ¿Qué datos tiene df3? ¿Qué hace el método merge? 
 
 Probemos ahora el método _concat()_:
 ``` python
-df3 = pd.conact([df, df_cat,])
+personas_cat = pd.conact([personas, categorias])
 ```
 > Para pensar 🤔: ¿Qué datos tiene df3? ¿Qué hace el método _concat()_ y qué diferencia tiene con hacer _merge()_? 
 
