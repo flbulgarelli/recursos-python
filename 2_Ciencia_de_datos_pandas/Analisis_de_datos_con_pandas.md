@@ -150,13 +150,59 @@ dtype: int64
 
 
 
+Podemos hacer esta inspección de los datos de forma visual:
+
+```python
+import seaborn as sns
+
+sns.heatmap(personas.isnull(), cmap='viridis')
+```
+
+![Resultado](./heat_map_null.jpeg)
+
+
 >
 > Para pensar 🤔: ¿Cuáles son las columnas con valores nulos? ¿Coinciden con las que tenían valores `NaN`?¿Qué obtenemos cuándo hacemos `isnull()`?
 >
 >  🧗‍♀️ Desafío II: Calcular el porcentaje del total de datos, representan los datos nulos de cada columna (variable)
 >
 
-
 Los datos faltantes pueden alterar el análisis de datos ya que disminuyen el tamaño de las muestras y, por tanto, la potencia de los tests estadísticos. Por ello, resulta necesario hacer un tratamiento de los datos faltantes, previo al análisis de los datos. Existen distintos modos de trabajar con los datos faltantes, dependiendo mayormente de nuestro lote de datos y de la variable en cuestión. 
 
 Pero antes de tomar cualquier decisión, cabe preguntarse algunas cosas: ¿Qué información me aporta cada una de las columnas con datos faltantes? ¿Qué tipo de datos son los pertenecientas a cada una de las columnas (categóricos o numéricos)?¿Es relevante dicha variable para el análisis global de los datos? Será entonces, según estas respuestas a estas preguntas que decidiremos alguno de los modos de acción que detallaremos a continuación.
+
+Una de las soluciones posibles para el tratamiento de los datos faltantes es la eliminación de casos completos, es decir eliminar toda las filas que contienen un dato faltante:
+
+```python
+personas.dropna(inplace=True) 
+```
+
+O aquellas que tienen más de un dato faltante:
+
+```python
+personas.dropna(thresh=2, inplace=True)
+```
+
+>
+> Para pensar 🤔: ¿Qué desventajas crees que tiene esta forma de lidiar con los datos faltantes?¿Cuándo lo usarías?
+>
+
+<details>
+  <summary>Comentarios</summary>
+Esta forma de tratar los faltantes introduce sesgo y reduce el tamaño muestral. 
+</details>
+
+Otra solución posible para el tratamiento de datos faltantes sería la eliminación por columna:
+
+```python
+personas.drop(['maximo_grado_academico_id'], axis=1, inplace=True)
+```
+
+>
+> Para pensar 🤔: ¿Qué desventajas crees que tiene esta forma de lidiar con los datos faltantes?¿Cuándo lo usarías?
+>
+
+<details>
+  <summary>Comentarios</summary>
+Produce muestras heterogéneas
+</details>
