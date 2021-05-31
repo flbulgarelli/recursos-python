@@ -153,10 +153,10 @@ dtype: int64
 >
 > Para pensar 🤔: ¿Cuáles son las columnas con valores nulos? ¿Coinciden con las que tenían valores `NaN`?¿Qué obtenemos cuándo hacemos `isnull()`?
 >
+>  🧗‍♀️ Desafío II: Calcular el porcentaje del total de datos, representan los datos nulos de cada columna (variable)
+>
 
 
 Los datos faltantes pueden alterar el análisis de datos ya que disminuyen el tamaño de las muestras y, por tanto, la potencia de los tests estadísticos. Por ello, resulta necesario hacer un tratamiento de los datos faltantes, previo al análisis de los datos. Existen distintos modos de trabajar con los datos faltantes, dependiendo mayormente de nuestro lote de datos y de la variable en cuestión. 
 
-> Antes de tomar cualquier decisión, cabe preguntarse algunas cosas:
->  🧗‍♀️ Desafío II: Calcular el porcentaje del total de datos, representan los datos nulos de cada columna (variable)
-> Para pensar 🤔: ¿Qué información me aporta cada una de las columnas con datos faltantes? ¿Qué tipo de datos son los pertenecientas a cada una de las columnas (categóricos o numéricos)?¿Es relevante dicha variable para el análisis global de los datos? 
+Pero antes de tomar cualquier decisión, cabe preguntarse algunas cosas: ¿Qué información me aporta cada una de las columnas con datos faltantes? ¿Qué tipo de datos son los pertenecientas a cada una de las columnas (categóricos o numéricos)?¿Es relevante dicha variable para el análisis global de los datos? Será entonces, según estas respuestas a estas preguntas que decidiremos alguno de los modos de acción que detallaremos a continuación.
