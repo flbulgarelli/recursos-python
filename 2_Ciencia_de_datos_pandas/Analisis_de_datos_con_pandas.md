@@ -217,6 +217,10 @@ df.fillna(df['columna_con_faltantes'].mean(), inplace=True)
 >
 > Para pensar 🤔: ¿Qué desventajas crees que tiene esta forma de lidiar con los datos faltantes?¿Con qué criterio? ¿Siempre puede usarse la media? ¿Qué otros valores podrían usarse?
 >
+>  🧗‍♀️ Desafío III: Escribí el código que usarías para reemplazar los faltantes por la moda y por la mediana.
+>
+> Para pensar 🤔: ¿Cuál son la media, moda y mediana? ¿Y los cuantiles?
+>
 
 <details>
   <summary>Comentarios</summary>
