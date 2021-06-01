@@ -207,4 +207,20 @@ personas.drop(['maximo_grado_academico_id'], axis=1, inplace=True)
 Produce muestras heterogéneas que no tienem una representación clara de las variables
 </details>
 
-Una última alternativa posible para el manejo de faltantes es estimar los valores ausentes en base a los valores válidos a partir de otras variables y/o casos de la muestra.
+Una última alternativa posible para el manejo de faltantes es estimar los valores ausentes en base a los valores válidos a partir de otros casos de la muestra. Estas estimaciones se pueden hacer, por ejemplo reemplazando los valores faltantes por la media obtenida con los demás valores observados para dicha variable:
+
+
+```python
+df.fillna(df['columna_con_faltantes'].mean(), inplace=True)
+```
+
+>
+> Para pensar 🤔: ¿Qué desventajas crees que tiene esta forma de lidiar con los datos faltantes?¿Con qué criterio? ¿Siempre puede usarse la media? ¿Qué otros valores podrían usarse?
+>
+
+<details>
+  <summary>Comentarios</summary>
+Distorsiona la verdadera distribución de la variable
+Distorsiona la correlación entre variables dado que añade valores constantes
+</details>
+
