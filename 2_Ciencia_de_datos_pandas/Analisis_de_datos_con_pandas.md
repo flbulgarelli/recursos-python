@@ -29,6 +29,7 @@ Si bien no es estrictamente necesario saber a fondo la sintaxis de Python para c
 # Guias de Trabajo
  * [1. Carga e inspección de datos](#1-carga)
  * [2. Tratamiento de datos faltantes](#2-faltantes)
+ * [3. Tratamiento de tipos de datos de las columnas](#3-tipos_datos)
 
 
 [1. Tratamiento de Datos con Python](#1-carga)
@@ -228,3 +229,26 @@ Distorsiona la verdadera distribución de la variable
 Distorsiona la correlación entre variables dado que añade valores constantes
 </details>
 
+[3. Ajuste de tipos de datos de las columnas y duplicados](#2-tipos_datos)
+En algunos casos las bases de datos suelen tener algunas inconsistencias de tipos de datos, por ejemplo columnas que deberían ser numéricas y se cargan como (strings) o el formato de las fechas es inadecuado. Es por ello que resulta muy importante cerciorarse antes de operar con las columnas, es necesario realizar algunos ajustes en los tipos de datos.
+
+Podemos conocer el tipo de dato al que se corresponde una columna mediante el método `dtypes`:
+
+```python
+df['columna_de_interes'].dtypes
+```
+
+Y convertir una columna a tipo de dato numérico, haciendo:
+
+```python
+df['columna_de_interes'] = pd.to_numeric(df['columna_de_interes'], errors='coerce')
+```
+
+Así mismo es frecuente encontrar celdas duplicadas en los datos, que facilmente pueden ser removidos mediante:
+
+```python
+df.drop_duplicates(inplace=True)
+```
+
+>  🧗‍♀️ Desafío III: Revisá el DataFrame para detectar otras anomalías en los datos y averiguá como resolverlas.
+>
