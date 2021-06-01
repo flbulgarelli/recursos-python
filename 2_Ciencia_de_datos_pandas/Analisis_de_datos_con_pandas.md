@@ -204,5 +204,7 @@ personas.drop(['maximo_grado_academico_id'], axis=1, inplace=True)
 
 <details>
   <summary>Comentarios</summary>
-Produce muestras heterogéneas
+Produce muestras heterogéneas que no tienem una representación clara de las variables
 </details>
+
+Una última alternativa posible para el manejo de faltantes es estimar los valores ausentes en base a los valores válidos a partir de otras variables y/o casos de la muestra.
