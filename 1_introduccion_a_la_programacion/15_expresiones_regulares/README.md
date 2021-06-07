@@ -23,7 +23,7 @@ Vamos a ver algunas de las secuencias de escape más frecuentes:
 | Secuencia de escape| representación |
 |-------------	|----------	|
 | \n | salto de línea |
-| \t | Tab o cambio de pestaña |
+| \t | Tab o cambio de columna |
 | \s | espacio |
 | \' | Comillas simples |
 | \" | Comillas dobles |
