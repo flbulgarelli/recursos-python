@@ -186,6 +186,10 @@ def gano(cumplio_objetivo_secreto, cantidad_de_paises_conquistados):
 
 ### Respuesta
 
+
+<details>
+<summary>:eyes: Ver</summary>
+
 Vamos a ver como sería la tabla de verdad de la disyunción para compararla con la tuya:
 
 <table class="table table-striped table-bordered table-condensed text-center">
@@ -215,6 +219,8 @@ Vamos a ver como sería la tabla de verdad de la disyunción para compararla con
     <td>Falso</td>
   </tr>
 </table>
+
+</details>
 
 ## 5. Y ahora... ¿quién podrá ayudarnos?
 

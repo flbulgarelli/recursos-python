@@ -18,9 +18,14 @@ Python es un lenguaje creado a fines de los 80 y publicado por primera vez en 19
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☒ En el lenguaje de programación _Cobra_.
 1. ☑️ En los humoristas británicos _Monty Python_.
 1. ☒ En la picadura de serpiente que sufrió el creador.
+
+</details>
 
 ### Para pensar
 
@@ -427,6 +432,9 @@ Uff, ¡vimos un montón de cosas! :sweat_smile: Aprendimos sobre la sintaxis de 
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☑️ `4 + 4` vale `8`
 1. ☑️ `"4" + "4"` vale `"44"`
 1. ☒ `4 + 4` vale `"44"`
@@ -434,6 +442,8 @@ Uff, ¡vimos un montón de cosas! :sweat_smile: Aprendimos sobre la sintaxis de 
 1. ☑️ `True and False` vale `False`
 1. ☒ `True and False` vale `0`
 1. ☑️ `5 >= 6` vale `False`
+
+</details>
 
 ### Para pensar
 

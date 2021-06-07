@@ -28,6 +28,9 @@ Saber programar nos da un gran poder: en lugar de hacer tareas repetitivas y ted
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☑️ La contabilidad de una empresa.
 1. ☑️ La reserva de un turno.
 1. ☑️ Corregir un examen.
@@ -35,6 +38,9 @@ Saber programar nos da un gran poder: en lugar de hacer tareas repetitivas y ted
 1. ☑️ Realizar videollamadas.
 1. ☑️ Reconocer imágenes
 1. ☑️ Conducir un robot en Marte.
+
+</details>
+
 
 ### Para pensar
 
@@ -57,10 +63,15 @@ Mmm, en realidad no... :disappointed:
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ❎ Resolver una discusión.
 1. ❎ Determinar si un cuadro es bello.
 1. ❎ Empatizar con otras personas.
 1. ☑️ Ninguno de los anteriores
+
+</details>
 
 ### Para pensar
 
@@ -84,12 +95,17 @@ Un montón de objetos son computadoras aunque no lo creas. Los teléfonos inteli
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ❎ Licuadora antigua.
 1. ☑️ Consola de videojuegos.
 1. ☑️ Navegador GPS.
 1. ☑️ Teléfono celular.
 1. ❎ Una mesa de madera.
 1. ☑️ Cajero automático.
+
+</details>
 
 ### Para pensar
 
@@ -121,6 +137,9 @@ Si bien muchas veces utilizamos el término aplicación para hablar tanto de una
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ❎ [Bloc de notas](https://es.wikipedia.org/wiki/Bloc_de_notas)
 1. ☑️ [AFIP](https://www.afip.gob.ar/sitio/externos/default.asp)
 1. ☑️ [Instagram](https://www.instagram.com)
@@ -131,6 +150,8 @@ Si bien muchas veces utilizamos el término aplicación para hablar tanto de una
 1. ☑️ [Minecraft](https://www.minecraft.net/es-es)
 1. ❎ [Solitario](https://es.wikipedia.org/wiki/Solitario_Microsoft)
 1. ☑️ [Mumuki](https://mumuki.io/home)
+
+</details>
 
 ### Para pensar
 
@@ -154,11 +175,16 @@ Un algoritmo es una secuencia de pasos ordenados para la resolución de un probl
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ❎ Una receta de cocina.
 1. ❎ Las instrucciones para hacer un origami.
 1. ❎ Los pasos para resolver un cubo Rubik.
 1. ❎ La lógica que siguen las redes sociales para sugerirte contactos.
 1. ☑️ Todas las anteriores.
+
+</details>
 
 ### Para pensar
 
@@ -178,11 +204,16 @@ Ahora que ya sabemos bien lo que es un algoritmo...
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 El orden debería ser el siguiente:
 
 1. Empezá con un círculo. Este será el centro de la flor.
 1. Alrededor del centro dibujá círculos que tengan igual tamaño pegados entre ellos. Estos serán los pétalos.
 1. Dibujá el tallo pegado a uno de los pétalos.
+
+</details>
 
 ## 7. ¿Qué decís?
 
@@ -198,11 +229,16 @@ Al comunicarnos los seres humanos debemos seguir una serie de lineamientos pero 
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ❎ ola k asé?
 1. ☑️ hola, ¿qué haces?
 1. ❎ ?hola qué hacés¿
 1. ❎ hola, que? haces
 1. ❎ hoal, ¿qéu haecs?
+
+</details>
 
 ### Para pensar
 
@@ -279,6 +315,9 @@ def doble(numero)
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 ❎
 ```python
 def doble(número):
@@ -302,6 +341,8 @@ def doble(numero):
 def doble(numero)
   return numero * 2
 ```
+
+</details>
 
 
 ### Para pensar
@@ -337,12 +378,18 @@ Para formalizar un poco lo que venimos viendo, diremos que para darle órdenes a
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ❎ Español
 1. ☑️ Ruby: es un lenguaje de programación inventado en los 90.
 1. ❎ Mozilla Firefox: es un programa para navegar en internet
 1. ☑️ Python: es un lenguaje de programación creado a fines de los 80
 1. ❎ Inglés
 1. ☑️ Javascript: es un lenguaje de programación, también creado en los 90
+
+
+</details>
 
 ### Para pensar
 
@@ -408,6 +455,9 @@ def saludar(nombre):
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 ❎
 
 ```ruby
@@ -431,6 +481,7 @@ def saludar(nombre):
   return "Hola " + nombre
 ```
 
+</details>
 
 ### Para pensar
 

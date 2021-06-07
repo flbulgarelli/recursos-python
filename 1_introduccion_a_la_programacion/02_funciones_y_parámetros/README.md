@@ -167,12 +167,18 @@ False
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☑️ Ambas empiezan con `def` seguido del nombre de la función
 1. ☒ Ambas empiezan con `def` seguido de dos puntos
 1. ☒ Ambas tienen un `return` en la primera línea
 1. ☑️ Ambas tienen un `return` en la última línea
 1. ☑️ Ambas terminan la primera línea con dos puntos
 1. ☒ Ambas arrancan la segunda línea contra el margen
+
+
+</details>
 
 ### Para pensar
 
@@ -311,10 +317,15 @@ Por ejemplo, cuando invocamos `mitad` con el argumento `4`, a través de este "a
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☑️ `suma_longitudes` es una función
 1. ☑️ `suma_longitudes` tiene dos parámetros
 1. ☑️ `suma_longitudes` puede ser invocada con 2 argumentos
 1. ☑️ si escribimos `suma_longitudes("aprendiendo", "programación")`, `"aprendiendo"` será el primer argumento y `"programación"`, el segundo
+
+</details>
 
 ### Para pensar
 
@@ -659,8 +670,13 @@ False
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☒ Si, porque en la función `es_biblioteca`, `lugar` es un parámetro de tipo string y debemos indicarlo colocándolo entre comillas
 1. ☑️ No, porque en la función `es_biblioteca`, `lugar` es un parámetro de tipo string, pero los parámetros son nombres que no van entre comillas
+
+</details>
 
 ### Para pensar
 

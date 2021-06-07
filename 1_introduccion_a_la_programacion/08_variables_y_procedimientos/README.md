@@ -619,6 +619,9 @@ def es_volumen_saludable():
 
 ### Respuesta
 
+<details>
+<summary>:eyes: Ver</summary>
+
 1. ☒ `volumen` es una variable local
 1. ☑️ `volumen` es una variable global
 1. ☒ `subir_volumen` es una función
@@ -630,6 +633,8 @@ def es_volumen_saludable():
 1. ☒ `subir_volumen` retorna un número
 1. ☒ `es_volumen_saludable` retorna un número
 1. ☑️ `es_volumen_saludable` retorna un booleano
+
+</details>
 
 ### Para pensar
 
