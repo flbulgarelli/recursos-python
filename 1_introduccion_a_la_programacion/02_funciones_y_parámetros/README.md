@@ -630,6 +630,21 @@ False
 False
 ```
 
+### Solución posible
+
+
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def esta_entre(numero_1, numero_2, numero_3):
+  return numero_1 > numero_2 and numero_1 < numero_3
+
+def esta_fuera_de_rango(numero_1, numero_2, numero_3):
+  return not esta_entre(numero_1, numero_2, numero_3)
+```
+
+</details>
 
 
 ### Para pensar
@@ -738,6 +753,16 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 13
 ```
 
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def longitud_nombre_completo(nombre, apellido):
+  return len(str.strip(nombre + " " + apellido))
+```
+
+</details>
+
 ## 13. ¡GRITAR!
 
 Una conocida banda, para agregar gritos varios a su canción, nos pidió que desarrollemos una función `gritar`, que tome un string y lo devuelva en mayúsculas y entre signos de exclamación.
@@ -822,6 +847,17 @@ False
 >>> es_fin_de_semana("viernes")
 False
 ```
+
+
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def es_fin_de_semana(dia):
+  return str.lower(dia) == "sábado" or str.lower(dia) == "domingo"
+```
+
+</details>
 
 
 ### Para pensar
