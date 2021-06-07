@@ -50,22 +50,16 @@ False # Ups ¡era para el otro lado!
 >>> es_mas_largo_que("Santiago del Estero", "Misiones")
 ```
 
-> :octagonal_sign: ¡Momento! ¿Esto funcionará? Averigualo probándolo en la consola.
-
-
-### Autoevaluación
-
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
-
-```python
-def es_mas_largo_que(un_string, otro_string):
-  return len(un_string) > len(otro_string)
-
->>> True
-True
-```
-
-
+> :octagonal_sign: ¡Momento! ¿Esta _consulta_ que acabamos de mostrar funcionará?
+>
+> Para averiguarlo, pegá el siguiente código en la consola...
+>
+> ```python
+> def es_mas_largo_que(un_string, otro_string):
+>   return len(un_string) > len(otro_string)
+> ```
+> ... y luego probá la consulta.
+>
 
 ### Para pensar
 
@@ -105,11 +99,8 @@ True # si los argumentos cambian, el resultado puede ser diferente también
 
 > Veamos si se va entendiendo:
 >
->  1. Copiá la _definición_ de la función `es_mas_largo_que` en el editor que está debajo;
->  2. en la `Consola`, invocá la función `es_mas_largo_que` varias veces con argumentos diferentes;
->  3. luego, volvé a la pestaña de `Solución` y presioná el botón `Enviar`.
-
-
+>  Copiá la _definición_ de la función `es_mas_largo_que` en la consola y luego invocá la función `es_mas_largo_que` varias veces con argumentos diferentes.
+>
 
 
 ### Autoevaluación
@@ -117,13 +108,13 @@ True # si los argumentos cambian, el resultado puede ser diferente también
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ```python
->>> es_mas_largo_que("Rosario", "Bahía Blanca")
+>>> es_mas_largo_que("Bahía Blanca", "Rosario")
+True
+>>> es_mas_largo_que("Temperley", "Lomas del Mirador")
 False
->>> es_mas_largo_que("Valle de Uco", "La Punta")
+>>> es_mas_largo_que("San Fernando", "Tigre")
 True
 ```
-
-
 
 ### Para pensar
 
@@ -208,17 +199,22 @@ Uff, ¡muchas reglas :tired_face:! No te preocupes, de a poco las iremos dominan
 
 Esto es lo que se conoce como un _error de sintaxis_, que representaremos mediante el símbolo <i class="fas fa-minus-circle text-broken"></i>. Mientras aprendemos a programar nos toparemos con esta clase de errores muchas veces, ¡pero a no desesperar! Si leemos con paciencia y atención nuestro código podremos resolverlo.
 
-> ¡Veamos si se entiende! Esta vez definimos en el editor dos funciones, pero no garantizamos que estén bien hechas. :zipper_mouth:
+> ¡Veamos si se entiende! Mirá las dos funciones a continuación...
 >
-> 1. :arrow_forward: Enviá el código que está a continuación, y fijate qué pasa;
+> ```python
+> Def mitad(un_numero)
+> return un_numero / 2
+>
+> def suma_longitudes un_string, otro_string):
+>   return len(un_string) + len(otro_string)
+> ```
+>
+> ...¿están bien escritas? ¡Averigüémoslo!
+>
+> 1. :arrow_forward: Pegá el código en la consola, y fijate qué pasa;
 > 2. :eyes: lee con atención el mensaje que Python te muestra;
-> 3. :tools: corregí los errores de sintaxis y volvé a enviar;
+> 3. :tools: corregí los errores de sintaxis y volvé a enviar
 >
-> Ah, y si no te acordás de las reglas sintáticas que vimos en el ejercicio anterior, presioná en la ayuda :innocent:
-
-
-
-
 
 ### Pistas
 
@@ -234,11 +230,9 @@ Repasemos las reglas:
   2. la última línea en particular debe empezar además con  `return`, seguido de lo que queremos devolver
 
 
-
-
 ### Autoevaluación
 
-Probá las siguientes consultas y verificá que devuelvan lo mismo:
+Una vez corregido el código, probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ```python
 >>> mitad(2)
@@ -254,14 +248,13 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ```
 
 
-
 ### Para pensar
 
 ¡Muy bien! Quizás habrás notado que cuando Python no puede entender tu código genera mensajes como éstos:
 
 ```
-  File "solucion.py", ...
-    def mitad(un_numero)
+  File "<stdin>", line 1, ...
+    Def mitad(un_numero)
                        ^
 SyntaxError: invalid syntax
 ```
