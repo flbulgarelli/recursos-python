@@ -29,7 +29,7 @@ True
 ¡Lo lograste! Pero, ¿no fue un poco tedioso y repetitivo? :sleeping: Una vez que ya nos dimos cuenta cómo resolver el problema de saber si un string es más largo que otro...
 
 ```python
-ム len(un_string) > len(otro_string)
+>>> len(un_string) > len(otro_string)
 ```
 
 ...¿no sería genial si pudiéramos _reutilizar_ esta idea? :recycle:
@@ -51,9 +51,6 @@ False # Ups ¡era para el otro lado!
 ```
 
 > :octagonal_sign: ¡Momento! ¿Esto funcionará? Averigualo probándolo en la consola.
-
-
-
 
 
 ### Autoevaluación
@@ -333,7 +330,7 @@ Por ejemplo, cuando invocamos `mitad` con el argumento `4`, a través de este "a
 Una función puede _declarar_ tantos parámetros como necesite en su definición; por cada uno de ellos, deberemos pasar un argumento al invocarla. Lo interesante es que no importa qué argumentos utilicemos, ya que a cada uno lo conoceremos con el nombre de su parámetro. En este ejemplo, si escribimos en la consola...
 
 ```python
-ム suma_longitudes("aprendiendo", "programación")
+>>> suma_longitudes("aprendiendo", "programación")
 ```
 ...dentro de la función `suma_longitudes` el argumento `"aprendiendo"` será `un_string` y `"programación"` será `otro_string`:
 
@@ -349,7 +346,7 @@ def suma_longitudes(un_string, otro_string):
 Sin embargo, si lo invocamos escribiendo...
 
 ```python
-ム suma_longitudes("conociendo", "Python")
+>>> suma_longitudes("conociendo", "Python")
 ```
 
 ... ahora el parámetro `un_string` tiene como valor `"conociendo"` y `otro_string` _vale_ `"Python"`.
@@ -701,18 +698,18 @@ def es_biblioteca(lugar)
 Recordá que podemos averiguar el largo de los strings mediante `len`...
 
 ```python
-ム len("biblioteca")
+>>> len("biblioteca")
 10
-ム len("babel")
+>>> len("babel")
 5
 ```
 
 ...y también podemos _concatenarlos_, es decir, obtener **uno nuevo** que junta dos strings:
 
 ```python
-ム "aa" + "bb"
+>>> "aa" + "bb"
 "aabb"
-ム "sus anaqueles " + "registran todas las combinaciones"
+>>> "sus anaqueles " + "registran todas las combinaciones"
 "sus anaqueles registran todas las combinaciones"
 ```
 
@@ -755,10 +752,10 @@ Tené en cuenta que los signos de admiración `"¡"` y `"!"` (al igual que los e
 Por ejemplo:
 
 ```python
-ム "todo" + "terreno"
+>>> "todo" + "terreno"
 "todoterreno"
 
-ム "¿" + "Aló" + "?"
+>>> "¿" + "Aló" + "?"
 "¿Aló?"
 ```
 

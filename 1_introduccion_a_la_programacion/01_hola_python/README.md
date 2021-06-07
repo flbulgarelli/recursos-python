@@ -41,19 +41,21 @@ Para estos cálculos usaremos la *consola*, una herramienta muy útil para hacer
 > >> 21 / 7
 > >> 11 - 2
 > ```
-> Luego de cada cálculo presioná enter.
-
+>
+> Luego de cada cálculo presioná enter y observá que muestra en la pantalla.
 
 
 ## 3. #Comentario
 
 Si bien ahora nos acostumbramos a ver el `#` en redes sociales :busts_in_silhouette:, también es lo que vamos a utilizar para hacer comentarios en nuestro código. Es que cuando programamos, a veces queremos hacer aclaraciones. :sweat_smile:
 
-> Probá esto en la consola:
+> Probá esto en la consola...
 >
 > ```python
 > >>> 2 * 3 #¿Esto será 6 o llueve?`
 > ```
+>
+> ... y pensá: ¿cambió en algo el resultado?
 
 
 ### Para pensar
@@ -62,20 +64,6 @@ Si bien ahora nos acostumbramos a ver el `#` en redes sociales :busts_in_silhoue
 
 Eso está bien, los comentarios son para quienes programan, sirven para comunicarnos o para recordarnos cosas a futuro. :brain:
 
-Y si queremos hacer comentarios de más de una línea, conocidos justamente como multilínea, los haremos de cualquiera de estas dos maneras:
-
-```python
-"""
-Hola, soy...
-¡un comentario multilínea!
-"""
-
-'''
-¡Que coincidencia!
-Mucho gusto
-Yo también :)
-'''
-```
 
 ## 4. ¡Cuántos chirimbolos!
 
@@ -184,12 +172,12 @@ y también concatenarlos, es decir, obtener un string a partir de la unión de o
 
 > Probá en la consola lo siguiente:
 >
-``` python
->>> "guarda" + "polvos"
->>> "Hola, " + "¿cómo estás?"
->>> "Dame " + str(5)
->>> 'Mari' + 'posa'
-```
+> ``` python
+> >>> "guarda" + "polvos"
+> >>> "Hola, " + "¿cómo estás?"
+> >>> "Dame " + str(5)
+> >>> 'Mari' + 'posa'
+> ```
 
 
 
@@ -200,7 +188,7 @@ y también concatenarlos, es decir, obtener un string a partir de la unión de o
 Si te estás preguntando qué es ese `str`, es la manera que tenemos de convertir números a strings. Si no lo hacemos y escribimos...
 
 ``` python
-ム "Dame " + 5
+>>> "Dame " + 5
 ```
 
 ... nos daría un error que diría `can only concatenate str (not "int") to str`. En otras palabras, que los strings solo se pueden concatenar con otros strings. :man_shrugging:
@@ -211,11 +199,11 @@ Cuando trabajamos con _strings_ también podemos saber si uno contiene a otro ut
 
 > Para verlo en práctica, escribí lo siguiente en la consola:
 >
-``` python
->>> "amor" in "celos"
->>> "placer" in "dolor"
->>> "historia" in "prehistoria"
-```
+> ``` python
+> >>> "amor" in "celos"
+> >>> "placer" in "dolor"
+> >>> "historia" in "prehistoria"
+> ```
 
 
 
@@ -226,7 +214,7 @@ Resumiendo, no hay amor en los celos ni placer en el dolor ¡pero si historia en
 Fuera del juego de palabras, `in` se puede utilizar con textos más largos. Por ejemplo:
 
 ```python
-ム "protección de las leyes" in "El trabajo en sus diversas formas gozará de la protección de las leyes, las que asegurarán..."
+>>> "protección de las leyes" in "El trabajo en sus diversas formas gozará de la protección de las leyes, las que asegurarán..."
 True
 ```
 
@@ -239,11 +227,11 @@ La sintaxis de estas operaciones es _apenitas_ :ok_hand: diferente de lo que ven
 
 > Probalas en la consola escribiendo:
 >
-``` python
->>> str.startswith("Fundación e imperio", "Fundación")
->>> str.endswith("Bueno, y sí", "y sí")
->>> str.endswith("Hola, ¿qué tal?", "Hola")
-```
+> ``` python
+> >>> str.startswith("Fundación e imperio", "Fundación")
+> >>> str.endswith("Bueno, y sí", "y sí")
+> >>> str.endswith("Hola, ¿qué tal?", "Hola")
+> ```
 
 ## 10. ¿Cuánto mide?
 
@@ -251,11 +239,11 @@ Muchas veces nos va a interesar saber el largo de un string, o en otras palabras
 
 > Veámoslo funcionando en la consola probando:
 >
-``` python
->>> len('prosopopeya')
->>> len("Buenos días a todo el mundo")
->>> len('¿No tenés 5 minutos?')
-```
+> ``` python
+> >>> len('prosopopeya')
+> >>> len("Buenos días a todo el mundo")
+> >>> len('¿No tenés 5 minutos?')
+> ```
 > ¿Te animás a pensar qué va a devolver cada caso antes de probarlo?
 
 
@@ -276,13 +264,13 @@ Por suerte en la contracara tenemos a las calmas minúsculas. En Python podemos 
 
 > Probemos `str.strip`, `str.upper` y `str.lower` en la consola:
 >
-```python
->>> str.strip("    ¿Por qué tantos espacios?       ")
->>> str.lower('BAJÁ EL VOLUMEN')
->>> str.lower('ya bajamos el volumen')
->>> str.upper('¡Ahora sí!')
->>> str.upper('NECESITO MAYÚSCULAS MÁS GRANDES')
-```
+> ```python
+> >>> str.strip("    ¿Por qué tantos espacios?       ")
+> >>> str.lower('BAJÁ EL VOLUMEN')
+> >>> str.lower('ya bajamos el volumen')
+> >>> str.upper('¡Ahora sí!')
+> >>> str.upper('NECESITO MAYÚSCULAS MÁS GRANDES')
+> ```
 > ¿Te imaginás qué va a pasar en cada caso?
 
 
@@ -299,11 +287,11 @@ Ya estuvimos probando operaciones de números y de strings, ¿los booleanos se p
 
 > Probá lo siguiente en la consola:
 >
-``` python
->>> len("hola") == len("chau") and len("blanco") == len("negro")
->>> 8 < 10 and 8 > 9
->>> str.startswith("caracol", "cara") and str.endswith("caracol", "col")
-```
+> ``` python
+> >>> len("hola") == len("chau") and len("blanco") == len("negro")
+> >>> 8 < 10 and 8 > 9
+> >>> str.startswith("caracol", "cara") and str.endswith("caracol", "col")
+> ```
 > Fijate si detectas algún patrón.
 
 
@@ -315,25 +303,25 @@ Ya estuvimos probando operaciones de números y de strings, ¿los booleanos se p
 Para que `and` retorne `True` es necesario que ambas condiciones sean verdaderas. Por eso...
 
 ``` python
-ム 8 < 10 and 8 > 9
+>>> 8 < 10 and 8 > 9
 ```
 
 ... retorna `False`, porque 8 es menor a 10 pero no es mayor a 9. Dicho de otra forma, `8 < 10` es `True` pero `8 > 9` es `False`. En cambio al probar...
 
 ``` python
-ム str.startswith("caracol", "cara") and str.endswith("caracol", "col")
+>>> str.startswith("caracol", "cara") and str.endswith("caracol", "col")
 ```
 
 ... obtenemos `True`, dado que ambas condiciones son verdaderas. En resumen:
 
 ```python
-ム False and False
+>>> False and False
 False
-ム True and False
+>>> True and False
 False
-ム False and True
+>>> False and True
 False
-ム True and True
+>>> True and True
 True
 ```
 
@@ -346,11 +334,11 @@ Otro famoso operador lógico es el `or` que sirve para realizar disyunciones ló
 
 > Hacé las siguientes pruebas en la consola:
 >
-``` python
->>> str.lower("HOLA") == "hola" or str.lower("adiós") == "adiós"
->>> len("hola") > 5 or abs(-5) == 5
->>> str.upper("python") == "Python" or "amor" in "romance"
-```
+> ``` python
+> >>> str.lower("HOLA") == "hola" or str.lower("adiós") == "adiós"
+> >>> len("hola") > 5 or abs(-5) == 5
+> >>> str.upper("python") == "Python" or "amor" in "romance"
+> ```
 
 
 
@@ -361,19 +349,19 @@ Otro famoso operador lógico es el `or` que sirve para realizar disyunciones ló
 Dijimos que `and` solo retorna `True` cuando ambos booleanos son `True`. Por el otro lado, para que `or` sea verdadero alcanza con que al menos uno de los booleanos lo sea. Dicho de otra manera, ambas condiciones deben ser falsas para que retorne `False`. Por ejemplo en...
 
 ``` python
-ム str.upper("python") == "Python" or "amor" in "romance"
+>>> str.upper("python") == "Python" or "amor" in "romance"
 ```
 
 ... tanto `str.upper("python") == "Python"` como `"amor" in "romance"` devuelven `False`. Si probamos con los booleanos directamente veremos que:
 
 ```python
-ム False or False
+>>> False or False
 False
-ム True or False
+>>> True or False
 True
-ム False or True
+>>> False or True
 True
-ム True or True
+>>> True or True
 True
 ```
 
@@ -400,13 +388,13 @@ Además, existen operaciones que sirven para todos los _tipos de datos_, por eje
 
 > Probá en la consola lo siguiente:
 >
-``` python
->>> 5 + 6
->>> 5 == "5"
->>> 8 > 6
->>> False / True
->>> 'hola' or 'chau'
-```
+> ``` python
+> >>> 5 + 6
+> >>> 5 == "5"
+> >>> 8 > 6
+> >>> False / True
+> >>> 'hola' or 'chau'
+> ```
 > ¿Todas estas operaciones tienen sentido?
 
 
