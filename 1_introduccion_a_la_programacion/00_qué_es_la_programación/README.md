@@ -216,30 +216,26 @@ Al comunicarnos los seres humanos debemos seguir una serie de lineamientos pero 
 
 ## 8. No te entiendo nada
 
-Recién vimos que las oraciones, frases o párrafos escritos en un lenguaje natural deberían cumplir ciertas reglas sintácticas. ¿Pero qué pasa cuando escribimos código, es decir, órdenes para una computadora escritas en lenguaje formal? :thinking: ¡También tendremos que cumplir sus reglas!
+Para comunicarnos con una computadora y darle instrucciones también vamos a necesitar _escribirle_ de alguna forma. Pero en lugar de hacerlo en un lenguaje _natural_ (es decir, uno que las personas usamos cotidianamente, como por ejemplo el español), lo haremos usando un lenguaje _formal_: uno inventado, con reglas precisas y que está diseñado para que una máquina lo pueda entender.
 
-Por ejemplo el siguiente código:
+Por ejemplo, así se podría ver uno de estos _textos_, que de ahora en más llamaremos _código_:
 
 ```python
 def hola_mundo():
     print('hola mundo')
 ```
 
-no es lo mismo que:
+Recién vimos que las oraciones, frases o párrafos escritos en un lenguaje natural deberían cumplir ciertas reglas _sintácticas_. ¿Pero qué pasa cuando escribimos código? :thinking: ¡También tendremos que cumplir sus reglas! Siguiendo con el ejemplo anterior, **ninguno** de éstos códigos son equivalentes:
 
 ```python
 Def Hola_mundo():
     Print('hola mundo')
 ```
 
-o esto:
-
 ```python
 def hola_mundo[]:
     print('hola mundo')
 ```
-
-ni esto:
 
 ```python
 def hola_mundo():
@@ -328,7 +324,7 @@ Peeeero... desde el punto de vista _semántico_, es decir, desde su significado,
 
 ## 9. Hablándole a la computadora
 
-Para formalizar un poco lo que venimos viendo, diremos que para darle órdenes a una computadora tenemos que hacerlo hablando, o mejor dicho escribiendo, en un lenguaje de programación :keyboard:. Y las computadoras, al igual que los seres humanos, pueden entender más de un lenguaje.
+Para formalizar un poco lo que venimos viendo, diremos que para darle órdenes a una computadora tenemos que hacerlo escribiendo en un lenguaje de programación :keyboard:. Y las computadoras, al igual que los seres humanos, pueden entender más de un lenguaje.
 
 > ¿Cuáles de los siguientes crees que son lenguajes de programación?
 
@@ -341,12 +337,12 @@ Para formalizar un poco lo que venimos viendo, diremos que para darle órdenes a
 
 ### Respuesta
 
-1. ❎ Español.
-1. ☑️ Ruby.
-1. ❎ Mozilla Firefox.
-1. ☑️ Python.
-1. ❎ Inglés.
-1. ☑️ Javascript.
+1. ❎ Español
+1. ☑️ Ruby: es un lenguaje de programación inventado en los 90.
+1. ❎ Mozilla Firefox: es un programa para navegar en internet
+1. ☑️ Python: es un lenguaje de programación creado a fines de los 80
+1. ❎ Inglés
+1. ☑️ Javascript: es un lenguaje de programación, también creado en los 90
 
 ### Para pensar
 
