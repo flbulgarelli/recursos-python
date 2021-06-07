@@ -418,21 +418,15 @@ Ahora que ya podemos escribir nuestros cartelitos identificatorios grandes y chi
 > ```
 
 
-
-
 ### Pistas
 
 Recordá que el largo de un string lo podés saber con la función `len` y  que tenés `escribir_cartelito` definida en la Biblioteca. No tenés que definirla, solo invocarla. :wink:
-
-
 
 ### Autoevaluación
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ```python
-#...previousSolution...#
-
 >>> escribir_cartelito_optimo("Ing.", "Carla", "Toledo")
 "Ing. Carla Toledo"
 >>> escribir_cartelito_optimo("Ing.", "Branco", "Luis")
@@ -680,22 +674,15 @@ Bueno, ehm, no, pará, primero queremos calcular cuántos puntos de envido suma 
 > 3
 > ```
 
-
-
-
 ### Pistas
 
 Para el caso en que las cartas sean de distinto palo te va a servir el ya conocido `max`. :sunglasses:
-
-
 
 ### Autoevaluación
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ```python
-#...previousSolution...#
-
 >>> puntos_de_envido_totales(4, "espadas", 3, "espadas")
 27
 >>> puntos_de_envido_totales(6, "copas", 11, "copas")
