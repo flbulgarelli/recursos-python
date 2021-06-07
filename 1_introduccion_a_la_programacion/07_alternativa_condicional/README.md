@@ -183,8 +183,6 @@ Es allí que tomamos una moneda y decimos: _si sale cara, comemos pizzas, si no,
 > ```
 
 
-
-
 ### Autoevaluación
 
 Probá las siguientes consultas y verificá que devuelvan lo mismo:
@@ -199,6 +197,22 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 >>> decision_con_moneda("ceca", "pizzas", "pastas")
 "pastas"
 ```
+
+### Solución posible
+
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def decision_con_moneda(lado, opcion1, opcion2):
+  if lado == "cara":
+    return opcion1
+  else:
+    return opcion2
+```
+
+</details>
+
 
 ## 5. El retorno del booleano
 
@@ -327,6 +341,19 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 >>> escribir_cartelito("Dr.", "Julio", "Gelman")
 "Dr. Julio Gelman"
 ```
+
+### Solución posible
+
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def escribir_cartelito(titulo, nombre, apellido):
+  return titulo + " " + nombre + " " + apellido
+```
+
+</details>
+
 
 ## 7. Más Cartelitos
 
@@ -620,6 +647,23 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 0
 ```
 
+### Solución posible
+
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def valor_envido(numero):
+  if numero >= 1 and numero <= 7:
+    return numero
+  else:
+    return 0
+```
+
+</details>
+
+
+
 ## 13. ¡Quiero retruco!
 
 Bueno, ehm, no, pará, primero queremos calcular cuántos puntos de envido suma un jugador. Sabemos que:
@@ -661,6 +705,22 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 >>> puntos_de_envido_totales(6, "copas", 7, "espadas")
 7
 ```
+
+### Solución posible
+
+<details>
+<summary>:eyes: Ver</summary>
+
+```python
+def puntos_de_envido_totales(numero_1, palo_1, numero_2, palo_2):
+  if palo_1 == palo_2:
+    return valor_envido(numero_1) + valor_envido(numero_2) + 20
+  else:
+    return max(valor_envido(numero_1), valor_envido(numero_2))
+```
+
+</details>
+
 
 ## 14. ¡Quiero vale cuatro!
 
