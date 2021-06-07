@@ -1,5 +1,7 @@
 > Este material se basa en [Clustering con Python by Joaquín Amat Rodrigo](https://www.cienciadedatos.net/documentos/py20-clustering-con-python.html) 
 
+En este recorrido utilizaremos el set de datos [Iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) que consiste en un conjunto de datos u observaciones realizadas por el biólogo Ronald Fisher, sobre las característica de distintas especies de plantas plantas.
+
 # Guias de Trabajo
  * [1.Clustering ¿Qué es?](#1-Intro)
  * [2.Calculo de distancias](#2-distancia)
