@@ -196,7 +196,7 @@ Si te estás preguntando qué es ese `str`, es la manera que tenemos de converti
 >>> "Dame " + 5
 ```
 
-... nos daría un error que diría `can only concatenate str (not "int") to str`. En otras palabras, que los strings solo se pueden concatenar con otros strings. :man_shrugging:
+... nos daría un error que diría `can only concatenate str (not "int") to str`. En otras palabras, que los strings solo se pueden concatenar con otros strings. :person_shrugging:
 
 ## 8. Yo soy parte
 
@@ -265,7 +265,7 @@ Es que como te contamos, `len` nos dice la cantidad de caracteres. Los caractere
 
 :speaking_head: QUE AGRESIVAS LAS MAYÚSCULAS, ¿NO? ¡NI HABLAR SI LES AGREGAMOS SIGNOS DE EXCLAMACIÓN!
 
-Por suerte en la contracara tenemos a las calmas minúsculas. En Python podemos pasar un texto en mayúsculas a minúsculas y viceversa. También podemos sacar los espacios que tenga un string al principio o al final, dado que hay veces que no nos interesan. :man_shrugging:
+Por suerte en la contracara tenemos a las calmas minúsculas. En Python podemos pasar un texto en mayúsculas a minúsculas y viceversa. También podemos sacar los espacios que tenga un string al principio o al final, dado que hay veces que no nos interesan. :person_shrugging:
 
 > Probemos `str.strip`, `str.upper` y `str.lower` en la consola:
 >
@@ -452,6 +452,3 @@ Uff, ¡vimos un montón de cosas! :sweat_smile: Aprendimos sobre la sintaxis de 
 Ya vimos cómo son los números, los booleanos y los strings de Python. También conocimos a la consola, una poderosa aliada que nos acompañará a lo largo de todo este recorrido. :handshake:
 
 Ahora que sabemos algunas operaciones básicas de Python ¡vamos a crear nuestros primeros programas! :muscle:
-
-
-
