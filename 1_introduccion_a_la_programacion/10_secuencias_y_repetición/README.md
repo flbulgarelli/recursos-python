@@ -12,7 +12,7 @@ def sumar_los_primeros_5(una_lista):
   return una_lista[0] + una_lista[1] + una_lista[2] + una_lista[3] + una_lista[4]
 ```
 
-¿Notás qué es lo que se repite? Sí, estamos haciendo 4 veces lo mismo: _acceder a un elemento por índice y luego sumarlo_. Sin dudas, sería mucho más interesante que la computadora hiciera eso por nosotros... ¡o si no te estaríamos mintiendo con lo de automatizar! :expressionless:
+¿Notás qué es lo que se repite? Sí, estamos haciendo 4 veces lo mismo: _acceder a un elemento por índice y luego sumarlo_. Sin dudas, sería mucho más interesante que la computadora hiciera eso por nosotros... ¡o si no te estaríamos mintiendo con lo de automatizar! 😑
 
 En esta guía vamos a aprender cómo decirle a la computadora que repita varias veces lo mismo, y también algunos trucos más.
 
@@ -56,7 +56,7 @@ Como vemos, las listas y los strings, si bien _no son lo mismo_, son más pareci
 
 ## 2. Una rebanada, por favor
 
-Otras operaciones que listas y strings tienen en común son los _slices_, que podemos traducir como segmentos, secciones, o (de forma más literal y graciosa) rebanadas  :bread:, que nos permite obtener los elementos entre dos límites:
+Otras operaciones que listas y strings tienen en común son los _slices_, que podemos traducir como segmentos, secciones, o (de forma más literal y graciosa) rebanadas  🍞, que nos permite obtener los elementos entre dos límites:
 
 ```python
 >>> numeros = [10, 20, 30, 40, 50]
@@ -89,11 +89,11 @@ Otras operaciones que listas y strings tienen en común son los _slices_, que po
 
 ### Pistas
 
-:bulb: Algunas sugerencias:
+💡 Algunas sugerencias:
 
-* Tanto los primeros 22 caracteres como los útimos 25 tienen palabras completas. Si ves alguna palabra cortada, es porque no estás usando los límites correctos. :person_gesturing_no:
-* Para resolver la última tarea te puede ser útil escribir algo del estilo `primera_estrofa[aca_va_el_punto_de_partida:]` ¿Y cómo hacer para saber cuáles cuál es el primero de los últimos 25 caracteres? Probá restar 25 al largo de la lista :wink:
-* Si te pica la  curiosidad :honeybee:, podés ver qué contiene `primera_estrofa`, escribiendo, simplemente, `primera_estrofa`. El problema es que se verá mezclado con varios caracteres _extraños_. Probá usar entonces `print(primera_estrofa)`. No te preocupes: ya hablaremos de esto de breve.
+* Tanto los primeros 22 caracteres como los útimos 25 tienen palabras completas. Si ves alguna palabra cortada, es porque no estás usando los límites correctos. 🙅
+* Para resolver la última tarea te puede ser útil escribir algo del estilo `primera_estrofa[aca_va_el_punto_de_partida:]` ¿Y cómo hacer para saber cuáles cuál es el primero de los últimos 25 caracteres? Probá restar 25 al largo de la lista 😉
+* Si te pica la  curiosidad 🐝, podés ver qué contiene `primera_estrofa`, escribiendo, simplemente, `primera_estrofa`. El problema es que se verá mezclado con varios caracteres _extraños_. Probá usar entonces `print(primera_estrofa)`. No te preocupes: ya hablaremos de esto de breve.
 
 
 ### Autoevaluación
@@ -132,7 +132,7 @@ al fin y al cabo, no teníamos ninguna forma para indicar de forma más sencilla
 
 ## 3. Al derecho y al revés
 
-¡Los segmentos `[:]` y el operador de indexación `[]` no serían tan útiles si no pudieramos contar también de atrás para adelante! :arrow_left: Por eso es que Python nos permite utilizar:
+¡Los segmentos `[:]` y el operador de indexación `[]` no serían tan útiles si no pudieramos contar también de atrás para adelante! ⬅️ Por eso es que Python nos permite utilizar:
 
  * índices positivos: empiezan en `0` y cuentan los elementos desde la primera posición hasta la última;
  * índices negativos: empiezan en `-1` y cuentan los elementos desde la última posición hasta la primera.
@@ -219,7 +219,7 @@ Por ejemplo, esto nos permitirá entender al string `"hola mundo"` de dos formas
 
 ### Pistas
 
-En `extremos` no va a alcanzar con sólo extraer segmentos o acceder por indices: vas a tener que de alguna forma crear una nueva lista especificando sus elementos. :thinking:
+En `extremos` no va a alcanzar con sólo extraer segmentos o acceder por indices: vas a tener que de alguna forma crear una nueva lista especificando sus elementos. 🤔
 
 
 
@@ -246,7 +246,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ## 4. Textos impresos
 
-:octagonal_sign: Antes de continuar vamos a hacer un alto en el camino para ver <del>una vaca :cow:</del> otra payada:
+🛑 Antes de continuar vamos a hacer un alto en el camino para ver <del>una vaca 🐄</del> otra payada:
 
 ```python
 payada_de_la_vaca = """
@@ -261,7 +261,7 @@ Fingiendo indiferencia
 """
 ```
 
-¿Tres comillas? ¿Es un error de tipeo? ¡No! En Python podemos escribir textos de _varias líneas_ si los colocamos entre triples comillas dobles :sunglasses:. Si bien esto funciona muy bien, tiene un pequeño problema: cuando queramos verlo en la consola, aparecerán unos muy peculiares `\n`:
+¿Tres comillas? ¿Es un error de tipeo? ¡No! En Python podemos escribir textos de _varias líneas_ si los colocamos entre triples comillas dobles 🕶️. Si bien esto funciona muy bien, tiene un pequeño problema: cuando queramos verlo en la consola, aparecerán unos muy peculiares `\n`:
 
 ```python
 >>> payada_de_la_vaca
@@ -299,13 +299,13 @@ Fingiendo indiferencia
 
 Como vemos, `print` imprime el pantalla el valor recibido y funciona con listas, strings, y... casi cualquier tipo de dato. Y como todo buen procedimiento, ¡no devuelve nada!
 
-Por otro lado, cuando estamos en la consola los resultados son apenas diferentes cuando usamos strings. Por eso es que no fue necesario... hasta ahora.  :stuck_out_tongue:
+Por otro lado, cuando estamos en la consola los resultados son apenas diferentes cuando usamos strings. Por eso es que no fue necesario... hasta ahora.  😛
 
 ## 5. De visita
 
-_¡Y llegamos al plato fuerte de la lección :spaghetti:!_
+_¡Y llegamos al plato fuerte de la lección 🍝!_
 
-De todas las cosas interesantes que podemos hacer con las secuencias de cosas, probablemente la más poderosa sea la de _recorrer_ **cada uno** de sus elementos :person_walking:, utilizando la estructura de control `for`:
+De todas las cosas interesantes que podemos hacer con las secuencias de cosas, probablemente la más poderosa sea la de _recorrer_ **cada uno** de sus elementos 🚶, utilizando la estructura de control `for`:
 
 ```python
 def imprimir_cada_elemento(elementos):
@@ -315,7 +315,7 @@ def imprimir_cada_elemento(elementos):
 
 Esta estructura de control nos permitirá...
 
-> ...no, mejor no te contamos qué hace exactamente `for` :smiling_imp:. Descubrilo probando el **procedimiento** `imprimir_cada_elemento` en la consola:
+> ...no, mejor no te contamos qué hace exactamente `for` 😈. Descubrilo probando el **procedimiento** `imprimir_cada_elemento` en la consola:
 >
 > ```python
 > >>> imprimir_cada_elemento(["Violeta", "Mercedes", "Natalia", "Charo", "María Elena"])
@@ -334,7 +334,7 @@ Esta estructura de control nos permitirá...
 No olvides que los procedimientos no devuelven nada. Esto significa que ni `print` ni `imprimir_cada_elemento` están retornando valores, sino que sólo los están imprimiendo.
 
 
-Ah, ¿y qué hace `range`? También te lo dejamos a vos para que lo descubras :innocent:
+Ah, ¿y qué hace `range`? También te lo dejamos a vos para que lo descubras 😇
 
 
 
@@ -361,14 +361,14 @@ True
 
 ¡Acaban de pasar varias cosas! Primero, han entrado en escena los _rangos_, que son otro tipo de dato de Python que representa una secuencia de números, que puede ser:
 
-* continua, como en `range(1, 10)`, que no es nada más y nada menos que la secuencia de los números del `1` al `9` (sí, el último no entra :exclamation:)
+* continua, como en `range(1, 10)`, que no es nada más y nada menos que la secuencia de los números del `1` al `9` (sí, el último no entra ❗)
 * con saltos, como en `range(0, 10, 3)`, que son los números del `0` al `9` dando saltos de a 3: `0`, `3`, `6`, `9`
 
 Por otro lado, acabamos de ver también que el `for ... in` nos permite "visitar" a cada elemento de una lista, string o rango de números, y hacer algo con éste. Para ello, esta estructura tiene tres partes:
 
  1. `in` nos permite especificar qué secuencia de elementos vamos a recorrer;
  2. `for` nos permite elegir un nombre con el que nos referiremos a cada elemento de la secuencia;
- 3. y después del `:` tendremos una o más acciones que ejecutaremos al visitar cada elemento. :warning: ¡Cuidado! Tienen que estar tabuladas respecto de la línea del `for`
+ 3. y después del `:` tendremos una o más acciones que ejecutaremos al visitar cada elemento. ⚠️ ¡Cuidado! Tienen que estar tabuladas respecto de la línea del `for`
 
 
 En este caso, en `imprimir_cada_elemento` elegimos:
@@ -378,7 +378,7 @@ En este caso, en `imprimir_cada_elemento` elegimos:
  3. imprimir cada uno de esos elementos usando `print`.
 
 
-Muy interesante, pero no parece que hayamos hecho nada muy útil :confused:. ¿Podremos hacer cosas más que sólo mostrar elementos?
+Muy interesante, pero no parece que hayamos hecho nada muy útil 😕. ¿Podremos hacer cosas más que sólo mostrar elementos?
 
 
 
@@ -398,7 +398,7 @@ def operacion_misteriosa(elementos):
 
 ¿Qué hace? ¿Qué devuelve? ¿Te recuerda a algo conocido? ¿Tiene algo que llama la atención?
 
-> :dizzy_face: ¡Muchas preguntas! ¡Marcá todas las opciones que creas correctas!
+> 😵 ¡Muchas preguntas! ¡Marcá todas las opciones que creas correctas!
 
 
 
@@ -406,7 +406,7 @@ def operacion_misteriosa(elementos):
 
 ### Pistas
 
-:bulb: Recordá que `cantidad += 1` es lo mismo que escribir `cantidad = cantidad + 1`. En otras palabras, estamos _actualizando_ la variable local `cantidad`, incrementádola de a uno en uno.
+💡 Recordá que `cantidad += 1` es lo mismo que escribir `cantidad = cantidad + 1`. En otras palabras, estamos _actualizando_ la variable local `cantidad`, incrementádola de a uno en uno.
 
 
 
@@ -421,7 +421,7 @@ def operacion_misteriosa(elementos):
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☑️ `operacion_misteriosa` es una función, porque devuelve algo
 1. ☒ `operacion_misteriosa` es un procedimiento, porque no devuelve nada
@@ -435,9 +435,9 @@ def operacion_misteriosa(elementos):
 
 ### Para pensar
 
-`operacion_misteriosa` hace exactamente lo mismo que la función `len`: cuenta la cantidad de elementos en una secuencia :smile:. Además empieza a darnos una idea de lo poderoso que es combinar _variables locales_ con la estructura `for`.
+`operacion_misteriosa` hace exactamente lo mismo que la función `len`: cuenta la cantidad de elementos en una secuencia 😄. Además empieza a darnos una idea de lo poderoso que es combinar _variables locales_ con la estructura `for`.
 
-Y eso que aún no usamos realmente a cada `elemento`. :face_with_hand_over_mouth:
+Y eso que aún no usamos realmente a cada `elemento`. 🤭
 
 
 ## 7. Todo suma
@@ -521,15 +521,15 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Bien! :clap: Si bien la función `productoria` no existe en Python, sí existe la función `sum` que calcula una sumatoria tal como vimos acá.
+¡Bien! 👏 Si bien la función `productoria` no existe en Python, sí existe la función `sum` que calcula una sumatoria tal como vimos acá.
 
 Lo que tienen estas dos funciones en común (y casi todas las que veremos a continuación) es que se basan en la estructura de un _acumulador_: una variable local que **inicializamos con un valor de base**, y cada vez que visitemos un elemento, **la actualizaremos**. Y al final, **retornaremos ese resultado acumulado**.
 
 ## 8. Todos los días un poco
 
-_¡Pero el `for` no se trata sólo de números! Por ejemplo también podríamos utilizarlo para acumular un resultado booleano._ :open_mouth:
+_¡Pero el `for` no se trata sólo de números! Por ejemplo también podríamos utilizarlo para acumular un resultado booleano._ 😮
 
-Agus quiere saber si en alguna de sus últimas marcas de natacion :person_swimming: superó su objetivo personal de 3 minutos:
+Agus quiere saber si en alguna de sus últimas marcas de natacion 🏊 superó su objetivo personal de 3 minutos:
 
 ```python
 >>> alguna_vez_supero_objetivo([3.2, 3.4, 3.01, 3.08])
@@ -554,7 +554,7 @@ def alguna_vez_supero_objetivo(duraciones):
 Como vemos, acá la variable local que estamos usando de _acumulador_ es booleana, y en cada _iteración_ (es decir, cada vez que visitamos una `duracion`) actualizaremos su valor, para saber si esta `duracion` o alguna de las anteriores fue menor a 3.
 
 
-> ¡Ahora te toca a vos! Dani tampoco quiere perder la práctica diaria de fútbol :soccer: y necesita una función `todos_los_dias_un_poco` que reciba una lista con cuántos minutos practicó cada cada día, y retorne si su práctica diaria fue siempre mayor a 30 minutos:
+> ¡Ahora te toca a vos! Dani tampoco quiere perder la práctica diaria de fútbol ⚽ y necesita una función `todos_los_dias_un_poco` que reciba una lista con cuántos minutos practicó cada cada día, y retorne si su práctica diaria fue siempre mayor a 30 minutos:
 >
 >
 > ```python
@@ -650,9 +650,9 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Pistas
 
-:bulb: Quizás, para evitar que te sobren separadores al principio o al final, te convenga extaer segmentos como vimos al inicio de la lección.
+💡 Quizás, para evitar que te sobren separadores al principio o al final, te convenga extaer segmentos como vimos al inicio de la lección.
 
-Por otro lado, para hacer las cosas un poco más fáciles, no es necesario que la nueva versión de `juntar` funcione para la lista vacía :relieved:. Pero si lo hace, ¡mucho mejor :sunglasses:!
+Por otro lado, para hacer las cosas un poco más fáciles, no es necesario que la nueva versión de `juntar` funcione para la lista vacía 😌. Pero si lo hace, ¡mucho mejor 🕶️!
 
 
 
@@ -675,7 +675,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Bien! Esta versión final de nuestra función `juntar` también existe en Python, y se llama `str.join` :nerd:
+¡Bien! Esta versión final de nuestra función `juntar` también existe en Python, y se llama `str.join` 🤓
 
 ## 11. La fama es puro cuento
 
@@ -725,7 +725,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ## 12. ¿Dónde están las llaves?
 
-Estabamos por proponerte jugar a un conocido juego que consiste en encontrar a un personaje de pulóver blanco y rojo, pero por problemas de copyright vamos a hacer una versión de bajo presupuesto :copyright:: _¿Dónde están las llaves?_
+Estabamos por proponerte jugar a un conocido juego que consiste en encontrar a un personaje de pulóver blanco y rojo, pero por problemas de copyright vamos a hacer una versión de bajo presupuesto ©️: _¿Dónde están las llaves?_
 
 > Usando lo visto en esta lección, definí la función `donde_estan_las_llaves` que tome un string con emojis y nos diga en qué posición están las llaves, contando desde `1`:
 >
@@ -774,6 +774,6 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 En esta guía aprendiste algo muy importante: cómo hacer que la computadora repita tareas, usando la estructura de control `for`. Además, conociste los segmentos (_slices_), que nos permiten extrar rebanadas de listas y strings, los y rangos, que nos permiten generar números enteros entre otros dos. Y todo esto lo combinamos con el poder de las listas, para agrupar elementos y hacer tareas repetitivas con todos ellos.
 
-Este caldero de conocimientos ya tiene todos los ingredientes de la pócima de la programación... :woman_mage::man_mage:
+Este caldero de conocimientos ya tiene todos los ingredientes de la pócima de la programación... 🧙‍♀️🧙‍♂️
 
-...pero no tan rápido, ¡aún falta uno! :crystal_ball: Acompañanos a la siguiente lección para revelar el misterio de _los diccionarios_.
+...pero no tan rápido, ¡aún falta uno! 🔮 Acompañanos a la siguiente lección para revelar el misterio de _los diccionarios_.

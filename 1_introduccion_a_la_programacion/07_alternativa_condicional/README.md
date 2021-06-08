@@ -11,7 +11,7 @@ Pero en esta lección nos introduciremos en el mundo de lo desconocido, donde la
 
 ## 1. Empezando el día
 
-Acaba de empezar el día :sunrise: y ya tenemos que hacer una nueva función :sleeping:.
+Acaba de empezar el día 🌅 y ya tenemos que hacer una nueva función 😴.
 
 > Definí la función `saludar_a` que tome un nombre y salude a la persona con un clásico _Buenos días_:
 >
@@ -39,11 +39,11 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Buenos días a vos también! Hmm...¿o serán buenas noches? :full_moon:
+¡Buenos días a vos también! Hmm...¿o serán buenas noches? 🌕
 
 ## 2. Hora de tomar una decisión
 
-En realidad no siempre saludamos con _buenos días_: por ejemplo, pasadas ciertas horas decimos _buenas noches_. :night_with_stars:
+En realidad no siempre saludamos con _buenos días_: por ejemplo, pasadas ciertas horas decimos _buenas noches_. 🌃
 
 Por eso, ahora nos gustaría modificar nuestra función `saludar_a` para que tome un parámetro adicional, `horario`, y retorne un saludo diferente según éste:
 
@@ -64,12 +64,12 @@ def saludar_a(quien, horario):
     return "Buenas noches " + quien
 ```
 
-> :hourglass_flowing_sand: Tomate uno minutos para leer este `if` e intentar entender qué está pasando acá. Y después probá en la consola lo siguiente:
+> ⏳ Tomate uno minutos para leer este `if` e intentar entender qué está pasando acá. Y después probá en la consola lo siguiente:
 >
 >  1. saludá a `"Juli"` a las `18`
 >  2. saludá a `"Pun Pun"` a las `19`
 >
-> ¿Sucede lo que esperabas? :thinking:
+> ¿Sucede lo que esperabas? 🤔
 
 
 
@@ -102,14 +102,14 @@ En programación decimos que el `if` es _una estructura de control_ porque permi
 Por eso es que:
 
 * cuando saludamos a Juli a las 18 se ejecuta `return "Buenos días " + quien`;
-* pero cuando saludamos a Pun Pun a las 19 horas (ojo :eye:, 19 **no es menor a** 19) se ejecuta `"Buenas noches " + quien`.
+* pero cuando saludamos a Pun Pun a las 19 horas (ojo 👁️, 19 **no es menor a** 19) se ejecuta `"Buenas noches " + quien`.
 
 
 
 
 ## 3. Esto es lo máximo
 
-_Bueno, quizás no sea para taaaanto, pero sí, el `if` es muy útil_  :stuck_out_tongue_closed_eyes:
+_Bueno, quizás no sea para taaaanto, pero sí, el `if` es muy útil_  😝
 
 Veamos otro ejemplo...
 
@@ -128,7 +128,7 @@ def valor_absoluto(numero):
  2. luego está _la acción_ del `if`, que retornará lo que queremos en caso de que la condición anterior sea **verdadera**;
  3. por último contamos con  _la acción_ del `else`, que retornará lo que queremos en caso de que la condición anterior sea **falsa**.
 
-Además, a cada una de estas acciones también se las conoce como _ramas_ :deciduous_tree:, porque ramifican el flujo de ejecución, introduciendo en nuestro programa caminios alternativos. Ah, y algo no menor: las tabulaciones `↹` en cada rama son necesarias para que todo ande. :sweat_smile:
+Además, a cada una de estas acciones también se las conoce como _ramas_ 🌳, porque ramifican el flujo de ejecución, introduciendo en nuestro programa caminios alternativos. Ah, y algo no menor: las tabulaciones `↹` en cada rama son necesarias para que todo ande. 😅
 
 > ¡Escribamos nuestro primer `if`! Definí una función `maximo`, que funcione como `max` (¡no vale usarla!) y devuelva el máximo entre dos números:
 >
@@ -162,13 +162,13 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Felicitaciones! Este es un gran paso hacia adelante :footprints:
+¡Felicitaciones! Este es un gran paso hacia adelante 👣
 
-A continuación practicaremos un poco lo aprendido para recorrer con más seguridad nuestros nuevos (y alternativos :stuck_out_tongue:) caminos. ¡Acompañanos!
+A continuación practicaremos un poco lo aprendido para recorrer con más seguridad nuestros nuevos (y alternativos 😛) caminos. ¡Acompañanos!
 
 ## 4. Cara o ceca
 
-Hay veces en las que tenemos difíciles decisiones que tomar en nuestras vidas _(como por ejemplo, si comer pizzas :pizza: o empanadas  :dumpling:)_, y no tenemos más remedio que dejarlas libradas a la suerte.
+Hay veces en las que tenemos difíciles decisiones que tomar en nuestras vidas _(como por ejemplo, si comer pizzas 🍕 o empanadas  🥟)_, y no tenemos más remedio que dejarlas libradas a la suerte.
 
 Es allí que tomamos una moneda y decimos: _si sale cara, comemos pizzas, si no, empanadas_.
 
@@ -201,7 +201,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ### Solución posible
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def decision_con_moneda(lado, opcion1, opcion2):
@@ -237,7 +237,7 @@ def es_mayor_de_edad(edad):
   return edad >= 18
 ```
 
-Mucho más simple, ¿no? :wink:
+Mucho más simple, ¿no? 😉
 
 > Para Ema un número es de la suerte si:
 >
@@ -252,7 +252,7 @@ Mucho más simple, ¿no? :wink:
 
 ### Pistas
 
-Los números positivos son los mayores a 0. :wink:
+Los números positivos son los mayores a 0. 😉
 
 
 
@@ -291,9 +291,9 @@ False
 
 ### Para pensar
 
-En general, como regla práctica, si tenés ifs que devuelven `True`s o `False`s, probablemente lo estás haciendo mal :cop:. Y si bien _funcionará_, habrás escrito código innecesariamente complejo y/o extenso.
+En general, como regla práctica, si tenés ifs que devuelven `True`s o `False`s, probablemente lo estás haciendo mal 👮. Y si bien _funcionará_, habrás escrito código innecesariamente complejo y/o extenso.
 
-Recordá: **¡menos código, más felicidad!** :grin:
+Recordá: **¡menos código, más felicidad!** 😁
 
 
 ## 6. Cartelitos
@@ -319,7 +319,7 @@ Para eso, tenemos que juntar su nombre, su apellido, y su título (_dr._, _dra._
 
 ### Pistas
 
-Tené en cuenta que los espacios para separar las palabras también son caracteres. ¡No te olvides de incluirlos al armar los cartelitos! :wink:
+Tené en cuenta que los espacios para separar las palabras también son caracteres. ¡No te olvides de incluirlos al armar los cartelitos! 😉
 
 Por ejemplo:
 
@@ -345,7 +345,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ### Solución posible
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def escribir_cartelito(titulo, nombre, apellido):
@@ -357,7 +357,7 @@ def escribir_cartelito(titulo, nombre, apellido):
 
 ## 7. Más Cartelitos
 
-Ah, ¡pero no tan rápido! Algunas veces en nuestro cartelito :name_badge: sólo queremos el título y el apellido, sin el nombre.
+Ah, ¡pero no tan rápido! Algunas veces en nuestro cartelito 📛 sólo queremos el título y el apellido, sin el nombre.
 
 Por eso ahora nos toca mejorar nuestra función de forma que reciba 4 párámetros:
 
@@ -397,9 +397,9 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Genial! :clap:
+¡Genial! 👏
 
-Es importante recordar que es recomendable usar nombres expresivos en nuestras funciones y parámetros. No es lo mismo decir `string1`, `string2`, `string3`, `booleano` que `titulo`, `nombre`, `apellido`, `quiere_cartel_corto`. :grimacing:
+Es importante recordar que es recomendable usar nombres expresivos en nuestras funciones y parámetros. No es lo mismo decir `string1`, `string2`, `string3`, `booleano` que `titulo`, `nombre`, `apellido`, `quiere_cartel_corto`. 😬
 
 ## 8. Cartelitos óptimos
 
@@ -420,7 +420,7 @@ Ahora que ya podemos escribir nuestros cartelitos identificatorios grandes y chi
 
 ### Pistas
 
-Recordá que el largo de un string lo podés saber con la función `len` y  que tenés `escribir_cartelito` definida en la Biblioteca. No tenés que definirla, solo invocarla. :wink:
+Recordá que el largo de un string lo podés saber con la función `len` y  que tenés `escribir_cartelito` definida en la Biblioteca. No tenés que definirla, solo invocarla. 😉
 
 ### Autoevaluación
 
@@ -446,7 +446,7 @@ Ahora que ya vimos varios `if`s, volvamos a la función con la que iniciamos la 
 "Buenos días Ivi"
 ```
 
-¿No es un poco tarde para decir _buen día_? :dizzy_face: ¿No sería mejor que `saludar_a` hiciera lo siguiente?
+¿No es un poco tarde para decir _buen día_? 😵 ¿No sería mejor que `saludar_a` hiciera lo siguiente?
 
  1. Si son menos de las 12, que diga _Buenos días_;
  2. **en caso contrario** y si son menos de las 19, que diga _Buenas tardes_;
@@ -466,7 +466,7 @@ def saludar_a(quien, horario):
 
 Como vemos, el `elif` nos permite tomar una decisión cuando la condición anterior no se cumplió, y tal como su nombre lo sugiere, funciona como la combinación de un `if` justo después de un `else`.
 
-> :warning: ¿Esto significa que las condiciones se evalúan **en orden**? Esta definición alternativa...
+> ⚠️ ¿Esto significa que las condiciones se evalúan **en orden**? Esta definición alternativa...
 >
 > ```python
 > def saludar_a_recargado(quien, horario):
@@ -517,9 +517,9 @@ True
 
 ### Para pensar
 
-Como vemos, el **orden importa** :exploding_head:.
+Como vemos, el **orden importa** 🤯.
 
-La condición de `hora < 12` incluye a la condición de `hora < 19`, o en otras palabras, si la segunda se cumple, la primera también. Cuando sucede esto tenemos que tener cuidado y ordenar adecuadamente las condiciones :nerd:
+La condición de `hora < 12` incluye a la condición de `hora < 19`, o en otras palabras, si la segunda se cumple, la primera también. Cuando sucede esto tenemos que tener cuidado y ordenar adecuadamente las condiciones 🤓
 
 ## 10. ¿De qué signo sos?
 
@@ -535,7 +535,7 @@ Necesitamos una función `signo`, que dado un número nos devuelva:
 
 ### Pistas
 
-:eyes: Algunas cosas a tener en cuenta:
+👀 Algunas cosas a tener en cuenta:
 
 * Un número es positivo cuando es **mayor a 0** y negativo cuando es **menor a 0**.
 * La función `signo` debe devolver los números `1`, `-1` y `0`, no los strings `"1"`, `"-1"` y `"0"`
@@ -617,7 +617,7 @@ Queremos saber el valor de las [cartas de truco](https://es.wikipedia.org/wiki/T
 > 3
 > ```
 >
-> :memo: Asumí que nunca te vamos a pasar cartas con 8 o 9 como valor.
+> 📝 Asumí que nunca te vamos a pasar cartas con 8 o 9 como valor.
 
 
 
@@ -644,7 +644,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ### Solución posible
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def valor_envido(numero):
@@ -676,7 +676,7 @@ Bueno, ehm, no, pará, primero queremos calcular cuántos puntos de envido suma 
 
 ### Pistas
 
-Para el caso en que las cartas sean de distinto palo te va a servir el ya conocido `max`. :sunglasses:
+Para el caso en que las cartas sean de distinto palo te va a servir el ya conocido `max`. 🕶️
 
 ### Autoevaluación
 
@@ -696,7 +696,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ### Solución posible
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def puntos_de_envido_totales(numero_1, palo_1, numero_2, palo_2):
@@ -727,7 +727,7 @@ Cuando se juega al truco, los equipos oponentes alternativamente pueden subir la
 > 3
 > ```
 >
-> :warning: Asumí que sólo te van a pasar como argumento un string que represente un canto de truco. Por ejemplo, no vamos a probar la función para el caso `valor_canto_truco("zaraza")`
+> ⚠️ Asumí que sólo te van a pasar como argumento un string que represente un canto de truco. Por ejemplo, no vamos a probar la función para el caso `valor_canto_truco("zaraza")`
 
 
 ### Autoevaluación

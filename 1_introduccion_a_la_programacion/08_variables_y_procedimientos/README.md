@@ -3,13 +3,13 @@
 
 # Variables y Procedimientos
 
-Cuando programamos, ¿siempre vamos a querer retornar algo? ¿Habrá alguna especie de función que no retorne? Y si no retorna, ¿es una función? :thinking:
+Cuando programamos, ¿siempre vamos a querer retornar algo? ¿Habrá alguna especie de función que no retorne? Y si no retorna, ¿es una función? 🤔
 
-En esta lección vamos a conocer a las variables y los procedimientos, dos herramientas que nos van a pemitir solucionar nuevos tipos problemas y hacer programas más complejos. :sunglasses:
+En esta lección vamos a conocer a las variables y los procedimientos, dos herramientas que nos van a pemitir solucionar nuevos tipos problemas y hacer programas más complejos. 🕶️
 
 ## 1. El círculo de la vida
 
-En programación buscamos resolver nuestros problemas usando… programas :stuck_out_tongue_winking_eye:. Y entre los problemas que casi nadie quiere resolver están los matemáticos. Sobre todo aquellos en los que aparecen números, como pi, con infinitos decimales imposibles de recordar.  :head_bandage:
+En programación buscamos resolver nuestros problemas usando… programas 😜. Y entre los problemas que casi nadie quiere resolver están los matemáticos. Sobre todo aquellos en los que aparecen números, como pi, con infinitos decimales imposibles de recordar.  🤕
 
 > Considerando al número pi igual a `3.14159265358979` (no es infinito pero lo suficientemente preciso para nuestros cáculos),
 > definí las funciones `perimetro_circulo` y `area_circulo` que reciben el radio de un círculo y nos devuelven su perímetro y su área.
@@ -46,11 +46,11 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-Excelente, la precisión de nuestros cálculos es innegable :face_with_monocle:, pero tuvimos que escribir un número larguísimo. Pensemos que pi aparece en un montón de fórmulas matemáticas. ¿Es necesario escribir este número cada vez?¿No podemos hacer algo más cómodo? :thinking:
+Excelente, la precisión de nuestros cálculos es innegable 🧐, pero tuvimos que escribir un número larguísimo. Pensemos que pi aparece en un montón de fórmulas matemáticas. ¿Es necesario escribir este número cada vez?¿No podemos hacer algo más cómodo? 🤔
 
 ## 2. PI-enso que así es más fácil
 
-Por suerte existe una herramienta que va a simplificar nuestra tarea de ahora en adelante: las _variables_. :grin:
+Por suerte existe una herramienta que va a simplificar nuestra tarea de ahora en adelante: las _variables_. 😁
 
 Las variables nos permiten nombrar y reutilizar _valores_. Similar a cómo las funciones nos permiten dar nombres y reutilizar soluciones a problemas más pequeños. Por ejemplo, si hacemos...
 
@@ -58,7 +58,7 @@ Las variables nos permiten nombrar y reutilizar _valores_. Similar a cómo las f
 primer_mes = "enero"
 ```
 
-...estamos _asignándole_ el valor `"enero"` a la variable `primer_mes`. En criollo, estamos dándole ese valor a la variable. :relieved:
+...estamos _asignándole_ el valor `"enero"` a la variable `primer_mes`. En criollo, estamos dándole ese valor a la variable. 😌
 
 > Cambiá los lugares donde aparece `3.14159265358979` por la variable `pi` en las funciones que tenemos definidas.
 
@@ -87,11 +87,11 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Excelente! Gracias a la variable `pi` no tuvimos que escribir el número cada vez que teníamos que usarlo y ¡nuestro programa quedó mucho más entendible! :raised_hands:
+¡Excelente! Gracias a la variable `pi` no tuvimos que escribir el número cada vez que teníamos que usarlo y ¡nuestro programa quedó mucho más entendible! 🙌
 
 ## 3. Esto no tiene valor
 
-Ya que vas entendiendo cómo se **asignan** las variables, te traemos algo para pensar: ¿qué pasa si intento **usar** una variable a la que nunca le asigné un valor? :scream:
+Ya que vas entendiendo cómo se **asignan** las variables, te traemos algo para pensar: ¿qué pasa si intento **usar** una variable a la que nunca le asigné un valor? 😱
 
 > ¡Averigüémoslo! Tenemos esta función definida:
 >
@@ -119,11 +119,11 @@ def suma_sin_sentido():
 
 ### Para pensar
 
-Entonces, ¿es necesario darle valor a nuestras variables antes de usarlas? :thinking:
+Entonces, ¿es necesario darle valor a nuestras variables antes de usarlas? 🤔
 
 ## 4. Todo tiene un inicio
 
-Para evitar errores :x: , antes de utilizar una variable tenemos que darle un valor inicial, es decir, _inicializarla_.
+Para evitar errores ❌ , antes de utilizar una variable tenemos que darle un valor inicial, es decir, _inicializarla_.
 
 > Definí una función `ascensor_sobrecargado`, que toma una cantidad de personas y dice si entre todas superan la carga máxima:
 >
@@ -164,9 +164,9 @@ True
 
 ### Para pensar
 
-¡Excelente! :clap:
+¡Excelente! 👏
 
-Con lo que venimos haciendo cualquier función puede utilizar a las variables, pero ¿qué pasa si no queremos que eso pase? :thinking:
+Con lo que venimos haciendo cualquier función puede utilizar a las variables, pero ¿qué pasa si no queremos que eso pase? 🤔
 
 ## 5. Jugando de local
 
@@ -183,13 +183,13 @@ def el_mas_largo_sin_espacios(un_string, otro_string):
     return otro_string_sin_espacios
 ```
 
-Las variables inicializadas dentro de un `def`, conocidas como _variables locales_, no presentan mayor misterio. Sin embargo, hay que tener un particular cuidado :warning: ya que sólo se pueden utilizar dentro del `def` en cuestión. Si quiero referenciarla desde un programa...
+Las variables inicializadas dentro de un `def`, conocidas como _variables locales_, no presentan mayor misterio. Sin embargo, hay que tener un particular cuidado ⚠️ ya que sólo se pueden utilizar dentro del `def` en cuestión. Si quiero referenciarla desde un programa...
 
 ```python
 pregunta = "¿" + un_string_sin_espacios + "?"
 ```
 
-...¡boom! ¡se romperá! :collision:
+...¡boom! ¡se romperá! 💥
 
 Sin embargo, las variables inicializadas directamente en el programa, conocidas como _variables globales_, pueden ser leídas desde cualquier `def`. Por ejemplo:
 
@@ -225,7 +225,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Excelente! :raised_hands:
+¡Excelente! 🙌
 
 Para resumir lo visto:
 
@@ -236,9 +236,9 @@ Si bien ahora conocemos los dos tipos de variables no abusemos de su uso. Record
 
 ## 6. Variemos un poco
 
-_Todo muy lindo hasta acá, pero ¿por qué se llaman variables si no varian?_ :face_with_raised_eyebrow:
+_Todo muy lindo hasta acá, pero ¿por qué se llaman variables si no varian?_ 🤨
 
-Bueno, es que en realidad sí pueden variar :sunglasses: . Veamos un ejemplo:
+Bueno, es que en realidad sí pueden variar 🕶️ . Veamos un ejemplo:
 
 ```python
 # inicializamos la variable para que valga 0...
@@ -273,7 +273,7 @@ def pasar_un_dia_normal():
 > 4. `pasar_un_dia_normal()`
 > 5. `dias_sin_accidentes_con_velocirraptores`
 
-> Podés usar las flechas de tu teclado para navegar entre comandos ejecutados previamente. :arrow_up_small: :arrow_down_small:
+> Podés usar las flechas de tu teclado para navegar entre comandos ejecutados previamente. 🔼 🔽
 
 
 
@@ -295,14 +295,14 @@ def pasar_un_dia_normal():
 
 ### Para pensar
 
-¡Varió! O mutó como solemos decir. Pero tené en cuenta que poder hacerlo, no significa querer hacerlo. No siempre vamos a querer modificar el valor de nuestras variables. :relieved:
+¡Varió! O mutó como solemos decir. Pero tené en cuenta que poder hacerlo, no significa querer hacerlo. No siempre vamos a querer modificar el valor de nuestras variables. 😌
 
-Si te preguntas por qué es necesario anteponer `global`, tené en cuenta que las variables globales pueden ser accedidas por cualquier función. Es la manera que tenemos de asegurar que sabemos eso y que aún así queremos modificar nuestra variable. :relieved:
+Si te preguntas por qué es necesario anteponer `global`, tené en cuenta que las variables globales pueden ser accedidas por cualquier función. Es la manera que tenemos de asegurar que sabemos eso y que aún así queremos modificar nuestra variable. 😌
 
 
 ## 7. Procedemos a lo siguiente
 
-¿Notaste algo distinto en la "función" del ejercicio anterior :mag:? Veámosla nuevamente:
+¿Notaste algo distinto en la "función" del ejercicio anterior 🔍? Veámosla nuevamente:
 
 ```python
 def pasar_un_dia_normal():
@@ -310,14 +310,14 @@ def pasar_un_dia_normal():
   dias_sin_accidentes_con_velocirraptores = dias_sin_accidentes_con_velocirraptores + 1
 ```
 
-¡No tiene `return`! Pero, ¿las funciones no tienen todas un `return`? :face_with_monocle:
+¡No tiene `return`! Pero, ¿las funciones no tienen todas un `return`? 🧐
 
-Correcto, es que en realidad `pasar_un_dia_normal()` no es una función, ¡es un _procedimiento_! :open_mouth: Si bien tanto funciones como procedimientos se definen de la misma manera y ambos nos ayudan a simplificar nuestras tareas, tienen algunas diferencias:
+Correcto, es que en realidad `pasar_un_dia_normal()` no es una función, ¡es un _procedimiento_! 😮 Si bien tanto funciones como procedimientos se definen de la misma manera y ambos nos ayudan a simplificar nuestras tareas, tienen algunas diferencias:
 
 * las funciones **retornan un valor y no tienen efecto**, es decir, no cambian nuestras variables;
 * los procedimientos **no retornan nada y tienen un efecto** al ser invocados.
 
-> Ahora que sabes la diferencia, definí un procedimiento `aumentar_fortuna` que duplique el valor de la variable global `pesos_en_mi_billetera`. No inicialices la variable, porque ya lo hicimos por vos (con una cantidad secreta de dinero :wink:).
+> Ahora que sabes la diferencia, definí un procedimiento `aumentar_fortuna` que duplique el valor de la variable global `pesos_en_mi_billetera`. No inicialices la variable, porque ya lo hicimos por vos (con una cantidad secreta de dinero 😉).
 
 
 
@@ -351,11 +351,11 @@ x *= y # equivalente a x = x * y
 x -= y # equivalente a x = x - y
 ```
 
-¡Usalos cuando quieras! :wink:
+¡Usalos cuando quieras! 😉
 
 ## 8. ¡Que el último apague la luz!
 
-Ahora que conocimos a los procedimientos podemos modelar casos de alternancia utilizando `not`. Por ejemplo, prender y apagar una luz :bulb::
+Ahora que conocimos a los procedimientos podemos modelar casos de alternancia utilizando `not`. Por ejemplo, prender y apagar una luz 💡:
 
 ```python
 luz_prendida = False
@@ -367,7 +367,7 @@ def apretar_interruptor():
 
 ¡Ahora te toca a vos!
 
-> Definí el procedimiento `usar_cierre` para que podamos abrir y cerrar nuestra mochila. :school_satchel:
+> Definí el procedimiento `usar_cierre` para que podamos abrir y cerrar nuestra mochila. 🎒
 
 
 
@@ -391,7 +391,7 @@ True
 
 ## 9. Tomate un mate
 
-Con todo lo que aprendimos hasta acá estaría bueno cortar para tomar unos mates, ¿no? :mate: Mejor aún, ¡programemos los mates! :sweat:
+Con todo lo que aprendimos hasta acá estaría bueno cortar para tomar unos mates, ¿no? 🧉 Mejor aún, ¡programemos los mates! 😓
 
 Sabiendo que al cebar un mate la cantidad de agua del termo disminuye...
 
@@ -418,7 +418,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ## 10. Se enfrió el agua
 
-Sin importar cuan bueno sea el termo, algunas veces el agua simplemente se enfría. :confounded:
+Sin importar cuan bueno sea el termo, algunas veces el agua simplemente se enfría. 😖
 
 > Definí los procedimientos:
 
@@ -444,7 +444,7 @@ self.assertEqual(agua_del_termo, 1000)
 
 ## 11. No creo tomar mucho más
 
-A veces no hace falta llenar tooooodo el termo, con un poco de agua quizás alcanza. :droplet:
+A veces no hace falta llenar tooooodo el termo, con un poco de agua quizás alcanza. 💧
 
 > Definí el procedimiento `cargar_termo` que espere una cantidad de agua como argumento y aumente el `agua_del_termo` en esa cantidad.
 
@@ -469,11 +469,11 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-Todo bien con el termo, pero ¿dónde está el mate? :mate:
+Todo bien con el termo, pero ¿dónde está el mate? 🧉
 
 ## 12. Jaque, el mate
 
-Ya hicimos toda la lógica relacionada con el agua del termo, pero del mate ni noticias. :unamused:
+Ya hicimos toda la lógica relacionada con el agua del termo, pero del mate ni noticias. 😒
 
 > Vamos a modificar un poco el programa que teníamos:
 
@@ -512,13 +512,13 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-Bueno, ya es bastante mate, ¿no? :eyes:
+Bueno, ya es bastante mate, ¿no? 👀
 
-Recordemos que la educación está ante todo. :relieved:
+Recordemos que la educación está ante todo. 😌
 
 ## 13. ¡Gracias!
 
-Es conocimiento popular que cuando no queremos más mate solo basta con decir _Gracias_. :relaxed:
+Es conocimiento popular que cuando no queremos más mate solo basta con decir _Gracias_. ☺️
 
 Para modelar esta lógica vamos a definir el procedimiento `pasar` que no va a hacer nada. Sin embargo, no va a ser un procedimiento vacío sino que va a estar definido de la siguiente manera:
 
@@ -582,11 +582,11 @@ def pasar():
   # Paso
 ```
 
-...dado que los comentarios son ignorados. Sin embargo, `pass` es tenido en cuenta ya que es la representación en código de "no hacer nada". :exploding_head:
+...dado que los comentarios son ignorados. Sin embargo, `pass` es tenido en cuenta ya que es la representación en código de "no hacer nada". 🤯
 
 ## 14. Bajemos el volumen
 
-Mirá el siguiente programa con atención :eyes: :
+Mirá el siguiente programa con atención 👀 :
 
 ```python
 volumen = 40
@@ -620,7 +620,7 @@ def es_volumen_saludable():
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☒ `volumen` es una variable local
 1. ☑️ `volumen` es una variable global
@@ -638,11 +638,11 @@ def es_volumen_saludable():
 
 ### Para pensar
 
-¡Perfecto! :ok_hand:
+¡Perfecto! 👌
 
 A lo largo de esta lección hiciste muchas cosas nuevas:
 
-* conociste los procedimientos en el lenguaje Python, que si bien se definen igual que las funciones son bien distintos; :eyes:
-* utilizaste los dos tipos de variables, locales y globales, y aprendiste sus diferencias. :sunglasses:
+* conociste los procedimientos en el lenguaje Python, que si bien se definen igual que las funciones son bien distintos; 👀
+* utilizaste los dos tipos de variables, locales y globales, y aprendiste sus diferencias. 🕶️
 
-¡Veamos que depara la siguiente lección! :eyes:
+¡Veamos que depara la siguiente lección! 👀

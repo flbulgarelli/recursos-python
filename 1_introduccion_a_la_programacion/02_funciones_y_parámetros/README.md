@@ -6,7 +6,7 @@ Si bien ya sabemos usar la consola de Python, con la que podemos dar algunas ór
 
 ## 1. La unión hace la fuerza
 
-Cuando programamos es común que las órdenes que vimos anteriormente no sean suficientes por sí solas para resolver un problema. Pero, ¿hay algo que nos impida _combinarlas_? :thinking: ¡Por supuesto que no! :handshake:
+Cuando programamos es común que las órdenes que vimos anteriormente no sean suficientes por sí solas para resolver un problema. Pero, ¿hay algo que nos impida _combinarlas_? 🤔 ¡Por supuesto que no! 🤝
 
 Por ejemplo, en Python no hay nada que nos diga si dos textos tienen la misma longitud. Pero podemos averiguarlo combinando `len` con `==`:
 
@@ -26,31 +26,31 @@ True
 
 ### Para pensar
 
-¡Lo lograste! Pero, ¿no fue un poco tedioso y repetitivo? :sleeping: Una vez que ya nos dimos cuenta cómo resolver el problema de saber si un string es más largo que otro...
+¡Lo lograste! Pero, ¿no fue un poco tedioso y repetitivo? 😴 Una vez que ya nos dimos cuenta cómo resolver el problema de saber si un string es más largo que otro...
 
 ```python
 >>> len(un_string) > len(otro_string)
 ```
 
-...¿no sería genial si pudiéramos _reutilizar_ esta idea? :recycle:
+...¿no sería genial si pudiéramos _reutilizar_ esta idea? ♻️
 
 
 ## 2. ¡No te repitas!
 
-Combinar operaciones es muy útil, pero tiene el problema de que ahora tenemos que recordar (o pensar :thought_balloon:) como hacerlo cada vez que lo necesitemos. Esto nos puede llevar a equivocarnos...
+Combinar operaciones es muy útil, pero tiene el problema de que ahora tenemos que recordar (o pensar 💭) como hacerlo cada vez que lo necesitemos. Esto nos puede llevar a equivocarnos...
 
 ```python
 # queremos saber si el primero es mas largo que el segundo
 >>> len("Santiago del Estero") < len("Misiones")
 False # Ups ¡era para el otro lado!
 ```
-...o simplemente a aburrirnos por hacer una y otra vez lo mismo :rolling_eyes:. ¿No sería mucho mejor si pudieramos escribir directamente así?:
+...o simplemente a aburrirnos por hacer una y otra vez lo mismo 🙄. ¿No sería mucho mejor si pudieramos escribir directamente así?:
 
 ```python
 >>> es_mas_largo_que("Santiago del Estero", "Misiones")
 ```
 
-> :octagonal_sign: ¡Momento! ¿Esta _consulta_ que acabamos de mostrar funcionará?
+> 🛑 ¡Momento! ¿Esta _consulta_ que acabamos de mostrar funcionará?
 >
 > Para averiguarlo, pegá el siguiente código en la consola...
 >
@@ -72,14 +72,14 @@ Develemos el misterio...
 
 Sí, Python nos da operaciones que nos permites resolver diferentes tareas y además nos permite combinarlas, pero el verdadero poder de la programación es que también podemos crear nuestras propias operaciones.
 
-Y para hacer esto, ¡démosle entonces la bienvenida a _las funciones_ :confetti_ball:! Nuestras nuevas amigas nos permitirán "enseñarle"  a la computadora a realizar una tarea que originalmente no estaba incluida en el lenguaje mediante. ¿Cómo? _Escribiendo una definición_ como la siguiente **una sola vez** :one:...
+Y para hacer esto, ¡démosle entonces la bienvenida a _las funciones_ 🎊! Nuestras nuevas amigas nos permitirán "enseñarle"  a la computadora a realizar una tarea que originalmente no estaba incluida en el lenguaje mediante. ¿Cómo? _Escribiendo una definición_ como la siguiente **una sola vez** 1️⃣...
 
 ```python
 def es_mas_largo_que(un_string, otro_string):
   return len(un_string) > len(otro_string)
 ```
 
-...y luego _invocando_ a esta función **cuantas veces queramos** :1234::
+...y luego _invocando_ a esta función **cuantas veces queramos** 🔢:
 
 ```python
 >>> es_mas_largo_que("Valle de Uco", "Cerro de los Siete Colores")
@@ -88,7 +88,7 @@ False
 False # las dos veces devuelve lo mismo
 ```
 
-¡Y no sólo eso! Cada vez que la invoquemos podremos hacerlo con _argumentos_ diferentes :open_mouth: :
+¡Y no sólo eso! Cada vez que la invoquemos podremos hacerlo con _argumentos_ diferentes 😮 :
 
 ```python
 >>> es_mas_largo_que("Rosario", "Bahía Blanca")
@@ -122,8 +122,8 @@ Como vemos las funciones tienen un _nombre_ (en este caso `es_mas_largo_que`) qu
 
 Es muy importante que este nombre sea _expresivo_, es decir, que sea claro y refleje la intención de esa función. Por ejemplo, si la función nos dice si una palabra está escrita en mayúsculas:
 
-* :heavy_check_mark: `esta_en_mayusculas` podría ser un buen nombre;
-* :x: `asdf` o `estenmayus` son malos nombres.
+* ✔️ `esta_en_mayusculas` podría ser un buen nombre;
+* ❌ `asdf` o `estenmayus` son malos nombres.
 
 ¿Pero qué es `def` y `return`? ¿Y esos dos puntos? ¡Estudiemos la sintaxis!
 
@@ -148,7 +148,7 @@ False
 
 ¿Se parece la definición de esta función a la anterior? ¿Por qué será?
 
-> :mag: Compará esta nueva definición con la que vimos anteriormente...
+> 🔍 Compará esta nueva definición con la que vimos anteriormente...
 >
 > ```python
 > def es_mas_largo_que(un_string, otro_string):
@@ -168,7 +168,7 @@ False
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☑️ Ambas empiezan con `def` seguido del nombre de la función
 1. ☒ Ambas empiezan con `def` seguido de dos puntos
@@ -182,7 +182,7 @@ False
 
 ### Para pensar
 
-¡Bien! Estas semanejanzas no son casuales: ¡para definir funciones hay que seguir algunas reglas _sintácticas_! :straight_ruler:
+¡Bien! Estas semanejanzas no son casuales: ¡para definir funciones hay que seguir algunas reglas _sintácticas_! 📏
 
 1. La primera línea, también llamada cabecera:
   1. debe arrancar con la palabra reservada `def` (abreviatura de _definir_ en inglés);
@@ -194,14 +194,14 @@ False
   2. la última línea en particular debe empezar además con  `return`, seguido de lo que queremos que devuelva nuestra función.
 
 
-Uff, ¡muchas reglas :tired_face:! No te preocupes, de a poco las iremos dominando. :smile:
+Uff, ¡muchas reglas 😫! No te preocupes, de a poco las iremos dominando. 😄
 
 
 
 
 ## 5. Funciones que no funcionan
 
-¿Y qué pasa si al definir una función no cumplimos la reglas que acabamos de ver :speak_no_evil:? ¡La computadora se rehusará a aprender la tarea que acabamos de enseñarle!
+¿Y qué pasa si al definir una función no cumplimos la reglas que acabamos de ver 🙊? ¡La computadora se rehusará a aprender la tarea que acabamos de enseñarle!
 
 Esto es lo que se conoce como un _error de sintaxis_, que representaremos mediante el símbolo <i class="fas fa-minus-circle text-broken"></i>. Mientras aprendemos a programar nos toparemos con esta clase de errores muchas veces, ¡pero a no desesperar! Si leemos con paciencia y atención nuestro código podremos resolverlo.
 
@@ -217,9 +217,9 @@ Esto es lo que se conoce como un _error de sintaxis_, que representaremos median
 >
 > ...¿están bien escritas? ¡Averigüémoslo!
 >
-> 1. :arrow_forward: Pegá el código en la consola, y fijate qué pasa;
-> 2. :eyes: lee con atención el mensaje que Python te muestra;
-> 3. :tools: corregí los errores de sintaxis y volvé a enviar
+> 1. ▶️ Pegá el código en la consola, y fijate qué pasa;
+> 2. 👀 lee con atención el mensaje que Python te muestra;
+> 3. 🧰 corregí los errores de sintaxis y volvé a enviar
 >
 
 ### Pistas
@@ -265,15 +265,15 @@ Una vez corregido el código, probá las siguientes consultas y verificá que de
 SyntaxError: invalid syntax
 ```
 
-Aunque resulten un poco crípticos al principio, ¡en realidad son textos muy útiles! En general el símbolo `^` está precisamente donde falta algo (por ejemplo los dos puntos `:`) o justo después de algo que está mal escrito. Eso sí, no siempre es perfecto, tampoco le podemos pedir tanto. :face_with_hand_over_mouth:
+Aunque resulten un poco crípticos al principio, ¡en realidad son textos muy útiles! En general el símbolo `^` está precisamente donde falta algo (por ejemplo los dos puntos `:`) o justo después de algo que está mal escrito. Eso sí, no siempre es perfecto, tampoco le podemos pedir tanto. 🤭
 
-Pero ahora que nuestro código anda, te dejamos algo para pensar: ¿Qué devuelve la función `mitad`? ¿Un booleano u otra cosa? ¿Y `suma_longitudes`? Probalo en la consola para sacarte la duda :wink:
+Pero ahora que nuestro código anda, te dejamos algo para pensar: ¿Qué devuelve la función `mitad`? ¿Un booleano u otra cosa? ¿Y `suma_longitudes`? Probalo en la consola para sacarte la duda 😉
 
 ## 6. Funciones con agujeritos
 
-Probablemente habrás notado que las funciones que definimos hasta ahora podían devolver tanto números como booleanos. Es más: **pueden devolver cualquier tipo de dato** :exploding_head:. Pero, ¿qué hay de lo que _entra_ a la función? ¿Cuántos argumentos podemos pasarles? ¿Y qué son exactamente los parámetros?
+Probablemente habrás notado que las funciones que definimos hasta ahora podían devolver tanto números como booleanos. Es más: **pueden devolver cualquier tipo de dato** 🤯. Pero, ¿qué hay de lo que _entra_ a la función? ¿Cuántos argumentos podemos pasarles? ¿Y qué son exactamente los parámetros?
 
-La respuesta es que los parámetros son _...redoble de tambores :drum:..._  ¡pequeños agujeros! :face_with_raised_eyebrow:
+La respuesta es que los parámetros son _...redoble de tambores 🥁..._  ¡pequeños agujeros! 🤨
 
 Por ejemplo, en esta definición estamos _declarando_ **un** parámetro llamado `un_numero`...
 
@@ -318,7 +318,7 @@ Por ejemplo, cuando invocamos `mitad` con el argumento `4`, a través de este "a
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☑️ `suma_longitudes` es una función
 1. ☑️ `suma_longitudes` tiene dos parámetros
@@ -329,7 +329,7 @@ Por ejemplo, cuando invocamos `mitad` con el argumento `4`, a través de este "a
 
 ### Para pensar
 
-¡Exactamente! Todas las opciones son correctas. :ok_hand:
+¡Exactamente! Todas las opciones son correctas. 👌
 
 Una función puede _declarar_ tantos parámetros como necesite en su definición; por cada uno de ellos, deberemos pasar un argumento al invocarla. Lo interesante es que no importa qué argumentos utilicemos, ya que a cada uno lo conoceremos con el nombre de su parámetro. En este ejemplo, si escribimos en la consola...
 
@@ -361,7 +361,7 @@ Sin embargo, si lo invocamos escribiendo...
 
 ¡El momento ha llegado! Ahora escribiremos nuestra primera función desde cero.
 
-Pero a no desesperar :scream:: si algo no sale recordá que podés enviar tantas veces como necesites, siempre podés consultar los ejercicios anteriores. ¡Y la ayuda, claro! :wink:
+Pero a no desesperar 😱: si algo no sale recordá que podés enviar tantas veces como necesites, siempre podés consultar los ejercicios anteriores. ¡Y la ayuda, claro! 😉
 
 
 > Definí la función `es_hora_de_la_verdad`, que tome una hora y nos diga si son las `12` y probala en la consola:
@@ -379,7 +379,7 @@ Pero a no desesperar :scream:: si algo no sale recordá que podés enviar tantas
 >
 > Al terminar, presioná enviar.
 >
-> Ah, ¿y por qué _la hora de la verdad son las 12_? La verdad, ahora no hay un por qué :stuck_out_tongue_winking_eye:
+> Ah, ¿y por qué _la hora de la verdad son las 12_? La verdad, ahora no hay un por qué 😜
 >
 
 
@@ -388,7 +388,7 @@ Pero a no desesperar :scream:: si algo no sale recordá que podés enviar tantas
 
 ### Pistas
 
-Estas son las funciones que definimos hasta ahora. Te pueden servir de inspiración :art:.
+Estas son las funciones que definimos hasta ahora. Te pueden servir de inspiración 🎨.
 
 
 ```python
@@ -426,11 +426,11 @@ True
 
 ### Para pensar
 
-¡Excelente! :tada:
+¡Excelente! 🎉
 
 En esta lección estuvimos hablando de la importancia de la expresividad a la hora de elegir nombres para nuestras funciones ¡Esto también aplica a los parámetros!
 
-Si por ejemplo al parámetro de `hora_de_la_verdad` le pusiste `numero`, está bien. Sin embargo, un mejor nombre sería `hora` o `una_hora`, ya que eso es lo que representa :wink::
+Si por ejemplo al parámetro de `hora_de_la_verdad` le pusiste `numero`, está bien. Sin embargo, un mejor nombre sería `hora` o `una_hora`, ya que eso es lo que representa 😉:
 
 ```python
 def es_hora_de_la_verdad(hora):
@@ -439,7 +439,7 @@ def es_hora_de_la_verdad(hora):
 
 ## 8. Plan Combo 2.0
 
-¿Y podremos combinar estas funciones al igual que hacíamos con los operadores y funciones que ya venían con Python? ¡Por supuesto! :heart_eyes: En otras palabras, _podemos invocar funciones dentro de definiciones_. Por ejemplo:
+¿Y podremos combinar estas funciones al igual que hacíamos con los operadores y funciones que ya venían con Python? ¡Por supuesto! 😍 En otras palabras, _podemos invocar funciones dentro de definiciones_. Por ejemplo:
 
 ```python
 def doble(numero):
@@ -495,7 +495,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ## 9. Libros de la buena memoria
 
-¡Definamos más funciones! :writing_hand: Dani ama el primer dia de cada mes :date:, y por eso definió esta función...
+¡Definamos más funciones! ✍️ Dani ama el primer dia de cada mes 📅, y por eso definió esta función...
 
 ```python
 def es_dia_favorito(dia_del_mes):
@@ -530,7 +530,7 @@ True
 
 ### Pistas
 
-Como vimos anteriormente, en Python contamos con operadores como `>=`, `>`, `<`,`<=` que nos dicen si dos valores son  mayores-o-iguales, mayores, menores, etc. Los vamos a usar bastante :grin:.
+Como vimos anteriormente, en Python contamos con operadores como `>=`, `>`, `<`,`<=` que nos dicen si dos valores son  mayores-o-iguales, mayores, menores, etc. Los vamos a usar bastante 😁.
 
 
 
@@ -556,9 +556,9 @@ False
 
 ### Para pensar
 
-¡Muy bien! :clap:
+¡Muy bien! 👏
 
-Aunque sonemos un poco insistentes :rolling_eyes:, no te olvides de poner buenos nombres a tus parámetros. Por ejemplo, `libros` o `cantidad_de_libros` son mejores que `cantidad` o `numero`:
+Aunque sonemos un poco insistentes 🙄, no te olvides de poner buenos nombres a tus parámetros. Por ejemplo, `libros` o `cantidad_de_libros` son mejores que `cantidad` o `numero`:
 
 ```python
 def le_gusta_leer(cantidad_de_libros):
@@ -581,7 +581,7 @@ False
 True
 ```
 
-> ¡A practicar! :muscle: Definí las siguientes funciones:
+> ¡A practicar! 💪 Definí las siguientes funciones:
 >
 > * `esta_entre`, que tome tres números y diga si el primero es mayor al segundo y menor al tercero.
 > * `esta_fuera_de_rango`: que tome tres números y diga si el primero es menor al segundo o mayor al tercero
@@ -634,7 +634,7 @@ False
 
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def esta_entre(numero_1, numero_2, numero_3):
@@ -668,7 +668,7 @@ False
 
 ...y además, las funciones pueden tener parámetros, uno por cada argumento que necesite recibir.
 
-> ¡Momento! ¿Tendremos que escribir de forma diferente nuestros parámetros cuando _son de tipo_ string? :thinking:
+> ¡Momento! ¿Tendremos que escribir de forma diferente nuestros parámetros cuando _son de tipo_ string? 🤔
 >
 > Por ejemplo, observá la siguiente definición de `es_biblioteca`...
 >
@@ -676,7 +676,7 @@ False
 > def es_biblioteca("lugar"):
 >  return "biblioteca" in "lugar"
 > ```
-> ...¿está bien escrita? :eyes:
+> ...¿está bien escrita? 👀
 
 
 
@@ -686,7 +686,7 @@ False
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☒ Si, porque en la función `es_biblioteca`, `lugar` es un parámetro de tipo string y debemos indicarlo colocándolo entre comillas
 1. ☑️ No, porque en la función `es_biblioteca`, `lugar` es un parámetro de tipo string, pero los parámetros son nombres que no van entre comillas
@@ -754,7 +754,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 ```
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def longitud_nombre_completo(nombre, apellido):
@@ -812,7 +812,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ## 14. Terminando la semana
 
-Ya falta poco para el fin de semana :beach:... ¡o al menos el fin de esta lección! Terminemos combinando todo lo visto :eyes:.
+Ya falta poco para el fin de semana 🏖️... ¡o al menos el fin de esta lección! Terminemos combinando todo lo visto 👀.
 
 > Definí la función `es_fin_de_semana` que tome un string que represente el nombre de un día de la semana, y nos diga si es `"sábado"` o `"domingo"`:
 >
@@ -829,7 +829,7 @@ Ya falta poco para el fin de semana :beach:... ¡o al menos el fin de esta lecci
 
 ### Pistas
 
-Para saber si un día es fin de semana, _ese día tiene que ser `"sábado"` o ese día tiene que ser `"domingo"`_. Recordá que el "o lógico" opera booleanos, no strings. :eyes:
+Para saber si un día es fin de semana, _ese día tiene que ser `"sábado"` o ese día tiene que ser `"domingo"`_. Recordá que el "o lógico" opera booleanos, no strings. 👀
 
 
 
@@ -850,7 +850,7 @@ False
 
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 ```python
 def es_fin_de_semana(dia):
@@ -862,6 +862,6 @@ def es_fin_de_semana(dia):
 
 ### Para pensar
 
-¡Felicitaciones! :tada:
+¡Felicitaciones! 🎉
 
-En esta lección aprendiste a definir funciones que, a partir de su reutilización, nos ayudan a evitar la repetición de lógica. También viste la diferencia entre parámetros y argumentos, elementos esenciales para poder hacer lo mismo con distintos valores. :raised_hands:
+En esta lección aprendiste a definir funciones que, a partir de su reutilización, nos ayudan a evitar la repetición de lógica. También viste la diferencia entre parámetros y argumentos, elementos esenciales para poder hacer lo mismo con distintos valores. 🙌

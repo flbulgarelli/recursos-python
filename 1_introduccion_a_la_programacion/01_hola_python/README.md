@@ -2,15 +2,15 @@
 
 # ¡Hola Python!
 
-En esta lección conoceremos algunos de los tipos de datos más comunes de Python :snake: , un lenguaje multipróposito muy usado en la actualidad. También conoceremos a la consola :desktop: , la herramienta que nos permitirá probar las operaciones que más utilizaremos a lo largo de todo el recorrido.
+En esta lección conoceremos algunos de los tipos de datos más comunes de Python 🐍 , un lenguaje multipróposito muy usado en la actualidad. También conoceremos a la consola 🖥️ , la herramienta que nos permitirá probar las operaciones que más utilizaremos a lo largo de todo el recorrido.
 
-¡Comencemos! :star_struck:
+¡Comencemos! 🤩
 
 ## 1. El sentido de Python
 
-Python es un lenguaje creado a fines de los 80 y publicado por primera vez en 1991. Lo desarrolló Guido van Rosum y, si bien tuvo sus momentos de auge y declinación, resurgió gracias a su uso extendido en el ámbito de ciencia de datos. :mag:
+Python es un lenguaje creado a fines de los 80 y publicado por primera vez en 1991. Lo desarrolló Guido van Rosum y, si bien tuvo sus momentos de auge y declinación, resurgió gracias a su uso extendido en el ámbito de ciencia de datos. 🔍
 
-> ¿En qué crees que está inspirado su nombre? :thinking:
+> ¿En qué crees que está inspirado su nombre? 🤔
 
 1. ☐ En el lenguaje de programación _Cobra_.
 1. ☐ En los humoristas británicos _Monty Python_.
@@ -19,7 +19,7 @@ Python es un lenguaje creado a fines de los 80 y publicado por primera vez en 19
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☒ En el lenguaje de programación _Cobra_.
 1. ☑️ En los humoristas británicos _Monty Python_.
@@ -29,12 +29,12 @@ Python es un lenguaje creado a fines de los 80 y publicado por primera vez en 19
 
 ### Para pensar
 
-El lenguaje de programación Cobra existe, pero es muy posterior a Python. Por otro lado, no sabemos si hubo una picadura de serpiente :stuck_out_tongue:, pero el motivo oficialmente reconocido es el show de Monty Python. :joy:
+El lenguaje de programación Cobra existe, pero es muy posterior a Python. Por otro lado, no sabemos si hubo una picadura de serpiente 😛, pero el motivo oficialmente reconocido es el show de Monty Python. 😂
 
 
 ## 2. Calculo que sí
 
-Una de las tantas cosas que podemos hacer con Python es cálculos matemáticos. Aunque suene medio aburrido,  :sleeping: aprender a hacer estos cálculos nos va a ayudar después a trabajar sobre otros tipos de datos. :star_struck:
+Una de las tantas cosas que podemos hacer con Python es cálculos matemáticos. Aunque suene medio aburrido,  😴 aprender a hacer estos cálculos nos va a ayudar después a trabajar sobre otros tipos de datos. 🤩
 
 Para estos cálculos usaremos la *consola*, una herramienta muy útil para hacer pruebas rápidas sobre lo que estás haciendo. La podés reconocer fácilmente porque arranca con el chirimbolito `>>>`, que se llama _[prompt](https://es.wikipedia.org/wiki/Prompt)_.
 
@@ -52,7 +52,7 @@ Para estos cálculos usaremos la *consola*, una herramienta muy útil para hacer
 
 ## 3. #Comentario
 
-Si bien ahora nos acostumbramos a ver el `#` en redes sociales :busts_in_silhouette:, también es lo que vamos a utilizar para hacer comentarios en nuestro código. Es que cuando programamos, a veces queremos hacer aclaraciones. :sweat_smile:
+Si bien ahora nos acostumbramos a ver el `#` en redes sociales 👥, también es lo que vamos a utilizar para hacer comentarios en nuestro código. Es que cuando programamos, a veces queremos hacer aclaraciones. 😅
 
 > Probá esto en la consola...
 >
@@ -65,14 +65,14 @@ Si bien ahora nos acostumbramos a ver el `#` en redes sociales :busts_in_silhoue
 
 ### Para pensar
 
-¡Lo ignoró! :confounded:
+¡Lo ignoró! 😖
 
-Eso está bien, los comentarios son para quienes programan, sirven para comunicarnos o para recordarnos cosas a futuro. :brain:
+Eso está bien, los comentarios son para quienes programan, sirven para comunicarnos o para recordarnos cosas a futuro. 🧠
 
 
 ## 4. ¡Cuántos chirimbolos!
 
-Como acabamos de ver en Python podemos multiplicar :heavy_multiplication_x: y dividir :heavy_division_sign:, y como te imaginarás, también sumar   :heavy_plus_sign:  y restar , :heavy_minus_sign:. En programación a estos chirimbolos se los llaman _operadores_ y se escriben ligeramente diferentes:
+Como acabamos de ver en Python podemos multiplicar ✖️ y dividir ➗, y como te imaginarás, también sumar   ➕  y restar , ➖. En programación a estos chirimbolos se los llaman _operadores_ y se escriben ligeramente diferentes:
 
 |Operación	     | Operador  | Ejemplo  |
 |-------------	 |----------	|-------  |
@@ -81,25 +81,25 @@ Como acabamos de ver en Python podemos multiplicar :heavy_multiplication_x: y di
 |  Multiplicación | `*`       | `2 * 3`  |
 |  División       | `/`       | `16 / 2` |
 
-Genial :tada: , entonces ¿la consola nos permite hacer cualquier cálculo? :thinking:
+Genial 🎉 , entonces ¿la consola nos permite hacer cualquier cálculo? 🤔
 
 > Probá en la consola:
 >
 > `>>> 8 / 0`
 >
-> y fijate que pasa. :grimacing:
+> y fijate que pasa. 😬
 
 
 
 ### Para pensar
 
-_¿Qué pasó?_ :scream:
+_¿Qué pasó?_ 😱
 
-¡Nada grave! Esa es la manera en que veremos los errores en la consola. En este caso fue porque no podemos dividir por 0. :sweat_smile:
+¡Nada grave! Esa es la manera en que veremos los errores en la consola. En este caso fue porque no podemos dividir por 0. 😅
 
 ## 5. No todo es un chirimbolo
 
- Por suerte no todas las operaciones que podemos hacer son con chirimbolos. Además de los operadores matemáticos `+`, `-`, `/` y `*`, existen otras operaciones matemáticas comunes, algunas de las cuales ya vienen con Python y están listas para ser usadas. :raised_hands:
+ Por suerte no todas las operaciones que podemos hacer son con chirimbolos. Además de los operadores matemáticos `+`, `-`, `/` y `*`, existen otras operaciones matemáticas comunes, algunas de las cuales ya vienen con Python y están listas para ser usadas. 🙌
 
 A diferencia de los operadores que vimos hasta acá, estos funcionan un poco distinto. Les específicamos los valores de entrada, llamados *argumentos*, entre paréntesis y a partir de ellos nos da un valor de salida, conocido como *retorno*.
 
@@ -119,7 +119,7 @@ A diferencia de los operadores que vimos hasta acá, estos funcionan un poco dis
 
 ### Para pensar
 
-Formalicemos qué hacen estas operaciones antes de continuar :wink: :
+Formalicemos qué hacen estas operaciones antes de continuar 😉 :
 
 * `abs`: nos dice el [valor absoluto](https://es.wikipedia.org/wiki/Valor_absoluto) de un número;
 * `round`: nos devuelve el redondeo de un número;
@@ -128,7 +128,7 @@ Formalicemos qué hacen estas operaciones antes de continuar :wink: :
 
 ## 6. No todo es un número
 
-Pero los operadores no solo nos sirven para obtener números a partir de otros, ¡también podemos compararlos! :muscle:
+Pero los operadores no solo nos sirven para obtener números a partir de otros, ¡también podemos compararlos! 💪
 
 > Probá lo siguiente en la consola:
 >
@@ -140,20 +140,20 @@ Pero los operadores no solo nos sirven para obtener números a partir de otros, 
 >>> 9 == 9
 >>> 8 != 8
 ```
-> ¿Qué crees que devolverán? ¿Será un número? :thinking:
+> ¿Qué crees que devolverán? ¿Será un número? 🤔
 
 
 
 
 ### Para pensar
 
-Como podés ver, estos operadores no devuelven números sino `True` o `False`, (verdadero y falso en inglés respectivamente). Ete nuevo tipo de dato se llama *booleano*. Vamos al siguiente ejercicio a conocer otro tipo más. :sunglasses:
+Como podés ver, estos operadores no devuelven números sino `True` o `False`, (verdadero y falso en inglés respectivamente). Ete nuevo tipo de dato se llama *booleano*. Vamos al siguiente ejercicio a conocer otro tipo más. 🕶️
 
 ## 7. Palabras, solo palabras
 
 Ya conocimos a los números y a los booleanos de Python, ¡pero eso no es todo!
 
-Muchas veces queremos escribir programas que trabajen con texto :page_facing_up:: queremos saber cuántas palabras hay en un libro, o convertir minúsculas a mayúsculas, o saber en qué parte de un texto está otro.
+Muchas veces queremos escribir programas que trabajen con texto 📄: queremos saber cuántas palabras hay en un libro, o convertir minúsculas a mayúsculas, o saber en qué parte de un texto está otro.
 
 Para este tipo de problemas tenemos los _strings_, también llamados _cadenas de caracteres_:
 
@@ -173,7 +173,7 @@ False
 True
 ```
 
-y también concatenarlos, es decir, obtener un string a partir de la unión de otros. :chains:
+y también concatenarlos, es decir, obtener un string a partir de la unión de otros. ⛓️
 
 > Probá en la consola lo siguiente:
 >
@@ -188,7 +188,7 @@ y también concatenarlos, es decir, obtener un string a partir de la unión de o
 
 ### Para pensar
 
-¡Genial! :grin:
+¡Genial! 😁
 
 Si te estás preguntando qué es ese `str`, es la manera que tenemos de convertir números a strings. Si no lo hacemos y escribimos...
 
@@ -196,11 +196,11 @@ Si te estás preguntando qué es ese `str`, es la manera que tenemos de converti
 >>> "Dame " + 5
 ```
 
-... nos daría un error que diría `can only concatenate str (not "int") to str`. En otras palabras, que los strings solo se pueden concatenar con otros strings. :person_shrugging:
+... nos daría un error que diría `can only concatenate str (not "int") to str`. En otras palabras, que los strings solo se pueden concatenar con otros strings. 🤷
 
 ## 8. Yo soy parte
 
-Cuando trabajamos con _strings_ también podemos saber si uno contiene a otro utilizando el operador `in`. :point_down:
+Cuando trabajamos con _strings_ también podemos saber si uno contiene a otro utilizando el operador `in`. 👇
 
 > Para verlo en práctica, escribí lo siguiente en la consola:
 >
@@ -214,7 +214,7 @@ Cuando trabajamos con _strings_ también podemos saber si uno contiene a otro ut
 
 ### Para pensar
 
-Resumiendo, no hay amor en los celos ni placer en el dolor ¡pero si historia en la prehistoria! :t_rex: :sauropod:
+Resumiendo, no hay amor en los celos ni placer en el dolor ¡pero si historia en la prehistoria! 🦖 🦕
 
 Fuera del juego de palabras, `in` se puede utilizar con textos más largos. Por ejemplo:
 
@@ -228,7 +228,7 @@ True
 
 Como vimos, `in` nos puede decir si un string está incluído en otro. Hay dos casos particulares de esta operación: cuando un string comienza, o termina, con otro.
 
-La sintaxis de estas operaciones es _apenitas_ :ok_hand: diferente de lo que venimos haciendo: hay que prefijarlas con `str.`. Por ejemplo, la operación que devuelve si un `string` comienza con otro es `str.startswith`, mientras que la que nos dice si termina con otro es `str.endswith`. :eyes:
+La sintaxis de estas operaciones es _apenitas_ 👌 diferente de lo que venimos haciendo: hay que prefijarlas con `str.`. Por ejemplo, la operación que devuelve si un `string` comienza con otro es `str.startswith`, mientras que la que nos dice si termina con otro es `str.endswith`. 👀
 
 > Probalas en la consola escribiendo:
 >
@@ -240,7 +240,7 @@ La sintaxis de estas operaciones es _apenitas_ :ok_hand: diferente de lo que ven
 
 ## 10. ¿Cuánto mide?
 
-Muchas veces nos va a interesar saber el largo de un string, o en otras palabras, cuántos caracteres tiene :straight_ruler: . Para esto nos va a ayudar `len`. :star_struck:
+Muchas veces nos va a interesar saber el largo de un string, o en otras palabras, cuántos caracteres tiene 📏 . Para esto nos va a ayudar `len`. 🤩
 
 > Veámoslo funcionando en la consola probando:
 >
@@ -255,17 +255,17 @@ Muchas veces nos va a interesar saber el largo de un string, o en otras palabras
 
 ### Para pensar
 
-¡Un momento! :face_with_raised_eyebrow:
+¡Un momento! 🤨
 
-¿Por qué la última consulta retorno `20` si solo tiene 14 letras? :face_with_monocle:
+¿Por qué la última consulta retorno `20` si solo tiene 14 letras? 🧐
 
 Es que como te contamos, `len` nos dice la cantidad de caracteres. Los caracteres son tanto las letras como los espacios, números y carácteres especiales (`.`, `?`, `&`, `/`, etc.)
 
 ## 11. ¡A mí no me grités!
 
-:speaking_head: QUE AGRESIVAS LAS MAYÚSCULAS, ¿NO? ¡NI HABLAR SI LES AGREGAMOS SIGNOS DE EXCLAMACIÓN!
+🗣️ QUE AGRESIVAS LAS MAYÚSCULAS, ¿NO? ¡NI HABLAR SI LES AGREGAMOS SIGNOS DE EXCLAMACIÓN!
 
-Por suerte en la contracara tenemos a las calmas minúsculas. En Python podemos pasar un texto en mayúsculas a minúsculas y viceversa. También podemos sacar los espacios que tenga un string al principio o al final, dado que hay veces que no nos interesan. :person_shrugging:
+Por suerte en la contracara tenemos a las calmas minúsculas. En Python podemos pasar un texto en mayúsculas a minúsculas y viceversa. También podemos sacar los espacios que tenga un string al principio o al final, dado que hay veces que no nos interesan. 🤷
 
 > Probemos `str.strip`, `str.upper` y `str.lower` en la consola:
 >
@@ -282,13 +282,13 @@ Por suerte en la contracara tenemos a las calmas minúsculas. En Python podemos 
 
 ### Para pensar
 
-¡Cuántas cosas podemos hacer con los strings! Y eso no es todo, pero con estas operaciones estamos por ahora. :sweat_smile:
+¡Cuántas cosas podemos hacer con los strings! Y eso no es todo, pero con estas operaciones estamos por ahora. 😅
 
 ## 12. No olvidemos los booleanos
 
-Ya estuvimos probando operaciones de números y de strings, ¿los booleanos se podrán operar? :thought_balloon:
+Ya estuvimos probando operaciones de números y de strings, ¿los booleanos se podrán operar? 💭
 
-¡Sí! Una de las operaciones más comunes es la conjunción lógica, "Y lógico" o simplemente `and`. :relieved:
+¡Sí! Una de las operaciones más comunes es la conjunción lógica, "Y lógico" o simplemente `and`. 😌
 
 > Probá lo siguiente en la consola:
 >
@@ -303,7 +303,7 @@ Ya estuvimos probando operaciones de números y de strings, ¿los booleanos se p
 
 ### Para pensar
 
-¿Descubriste el patrón? :grimacing:
+¿Descubriste el patrón? 😬
 
 Para que `and` retorne `True` es necesario que ambas condiciones sean verdaderas. Por eso...
 
@@ -335,7 +335,7 @@ True
 
 ## 13. Verdadero o falso
 
-Otro famoso operador lógico es el `or` que sirve para realizar disyunciones lógicas. El "O lógico" tiene sus diferencias con el `and`, ¿te animás a descubrirlas? :hugging:
+Otro famoso operador lógico es el `or` que sirve para realizar disyunciones lógicas. El "O lógico" tiene sus diferencias con el `and`, ¿te animás a descubrirlas? 🤗
 
 > Hacé las siguientes pruebas en la consola:
 >
@@ -349,7 +349,7 @@ Otro famoso operador lógico es el `or` que sirve para realizar disyunciones ló
 
 ### Para pensar
 
- ¿Descubriste las diferencias? :nerd:
+ ¿Descubriste las diferencias? 🤓
 
 Dijimos que `and` solo retorna `True` cuando ambos booleanos son `True`. Por el otro lado, para que `or` sea verdadero alcanza con que al menos uno de los booleanos lo sea. Dicho de otra manera, ambas condiciones deben ser falsas para que retorne `False`. Por ejemplo en...
 
@@ -389,7 +389,7 @@ Además, existen operaciones que sirven para todos los _tipos de datos_, por eje
 * `==`: nos dice si dos cosas son iguales;
 * `!=`: nos dice si dos cosas son diferentes.
 
-**Es importante usar las operaciones correctas con los tipos de datos correctos**, por ejemplo, no tiene sentido sumar dos booleanos o hacer operaciones booleanas con los números. **Si usas operaciones que no corresponden, cosas muy raras y malas pueden pasar**. :confounded:
+**Es importante usar las operaciones correctas con los tipos de datos correctos**, por ejemplo, no tiene sentido sumar dos booleanos o hacer operaciones booleanas con los números. **Si usas operaciones que no corresponden, cosas muy raras y malas pueden pasar**. 😖
 
 > Probá en la consola lo siguiente:
 >
@@ -411,13 +411,13 @@ Hablemos de las dos últimas consultas:
 * ¿por qué querríamos dividir booleanos?
 * ¡`or` no sirve para elegir un string u otro!
 
-Si bien no arrojaron un error no tenían sentido :face_with_raised_eyebrow: . Es por eso que tenemos que tener cuidado con las operaciones que usamos con cada tipo de dato. :face_with_monocle:
+Si bien no arrojaron un error no tenían sentido 🤨 . Es por eso que tenemos que tener cuidado con las operaciones que usamos con cada tipo de dato. 🧐
 
 ## 15. Un poco de cada tipo
 
-Uff, ¡vimos un montón de cosas! :sweat_smile: Aprendimos sobre la sintaxis de las funciones en Python, los _tipos de datos_ y sus operaciones.
+Uff, ¡vimos un montón de cosas! 😅 Aprendimos sobre la sintaxis de las funciones en Python, los _tipos de datos_ y sus operaciones.
 
-¡Pero no tan rápido! :person_running:
+¡Pero no tan rápido! 🏃
 
 > Antes de terminar, un último desafío: ¡marcá todas las opciones correctas!
 
@@ -433,7 +433,7 @@ Uff, ¡vimos un montón de cosas! :sweat_smile: Aprendimos sobre la sintaxis de 
 ### Respuesta
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 1. ☑️ `4 + 4` vale `8`
 1. ☑️ `"4" + "4"` vale `"44"`
@@ -447,8 +447,8 @@ Uff, ¡vimos un montón de cosas! :sweat_smile: Aprendimos sobre la sintaxis de 
 
 ### Para pensar
 
-¡Excelente! :raised_hands:
+¡Excelente! 🙌
 
-Ya vimos cómo son los números, los booleanos y los strings de Python. También conocimos a la consola, una poderosa aliada que nos acompañará a lo largo de todo este recorrido. :handshake:
+Ya vimos cómo son los números, los booleanos y los strings de Python. También conocimos a la consola, una poderosa aliada que nos acompañará a lo largo de todo este recorrido. 🤝
 
-Ahora que sabemos algunas operaciones básicas de Python ¡vamos a crear nuestros primeros programas! :muscle:
+Ahora que sabemos algunas operaciones básicas de Python ¡vamos a crear nuestros primeros programas! 💪

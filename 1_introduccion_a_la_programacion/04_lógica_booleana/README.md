@@ -2,11 +2,11 @@
 
 # 2. Lógica booleana
 
-Como ya viste a lo largo de varios ejercicios, cuando programamos trabajamos con booleanos que representan valores de verdad. Podemos operar con ellos mediante lo que denominamos operadores lógicos, como la conjunción y la disyunción. ¡Vamos a aprender un poco más sobre ellos! :muscle:
+Como ya viste a lo largo de varios ejercicios, cuando programamos trabajamos con booleanos que representan valores de verdad. Podemos operar con ellos mediante lo que denominamos operadores lógicos, como la conjunción y la disyunción. ¡Vamos a aprender un poco más sobre ellos! 💪
 
 ## 1. Negar no cuesta nada
 
-Empecemos por algo sencillo, ¿te acordás del operador `not` ? Se lo denomina negación o complemento lógico y sirve para negar un valor booleano. Si tengo el booleano representado por `tiene_hambre`, el complemento será `not tiene_hambre`. :no_mouth:
+Empecemos por algo sencillo, ¿te acordás del operador `not` ? Se lo denomina negación o complemento lógico y sirve para negar un valor booleano. Si tengo el booleano representado por `tiene_hambre`, el complemento será `not tiene_hambre`. 😶
 
 No parece una idea muy interesante pero puede servir para reutilizar la lógica de una función que ya tenemos definida.
 
@@ -24,7 +24,7 @@ def es_impar(numero):
 
 ### Pistas
 
-Tanto `es_mayor_de_edad` como `es_menor_de_edad` reciben una edad como argumento. :wink:
+Tanto `es_mayor_de_edad` como `es_menor_de_edad` reciben una edad como argumento. 😉
 
 
 
@@ -55,7 +55,7 @@ True
 
 ### Para pensar
 
-Cada una de las funciones representa **un estado de dos posibles**: ser mayor o ser menor de edad. No se puede ser ambos al mismo tiempo y tampoco se puede evitar pertenecer a alguno de los dos grupos y por eso decimos que son complementarios y que juntos forman el _conjunto universal_. :milky_way:
+Cada una de las funciones representa **un estado de dos posibles**: ser mayor o ser menor de edad. No se puede ser ambos al mismo tiempo y tampoco se puede evitar pertenecer a alguno de los dos grupos y por eso decimos que son complementarios y que juntos forman el _conjunto universal_. 🌌
 
 ## 2. Peripatéticas
 
@@ -70,7 +70,7 @@ Por ejemplo, si cuento con la función...
   return cds_editados >= 10 and recitales_realizados > 25 and grabo_algun_dvd
 ```
 
-...basta con que un cantante no haya grabado un DVD para no ser considerado prolífico, incluso aunque haya editado más de 10 CDs y dado más de 25 recitales. :guitar:
+...basta con que un cantante no haya grabado un DVD para no ser considerado prolífico, incluso aunque haya editado más de 10 CDs y dado más de 25 recitales. 🎸
 
 > Definí una función `es_peripatetica` que tome el área en que se desempeña una persona, su país de origen y la cantidad de kilómetros que camina por día. Una persona es petipatética cuando se desempeña en filosofía, su país de origen es Grecia y le gusta pasear (camina más de 2 kilómetros por día). Ejemplo:
 >
@@ -86,7 +86,7 @@ Por ejemplo, si cuento con la función...
 
 ### Pistas
 
-¡No te olvides de las tildes! :eyes:
+¡No te olvides de las tildes! 👀
 
 
 
@@ -143,7 +143,7 @@ En la lógica booleana, se puede definir el comportamiento de un operador con un
   </tr>
 </table>
 
-En el mundo de la lógica estas expresiones se llaman _proposiciones_. Pero… ¿qué cosas pueden ser una proposición? :thought_balloon: Sólo hace falta que tengan un valor de verdad, es decir, cualquier expresión booleana puede ser una proposición.
+En el mundo de la lógica estas expresiones se llaman _proposiciones_. Pero… ¿qué cosas pueden ser una proposición? 💭 Sólo hace falta que tengan un valor de verdad, es decir, cualquier expresión booleana puede ser una proposición.
 
 > Para comprobarlo, probá en la consola tu función `es_peripatetica` con los siguientes valores y comprobá si se comporta como en la tabla:
 >
@@ -158,11 +158,11 @@ En el mundo de la lógica estas expresiones se llaman _proposiciones_. Pero… �
 
 ### Para pensar
 
-Como podrás ver, sólo `es_peripatetica("filosofía", "Grecia", 5)` es verdadera porque cumple las tres condiciones, o dicho de otra forma, todas sos proposiciones son verdaderas. :nerd:
+Como podrás ver, sólo `es_peripatetica("filosofía", "Grecia", 5)` es verdadera porque cumple las tres condiciones, o dicho de otra forma, todas sos proposiciones son verdaderas. 🤓
 
 ## 4. ¡Juguemos al T.E.G.!
 
-¿Y si basta con que una de varias condiciones se cumpla para afirmar que una expresión es verdadera? Podemos utilizar otro de los operadores que ya conocés, ¡la disyunción lógica `or`! :bulb:
+¿Y si basta con que una de varias condiciones se cumpla para afirmar que una expresión es verdadera? Podemos utilizar otro de los operadores que ya conocés, ¡la disyunción lógica `or`! 💡
 
 En el famoso juego T.E.G., un jugador puede ganar de dos formas: cumpliendo su objetivo secreto o alcanzando el objetivo general de conquistar 30 países:
 
@@ -188,7 +188,7 @@ def gano(cumplio_objetivo_secreto, cantidad_de_paises_conquistados):
 
 
 <details>
-<summary>:eyes: Ver</summary>
+<summary>👀 Ver</summary>
 
 Vamos a ver como sería la tabla de verdad de la disyunción para compararla con la tuya:
 
@@ -224,13 +224,13 @@ Vamos a ver como sería la tabla de verdad de la disyunción para compararla con
 
 ## 5. Y ahora... ¿quién podrá ayudarnos?
 
-¿Nunca te pasó haber querido hacer algún trámite en el banco y llegar sólo para darte cuenta de que estaba cerrado? A Dory :tropical_fish: sí, por lo que vamos a desarrollar una función que ayude a la gente despistada como ella.
+¿Nunca te pasó haber querido hacer algún trámite en el banco y llegar sólo para darte cuenta de que estaba cerrado? A Dory 🐠 sí, por lo que vamos a desarrollar una función que ayude a la gente despistada como ella.
 
 Sabemos que el banco está abierto los días de semana que no es feriado, y estamos dentro del horario bancario.
 
 Ya están definidas las funciones:
 
-* `dentro_de_horario_bancario`: recibe un horario :clock10: (una hora en punto que puede ir desde las 0 hasta las 23) y nos dice si está dentro de la franja de atención del banco.
+* `dentro_de_horario_bancario`: recibe un horario 🕙 (una hora en punto que puede ir desde las 0 hasta las 23) y nos dice si está dentro de la franja de atención del banco.
 * `es_fin_de_semana`: recibe un día y nos dice si es "sábado" o "domingo".
 
 > Definí la función `es_dia_de_semana` y luego completá `esta_abierto`.
@@ -282,7 +282,7 @@ Nosotros definimos por vos las funciones `madre_de` y `padre_de`:
 "Sofía De La Piedad"
 ```
 
-> Ahora te toca a vos definir la función `son_medio_hermanos`. Recordá que los medios hermanos pueden compartir madre o padre pero no ambos porque... ¡en ese caso serían hermanos! :sweat_smile:
+> Ahora te toca a vos definir la función `son_medio_hermanos`. Recordá que los medios hermanos pueden compartir madre o padre pero no ambos porque... ¡en ese caso serían hermanos! 😅
 
 
 
@@ -571,7 +571,7 @@ def son_medio_hermanos(una, otra):
 
 ## 8. ¡Hola! Mi nombre es Xor
 
-Ahora cambiemos las funciones `tienen_la_misma_madre` y `tienen_el_mismo_padre` por proposiciones genéricas **A** y **B**. Además, representemos la operación que realiza `son_medio_hermanos` con el símbolo **⊻**. Lo que obtenemos es... ¡una nueva tabla! :tada:
+Ahora cambiemos las funciones `tienen_la_misma_madre` y `tienen_el_mismo_padre` por proposiciones genéricas **A** y **B**. Además, representemos la operación que realiza `son_medio_hermanos` con el símbolo **⊻**. Lo que obtenemos es... ¡una nueva tabla! 🎉
 
 <table class="table table-striped table-bordered table-condensed text-center">
   <tr>
@@ -603,7 +603,7 @@ Ahora cambiemos las funciones `tienen_la_misma_madre` y `tienen_el_mismo_padre` 
 
 Este comportamiento existe como un operador dentro de la lógica y se lo denomina `xor` o disyunción lógica excluyente.
 
-A diferencia del `and`, `or` y `not`, el `xor` no suele estar definido en los lenguajes. :cry: Sin embargo, ahora que sabés cómo funciona, si alguna vez lo necesitás podés definirlo a mano. :wink:
+A diferencia del `and`, `or` y `not`, el `xor` no suele estar definido en los lenguajes. 😢 Sin embargo, ahora que sabés cómo funciona, si alguna vez lo necesitás podés definirlo a mano. 😉
 
 > Veamos si se entiende: definí la función genérica `xor`, que tome dos booleanos y devuelva el valor de verdad correspondiente.
 
@@ -635,7 +635,7 @@ Cuando una expresión matemática tiene varios operadores, sabemos que las multi
 
 Al igual que en matemática, cuando usamos operadores lógicos las expresiones se evalúan en un orden determinado llamado _precedencia_.
 
-¿Cuál es ese orden? :thinking:
+¿Cuál es ese orden? 🤔
 
 > Teniendo definidas estas funciones...
 >
@@ -665,7 +665,7 @@ Al igual que en matemática, cuando usamos operadores lógicos las expresiones s
 
 ### Para pensar
 
-¿Descifraste la precedencia de las operaciones booleanas? :thinking: Por las dudas acá tenemos un cuadro con la precedencia de ellas y de algunas operaciones que vimos (y otras que no):
+¿Descifraste la precedencia de las operaciones booleanas? 🤔 Por las dudas acá tenemos un cuadro con la precedencia de ellas y de algunas operaciones que vimos (y otras que no):
 
 
 <table class="table table-striped table-bordered table-condensed text-center">
@@ -728,7 +728,7 @@ En esta tabla la precedencia va de mayor a menor, es decir, la prioridad 1 es la
 
 ## 10. Un ejercicio sin precedentes
 
-Ya comprobaste que la operación con mayor precedencia es la negación, seguida de la conjunción y la disyunción pero ¿qué pasa si quiero alterar el orden en que se resuelven? :thought_balloon:
+Ya comprobaste que la operación con mayor precedencia es la negación, seguida de la conjunción y la disyunción pero ¿qué pasa si quiero alterar el orden en que se resuelven? 💭
 
 Al igual que en matemática, podemos usar paréntesis para agrupar las operaciones que queremos que se realicen primero.
 
@@ -741,7 +741,7 @@ Al igual que en matemática, podemos usar paréntesis para agrupar las operacion
 >
 > El mínimo de edad para realizar el trámite para las mujeres es de 60 años, mientras que para los hombres es 65. En ambos casos, se deben contar con al menos 30 años de aportes.
 >
-> Ah, y por esta vez te vamos a pedir que no definas funciones extra para resolverlo. :see_no_evil:
+> Ah, y por esta vez te vamos a pedir que no definas funciones extra para resolverlo. 🙈
 
 ### Autoevaluación
 
@@ -777,12 +777,12 @@ def puede_jubilarse(edad, sexo, anios_aportes):
   return cumple_edad_minima(edad, sexo) and tiene_suficientes_aportes(anios_aportes)
 ```
 
-**Al delegar correctamente**, hay veces en las que no es necesario alterar el orden de precedencia, ¡otro punto a favor de la delegación! :muscle:
+**Al delegar correctamente**, hay veces en las que no es necesario alterar el orden de precedencia, ¡otro punto a favor de la delegación! 💪
 
 
 ## 11. ¿Puedo subir?
 
-En un parque de diversiones de la ciudad instalaron una nueva montaña rusa :roller_coaster: y nos pidieron ayuda para que le digamos a las personas si pueden subirse o no antes de hacer la fila. Los requisitos para subir a la atracción son:
+En un parque de diversiones de la ciudad instalaron una nueva montaña rusa 🎢 y nos pidieron ayuda para que le digamos a las personas si pueden subirse o no antes de hacer la fila. Los requisitos para subir a la atracción son:
 
 * Alcanzar la altura mínima de 1.5m (o 1.2m si está acompañada por un adulto).
 * No tener ninguna afección cardíaca.

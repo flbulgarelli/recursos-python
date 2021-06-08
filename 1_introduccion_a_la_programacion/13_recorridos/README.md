@@ -6,7 +6,7 @@ En lecciones anteriores definimos funciones, usamos registros y listas. Ahora qu
 
 ## 1. Todas las ganancias, la ganancia
 
-Ana, contadora de una conocida empresa :office:, tiene diccionarios para representar los balances de cada mes y distintas listas para guardarlos. Por ejemplo:
+Ana, contadora de una conocida empresa 🏢, tiene diccionarios para representar los balances de cada mes y distintas listas para guardarlos. Por ejemplo:
 
 ```python
 #En julio ganó $50, en agosto perdió $12, etc.
@@ -39,7 +39,7 @@ Dicho esto, Ana necesita saber la ganancia acumulada de un conjunto de balances.
 
 ### Pistas
 
-Nuestro viejo amigo `for...in` y una variable local nos van a ayudar en esta tarea. Lo importante es pensar con qué valor la inicializamos y qué debemos hacer en cada iteración. :relaxed:
+Nuestro viejo amigo `for...in` y una variable local nos van a ayudar en esta tarea. Lo importante es pensar con qué valor la inicializamos y qué debemos hacer en cada iteración. ☺️
 
 
 
@@ -65,13 +65,13 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-¡Excelente! :star_struck:
+¡Excelente! 🤩
 
-En este caso como queríamos obtener una sumatoria, nuestra variable tenía que inicializarse en 0 ya que es el valor neutro de la suma. Si por ejemplo quisieramos hacer una productoria (lo mismo que la sumatoria pero multiplicando) deberíamos inicializar nuestra variable en 1. No siempre es fácil darse cuenta qué valor inicial debemos utilizar, pero es muy importante que lo pensemos antes de encarar el `for...in`. :hugging:
+En este caso como queríamos obtener una sumatoria, nuestra variable tenía que inicializarse en 0 ya que es el valor neutro de la suma. Si por ejemplo quisieramos hacer una productoria (lo mismo que la sumatoria pero multiplicando) deberíamos inicializar nuestra variable en 1. No siempre es fácil darse cuenta qué valor inicial debemos utilizar, pero es muy importante que lo pensemos antes de encarar el `for...in`. 🤗
 
 ## 2. Cuentas claras
 
-¡Ana tiene nuevos requirimientos! Ahora nos pidió lo siguiente: _"Quiero saber cuántos balances fueron positivos, es decir, aquellos en los que la ganancia fue mayor a cero"_. :chart_with_upwards_trend:
+¡Ana tiene nuevos requirimientos! Ahora nos pidió lo siguiente: _"Quiero saber cuántos balances fueron positivos, es decir, aquellos en los que la ganancia fue mayor a cero"_. 📈
 
 > Definí la función `cantidad_de_balances_positivos` que dada una lista de balances nos retorne cuántos son positivos.
 
@@ -80,7 +80,7 @@ En este caso como queríamos obtener una sumatoria, nuestra variable tenía que 
 
 ### Pistas
 
-Lo importante en este ejercicio es inicializar una variable local e incrementarla solo cuando corresponda. Para eso vas a tener que usar un `if`. :nerd:
+Lo importante en este ejercicio es inicializar una variable local e incrementarla solo cuando corresponda. Para eso vas a tener que usar un `if`. 🤓
 
 
 
@@ -117,11 +117,11 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ### Para pensar
 
-La variable local que utilizaste es lo que en programación se conoce como _contador_, una variable que se incrementa cada vez que hacemos algo dentro de un `for...in` o solo aquellas veces que se cumpla una condición (como en este caso). :wink:
+La variable local que utilizaste es lo que en programación se conoce como _contador_, una variable que se incrementa cada vez que hacemos algo dentro de un `for...in` o solo aquellas veces que se cumpla una condición (como en este caso). 😉
 
 ## 3. Soy el mapa, soy el mapa
 
-Más allá de las ganancias acumuladas o los balances positivos, Ana quisiera poder obtener todas las ganancias a partir de una lista de balances. Para ello debemos transformar, o _mapear_, cada elemento de la lista. :thumbsup:
+Más allá de las ganancias acumuladas o los balances positivos, Ana quisiera poder obtener todas las ganancias a partir de una lista de balances. Para ello debemos transformar, o _mapear_, cada elemento de la lista. 👍
 
 > Definí la función `ganancias` que toma una lista de balances y devuelve una lista que posea solo las ganancias de cada uno.
 >
@@ -139,9 +139,9 @@ Más allá de las ganancias acumuladas o los balances positivos, Ana quisiera po
 
 ### Pistas
 
-_¿Y ahora con qué valor inicializamos la variable local?_ :thinking:
+_¿Y ahora con qué valor inicializamos la variable local?_ 🤔
 
-En este caso te va a servir una lista vacía, ¡pero no te olvides de agregarle elementos! :wink:
+En este caso te va a servir una lista vacía, ¡pero no te olvides de agregarle elementos! 😉
 
 
 
@@ -159,13 +159,13 @@ self.assertEqual(ganancias([{ "mes": "marzo", "ganancia": 8 }, { "mes": "agosto"
 
 ### Para pensar
 
-¡Excelente! :clap: Ahora ya sabemos cómo transformar cada elemento de una lista para obtener una lista nueva :muscle:. Esta operación es muy común y se conoce como _mapeo_ de una lista.
+¡Excelente! 👏 Ahora ya sabemos cómo transformar cada elemento de una lista para obtener una lista nueva 💪. Esta operación es muy común y se conoce como _mapeo_ de una lista.
 
 ## 4. ¡Cómo pasan los meses!
 
-¡Ahora que sabemos mapear vamos a practicarlo! :muscle:
+¡Ahora que sabemos mapear vamos a practicarlo! 💪
 
-> Definí la función `meses` que dada una lista con diccionarios devuelve una lista de meses. :calendar:
+> Definí la función `meses` que dada una lista con diccionarios devuelve una lista de meses. 📆
 >
 ```python
 >>> meses([
@@ -191,7 +191,7 @@ self.assertEqual(meses([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", 
 
 ## 5. Un mapa para comprender
 
-En el ejercicio anterior hicimos un mapeo utilizando `for...in`. En Python contamos con otras formas de hacer eso, ¡las listas por comprensión! :star_struck:
+En el ejercicio anterior hicimos un mapeo utilizando `for...in`. En Python contamos con otras formas de hacer eso, ¡las listas por comprensión! 🤩
 
 Veamos cómo funcionan, si a partir de una lista de strings quisieramos obtener una lista con los largos de cada uno, podríamos definir:
 
@@ -227,13 +227,13 @@ self.assertEqual(meses([{ "mes": "enero", "ganancia": 10 }, { "mes": "febrero", 
 
 ### Para pensar
 
-¡Excelente! :raised_hands:
+¡Excelente! 🙌
 
-Lo bueno de conocer más de una manera de hacer lo mismo es que puedas elegir qué herramienta te gusta más para resolver los problemas. :hammer_pick:
+Lo bueno de conocer más de una manera de hacer lo mismo es que puedas elegir qué herramienta te gusta más para resolver los problemas. 🛠️
 
 ## 6. Esto proyecta muy bien
 
-Ana realiza muchas proyecciones sobre los balances de su empresa, por lo que le dijimos que podíamos darle una mano ahora que sabemos mapear. Lo que le interesa hacer es poder ver cuáles serían las ganancias de un balance si todas hubieran sido del doble :moneybag:. Por ejemplo:
+Ana realiza muchas proyecciones sobre los balances de su empresa, por lo que le dijimos que podíamos darle una mano ahora que sabemos mapear. Lo que le interesa hacer es poder ver cuáles serían las ganancias de un balance si todas hubieran sido del doble 💰. Por ejemplo:
 
 ``` python
 >>> balances_ultimo_semestre = [
@@ -249,9 +249,9 @@ Ana realiza muchas proyecciones sobre los balances de su empresa, por lo que le 
 [100, -24, 2000, 600, 400, 0]
 ```
 
-Como verás, si las ganancias fueran negativas ahora serán ¡doblemente negativas! :chart_with_downwards_trend:
+Como verás, si las ganancias fueran negativas ahora serán ¡doblemente negativas! 📉
 
-> Definí la función `doble_de_ganancias`. Podés utilizar tanto `for...in` como listas por comprensión, lo que vos prefieras. :relaxed:
+> Definí la función `doble_de_ganancias`. Podés utilizar tanto `for...in` como listas por comprensión, lo que vos prefieras. ☺️
 
 
 
@@ -269,13 +269,13 @@ self.assertEqual(doble_de_ganancias([{ "mes": "enero", "ganancia": 0 }, { "mes":
 
 ### Para pensar
 
-¡Perfecto! :clap:
+¡Perfecto! 👏
 
-¿Y si solo quisieramos algunos balances? ¿podemos filtrar utilizando `for...in`? :flushed:
+¿Y si solo quisieramos algunos balances? ¿podemos filtrar utilizando `for...in`? 😳
 
 ## 7. A filtrar, a filtrar cada cosa en su lugar
 
-Con la programación se puede hacer cualquier cosa, o casi :sweat_smile:. Ya hicimos una función para poder saber la cantidad de balances positivos (`cantidad_de_balances_positivos`), ahora vamos a ver cómo podemos hacer para saber cuáles son esos balances. :calendar:
+Con la programación se puede hacer cualquier cosa, o casi 😅. Ya hicimos una función para poder saber la cantidad de balances positivos (`cantidad_de_balances_positivos`), ahora vamos a ver cómo podemos hacer para saber cuáles son esos balances. 📆
 
 > Definí la función `balances_positivos` que toma los balances de un período y devuelve una lista con aquellos cuya ganancia fue mayor a cero.
 
@@ -284,7 +284,7 @@ Con la programación se puede hacer cualquier cosa, o casi :sweat_smile:. Ya hic
 
 ### Pistas
 
-Acá también vas a necesitar empezar con una lista vacía, pero a diferencia de cuando hicimos el mapeo, acá no vas a agregar elementos en cada iteración, solo en algunos casos. :eyes:
+Acá también vas a necesitar empezar con una lista vacía, pero a diferencia de cuando hicimos el mapeo, acá no vas a agregar elementos en cada iteración, solo en algunos casos. 👀
 
 
 
@@ -303,14 +303,14 @@ self.assertEqual(balances_positivos([{ "mes": "agosto", "ganancia": -12 }, { "me
 
 ### Para pensar
 
-¡Muy bien! :raised_hands: Ahora ya sabemos cómo filtrar una lista. En criollo, aprendimos a obtener los elementos de una lista que cumplen una condición determinada. En este caso obtuvimos una nueva lista con los balances que presentaban una ganancia positiva. :moneybag:
+¡Muy bien! 🙌 Ahora ya sabemos cómo filtrar una lista. En criollo, aprendimos a obtener los elementos de una lista que cumplen una condición determinada. En este caso obtuvimos una nueva lista con los balances que presentaban una ganancia positiva. 💰
 
 
 ## 8. La buena fortuna
 
-¡Practiquemos haciendo un nuevo filtrado! :wink:
+¡Practiquemos haciendo un nuevo filtrado! 😉
 
-> Definí la función `afortunados`, que filtra aquellos balances que tuvieron una ganancia mayor a $1000. :dollar:
+> Definí la función `afortunados`, que filtra aquellos balances que tuvieron una ganancia mayor a $1000. 💵
 
 
 
@@ -325,7 +325,7 @@ self.assertEqual(afortunados([{ "mes": "enero", "ganancia": 1000 }, { "mes": "fe
 
 ## 9. Comprendiendo al filtro
 
-Así como podíamos hacer mapeos utilizando listas por comprensión, también podemos hacer filtrados. :open_hands:
+Así como podíamos hacer mapeos utilizando listas por comprensión, también podemos hacer filtrados. 👐
 
 Imaginemos que tenemos la función `mayores_a_5` que dada una lista de números nos retorna una nueva con aquellos que son mayores a 5:
 
@@ -362,7 +362,7 @@ self.assertEqual(afortunados([{ "mes": "enero", "ganancia": 1000 }, { "mes": "fe
 
 ### Para pensar
 
-¡Excelente! :clap:
+¡Excelente! 👏
 
 También se puede combinar la idea de filtrar y de mapear en las listas por comprensión. Por ejemplo: si quisieramos el doble de los números mayores a 5 podríamos hacer:
 
@@ -371,14 +371,14 @@ def doble_de_los_mayores_a_5(numeros)
   [numero * 2 for numero in numeros if numero > 5]
 ```
 
-A modo de resumen, la sintaxis general de las listas por comprensión es `[expresion for elemento in lista if condicion]`. :sunglasses:
+A modo de resumen, la sintaxis general de las listas por comprensión es `[expresion for elemento in lista if condicion]`. 🕶️
 
 
 ## 10. Larguísimo este mes
 
-¿Sabes cuántos tienen 28 días? :thinking:
+¿Sabes cuántos tienen 28 días? 🤔
 
-¡Todos! :stuck_out_tongue_winking_eye:
+¡Todos! 😜
 
 Fuera del mal chiste, algunos meses son más largos que otros, es por eso que queremos saber de una lista de balances, cuáles corresponden a meses largos. Los meses largos son los que tienen 31 días. Veamos un ejemplo:
 
@@ -399,7 +399,7 @@ Fuera del mal chiste, algunos meses son más largos que otros, es por eso que qu
 
 ### Pistas
 
-Por si no te acordás, los meses con 31 días son enero, marzo, mayo, julio, agosto, octubre y diciembre. :calendar_spiral:
+Por si no te acordás, los meses con 31 días son enero, marzo, mayo, julio, agosto, octubre y diciembre. 🗓️
 
 
 
@@ -416,7 +416,7 @@ self.assertEqual(balances_de_meses_largos([{ "mes": "abril", "ganancia": 800 }, 
 
 ## 11. Los mejores meses del año
 
-En ejercicios anteriores ya definimos las funciones `meses` y `afortunados` tanto usando `for...in` como listas por comprensión. :wink:
+En ejercicios anteriores ya definimos las funciones `meses` y `afortunados` tanto usando `for...in` como listas por comprensión. 😉
 
 > Definí la función `meses_afortunados` utilizando listas por comprensión que dada una lista de balances reque nos diga los meses de aquellos que fueron afortunados.
 
@@ -428,7 +428,7 @@ En ejercicios anteriores ya definimos las funciones `meses` y `afortunados` tant
 
 En la `Biblioteca` te dejamos las definiciones de estas funciones que utilizaban listas por comprensión para que recuerdes la lógica.
 
-Pero no podes invocar `meses` ni `afortunados`. Tampoco `for...in`, ¿se te ocurre cómo combinarlas en una nueva lista por comprensión? :thinking:
+Pero no podes invocar `meses` ni `afortunados`. Tampoco `for...in`, ¿se te ocurre cómo combinarlas en una nueva lista por comprensión? 🤔
 
 
 
@@ -449,15 +449,15 @@ self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 999 }, { "mes"
 
 ### Para pensar
 
-¡Muy bien! :tada:
+¡Muy bien! 🎉
 
-Si bien esta es una forma de resolver el problema tiene como contra que no aprovechamos las funciones definidas previamente. Vamos a ver otra forma de resolver este problema en el próximo ejercicio. :muscle:
+Si bien esta es una forma de resolver el problema tiene como contra que no aprovechamos las funciones definidas previamente. Vamos a ver otra forma de resolver este problema en el próximo ejercicio. 💪
 
 ## 12. Afortunadamente
 
-¡Afortunadamente este es el último ejercicio de la lección! :stuck_out_tongue_winking_eye:
+¡Afortunadamente este es el último ejercicio de la lección! 😜
 
-Ahora sí, combinemos `meses` y `afortunados` para saber cuáles fueron esos meses en los que nos visitó la buena fortuna. :money_mouth:
+Ahora sí, combinemos `meses` y `afortunados` para saber cuáles fueron esos meses en los que nos visitó la buena fortuna. 🤑
 
 > Definí la función `meses_afortunados` que dada una lista de balances devuelve aquellos meses que fueron afortunados. Esta vez no podés usar listas por comprensión.
 
@@ -465,7 +465,7 @@ Ahora sí, combinemos `meses` y `afortunados` para saber cuáles fueron esos mes
 
 ### Pistas
 
-En este ejercicio no vas a tener que hacer un `for...in`, simplemente invocar correctamente a `meses` y `afortunados`. Para recordarlas podés ver la `Biblioteca`. :relaxed:
+En este ejercicio no vas a tener que hacer un `for...in`, simplemente invocar correctamente a `meses` y `afortunados`. Para recordarlas podés ver la `Biblioteca`. ☺️
 
 
 
@@ -486,6 +486,6 @@ self.assertEqual(meses_afortunados([{ "mes": "enero", "ganancia": 999 }, { "mes"
 
 ### Para pensar
 
-En esta última lección te reencontraste con el `for...in` y resolviste problemas más complejos con él :exploding_head:. Más especificamente creaste funciones para filtrar y/o transformar los elementos de una lista.
+En esta última lección te reencontraste con el `for...in` y resolviste problemas más complejos con él 🤯. Más especificamente creaste funciones para filtrar y/o transformar los elementos de una lista.
 
-¡Muy buen trabajo! :thumbsup:
+¡Muy buen trabajo! 👍

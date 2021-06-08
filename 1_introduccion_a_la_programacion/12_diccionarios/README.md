@@ -4,11 +4,11 @@
 
 Muchas veces, cuando representamos cosas de la vida real en nuestros programas, necesitamos poder agrupar múltiples características de esas cosas de alguna forma.
 
-Te presentamos una estructura que nos va a ayudar en esa tarea: los diccionarios. :grin:
+Te presentamos una estructura que nos va a ayudar en esa tarea: los diccionarios. 😁
 
 ## 1. Que ejercicio monumental
 
-Una historiadora está recopilando información acerca de distintos monumentos a lo largo y ancho del mundo :earth_americas:. En principio solo quiso saber el nombre, ubicación, y año de construcción de cada monumento. :moyai:
+Una historiadora está recopilando información acerca de distintos monumentos a lo largo y ancho del mundo 🌎. En principio solo quiso saber el nombre, ubicación, y año de construcción de cada monumento. 🗿
 
 Para eso almacenó cada dato en una variable:
 
@@ -21,7 +21,7 @@ locacion_cristo_redentor = "Rio De Janeiro"
 anio_de_construccion_cristo_redentor = "1931"
 ```
 
-Ahí es cuando se dio cuenta que no era conveniente :unamused:: si bien la información entre las variables estaba relacionada, la estaba almacenando por separado. Entonces pensó: ¿no existirá alguna forma de representar las distintas características o propiedades de una misma cosa de forma agrupada?
+Ahí es cuando se dio cuenta que no era conveniente 😒: si bien la información entre las variables estaba relacionada, la estaba almacenando por separado. Entonces pensó: ¿no existirá alguna forma de representar las distintas características o propiedades de una misma cosa de forma agrupada?
 
 > Luego de investigar un poco, encontró una mejor manera para guardar la información de los monumentos. Podés verla escribiendo en la consola:
 > ```python
@@ -51,7 +51,7 @@ coliseo = { "nombre": "Coliseo", "locacion": "Roma, Italia", "anio_de_construcci
 
 ### Para pensar
 
-¡Wow! Mucho más organizado, ¿no? :nerd:
+¡Wow! Mucho más organizado, ¿no? 🤓
 
 Para modelar estos monumentos las variables se inicializaron así:
 
@@ -70,9 +70,9 @@ coliseo = { "nombre": "Coliseo", "locacion": "Roma, Italia", "anio_de_construcci
 
 Los monumentos que probaste en el ejercicio anterior están representados como _diccionarios_, y cada una de sus características (nombre, locación, año de construcción) son _campos_ del diccionario. Por cierto, ¡podemos crear diccionarios de cualquier cosa, con los campos que querramos!
 
-Por ejemplo, podríamos almacenar un libro de modo que cada campo del diccionario fuese alguna característica: su título, su autor, su fecha de publicación, y más. :books:
+Por ejemplo, podríamos almacenar un libro de modo que cada campo del diccionario fuese alguna característica: su título, su autor, su fecha de publicación, y más. 📚
 
-> ¡Es tu momento del monumento! Inicializa las variables `torre_azadi` y `monumento_nacional_a_la_bandera` con diccionarios de esos monumentos, oriundos de las ciudades de `Teherán, Irán` y `Rosario, Argentina` respectivamente. ¿Te animás a investigar en qué año se terminaron de construir para completar ese campo? :satisfied:
+> ¡Es tu momento del monumento! Inicializa las variables `torre_azadi` y `monumento_nacional_a_la_bandera` con diccionarios de esos monumentos, oriundos de las ciudades de `Teherán, Irán` y `Rosario, Argentina` respectivamente. ¿Te animás a investigar en qué año se terminaron de construir para completar ese campo? 😆
 
 
 
@@ -104,9 +104,9 @@ self.assertEqual(monumento_nacional_a_la_bandera["anio_de_construccion"], 1957)
 
 ### Para pensar
 
-¡Buenas habilidades de búsqueda! :mag_right::wink:
+¡Buenas habilidades de búsqueda! 🔎😉
 
-Los diccionarios, al igual que las listas, son una _estructura de datos_ porque nos permiten organizar información. Pero ¿en qué se diferencia un diccionario de una lista? :thinking:
+Los diccionarios, al igual que las listas, son una _estructura de datos_ porque nos permiten organizar información. Pero ¿en qué se diferencia un diccionario de una lista? 🤔
 
 En las listas podemos guardar muchos elementos de un mismo tipo que representen una misma cosa (por ejemplo todos números, o todos strings). No existen límites para las listas: pueden tener muchos elementos, ¡o ninguno!
 
@@ -122,7 +122,7 @@ Cuando consultaste los diccionarios existentes, se veía algo parecido a lo sigu
 { "nombre": "Taj Mahal", "locacion": "Agra, India", "anio_de_construccion": 1653 }
 ```
 
-Esa consulta era porque estábamos viendo al diccionario `taj_mahal` completo, incluyendo todos sus campos. ¡Pero también se puede consultar por un campo particular! Mirá :eyes::
+Esa consulta era porque estábamos viendo al diccionario `taj_mahal` completo, incluyendo todos sus campos. ¡Pero también se puede consultar por un campo particular! Mirá 👀:
 
 ```python
 >>> taj_mahal["locacion"]
@@ -155,9 +155,9 @@ def listo():
 
 ## 4. Temperatura de planeta
 
-Ahora que agregamos diccionarios de planetas, ¡trabajemos un poco con ellos! :muscle:
+Ahora que agregamos diccionarios de planetas, ¡trabajemos un poco con ellos! 💪
 
-> Definí una función `temperatura_de_planeta` que reciba por parámetro un diccionario de planeta y devuelva un string que indica su nombre y su temperatura promedio. ¡Tiene que funcionar para cualquier planeta! :earth_americas: Por ejemplo:
+> Definí una función `temperatura_de_planeta` que reciba por parámetro un diccionario de planeta y devuelva un string que indica su nombre y su temperatura promedio. ¡Tiene que funcionar para cualquier planeta! 🌎 Por ejemplo:
 
 > ```
 >>> temperatura_de_planeta(mercurio)
@@ -175,7 +175,7 @@ Ahora que agregamos diccionarios de planetas, ¡trabajemos un poco con ellos! :m
 
 ¡Prestá atención a los strings que devuelven los ejemplos! Sólo la parte correspondiente a cada planeta varía, como el `nombre` y la `temperatura_promedio`. Además, tenés que dejar espacios entre las palabras que rodean a `nombre` y `temperatura_promedio`.
 
-También recordá que para concatenar un número a un string, antes debemos convertilo utilizando `str`. :wink:
+También recordá que para concatenar un número a un string, antes debemos convertilo utilizando `str`. 😉
 
 
 
@@ -198,7 +198,7 @@ self.assertEqual(temperatura_de_planeta({"nombre":"cualquier planeta", "temperat
 
 ## 5. Moviendo archivos
 
-Por el momento estuvimos creando y consultando diccionarios. ¿No sería interesante poder... modificarlos? :smirk:
+Por el momento estuvimos creando y consultando diccionarios. ¿No sería interesante poder... modificarlos? 😏
 
 La sintaxis para modificar campos de diccionarios es muy similar a lo que hacemos para cambiar los valores de las variables. Por ejemplo, para cambiar la temperatura de un planeta:
 
@@ -247,7 +247,7 @@ Probá las siguientes consultas y verificá que devuelvan lo mismo:
 
 ## 6. Diccionarios de dos milenios
 
-En el ejercicio anterior modificamos la ruta del diccionario, pero no utilizamos su fecha de creación. ¡Usémosla! Queremos saber si un archivo es del milenio pasado, lo que ocurre cuando su año es anterior al 2000 :back: :
+En el ejercicio anterior modificamos la ruta del diccionario, pero no utilizamos su fecha de creación. ¡Usémosla! Queremos saber si un archivo es del milenio pasado, lo que ocurre cuando su año es anterior al 2000 🔙 :
 
 ```python
 >>> es_del_milenio_pasado({ "ruta": "D:\fotonacimiento.jpg", "creacion": "14/09/1989" })
@@ -291,7 +291,7 @@ True
 
 ## 7. Postres complejos
 
- Unos ejercicios atrás te contamos la diferencia entre listas y diccionarios. ¡Pero eso no significa que no podamos usar ambas estructuras a la vez! :wink:
+ Unos ejercicios atrás te contamos la diferencia entre listas y diccionarios. ¡Pero eso no significa que no podamos usar ambas estructuras a la vez! 😉
 
 Por ejemplo, una lista puede ser el campo de un diccionario. Mirá estos diccionarios de postres, de los cuales sabemos cuántos minutos de cocción requieren y sus ingredientes:
 
@@ -313,7 +313,7 @@ Por ejemplo, una lista puede ser el campo de un diccionario. Mirá estos diccion
 
 ### Pistas
 
-¡Recordá que existe la función `len`! Y si los dos postres tienen la misma cantidad de ingredientes, podés devolver cualquiera de los dos. :satisfied:
+¡Recordá que existe la función `len`! Y si los dos postres tienen la misma cantidad de ingredientes, podés devolver cualquiera de los dos. 😆
 
 
 
@@ -334,9 +334,9 @@ True
 
 ## 8. Listas de diccionarios
 
-En el ejercicio anterior te mostramos que un diccionario puede tener una lista entre sus campos. ¿Y al revés? ¿Podemos tener una lista de diccionarios? :thought_balloon:
+En el ejercicio anterior te mostramos que un diccionario puede tener una lista entre sus campos. ¿Y al revés? ¿Podemos tener una lista de diccionarios? 💭
 
-> Mirá en la consola las listas `monumentos_de_america` y `postres_favoritos`. Hay un postre que no mostramos antes, ¿te das cuenta cuál es solamente leyendo sus ingredientes? :smirk:
+> Mirá en la consola las listas `monumentos_de_america` y `postres_favoritos`. Hay un postre que no mostramos antes, ¿te das cuenta cuál es solamente leyendo sus ingredientes? 😏
 
 
 
@@ -356,11 +356,11 @@ postres_favoritos = [ { "ingredientes": ["galletitas", "dulce de leche", "crema"
 
 ### Para pensar
 
-Así como trabajamos con listas de números, booleanos, strings o más listas, también podemos listar diccionarios. Se puede hacer todo lo que hacías antes, como por ejemplo remover (`list.remove`), saber su longitud (`len`) o preguntar por el elemento de cierta posición utilizando los corchetes `[]`. :star_struck:
+Así como trabajamos con listas de números, booleanos, strings o más listas, también podemos listar diccionarios. Se puede hacer todo lo que hacías antes, como por ejemplo remover (`list.remove`), saber su longitud (`len`) o preguntar por el elemento de cierta posición utilizando los corchetes `[]`. 🤩
 
 ## 9. 60 dulces minutos
 
-A veces no sólo queremos comer algo rico, sino que queremos comerlo lo antes posible. :smirk: :cake:
+A veces no sólo queremos comer algo rico, sino que queremos comerlo lo antes posible. 😏 🍰
 
 > Definí el procedimiento `agregar_a_postres_rapidos`, que recibe una lista con postres rápidos y un postre por parámetro. Si el tiempo de cocción es de una hora o menos, se agrega el diccionario a la lista.
 
@@ -368,9 +368,9 @@ A veces no sólo queremos comer algo rico, sino que queremos comerlo lo antes po
 
 ### Pistas
 
-¡Recordá que `tiempo_de_coccion` está expresado en minutos! Por lo tanto, si queremos que se cocine en una hora o menos, tenés que fijarte que ese `tiempo_de_coccion` sea menor a 60 minutos. :wink:
+¡Recordá que `tiempo_de_coccion` está expresado en minutos! Por lo tanto, si queremos que se cocine en una hora o menos, tenés que fijarte que ese `tiempo_de_coccion` sea menor a 60 minutos. 😉
 
-Ah, si es mayor a 60 no tenemos que hacer nada. :sweat_smile:
+Ah, si es mayor a 60 no tenemos que hacer nada. 😅
 
 
 
@@ -397,9 +397,9 @@ self.assertEqual(postres_rapidos[-1], postre_de_leche)
 
 ## 10. Hay un diccionario en mi diccionario
 
-¿Te acordás cuando vimos que una lista podía estar compuesta por otras listas? ¡Con los diccionarios aplica la misma idea! :hushed: Si tenemos alguna estructura de datos compleja, puede ocurrir que no alcance con representarla únicamente mediante strings, números, booleanos y listas, sino que necesitemos _otro_ diccionario dentro.
+¿Te acordás cuando vimos que una lista podía estar compuesta por otras listas? ¡Con los diccionarios aplica la misma idea! 😯 Si tenemos alguna estructura de datos compleja, puede ocurrir que no alcance con representarla únicamente mediante strings, números, booleanos y listas, sino que necesitemos _otro_ diccionario dentro.
 
-¡No se puede vivir a base de postres! Bueno, quizás sí, pero mantengamos una alimentación saludable :stuck_out_tongue_winking_eye:. Mediante un diccionario queremos modelar un menú completo: consiste en un plato principal :curry:, los vegetales de la ensalada que acompaña :tomato:, y un postre :custard: como lo veníamos trabajando, es decir, sigue siendo un diccionario.
+¡No se puede vivir a base de postres! Bueno, quizás sí, pero mantengamos una alimentación saludable 😜. Mediante un diccionario queremos modelar un menú completo: consiste en un plato principal 🍛, los vegetales de la ensalada que acompaña 🍅, y un postre 🍮 como lo veníamos trabajando, es decir, sigue siendo un diccionario.
 
 Por ejemplo, el siguiente es un menú con bife de lomo como plato principal, una ensalada de lechuga, tomate y zanahoria como acompañamiento y un cheesecake de postre. Como el diccionario es un poco extenso, y para que sea más legible, lo vamos a escribir de la siguiente forma:
 
@@ -411,7 +411,7 @@ menu_del_dia = {
 }
 ```
 
-> Averiguá los `ingredientes` del `postre` del `menu_infantil`. Es un diccionario dentro de otro, así que vamos a tener que acceder primero al campo `postre` y luego a su campo `ingredientes`. Si no se te ocurre como podés mirar la pista. :mag:
+> Averiguá los `ingredientes` del `postre` del `menu_infantil`. Es un diccionario dentro de otro, así que vamos a tener que acceder primero al campo `postre` y luego a su campo `ingredientes`. Si no se te ocurre como podés mirar la pista. 🔍
 
 
 
@@ -452,20 +452,20 @@ menu_infantil = {
 
 ### Para pensar
 
-Y también podríamos tener diccionarios que adentro tengan diccionarios que adentro tengan dic.... :flushed:
+Y también podríamos tener diccionarios que adentro tengan diccionarios que adentro tengan dic.... 😳
 
 ## 11. ¡Azúcar!
 
-Para terminar, trabajemos una vez más con los menúes. :page_facing_up:
+Para terminar, trabajemos una vez más con los menúes. 📄
 
-> Definí un procedimiento `endulzar_menu`, que recibe un menú y le agrega `azúcar` a los ingredientes de su postre. Si ya tiene azúcar, no importa... ¡le agrega más! :stuck_out_tongue:
+> Definí un procedimiento `endulzar_menu`, que recibe un menú y le agrega `azúcar` a los ingredientes de su postre. Si ya tiene azúcar, no importa... ¡le agrega más! 😛
 
 
 
 
 ### Pistas
 
-Recordá que cada menú tiene un `postre` y que cada postre tiene `ingredientes`. :custard:
+Recordá que cada menú tiene un `postre` y que cada postre tiene `ingredientes`. 🍮
 
 
 
@@ -490,4 +490,4 @@ True
 
 ### Para pensar
 
-Durante la lección aprendiste cuál es la utilidad de esta estructura de datos llamada diccionario, cómo acceder a sus campos y modificarlos, y hasta viste que pueden _anidarse_ (es decir, que haya un diccionario dentro de otro). ¡Felicitaciones! :clap:
+Durante la lección aprendiste cuál es la utilidad de esta estructura de datos llamada diccionario, cómo acceder a sus campos y modificarlos, y hasta viste que pueden _anidarse_ (es decir, que haya un diccionario dentro de otro). ¡Felicitaciones! 👏

@@ -92,7 +92,7 @@ GradosCelsius = (GradosFarenheit - 32) / 1.8
 
 ## Hace frío internacional
 
-¡Se vino el frío! :snowflake: Y necesitamos programar las siguientes funciones:
+¡Se vino el frío! ❄️ Y necesitamos programar las siguientes funciones:
 
 * `hace_frio_celsius` que nos diga si hace menos de 8 grados Celsius
 * `hace_frio_farenheit` que también nos diga si hace frío, pero que tome una temperatura expresada en grados Farenheit.
@@ -116,7 +116,7 @@ True
 
 ## Dispersión
 
-Trabajamos con tres enteros que representan el nivel de un río en tres días consecutivos :calendar:. Por ejemplo: medimos los días 1, 2 y 3, y las mediciones son: 22 cm, 283 cm, y 294 cm.
+Trabajamos con tres enteros que representan el nivel de un río en tres días consecutivos 📆. Por ejemplo: medimos los días 1, 2 y 3, y las mediciones son: 22 cm, 283 cm, y 294 cm.
 
 Usando estas mediciones nos gustaría saber tres cosas:
 
@@ -133,7 +133,7 @@ Usando estas mediciones nos gustaría saber tres cosas:
 272 # Porque 294 menos 22 es 272.
 ```
 
-> ¡Desarrollá estas tres funciones! Y no repitas código: reutilizá `maximo_entre_tres` y `minimo_entre_tres` en la definición de `dispersion` :sunglasses:
+> ¡Desarrollá estas tres funciones! Y no repitas código: reutilizá `maximo_entre_tres` y `minimo_entre_tres` en la definición de `dispersion` 🕶️
 
 
 ## Pasan los días
