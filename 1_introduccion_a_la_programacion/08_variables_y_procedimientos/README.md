@@ -605,33 +605,33 @@ def es_volumen_saludable():
 
 > Marcá las afirmaciones correctas:
 
-1. ☐ `volumen` es una variable local
-1. ☐ `volumen` es una variable global
-1. ☐ `subir_volumen` es una función
-1. ☐ `subir_volumen` es un procedimiento
-1. ☐ `bajar_volumen` es una función
-1. ☐ `bajar_volumen` es un procedimiento
-1. ☐ `es_volumen_saludable` es una función
-1. ☐ `es_volumen_saludable` es un procedimiento
-1. ☐ `subir_volumen` retorna un número
-1. ☐ `es_volumen_saludable` retorna un número
-1. ☐ `es_volumen_saludable` retorna un booleano
+1. 🔲 `volumen` es una variable local
+1. 🔲 `volumen` es una variable global
+1. 🔲 `subir_volumen` es una función
+1. 🔲 `subir_volumen` es un procedimiento
+1. 🔲 `bajar_volumen` es una función
+1. 🔲 `bajar_volumen` es un procedimiento
+1. 🔲 `es_volumen_saludable` es una función
+1. 🔲 `es_volumen_saludable` es un procedimiento
+1. 🔲 `subir_volumen` retorna un número
+1. 🔲 `es_volumen_saludable` retorna un número
+1. 🔲 `es_volumen_saludable` retorna un booleano
 
 ### Respuesta
 
 <details>
 <summary>👀 Ver</summary>
 
-1. ☒ `volumen` es una variable local
+1. ❎ `volumen` es una variable local
 1. ☑️ `volumen` es una variable global
-1. ☒ `subir_volumen` es una función
+1. ❎ `subir_volumen` es una función
 1. ☑️ `subir_volumen` es un procedimiento
-1. ☒ `bajar_volumen` es una función
+1. ❎ `bajar_volumen` es una función
 1. ☑️ `bajar_volumen` es un procedimiento
 1. ☑️ `es_volumen_saludable` es una función
-1. ☒ `es_volumen_saludable` es un procedimiento
-1. ☒ `subir_volumen` retorna un número
-1. ☒ `es_volumen_saludable` retorna un número
+1. ❎ `es_volumen_saludable` es un procedimiento
+1. ❎ `subir_volumen` retorna un número
+1. ❎ `es_volumen_saludable` retorna un número
 1. ☑️ `es_volumen_saludable` retorna un booleano
 
 </details>

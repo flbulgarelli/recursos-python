@@ -12,18 +12,18 @@ Python es un lenguaje creado a fines de los 80 y publicado por primera vez en 19
 
 > ¿En qué crees que está inspirado su nombre? 🤔
 
-1. ☐ En el lenguaje de programación _Cobra_.
-1. ☐ En los humoristas británicos _Monty Python_.
-1. ☐ En la picadura de serpiente que sufrió el creador.
+1. 🔲 En el lenguaje de programación _Cobra_.
+1. 🔲 En los humoristas británicos _Monty Python_.
+1. 🔲 En la picadura de serpiente que sufrió el creador.
 
 ### Respuesta
 
 <details>
 <summary>👀 Ver</summary>
 
-1. ☒ En el lenguaje de programación _Cobra_.
+1. ❎ En el lenguaje de programación _Cobra_.
 1. ☑️ En los humoristas británicos _Monty Python_.
-1. ☒ En la picadura de serpiente que sufrió el creador.
+1. ❎ En la picadura de serpiente que sufrió el creador.
 
 </details>
 
@@ -422,13 +422,13 @@ Uff, ¡vimos un montón de cosas! 😅 Aprendimos sobre la sintaxis de las funci
 > Antes de terminar, un último desafío: ¡marcá todas las opciones correctas!
 
 
-1. ☐ `4 + 4` vale `8`
-1. ☐ `"4" + "4"` vale `"44"`
-1. ☐ `4 + 4` vale `"44"`
-1. ☐ `"on" + "ce"` vale `"once"`
-1. ☐ `True and False` vale `False`
-1. ☐ `True and False` vale `0`
-1. ☐ `5 >= 6` vale `False`
+1. 🔲 `4 + 4` vale `8`
+1. 🔲 `"4" + "4"` vale `"44"`
+1. 🔲 `4 + 4` vale `"44"`
+1. 🔲 `"on" + "ce"` vale `"once"`
+1. 🔲 `True and False` vale `False`
+1. 🔲 `True and False` vale `0`
+1. 🔲 `5 >= 6` vale `False`
 
 ### Respuesta
 
@@ -437,10 +437,10 @@ Uff, ¡vimos un montón de cosas! 😅 Aprendimos sobre la sintaxis de las funci
 
 1. ☑️ `4 + 4` vale `8`
 1. ☑️ `"4" + "4"` vale `"44"`
-1. ☒ `4 + 4` vale `"44"`
+1. ❎ `4 + 4` vale `"44"`
 1. ☑️ `"on" + "ce"` vale `"once"`
 1. ☑️ `True and False` vale `False`
-1. ☒ `True and False` vale `0`
+1. ❎ `True and False` vale `0`
 1. ☑️ `5 >= 6` vale `False`
 
 </details>

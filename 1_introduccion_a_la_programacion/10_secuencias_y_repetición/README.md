@@ -410,13 +410,13 @@ def operacion_misteriosa(elementos):
 
 
 
-1. ☐ `operacion_misteriosa` es una función, porque devuelve algo
-1. ☐ `operacion_misteriosa` es un procedimiento, porque no devuelve nada
-1. ☐ `operacion_misteriosa` visita cada elemento de `elementos`, e incrementa `cantidad` en `1` por cada uno
-1. ☐ `operacion_misteriosa` inicializa una variable local `cantidad` en `0`
-1. ☐ `operacion_misteriosa` inicializa una variable global `cantidad` en `0`
-1. ☐ `operacion_misteriosa` hace lo mismo que la función `len`
-1. ☐ `operacion_misteriosa` no usa la variable `elemento`
+1. 🔲 `operacion_misteriosa` es una función, porque devuelve algo
+1. 🔲 `operacion_misteriosa` es un procedimiento, porque no devuelve nada
+1. 🔲 `operacion_misteriosa` visita cada elemento de `elementos`, e incrementa `cantidad` en `1` por cada uno
+1. 🔲 `operacion_misteriosa` inicializa una variable local `cantidad` en `0`
+1. 🔲 `operacion_misteriosa` inicializa una variable global `cantidad` en `0`
+1. 🔲 `operacion_misteriosa` hace lo mismo que la función `len`
+1. 🔲 `operacion_misteriosa` no usa la variable `elemento`
 
 ### Respuesta
 
@@ -424,10 +424,10 @@ def operacion_misteriosa(elementos):
 <summary>👀 Ver</summary>
 
 1. ☑️ `operacion_misteriosa` es una función, porque devuelve algo
-1. ☒ `operacion_misteriosa` es un procedimiento, porque no devuelve nada
+1. ❎ `operacion_misteriosa` es un procedimiento, porque no devuelve nada
 1. ☑️ `operacion_misteriosa` visita cada elemento de `elementos`, e incrementa `cantidad` en `1` por cada uno
 1. ☑️ `operacion_misteriosa` inicializa una variable local `cantidad` en `0`
-1. ☒ `operacion_misteriosa` inicializa una variable global `cantidad` en `0`
+1. ❎ `operacion_misteriosa` inicializa una variable global `cantidad` en `0`
 1. ☑️ `operacion_misteriosa` hace lo mismo que la función `len`
 1. ☑️ `operacion_misteriosa` no usa la variable `elemento`
 
