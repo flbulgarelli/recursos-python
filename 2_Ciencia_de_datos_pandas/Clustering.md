@@ -77,14 +77,26 @@ g = sns.histplot(data = iris, x = "sepal.length", binwidth=0.25, kde = True)
 
 > Para pensar 🤔: ¿Qué información obtenes del gráfico? 
 > 🧗‍♀️ Desafío II: Grafica la distribución de frecuencias de la variable "petal.length" ¿Qué información obtenes del gráfico? ¿Qué diferencias notás respecto del observado para la variable sepal.length? 
+> 🧗‍♀️ Desafío III: Grafica la distribución de frecuencias del resto de las variables.
+> Para pensar 🤔: ¿Qué información pudiste obtener de observar las distribuciones de las distintas variables? ¿Cuántos tipos de plantas crees que existen?
+
+Ahora que pudimos observar como se comportan las variables, nos puede ser de gran utilidad estudiar las asociaciones entre las mismas (correlación). De este modo sabremos si el comportamiento (crecimiento o disminución) de una variable, se debe o está influenciada por otra. Con los pairplots de seabron, podemos entonces estudiar si existen correlaciones entre las variables:
+
+
+```python
+import seaborn as sns
+
+g = sns.pairplot(iris)
+
+```
+> 🧗‍♀️ Desafío IV: ¿Existe alguna correlación entre algunas de las variables? ¿Cómo te diste cuenta? 
 
 
 [3.Calculo de distancias](#3-distancia)
 
+Hemos observado las distribuciones de nuestros datos y la manera en que se correlacionan las variables, y de este modo comenzar a intuir posibles agrupamientos de los datos. Es decir, pudimos observar mediante gráficos exploratorios que algunos registros muestran una mayor similitud entre si.
 
-Como hemos dicho, los métodos de clustering permiten la identificación de grupos en los que se pueden agrupar las observaciones de un conjunto de datos. Esto se hace de forma tal que las observaciones o registros asignados a un mismo grupo, muestren una mayor similitud entre sí que con los miembros de otros grupos.
-
-Pero, ¿Cómo medimos similitud entre miembros de un grupo dado? 🤔
+Justamente, los métodos de clustering permiten la identificación automática de grupos en los que se pueden agrupar las observaciones de un conjunto de datos. Esto se hace de forma tal que las observaciones o registros asignados a un mismo grupo, muestren una mayor similitud entre sí que con los miembros de otros grupos. Pero, ¿Cómo medimos similitud entre miembros de un grupo dado? 🤔
 
 Una forma de obtener la similitud es asumir que los datos son puntos en el espacio, por lo que si se define la distancia ente los puntos y se mide la separación entre dos registros, podrá obtenerse la similitud entre estos. 
 
@@ -93,5 +105,5 @@ Una de las formas más básicas para calcular la distancia  entre dos puntos es 
 ![Distancia Euclidea](./dist_euclídea.gif)
 
 
-¿Pero no todas las definiciones de distancia son aplicables a todos los tipos de datos no? ¡Claro que no!
+¿Pero no todas las definiciones de distancia son aplicables a todos los tipos de datos no? ¡Claro que no! ¿Como por ejemplo...?
 
