@@ -23,8 +23,8 @@ Si correr estas lineas no tira ningún error, etonces están felizmente instalad
 # Guias de Trabajo
  * [1.Clustering ¿Qué es?](#1-Intro)
  * [2.Un ojo en el Iris](#1-Iris)
- * [3.Normalizado y escalado de los datos](#3-escalado)
- * [4.Calculo de distancias](#4-distancia)
+ * [3.Calculo de distancias](#3-distancia)
+ * [4.Normalizado y escalado de los datos](#4-escalado)
  * [5.K-means](#5-kmeans)
  * [6.Agrupamiento jerárquico](#6-agrupamiento)
 
@@ -93,7 +93,8 @@ g = sns.pairplot(iris)
 > 🧗‍♀️ Desafío IV: ¿Existe alguna correlación entre algunas de las variables? ¿Cómo te diste cuenta? 
 
 
-[4.Calculo de distancias](#4-distancia)
+
+[3.Calculo de distancias](#3-distancia)
 
 Hemos observado las distribuciones de nuestros datos y la manera en que se correlacionan las variables, y de este modo comenzar a intuir posibles agrupamientos de los datos. Es decir, pudimos observar mediante gráficos exploratorios que algunos registros muestran una mayor similitud entre si.
 
@@ -118,3 +119,21 @@ Una de las formas más básicas para calcular la **distancia**  entre dos puntos
 > Para pensar 🤔: ¿Qué otras formas de caluclar la distancia se te ocurren?
 >
 > 🧗‍♀️ Desafío V: Buscá otras formas de calcular la distancia entre las observaciones ¿Qué ventajas o desventajas encontras en cada forma de calcular las distancias?
+
+[4.Normalizado y escalado de los datos](#4-escalado)
+
+Ya hemos identificado las problemáticas a la hora de clasificar los datos, pero para que las comparaciones que hagamos sean completamente válidas, resulta de suma importancia hacer un tratamiento extra de los datos. 
+
+Uno de los tratamientos necesarios es el escalado de los datos. Este procedimiento nos permite asegurarnos de que aún cuando algunas variables toman valores más grandes no se usarán como predictor principal a la hora de clasificar.
+
+
+Veamos un ejemplo gráfico de esta problemática que estamos describiendo: 
+
+![Carrera profesional](./carrera.jpeg)
+
+
+Imaginemos que tenemos que analizar la trayectoria profesional de dos personas, para hacer una selección laboral. A priori, sería lógico pensar en basar esta selección en el curriculum de dichas personas. Sin embargo, resulta evidente que el curriculum no nos da un panaroma completo de las habilidades de una persona. Por ejemplo, no nos permite conocer su capacidad de trabajo en equipo o sus habilidades para realizar más de una tarea a la vez, o... ¿Qué peso le estamos dando entonces a estas otras características? ¿Estamos subvalorando o sobrevalorando hablidades?
+
+Es por ello que resulta necesario escalar los datos. La escala es importante para poder especificar que una modificación en una cantidad no es igual a otra modificación en otra. En pocas palabras, escalar los datos le da a todas las características la misma importancia para que ninguna esté dominada por otra. 
+
+Otro tratamiento de los datos necesario antes de comenzar a clasificar nuestros datos es la normalización. Esta implica transformar o convertir el conjunto de datos en una distribución normal. Algunos algoritmos como Máquinas Vectores de Soporte convergen mucho más rápido en los datos normalizados, por lo que tiene sentido normalizar los datos para obtener mejores resultados.
