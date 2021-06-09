@@ -23,9 +23,10 @@ Si correr estas lineas no tira ningún error, etonces están felizmente instalad
 # Guias de Trabajo
  * [1.Clustering ¿Qué es?](#1-Intro)
  * [2.Un ojo en el Iris](#1-Iris)
- * [3.Calculo de distancias](#3-distancia)
- * [4.K-means](#4-kmeans)
- * [5.Agrupamiento jerárquico](#5-agrupamiento)
+ * [3.Normalizado y escalado de los datos](#3-escalado)
+ * [4.Calculo de distancias](#4-distancia)
+ * [5.K-means](#5-kmeans)
+ * [6.Agrupamiento jerárquico](#6-agrupamiento)
 
 [1.Clustering ¿Qué es?](#1-Intro)
 Hemos estado trabajando hasta aquí en la carga y limpieza da datos con Pandas. Es momento de comenzar a trabajar con los datos, analizarlos y poder encontrar patrones que nos permitan derivar información. El aprendizaje automático consiste en identificar de patrones o tendencias que de los datos de forma automática.
@@ -92,18 +93,28 @@ g = sns.pairplot(iris)
 > 🧗‍♀️ Desafío IV: ¿Existe alguna correlación entre algunas de las variables? ¿Cómo te diste cuenta? 
 
 
-[3.Calculo de distancias](#3-distancia)
+[4.Calculo de distancias](#4-distancia)
 
 Hemos observado las distribuciones de nuestros datos y la manera en que se correlacionan las variables, y de este modo comenzar a intuir posibles agrupamientos de los datos. Es decir, pudimos observar mediante gráficos exploratorios que algunos registros muestran una mayor similitud entre si.
 
 Justamente, los métodos de clustering permiten la identificación automática de grupos en los que se pueden agrupar las observaciones de un conjunto de datos. Esto se hace de forma tal que las observaciones o registros asignados a un mismo grupo, muestren una mayor similitud entre sí que con los miembros de otros grupos. Pero, ¿Cómo medimos similitud entre miembros de un grupo dado? 🤔
 
+
+Hagamos un prueba para intentar dar respuesta a esta pregunta. Tomemos, por ejemplo, un conjunto de emojis 🙀😻🥰😱😾🙊🙈😠
+> Para pensar 🤔: ¿Cómo los agruparías/clasificarías?¿Se te ocurre más de una forma de clasificarlos?¿Qué criterios usaste para cada caso?
+
+Como habrás observado, la clasificación de los datos es subjetiva, en tanto depende del modo en que decidimos medir la similitud entre las observaciones. Y tal como hemos visto, existen múltiples formas de calcular lasimilitud entre los datos. 
+
 Una forma de obtener la similitud es asumir que los datos son puntos en el espacio, por lo que si se define la distancia ente los puntos y se mide la separación entre dos registros, podrá obtenerse la similitud entre estos. 
 
-Una de las formas más básicas para calcular la distancia  entre dos puntos es la Euclídea, basada en el famoso [Teorema de Pitágoras](https://es.wikipedia.org/wiki/Teorema_de_Pit%C3%A1goras).. ¡Si, era importante Pitágoras!
+Una de las formas más básicas para calcular la **distancia**  entre dos puntos es la **Euclídea**, basada en el famoso [Teorema de Pitágoras](https://es.wikipedia.org/wiki/Teorema_de_Pit%C3%A1goras).. ¡Si, era importante Pitágoras!
 
 ![Distancia Euclidea](./dist_euclídea.gif)
 
 
-¿Pero no todas las definiciones de distancia son aplicables a todos los tipos de datos no? ¡Claro que no! ¿Como por ejemplo...?
+¿Pero no todas las definiciones de distancia son aplicables a todos los tipos de datos no? ¡Claro que no! ¿Como por ejemplo...? 🤔
 
+
+> Para pensar 🤔: ¿Qué otras formas de caluclar la distancia se te ocurren?
+>
+> 🧗‍♀️ Desafío V: Buscá otras formas de calcular la distancia entre las observaciones ¿Qué ventajas o desventajas encontras en cada forma de calcular las distancias?
