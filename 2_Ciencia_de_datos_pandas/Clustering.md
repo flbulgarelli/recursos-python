@@ -1,12 +1,31 @@
 > Este material se basa en [Clustering con Python by Joaquín Amat Rodrigo](https://www.cienciadedatos.net/documentos/py20-clustering-con-python.html) 
 
-En este recorrido utilizaremos el set de datos [Iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) que consiste en un conjunto de datos u observaciones realizadas por el biólogo Ronald Fisher, sobre las característica de distintas especies de plantas plantas.
+# Pasos previos
+Para este recorrido necesitarás las librerías [Pandas](https://pandas.pydata.org/), [Seaborn](https://seaborn.pydata.org/) y [Scipy](https://www.scipy.org/)
+
+Podes corroborar si las tienes instaladas corriendo las siguientes líneas en tu intérprete de Python:
+
+```python
+import pandas as pd
+import seaborn as sns
+import scipy.stats as ss
+```
+
+Si correr estas lineas no tira ningún error, etonces están felizmente instaladas las bibliotecas enc uestión. De lo contrario, obtendremos un mensaje de error `ModuleNotFoundError: No module named` al correr las lineas anteriores. En tal caso, podés instalar las bibliotecas desde la consola, con el comando:
+
+```bash
+        pip install pandas
+        pip install seaborn
+        pip install scipy
+```
+
 
 # Guias de Trabajo
  * [1.Clustering ¿Qué es?](#1-Intro)
- * [2.Calculo de distancias](#2-distancia)
- * [3.K-means](#3-kmeans)
- * [4.Agrupamiento jerárquico](#4-agrupamiento)
+ * [2.Un ojo en el Iris](#1-Iris)
+ * [3.Calculo de distancias](#3-distancia)
+ * [4.K-means](#4-kmeans)
+ * [5.Agrupamiento jerárquico](#5-agrupamiento)
 
 [1.Clustering ¿Qué es?](#1-Intro)
 Hemos estado trabajando hasta aquí en la carga y limpieza da datos con Pandas. Es momento de comenzar a trabajar con los datos, analizarlos y poder encontrar patrones que nos permitan derivar información. El aprendizaje automático consiste en identificar de patrones o tendencias que de los datos de forma automática.
@@ -29,7 +48,40 @@ En este recorrido nos centraremos particularmente en métodos que nos permitan d
 Existen una amplia cantidad de técnicas que nos permiten encontrar patrones en los datos y agruparlas de algún modo, pero en todos los casos estos agrupamientos se establecen de forma que, las observaciones que están dentro de un mismo grupo, son similares entre ellas y distintas a las de otros grupos. Todos los métodos de clustering requieren de la definición y cuantificación de la similitud entre las observaciones. Es por ello que resulta necesario revisar el concepto de distancia, ya que es lo que se usa como medida de similitud o diferencia entre grupos.
 
 
-[2.Calculo de distancias](#2-distancia)
+
+[2.Un ojo en el Iris](#2-Iris)
+
+
+En este recorrido utilizaremos el [set de datos](https://github.com/flbulgarelli/recursos-python/blob/master/2_Ciencia_de_datos_pandas/iris_data.txt) [Iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) que consiste en un conjunto de datos u observaciones realizadas por el biólogo Ronald Fisher, sobre las característica de distintas especies de plantas plantas. ¿Será posible clasificar las plantas utilizando alguno de estas observaciones que hizo Fisher?
+
+Vamos a explorar los datos:
+
+```python
+import pandas as pd
+
+iris = pd.read_csv(datapath + "iris/iris_hidden.txt", sep = '\t')
+```
+
+
+>  🧗‍♀️ Desafío I: Averiguá qué variables (columnas) tiene la tabla e inspecioná el DataFrame
+
+Para tener una idea más intuitiva del "comportamiento" de los datos podemos graficar la distribución de frecuencias de las distintas variables que nos permitirá, por ejemplo,  saber si las observaciones son únicas o se repiten. Para ello utilizaremos la biblioteca [Seaborn](https://seaborn.pydata.org/):
+
+```python
+import seaborn as sns
+
+g = sns.histplot(data = iris, x = "sepal.length", binwidth=0.25, kde = True)
+
+```
+
+
+> Para pensar 🤔: ¿Qué información obtenes del gráfico? 
+> 🧗‍♀️ Desafío II: Grafica la distribución de frecuencias de la variable "petal.length" ¿Qué información obtenes del gráfico? ¿Qué diferencias notás respecto del observado para la variable sepal.length? 
+
+
+[3.Calculo de distancias](#3-distancia)
+
+
 Como hemos dicho, los métodos de clustering permiten la identificación de grupos en los que se pueden agrupar las observaciones de un conjunto de datos. Esto se hace de forma tal que las observaciones o registros asignados a un mismo grupo, muestren una mayor similitud entre sí que con los miembros de otros grupos.
 
 Pero, ¿Cómo medimos similitud entre miembros de un grupo dado? 🤔
