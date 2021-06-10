@@ -62,7 +62,7 @@ Vamos a explorar los datos:
 ```python
 import pandas as pd
 
-iris = pd.read_csv(datapath + "iris/iris_hidden.txt", sep = '\t')
+iris = pd.read_csv(datapath, sep = '\t')
 ```
 
 
