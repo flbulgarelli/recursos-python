@@ -40,6 +40,7 @@
     * Filtrado
     * Acceso indexado (`iloc`, `una_lista[índice]`)
 
+Para más información, te dejamos de referencia una [guía rápida de python](https://github.com/flbulgarelli/recursos-python/tree/master/1_introduccion_a_la_programacion/14_integraci%C3%B3n/referencia_r%C3%A1pida_python#readme) y [otra de pandas](https://github.com/flbulgarelli/recursos-python/tree/master/1_introduccion_a_la_programacion/14_integraci%C3%B3n/referencia_r%C3%A1pida_pandas#readme)
 
 ## 2. `anio`
 
@@ -164,6 +165,7 @@ Usando `pandas`, Creá un `DataFrame` en pandas con los datos de ejercicio anter
 
 ```python
 import pandas as pd
+
 estudiantes = pd.DataFrame(curso_ejemplo)
 ```
 
@@ -176,9 +178,11 @@ estudiantes = pd.DataFrame(curso_ejemplo)
 
 ## 5. Tabla de emojis 😜
 
-Cargá [este](https://raw.githubusercontent.com/github/gemoji/ce6c4ab12ae229be2b1089cbf7e85702fdc5552f/db/emoji.json) archivo en una tabla de pandas...
+Cargá [este](https://raw.githubusercontent.com/github/gemoji/ce6c4ab12ae229be2b1089cbf7e85702fdc5552f/db/emoji.json) archivo en una tabla de `pandas`...
 
 ```python
+import pandas as pd
+
 # notá que este archivo no es un CSV, sino un JSON, un formato
 # muy diferente pero que podemos cargar de forma muy similar
 emojis = pd.read_json("https://raw.githubusercontent.com/github/gemoji/ce6c4ab12ae229be2b1089cbf7e85702fdc5552f/db/emoji.json")
@@ -210,7 +214,7 @@ Por ejemplo:
 
 ## 7. Emojificar
 
-Bonus: definí la función `emojificar`, que tome un texto y reemplace todas las palabras que se correspondan con el alias de un emoji por el emoji correspondiente.
+Definí la función `emojificar`, que tome un texto y reemplace todas las palabras que se correspondan con el alias de un emoji por el emoji correspondiente.
 
 Por ejemplo:
 
