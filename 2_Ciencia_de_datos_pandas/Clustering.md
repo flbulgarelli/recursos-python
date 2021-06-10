@@ -1,7 +1,7 @@
 > Este material se basa en [Clustering con Python by Joaquín Amat Rodrigo](https://www.cienciadedatos.net/documentos/py20-clustering-con-python.html) 
 
 # Pasos previos
-Para este recorrido necesitarás las librerías [Pandas](https://pandas.pydata.org/), [Seaborn](https://seaborn.pydata.org/) y [Scipy](https://www.scipy.org/)
+Para este recorrido necesitarás las librerías [Pandas](https://pandas.pydata.org/), [Seaborn](https://seaborn.pydata.org/) y [Scikitlearn](https://scikit-learn.org/stable/index.html)
 
 Podes corroborar si las tienes instaladas corriendo las siguientes líneas en tu intérprete de Python:
 
@@ -26,9 +26,11 @@ Si correr estas lineas no tira ningún error, etonces están felizmente instalad
  * [3.Calculo de distancias](#3-distancia)
  * [4.Normalizado y escalado de los datos](#4-escalado)
  * [5.K-means](#5-kmeans)
- * [6.Agrupamiento jerárquico](#6-agrupamiento)
+ * [6.Evaluación del resultado obtenido](#6-inercia)
 
 [1.Clustering ¿Qué es?](#1-Intro)
+
+
 Hemos estado trabajando hasta aquí en la carga y limpieza da datos con Pandas. Es momento de comenzar a trabajar con los datos, analizarlos y poder encontrar patrones que nos permitan derivar información. El aprendizaje automático consiste en identificar de patrones o tendencias que de los datos de forma automática.
 
 > Para pensar 🤔: ¿Qué utilidad le encontrás al aprendizaje automatizado? ¿Qué aplicaciones se te ocurren o conoces?
@@ -139,4 +141,70 @@ Imaginemos que tenemos que analizar la trayectoria profesional de dos personas, 
 
 Es por ello que resulta necesario escalar los datos. La escala es importante para poder especificar que una modificación en una cantidad no es igual a otra modificación en otra. En pocas palabras, escalar los datos le da a todas las características la misma importancia para que ninguna esté dominada por otra. 
 
-Otro tratamiento de los datos necesario antes de comenzar a clasificar nuestros datos es la normalización. Esta implica transformar o convertir el conjunto de datos en una distribución normal. Algunos algoritmos como Máquinas Vectores de Soporte convergen mucho más rápido en los datos normalizados, por lo que tiene sentido normalizar los datos para obtener mejores resultados.
+Ademas, resulta necesario antes de comenzar a clasificar nuestros datos es la normalización. Esta implica transformar o convertir el conjunto de datos en una distribución normal, de forma que todos datos tenga una varianza del mismo orden. De este modo, cada dato nos dará una idea de a cuántos desvíos de la media está ese punto.
+
+Estas operaciones pueden hacerse muy fácilmente con la clase `StandardScaler`, del módulo `scikitlearn`:
+
+
+```python
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+iris_escaleado = scaler.fit_transform(iris)
+```
+
+[5.K-means](#5-kmeans)
+
+Ahora que hemos normalizado y escalado nuestros datos podemos finalmente utilizar un método para agrupar nuestros datos. Vamos a utilizar el método K-means(MacQueen, 1967) que agrupa las observaciones en los mejores K grupos distintos, es decirlos k clusters con la menor varianza interna (intra-cluster variation) posible. Es decir que se reparten las observaciones en K clusters de forma que la suma de las varianzas internas de todos ellos sea lo menor posible. 
+
+Podríamos decir que este método repite/itera una serie de pasos hasta que encuentra los mejores k grupos:
+
+![Carrera profesional](./k_means.png)
+
+  1) Especifica el número K de clusters que se quieren crear
+
+  2) Selecciona de forma aleatoria k observaciones del set de datos como centroides iniciales, esto es los datos a los cuáles se calcula la distancia para delimitar el grupo de menor varianza interna
+
+  3) Calcula las distancia de todos los datos al centroide, para definir a cuál se encuentra más próximo
+
+  4) Para cada uno de los K clusters recalcular su centroide, la posición del centroide se actualiza tomando como nuevo centroide la posición del promedio de las observaciones pertenecientes a dicho grupo
+
+  5) Repete los pasos 3 y 4 hasta que los centroides no se mueven, o se mueven por debajo de una distancia umbral en cada paso, o se alcancen el número de iteraciones definidas de antemano.
+
+Apliquemos ahora este método a nuestros datos:
+
+
+```python
+k = 3  #definimos la cantidad de clusters
+kmeans = KMeans(n_clusters = k, init="random", n_init=10, max_iter=300, random_state=123457) #tomamos los centroides de forma aleatoria y definimos un máximo de 300 iteraciones
+kmeans.fit(iris_escaleado)  #aplicamos el método a nuestros datos
+```
+
+La asignación de cada punto a un cluster se obtiene el atributo `labels_` del objeto `clusters`, esta propiedad me dice que etiqueta le puso a cada uno de mis datos. 
+
+
+```python
+print(kmeans.labels_)
+
+```
+
+Los centroides pueden ser obtenidos con `cluster_centers_`:
+
+```python
+print(kmeans.cluster_centers_ )
+
+```
+
+Para entender mejor los resultados obtenidos grafiquemos la distribución de puntos, pintando cada punto según el color correspondiente al etiquetado:
+
+
+```python
+colores = ["red", "green", "blue"]
+g = sns.scatterplot(x = iris_escaleado[:,2], y = iris_escaleado[:, 3], hue = kmeans.labels_, palette = colores, alpha = 0.5)
+g = sns.scatterplot(x = kmeans.cluster_centers_[:,2], y = kmeans.cluster_centers_[:,3], zorder = 10, palette = colores, hue = [0, 1, 2], legend = False, marker=6, s=200)
+```
+
+> Para pensar 🤔: ¿Es bueno o malo este resultado? ¿Cómo podríamos evaluar el resultado?
+>
+
+
+[6.Evaluación del resultado obtenido](#6-inercia)
