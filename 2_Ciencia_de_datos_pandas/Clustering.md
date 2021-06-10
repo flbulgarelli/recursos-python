@@ -77,8 +77,11 @@ g = sns.histplot(data = iris, x = "sepal.length", binwidth=0.25, kde = True)
 
 
 > Para pensar 🤔: ¿Qué información obtenes del gráfico? 
+>
 > 🧗‍♀️ Desafío II: Grafica la distribución de frecuencias de la variable "petal.length" ¿Qué información obtenes del gráfico? ¿Qué diferencias notás respecto del observado para la variable sepal.length? 
+>
 > 🧗‍♀️ Desafío III: Grafica la distribución de frecuencias del resto de las variables.
+>
 > Para pensar 🤔: ¿Qué información pudiste obtener de observar las distribuciones de las distintas variables? ¿Cuántos tipos de plantas crees que existen?
 
 Ahora que pudimos observar como se comportan las variables, nos puede ser de gran utilidad estudiar las asociaciones entre las mismas (correlación). De este modo sabremos si el comportamiento (crecimiento o disminución) de una variable, se debe o está influenciada por otra. Con los pairplots de seabron, podemos entonces estudiar si existen correlaciones entre las variables:
