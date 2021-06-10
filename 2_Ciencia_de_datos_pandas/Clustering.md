@@ -8,7 +8,7 @@ Podes corroborar si las tienes instaladas corriendo las siguientes líneas en tu
 ```python
 import pandas as pd
 import seaborn as sns
-import scipy.stats as ss
+import sklearn
 ```
 
 Si correr estas lineas no tira ningún error, etonces están felizmente instaladas las bibliotecas enc uestión. De lo contrario, obtendremos un mensaje de error `ModuleNotFoundError: No module named` al correr las lineas anteriores. En tal caso, podés instalar las bibliotecas desde la consola, con el comando:
@@ -16,7 +16,7 @@ Si correr estas lineas no tira ningún error, etonces están felizmente instalad
 ```bash
         pip install pandas
         pip install seaborn
-        pip install scipy
+        pip install sklearn
 ```
 
 
