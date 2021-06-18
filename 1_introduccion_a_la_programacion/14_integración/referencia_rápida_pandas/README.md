@@ -149,7 +149,13 @@ max   |	60.0       |	426.0 |	60.0
 # Agregaciones
 
 ## `mean`
+
+Nos devuelve el valor promedio de una columna.
+
 ## `median`
+
+Nos devuelve la mediana de una columna (o lo que es lo mismo, el cuantil 50%, también llamado Q2).
+
 ## `quantile`
 ## `max` y `min`
 
@@ -217,11 +223,21 @@ arbolado[(arbolado.barrio != 'CONSTITUCION') & (arbolado.barrio != 'BELGRANO')]
 
 ## `isin`
 
+Nos permite saber si los valores de una columna están entre (son algunos de) los dados. Nos retorna una columna booleana, útil para realizar filtrados.
+
 ```python
 arbolado[arbolado.barrio.isin(['CONSTITUCION', 'FLORES', 'VERSALLES'])]
 ```
 
 ## `isna`, `notna`
+
+
+Nos permite saber si los valores de una columna son nulos o no nulos, respectivamente. Nos retorna una columna booleana, útil para realizar filtrados.
+
+
+```python
+arbolado[arbolado.barrio.notna()]
+```
 
 
 # Agrupamiento
@@ -267,6 +283,7 @@ Ciprés funerario         1
 cantidad_de_bibliotecas_por_barrio.plot.bar(figsize=(20, 10))
 ```
 
+## `plot.pie`
 ## `plot.hist`
 ## `plot.line`
 ## `plot.scatter`
