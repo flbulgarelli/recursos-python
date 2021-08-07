@@ -46,11 +46,10 @@
   1. Abrir Visual Code, que usaremos como editor de código
   1. Crear un archivo `cv.html`
   1. Cargarle nuestro nombre y título. Por ejemplo "Feli Pérez" y "Docente"
-  1. Abrirlo con el navegador
+  1. Abrirlo con el navegador: presten atención donde lo guardaste.
   1. Ver qué sucede. ¿Vemos el texto? ¿Cómo se ve? ¿Cómo le damos estructura?
   1. Envolvamos nuestro nombre entre `<h1>` y `</h1>` y nuestro título entre `<h2>` y `</h2>`
   1. Guardá el archivo y recargá la página. ¿Qué sucede?
-
 
 > 🏅️ Desafío:
 >
