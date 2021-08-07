@@ -92,3 +92,13 @@ header {
 ```
 
 10. Y para cerrar, usemos `sans-serif` como `font-family`.
+
+## Desafío
+
+¡Ahora te toca a vos! Usando las herramientas que vimos, completá tu CV y dale formato. Podés usar todos los elementos HTML y estilos CSS que vimos hasta ahora, pero quizás quieras explorar un poco más sobre las siguiente etiquetas:
+
+1. `ul`, `ol`, `li`
+3. `hr`
+2. `img`
+
+¡El próximo encuentro aprenderemos a ponerlo en línea!
