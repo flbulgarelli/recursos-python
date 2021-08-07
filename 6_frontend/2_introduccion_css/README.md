@@ -121,4 +121,6 @@ header {
 3. `hr`
 2. `img`
 
+Para que te sirva de inspiración, te dejamos un `cv_ejemplo.pdf` provisto por canva.com, pero sentite libre de cambiar su estilo tanto como quieras 😁️.
+
 ¡El próximo encuentro aprenderemos a ponerlo en línea!
