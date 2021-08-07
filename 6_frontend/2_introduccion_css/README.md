@@ -1,5 +1,25 @@
-## Introducción a CSS
+# Introducción a CSS
 
+## Repaso
+
+Repasemos lo visto:
+
+* 🥅️ Red de computadoras: ¿viste que un hilo por sí solo no sirve para mucho, pero si unís muchos formando una red podés sostener papas, evitar que una pelota salga volando de la cancha o pescar decenas de peces? ¿O que si muchas personas se conectan a través de una red social pueden lograr cosas que quizás ninguna hubiera podido hacer sola?  Bueno, las redes de computadoras son parecidas: cuando unís muchas computadoras (a través de cables, ondas de WiFi, 3G o incluso satélites), estas van a poder "hablar" entre sí y compartir información. De esa forma, todas juntas, pueden hacer mucho más que una sola. ¡Y vos también!
+
+* 🌎️Internet: es la "red de redes", ese conjunto de computadoras globales que nos permiten acceder a un montón de información y servicios públicos de estados y empresas a lo largo de tooooodo el mundo. Con una conexión a internet podés consultar la información que está en Wikipedia, enviar mensajes  a través de whatsapp, y usar las aplicaciones de Google Drive, Instagram o TicToc.
+
+* 🕸️La Web: es una de las "cosas" (o, más técnicamente, uno de los servicios) más obvias que podés encontrar en Internet. Se trata de un montón de información organizada en páginas (sí, las famosas páginas Web) que podés encontrar y navegar usando un navegador.
+
+* 🚢️ Navegadores: Son aplicaciones, como Firefox, Chrome o Edge, que nos permiten  navegar la Web y también cuentan con algunas herramientas para ayudarnos a crear nuestras propias páginas. Ojo, no confundirlos con los _buscadores_, que son páginas concretas, como google.com o bing.com, que sirven para buscar otras páginas en toda la Web.
+
+* 🤔️ Google: sí, todo el tiempo escuchamos de este gigante de la tecnología. Pero aunque es una empresa enorme y omnipresente, para nada es la única ni es todopoderosa. Y aunque muchas veces usamos sus productos y servicios, ¡no todos son lo mismo ni son la única opción! Como vimos recién: Chrome es un navegador, pero google.com es un buscador. Y Google Drive son un conjunto de aplicaciones online para crear documentos.
+
+* 🎉️HTML: es el lenguaje con el que construimos el esqueleto de nuestras páginas Web y con el que empezaremos hacer las nuestras. En HTML todo es una etiqueta (tag), que sirve para encerrar a nuestro texto y darle significado. Vimos 3 tags (¡de entre muchísimos!):
+
+* 🗃️ Los archivos HTML deben tener extensión (es decir, terminar en) .html. Los podemos editar con Visual Code y abrirlos con cualquier navegador.
+
+
+## Dando formato
 
 1. Terminar de armar el HTML. Comentar los tags semánticos:
    1. `html`
