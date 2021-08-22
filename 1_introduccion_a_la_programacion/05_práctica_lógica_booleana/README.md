@@ -61,20 +61,20 @@ es_consonante('n') # True
 > ```python
 >>> hora, minuto = str.split("12:30", ":")
 >>> hora
-'12'
+> '12'
 >>> minuto
-'30'
+>'30'
 >```
 >
 > ... y también la función `int`, que toma un string y lo conveirte a número, si es posible:
 >
 >```python
->> int("23")
-23
+>>> int("23")
+> 23
 >>> int("hola")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: invalid literal for int() with base 10: 'hola'
+> Traceback (most recent call last):
+>   File "<stdin>", line 1, in <module>
+> ValueError: invalid literal for int() with base 10: 'hola'
 >```
 >
 
