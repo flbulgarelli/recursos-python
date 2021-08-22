@@ -1,4 +1,4 @@
-> Ejercicios basados en https://github.com/MumukiProject/mumuki-guia-javascript-ejercitacion-bucles
+> Basado en https://github.com/MumukiProject/mumuki-guia-javascript-ejercitacion-bucles
 
 # Práctica Repetición
 

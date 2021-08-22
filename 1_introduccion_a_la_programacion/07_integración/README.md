@@ -1,6 +1,8 @@
-> Ejercicios basados en http://github.com/mumukiproject/mumuki-guia-funcional-practica-valores-y-funciones-pdep-utn
+> Basado en http://github.com/mumukiproject/mumuki-guia-funcional-practica-valores-y-funciones-pdep-utn
+> y en https://github.com/MumukiProject/mumuki-guia-javascript-ejercitacion-condicionales
 
-## Inversa
+
+## 1. `inversa`
 
 Definí una función `inversa`, que al aplicarla con un número cualquiera me devuelve el resultado de dividir a 1 por ese número.
 
@@ -12,46 +14,114 @@ Definí una función `inversa`, que al aplicarla con un número cualquiera me de
 2.0
 ```
 
+## 2. `par_o_impar(numero)`
 
-## Comienza con A
-
-Definí una función `comienza_con_a` que, al aplicarla con un string, me diga si el mismo comienza con la letra 'a'.
-Por ejemplo:
+Crear una función `par_o_impar` que acepte como argumento un `numero` y devuelva el string `par` si el `numero` es par, o el string `impar` si el `numero` es impar
 
 ```python
->> comienza_con_a("aguja")
-True
-
->> comienza_con_a("bote")
-False
+par_o_impar(3)  # 'impar'
+par_o_impar(10) # 'par'
 ```
 
-## Es múltiplo de 3
+## 3. `positivo_o_negativo(numero)`
 
-Definí la función `es_multiplo_de_3` que dice si un número se puede dividir por 3. Por ejemplo:
+Crear una función `positivo_o_negativo` que acepte como argumento un `numero` y devuelva el string `positivo` si el `numero` es positivo, o el string `negativo` si el `numero` es negativo
 
 ```python
->> es_multiplo_de_3(9)
-True
->> es_multiplo_de_3(4)
-False
+positivo_o_negativo(3)  # 'positivo'
+positivo_o_negativo(-5) # 'negativo'
 ```
 
-## Es Bisiesto
+> 🤔 Para pensar: ¿ves algo parecido entre esta función y la anterior? ¿Se te ocurre alguna forma de extraer a una nueva función las partes comunes de `positivo_o_negativo` y `par_o_impar` y luego modificarlas para no repetir código? ¡Intentalo!
 
-Definí la función `es_bisiesto` que indica si un año tiene 366 días.
+## 4. `avanzar_semaforo(color_actual)`
+
+Crear una función `avanzar_semaforo` que acepte como argumento un string `color_actual` y devuelva un string con el
+siguiente color del semáforo, siguiendo el orden: verde -> amarillo -> rojo -> verde
 
 ```python
->> es_bisiesto(2000)
-True
+avanzar_semaforo('verde')     # 'amarillo'
+avanzar_semaforo('amarillo')  # 'rojo'
+avanzar_semaforo('rojo')      # 'verde'
 ```
 
-Un año es bisiesto si:
+## 5. `obtener_dias_mes(mes)`
 
-* es múltiplo de 400, o bien
-* es múltiplo de 4 pero no de 100
+Crear una función `obtener_dias_mes` que tome como argumento un string `mes` y devuelva un número dependiendo de la
+cantidad de días que tenga ese mes
 
-## Celsius a Farenheit
+```python
+obtener_dias_mes("diciembre") # 31
+obtener_dias_mes("febrero")   # 29
+```
+
+## 6. `obtener_generacion(anio_nacimiento)`
+
+Crear una función `obtener_generacion` que tome como argumento un número `anio_nacimiento` y devuelva un string con la generación a la que pertenece, siguientdo estas reglas:
+
+| Generación | Años de nacimiento |
+| --- | --- |
+| Baby boomer | 1949-1968 |
+| Generación X | 1969-1980 |
+| Millennials | 1981-1993 |
+| Generación Z | 1994-2010 |
+
+## 7. `obtener_sensacion(temperatura)`
+
+Crear una función `obtener_sensacion` que tome como argumento un número `temperatura` y devuelva un string dependiendo de la `temperatura`,
+con las siguientes reglas:
+
+| Temperatura | Mensaje |
+| --- | --- |
+| Menor a 0° | ¡Está helando!
+| Mayor o igual a 0° y menor a 15° | ¡Hace frío!
+| Mayor o igual a 15° y menor a 25° | Está lindo
+| Mayor o igual a entre 25° y menor a 30° | Hace calor
+| Mayor o igual de 30° | ¡Hace mucho calor!
+
+```python
+obtener_sensacion(33) # "¡Hace mucho calor!"
+```
+
+## 8. `obtener_nota(puntaje)`
+
+Crear una función `obtener_nota` que tome como argumento un número `puntaje` y devuelva un string dependiendo del `puntaje`
+redondeado, con las siguientes reglas:
+
+| Puntaje | Nota |
+| --- | --- |
+| Menor a 6 | Desaprobado
+| Mayor o igual a 6 y menor a 7 | Regular
+| Mayor o igual a 7 y menor a 8 | Bueno
+| Mayor o igual a entre 8 y menor a 10 | Muy bueno
+| 10 | Excelente
+| Menor a 0 o mayor a 10 | Puntaje inválido
+
+```python
+obtener_nota(7)    # "Bueno"
+obtener_nota(9.6)  # "Excelente"
+obtener_nota(12)   # "Puntaje inválido"
+```
+
+## 9. `jugar_piedra_papel_tijera(a, b)`
+
+Crear una función `jugar_piedra_papel_tijera` que tome como argumentos dos strings que representen una jugada (`piedra`, `papel`, `tijera`) y
+dependiendo el devuelva un string con un mensaje avisando qué jugada ganó (o si hubo empate)
+
+```python
+jugar_piedra_papel_tijera('tijera', 'piedra')  # ¡Ganó piedra!
+jugar_piedra_papel_tijera('piedra', 'tijera')  # ¡Ganó piedra!
+jugar_piedra_papel_tijera('papel', 'piedra')   # ¡Ganó papel!
+jugar_piedra_papel_tijera('piedra', 'papel')   # ¡Ganó papel!
+jugar_piedra_papel_tijera('papel', 'tijera')   # ¡Ganó tijera!
+jugar_piedra_papel_tijera('tijera', 'papel')   # ¡Ganó tijera!
+jugar_piedra_papel_tijera('piedra', 'piedra')  # ¡Empate!
+jugar_piedra_papel_tijera('papel', 'papel')    # ¡Empate!
+jugar_piedra_papel_tijera('tijera', 'tijera')  # ¡Empate!
+```
+
+
+## 10. Celsius a Farenheit
 
 La temperatura se mide en _grados_, pero en algunos países se usan grados _"diferentes"_.
 
@@ -72,7 +142,7 @@ GradosFarenheit = GradosCelsius × 1.8 + 32
 > 32 # porque 0°C son 32°F
 > ```
 
-## Farenheit a Celsius
+## 11. Farenheit a Celsius
 
 Ahora hagamos el proceso inverso: aprendamos a convertir una temperatura en grados Farenheit a grados Celsius. La fórmula es la siguiente:
 
@@ -90,7 +160,7 @@ GradosCelsius = (GradosFarenheit - 32) / 1.8
 > ```
 
 
-## Hace frío internacional
+## 12. Hace frío internacional
 
 ¡Se vino el frío! ❄️ Y necesitamos programar las siguientes funciones:
 
@@ -114,7 +184,7 @@ True
 >
 > Como desafío adicional, definí `hace_frio_farenheit` reutilizando `hace_frio_celsius` y las funciones anteriores que necesites
 
-## Dispersión
+## 13. Dispersión
 
 Trabajamos con tres enteros que representan el nivel de un río en tres días consecutivos 📆. Por ejemplo: medimos los días 1, 2 y 3, y las mediciones son: 22 cm, 283 cm, y 294 cm.
 
@@ -136,7 +206,7 @@ Usando estas mediciones nos gustaría saber tres cosas:
 > ¡Desarrollá estas tres funciones! Y no repitas código: reutilizá `maximo_entre_tres` y `minimo_entre_tres` en la definición de `dispersion` 🕶️
 
 
-## Pasan los días
+## 14. Pasan los días
 
 Siguiendo con el problema anterior, ahora que contamos con la  función `dispersion`, necesitamos definir las siguientes funciones, que reciben los valores de los tres días, y nos responden si son días parejos, locos o normales:
 
@@ -159,7 +229,7 @@ False
 > Definí `dias_normales`, `dias_parejos` y `dias_locos`. Asumí que `dispersion` ya está definida.
 
 
-## Pinos
+## 15. Pinos
 
 En una plantación de pinos, de cada árbol se conoce la altura expresada en **metros**. El peso de un pino se puede calcular a partir de la altura así:
 
@@ -186,7 +256,7 @@ Los pinos se usan para llevarlos a una fábrica de muebles, a la que le sirven �
 > * Definí la función `sirve_pino`, recibe la altura de un pino y responde si un pino de ese peso le sirve a la fábrica.
 >
 
-## ¡Puntos para setenta!
+## 16. ¡Puntos para setenta!
 
 
 En el conocido juego de [la escoba de 15](https://es.wikipedia.org/wiki/Escoba_del_15) tenemos que una forma de ganar puntos es mediante el criterio de "setenta" en el cual una carta tiene un valor especifico dependiendo su número:
