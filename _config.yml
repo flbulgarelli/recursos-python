@@ -1,9 +1,9 @@
 title: Recursos Python
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >
   Recursos libres para aprender a programar en español
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/recursos-python"
+url: "https://flbulgarelli.github.io"
 twitter_username: flbulgarelli
 github_username:  flbulgarelli
 markdown: kramdown
