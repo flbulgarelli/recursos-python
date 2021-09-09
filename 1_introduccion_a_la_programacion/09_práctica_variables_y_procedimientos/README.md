@@ -71,3 +71,56 @@ Pero para todo esto tenga sentido, hay que poner plata 🤑
 ¿Pero qué pasa si alguien se quiere bajar? La agencia nos devuelve solo 500, sin importar el monto inicial (asumimos que las personas deben aportar inicialmente más de 500)
 
 > Definí el procedimiento `darse_de_baja`, que descuenta del pozo 500
+
+## 6. Tiempo de descuento
+
+Por una nueva reglamentación, todos pozos de dinero que tengan más de $15000, deberán tributar un impuesto (llamado _I.V.G.: Impuesto a las Variables Globales_) del 1% si el pozo. Por la misma reglamentación, el valor máximo del impuesto será de $500.
+
+> Definí:
+>
+>  * una **función** `calcular_monto_ivg`, que indique el valor del impuesto I.V.G. que el pozo debe pagar;
+>  * un **procedimiento** `aplicar_ivg`, que descuente del `pozo` el valor del impuesto que corresponda.
+>
+> Ejemplos:
+>
+> ```python
+> >>> pozo = 1000
+> >>> calcular_monto_ivg()
+> 0 # porque para tributar el monto debe ser de al menos $15000
+> >>> pozo = 16000
+> >>> calcular_monto_ivg()
+> 160 # porque es un pozo de más de $15000, y debe tributar el 1%
+> >>> pozo = 125000
+> >>> calcular_monto_ivg()
+> 500 # porque el valor máximo del impuesto es 500 (el 1% de 125000 hubiera sido $1250)
+> >>> aplicar_ivg()
+> >>> monto
+> 124500 # porque le restó los $500 del impuesto
+> ```
+
+## 7. La tercera es la vencida
+
+¡Otra nueva reglamentación! Después de algunas quejas contra el I.V.G. 😡, se determinó que ningún pozo deberá pagar el impuesto más de tres veces. En otras palabras, al aplicar el impuesto, sólo deberemos descontar del pozo su monto si se aplicó hasta 3 veces. Ejemplo:
+
+```python
+>>> monto = 100000
+>>> aplicar_ivg() # primera aplicación
+>>> monto
+99500
+>>> aplicar_ivg() # segunda aplicación
+>>> monto
+99000
+>>> aplicar_ivg() # tercera aplicación
+>>> monto
+98500
+>>> aplicar_ivg() # cuarta aplicación
+>>> aplicar_ivg() # quinta aplicación
+>>> aplicar_ivg() # etc
+>>> aplicar_ivg() # etc
+>>> monto
+98500 # a partir de la cuarta aplicación ya no se descuenta más del pozo
+```
+
+> Modificá el procedimiento `aplicar_ivg` para que refleje estos cambios de reglamentación.
+>
+> 💡 Sugerencia: para poder hacer estos cambios en la aplicación del impuesto I.V.G., quizás te convenga agregar nuevas variables globales (_qué ironía 😜_).
