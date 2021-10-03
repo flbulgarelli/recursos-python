@@ -29,9 +29,9 @@ layout: default
 
 ## Introducción al análisis de datos
 
-1. [Introducción a pandas](./2_introducción_al_análisis_de_datos/1_introducción_a_pandas)
-1. [Operaciones básicas](./2_introducción_al_análisis_de_datos/2_operaciones_basicas)
-1. [Práctica operaciones básicas](./2_introducción_al_análisis_de_datos/3_práctica_operaciones_básicas)
+1. [Tablas](./2_introducción_al_análisis_de_datos/1_tablas)
+1. [Filas y columnas](./2_introducción_al_análisis_de_datos/2_filas_y_columnas)
+1. [Práctica tablas, filas y columnas](./2_introducción_al_análisis_de_datos/3_práctica_tablas_filas_y_columnas)
 1. [Práctica listas y dataframes](./2_introducción_al_análisis_de_datos/4_práctica_listas_y_dataframes)
 
 ## Ciencia de datos
