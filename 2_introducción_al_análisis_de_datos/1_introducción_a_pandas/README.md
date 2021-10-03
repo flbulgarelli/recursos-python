@@ -1,107 +1,131 @@
-# Introducción a los Datasets con Pandas
+# Introducción a pandas
 
-A continuación, vamos a aprender sobre qué es un dataset (es decir, un conjunto o lote de datos), cómo se estructura y cómo se puede procesar utilizando algunas herramientas y tecnologías de ciencia de datos
+_¡Qué queremos? ¡Trabajar con datos! ¿Y dónde los vamos a buscar? Eh... en un... ¿conjunto de datos?🤔_
 
+Cuando queramos analizar datos, con mucha frecuencia los encontraremos en archivos llamados (no muy originalmente 😛) _lotes de datos_ (_datasets_, en inglés). ¿Pero cómo se ven estos lotes? ¿Dónde los podemos encontrar publicados? ¿Cómo los podemos procesar?
 
-https://colab.research.google.com/drive/1DXhu0bNiy7U5qayoC4icGPNd3rST49OH#scrollTo=kDEWWrePOMiX
-https://colab.research.google.com/drive/1q1qvfikU1QPARm_fSdJrSQ9qHCVFDBRD#scrollTo=HYwrSLUnqf65
+¡Muchas preguntas! En esta lección responderemos alguans de ellas. Y en el camino, conoceremos a `pandas` 🐼, una biblioteca que poco tiene con los simpáticos osos oriundos de las regiones montañosas de China 🇨🇳, pero que nos ayudará enormemente a trabajar con estos lotes de datos.
 
-# La biblioteca de Babel
+¡Empecemos!
 
-conjunto de funciones, procedimientos
-# tipos de datos y otras yerbas)
+## 1. Abierto al público
 
-# Comerciando código
+Primero lo primero: entendamos dónde encontrar nuestros tan deseados lotes de datos. O mejor dicho, entendamos que _no siempre_ podremos encontrarlos 😓. Esto se debe a las organizaciones que los recopilan (estados, empresas, ONGs, etc) a veces los _publican_ y otras veces, no.
 
-# sentencia import
-# se lee como "andá a buscar la biblioteca pandas y nombrala como pd"
-import pandas as pd
+Por eso es que tenemos dos grandes familias de lotes de datos:
 
-# ¿Cesequé?
+ * 🔓 Los datos abiertos: pueden ser consultados por cualquier persona y usados para casi cualquier fin.
+ * 🔒 Los datos cerrados: sólo los pueden consultar personas que pertenezcan a las organizaciones que los producen, o personas externas pero con fuertes limitaciones en su acceso y uso (por ejemplo, a través de un pago)
 
-Vamos a trabajar con archivos CSV, que es un acrónimo de Comma Separated Value, es decir, un archivo con valores separados por comas.
+> 🏅 Desafío: las siguientes son páginas de estados que ofrecen datos abiertos. Exploralas e identificá qué tipo de información publican y **en qué formatos**.
+>
+> * 🇦🇷 https://www.datos.gob.ar/
+> * 🇺🇾 https://www.gub.uy/datos-abiertos
+> * 🇲🇽 https://datos.gob.mx/
+> * 🇨🇱 https://datos.gob.cl/
 
-Por ejemplo:
+## 2. Manteniendo las formas
 
+Si exploraste las páginas anteriores, quizás hayas notado que casi todos los lotes de datos están publicados en forma de tablas. Y dentro de tooodos los formatos que existen, uno de los más frecuentes (y fáciles de usuar) se llama CSV.
+
+Momento, ¿cesequé? ¡Ce-ese-vé! Se trata de un acrónimo en inglés de _Comma Separated Value_, es decir, un archivo de texto con valores separados por comas. Por ejemplo así se ve un archivo `datos_ejemplo.csv`:
+
+```csv
+Feli,Perez,24
+Dani,Lopez,32
+Juani,Vazquez,19
 ```
+
+> Para pensar 🤔: ¿qué está intentando representar este CSV de ejemplo? ¿Qué información contiene cada renglón?
+
+## 3. Sin título
+
+El archivo CSV que vimos antes contenía información de personas, o al menos eso parece. Quizás se traten de sus nombres, apellidos y sus edades, o quizás sean estudiantes de una carrera y nos esté informando la cantidad de materias aprobadas.
+
+Para evitar este tipo de ambigüedad, normalmente los archivos CSV contendrán en su primer renglón los títulos de cada columna. Por ejemplo así podría verse ahora nuestro `datos_ejemplo.csv`:
+
+```csv
 nombre,apellido,edad
 Feli,Perez,24
 Dani,Lopez,32
-Juani,Vazquez,13
+Juani,Vazquez,19
 ```
 
-## A cargar, a cargar, cada tabla en su lugar
+
+> Para pensar 🤔: Y si ahora quisieras agregar la información de cuál es su gusto de helado favorito, ¿cómo harías?
+
+## 4. Comerciando código
+
+
+conjunto de funciones, procedimientos tipos de datos y otras yerbas)
+
+```python
+# sentencia import
+# se lee como "andá a buscar la biblioteca pandas y nombrala como pd"
+import pandas as pd
+```
+
+## 5. A cargar, a cargar, cada tabla en su lugar
 
 El primer paso es **cargar** la _biblioteca_ `pandas`, una herramienta poderosa para el lenguaje Python, que posibilita manipular datos de un lote de forma programática. En otras palabaras, va a permitirnos hacer las mismas operaciones que haríamos en una hoja de cálculos, pero utilizando código.
 
-## Quien busca, encuentra
-
 El siguiente paso es conseguir un lote y cargarlo dentro de Jupyter (es decir, esta aplicación) en la forma de un `DataFrame` llamado `bibliotecas`
 
-# Tablas y columnas
-
+## 6. Tablas y columnas
 
 Momento... ¿lo qué? ¿Un `DataFrame`?  ¿Qué es eso?
 
 Hasta ahora veníamos trabajando con cosas como números (por ejemplo, el `1`, el `42` y el `30410`) y booleanos (`True` o `False`); pero eso es muy limitado. Por eso vamos a usar ahora un nuevo tipo de dato llamado `DataFrame`, que es el tipo de la variable `bibliotecas`:
 
-# a lo que llamos tabla, pandas lo llama DataFrame
-# a lo que llamamos columna, pandas lo llama Series
+## 7. Poniéndonos cuantitativos
+
+len y len de columns
+
+## 8. La cabeza...
+
+head y tail
+
+## 9. ...y la cola
 
 
-# Series vs DataFrames
+## 10. Ordená, ¡es una orden!
 
-Hay funciones y procedimientos que funcionan tanto con los DataFrames como con los Series.
+```python
+# sort_values también es una función infija
+# tabla.sort_values(nombre_columna)
+florerias.sort_values("COMUNA")
+```
 
-Pero, al ser distintas sus estructuras, ya que el primero es una tabla con muchas columnas, mientras que el Series es básicamente una única columna, los parámetros variarán.
+## 11. Del derecho y del revés
 
+```python
+florerias.sort_values("COMUNA", ascending=False)
+```
 
-# El DataFrame también lo puedo ordenar, pero al tener muchas columnas, tengo que indicar por cuál/es criterios hacerlo.
-# No puede ordenar por TODAS las columnas a la vez.
+## 12. Haciendo valer el orden
 
-bibliotecas.sort_values("calle", ascending = False)
-
-# sort_values es casi igual que antes, pero con un argumento indicando la columna a utilizar para ordenar.
-
-
-# Lo mismo ocurre con los gráficos, donde tengo múltiples variables para elegir y graficar.
-# Agregamos entonces las columnas deseadas, indicando en qué eje estarán:
-
-bibliotecas.plot.bar(x = "comuna", y = "codigo_postal")
+... combinar head + sort ...
 
 
-
-Para una rápida visualización de los datos, tenemos algunas herramientas como:
-* `columns`, que nos permite ver rápidamente los nombres de las columnas y darnos una idea de la información que contienen
-* `head` y `tail` para tomar las primeras o las últimas n-filas, y chusmear la info en sí
-* `sample` que también toma n-filas, pero de manera aleatoria. Conviene usarlo para no sesgarnos con la información, ya que las primeras n filas podrían compartir ciertas características que no contengan las siguientes o las últimas.
-
-
-# Si bien vimos que value_counts era mucho más simple de usar que groupby, este último nos da más libertad para hacer otro tipo de operaciones.
-# Por ejemplo, si luego de agrupar por cierto criterio quiero sumar los valores de una columna en vez de contarlos, aplicaré un sum()
-
-codigos_postales_sumados = bibliotecas.groupby("comuna").sum().codigo_postal
-
-# Ojo, porque count() no suele tener problemas; en definitiva, siempre podemos contar elementos sin importar qué contengan.
-# No pasa lo mismo que sum(), que funcionará únicamente con cosas que se puedan sumar entre sí.
-
-
-Por otra parte, es un poco tedioso agregar `sort_values(ascending = False)` cada vez que quiera ordenarlo de manera descendente. Así que podemos definir una función que, al invocarla, resuelva esta parte.
-
-Lo importante es:
-* no repetir código innecesariamente (nos daremos cuenta tras copiar y pegar lo mismo 2 ó 3 veces)
-* reutilizar para simplificarnos la vida (nos ahorramos el problema de buscar el código que resuelva exactamente eso, y lo abstraemos en una función cuyo nombre será más fácil de recordar).
-
-
-def ordenar_descendente(series_a_ordenar):
-  return series_a_ordenar.sort_values(ascending = False)
-
-# Ojo, como ya vimos, sort_values no es igual en DataFrames que en Series. Así como está definido acá, funciona con Series.
-
-### Otra forma de responderlo: gráfica
+## Una imágen vale más que mil palabras
 
 Podemos hacer un gráfico de barras con el resultado de un `value_counts` usando `plot.bar` de la siguiente manera:
 
 ```python
 dataframe.plot.bar(figsize=(tamanio_x_en_pulgadas, tamanio_y_en_pulgadas))
 ```
+
+
+## 14. Combinando todo
+
+
+### Solución posible
+
+<details>
+<summary>👀 Ver</summary>
+
+```python
+bicicleterias.head(20).tail(10)
+```
+
+</details>

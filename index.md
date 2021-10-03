@@ -8,7 +8,7 @@ layout: default
 
 ## Introduccíón a la programación
 
-1. [Qué es la Pprogramación](./1_introduccion_a_la_programacion/00_qué_es_la_programación)
+1. [Qué es la Programación](./1_introduccion_a_la_programacion/00_qué_es_la_programación)
 1. [Hola Python](./1_introduccion_a_la_programacion/01_hola_python)
 1. [Funciones y Parámetros](./1_introduccion_a_la_programacion/02_funciones_y_parámetros)
 1. [Práctica Funciones y Parámetros](./1_introduccion_a_la_programacion/03_práctica_funciones_y_parámetros)
@@ -27,7 +27,14 @@ layout: default
 1. [Expresiones Regulares](./1_introduccion_a_la_programacion/16_expresiones_regulares)
 1. [Excepciones](./1_introduccion_a_la_programacion/17_excepciones)
 
-## Ciencia de datos en Pandas
+## Introducción al análisis de datos
+
+1. [Introducción a pandas](./2_introducción_al_análisis_de_datos/1_introducción_a_pandas)
+1. [Operaciones básicas](./2_introducción_al_análisis_de_datos/2_operaciones_basicas)
+1. [Práctica operaciones básicas](./2_introducción_al_análisis_de_datos/3_práctica_operaciones_básicas)
+1. [Práctica listas y dataframes](./2_introducción_al_análisis_de_datos/4_práctica_listas_y_dataframes)
+
+## Ciencia de datos
 
 ## Programación con objetos
 
