@@ -19,10 +19,10 @@ Por eso es que tenemos dos grandes familias de lotes de datos:
 
 > 🏅 Desafío: las siguientes son páginas de estados que ofrecen datos abiertos. Exploralas e identificá qué tipo de información publican y **en qué formatos**.
 >
-> * 🇦🇷 https://www.datos.gob.ar/
-> * 🇺🇾 https://www.gub.uy/datos-abiertos
-> * 🇲🇽 https://datos.gob.mx/
-> * 🇨🇱 https://datos.gob.cl/
+> * 🇦🇷 [www.datos.gob.ar](https://www.datos.gob.ar/)
+> * 🇺🇾 [www.gub.uy/datos-abiertos](https://www.gub.uy/datos-abiertos)
+> * 🇲🇽 [datos.gob.mx](https://datos.gob.mx/)
+> * 🇨🇱 [datos.gob.cl](https://datos.gob.cl/)
 
 ## 2. Manteniendo las formas
 
@@ -57,6 +57,8 @@ Juani,Vazquez,19
 ## 4. Comerciando código
 
 
+El primer paso es **cargar** la _biblioteca_ `pandas`, una herramienta poderosa para el lenguaje Python, que posibilita manipular datos de un lote de forma programática. En otras palabaras, va a permitirnos hacer las mismas operaciones que haríamos en una hoja de cálculos, pero utilizando código.
+
 conjunto de funciones, procedimientos tipos de datos y otras yerbas)
 
 ```python
@@ -67,19 +69,46 @@ import pandas as pd
 
 ## 5. A cargar, a cargar, cada tabla en su lugar
 
-El primer paso es **cargar** la _biblioteca_ `pandas`, una herramienta poderosa para el lenguaje Python, que posibilita manipular datos de un lote de forma programática. En otras palabaras, va a permitirnos hacer las mismas operaciones que haríamos en una hoja de cálculos, pero utilizando código.
+Ahora que importamos la biblioteca `pandas`, el siguiente paso es conseguir un lote de datos, como por ejemplo, el listado de bicicleterías 🚴 que hay que CABA, cuya dirección es [ésta](https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte/bicicleterias/bicicleterias-de-la-ciudad.csv)
 
-El siguiente paso es conseguir un lote y cargarlo dentro de Jupyter (es decir, esta aplicación) en la forma de un `DataFrame` llamado `bibliotecas`
+Un vez que hayamos encontrado la dirección (y copiado en nuestro portapeles 📋, para no tener que escribir la dirección a mano), podremos finalmente cargarla en un `DataFrame` llamado `bicicletarias`,
+utilizando la función `pd.read_csv`:
 
-## 6. Tablas y columnas
+```python
+bicicleterias = pd.read_csv("https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte/bicicleterias/bicicleterias-de-la-ciudad.csv")
+bicicleterias
+```
 
-Momento... ¿lo qué? ¿Un `DataFrame`?  ¿Qué es eso?
+> Probá éste código y observá qué sucede
+
+### Solución posible
+
+<details>
+<summary>👀 Ver</summary>
+
+```python
+Deberías ver una tabla con los datos de las bicicleterías
+```
+</details>
+
+
+### Para pensar
+
+¡Está vivo! ¡Apareció una tabla! Pero, momento...  ¿un `DataFrame`?  ¿Qué es eso? ¡Resolvamos el misterio! 🦇🎃
+
+
+## 6. ¡Hay tabla!
 
 Hasta ahora veníamos trabajando con cosas como números (por ejemplo, el `1`, el `42` y el `30410`) y booleanos (`True` o `False`); pero eso es muy limitado. Por eso vamos a usar ahora un nuevo tipo de dato llamado `DataFrame`, que es el tipo de la variable `bibliotecas`:
 
 ## 7. Poniéndonos cuantitativos
 
-len y len de columns
+```python
+>>> len(bicicletarias)
+112
+>>> len(bicicletarias.columns)
+15
+```
 
 ## 8. La cabeza...
 
@@ -93,13 +122,13 @@ head y tail
 ```python
 # sort_values también es una función infija
 # tabla.sort_values(nombre_columna)
-florerias.sort_values("COMUNA")
+bicicleterias.sort_values("comuna")
 ```
 
 ## 11. Del derecho y del revés
 
 ```python
-florerias.sort_values("COMUNA", ascending=False)
+bicicleterias.sort_values("comuna", ascending=False)
 ```
 
 ## 12. Haciendo valer el orden
@@ -107,12 +136,12 @@ florerias.sort_values("COMUNA", ascending=False)
 ... combinar head + sort ...
 
 
-## Una imágen vale más que mil palabras
+## 13. Un gráfico vale más que mil filas
 
 Podemos hacer un gráfico de barras con el resultado de un `value_counts` usando `plot.bar` de la siguiente manera:
 
 ```python
-dataframe.plot.bar(figsize=(tamanio_x_en_pulgadas, tamanio_y_en_pulgadas))
+bicileterias.plot.bar(figsize=(tamanio_x_en_pulgadas, tamanio_y_en_pulgadas))
 ```
 
 
