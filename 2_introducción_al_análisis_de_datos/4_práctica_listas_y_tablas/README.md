@@ -1,4 +1,4 @@
-## Ejercitacion de Complementarios
+## Ejercitacion de Listas y Tablas
 
 **Ejercicio 1**
 
