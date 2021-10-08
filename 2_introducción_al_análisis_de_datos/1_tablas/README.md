@@ -99,13 +99,17 @@ Deberías ver una tabla con los datos de las bicicleterías
 
 ## 6. ¡Hay tabla!
 
-Hasta ahora veníamos trabajando con cosas como números (por ejemplo, el `1`, el `42` y el `30410`) y booleanos (`True` o `False`); pero eso es muy limitado. Por eso vamos a usar ahora un nuevo tipo de dato llamado `DataFrame`, que es el tipo de la variable `bibliotecas`:
+Hasta ahora veníamos trabajando con cosas como números (por ejemplo, el `1`, el `42` y el `30410`) y booleanos (`True` o `False`); pero eso es muy limitado. Por eso vamos a usar ahora un nuevo tipo de dato llamado `DataFrame`, que es el tipo de la variable `bicicleterias`:
 
 ## 7. Poniéndonos cuantitativos
 
+¿Y cómo hacemos para saber cuántas filas y columnas tiene un `DataFrame`? Con nuestra vieja y querida función `len`:
+
 ```python
+# cantidad de filas
 >>> len(bicicletarias)
 112
+# cantidad de columnas
 >>> len(bicicletarias.columns)
 15
 ```
@@ -147,6 +151,7 @@ bicileterias.plot.bar(figsize=(tamanio_x_en_pulgadas, tamanio_y_en_pulgadas))
 
 ## 14. Combinando todo
 
+> Desafío: ¿cómo podríamos hacer para obtener todas las filas desde la décima y hasta la veinteva? ¡Escribilo!
 
 ### Solución posible
 
@@ -158,3 +163,9 @@ bicicleterias.head(20).tail(10)
 ```
 
 </details>
+
+## 15. Matrices recargadas
+
+Y ahora combinemos todo... ¡de nuevo!
+
+> Definí una función `entre_limites`, que generalice lo que hicimos en el ejercicio anterior: debe tomar una tabla y dos números, y devolvernos un `DataFrame` que contenga las filas entre los índices dados.

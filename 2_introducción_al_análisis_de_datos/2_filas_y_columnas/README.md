@@ -60,8 +60,7 @@ Name: Calle, Length: 100, dtype: object
 
 ## 3. La revancha de los últimos
 
-ojo con esta función, que se escribe como
-de igual forma tenemos la función tail
+De la misma forma que podemos obtener las primeras y últimas filas de una tabla, también podemos obtener los primeros valores de una columna...
 
 ```python
 >>> florerias["TITULAR"].head(5)
@@ -73,6 +72,8 @@ de igual forma tenemos la función tail
 Name: TITULAR, dtype: object
 ```
 
+... como los últimos:
+
 ```python
 >>> florerias["TITULAR"].tail(5)
 95      DE NICOLO CONO WALTER DARIO
@@ -82,6 +83,8 @@ Name: TITULAR, dtype: object
 99    CORDERO EZEQUIEL MAXIMILIANO
 Name: TITULAR, dtype: object
 ```
+
+Como vemos, esta funciones infijas toman un `Series` y un número, y devuelven otro `Series` con los valores seleccionados.
 
 ## 4. Series vs DataFrames
 
