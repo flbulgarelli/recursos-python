@@ -44,8 +44,8 @@
 
 > Como material de referencia, te dejamos algunos links para que leas y tengas a mano a partir de ahora:
 >
-> * [guía rápida de python](https://github.com/flbulgarelli/recursos-python/tree/master/1_introduccion_a_la_programacion/14_integraci%C3%B3n/referencia_r%C3%A1pida_python#readme)
-> * [otra de pandas](https://github.com/flbulgarelli/recursos-python/tree/master/1_introduccion_a_la_programacion/14_integraci%C3%B3n/referencia_r%C3%A1pida_pandas#readme)
+> * [guía rápida de python](https://flbulgarelli.github.io/recursos-python/1_introduccion_a_la_programacion/15_integraci%C3%B3n/referencia_r%C3%A1pida_python/)
+> * [otra de pandas](https://flbulgarelli.github.io/recursos-python/1_introduccion_a_la_programacion/15_integraci%C3%B3n/referencia_r%C3%A1pida_pandas/)
 >
 
 ## 2. `anio`
