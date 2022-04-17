@@ -14,6 +14,13 @@ Definí una función `inversa`, que al aplicarla con un número cualquiera me de
 2.0
 ```
 
+⚠️ ¡Cuidado! Recordá que no se puede dividir por 0, así que la inversa de 0 no se puede calcular. En este ejercicios vamos a tomar la decisión (no muy correcta matemáticamente 😛) de devolver `0` en ese caso.
+
+```python
+>> inversa(0)
+0
+```
+
 ## 2. `par_o_impar(numero)`
 
 Crear una función `par_o_impar` que acepte como argumento un `numero` y devuelva el string `par` si el `numero` es par, o el string `impar` si el `numero` es impar

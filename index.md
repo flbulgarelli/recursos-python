@@ -15,7 +15,7 @@ layout: default
 1. [Lógica Booleana](./1_introduccion_a_la_programacion/04_lógica_booleana)
 1. [Práctica Lógica Booleana](./1_introduccion_a_la_programacion/05_práctica_lógica_booleana)
 1. [Alternativa Condicional](./1_introduccion_a_la_programacion/06_alternativa_condicional)
-1. [Práctica Integradora](./1_introduccion_a_la_programacion/07_integración)
+1. [Práctica Alternativa Condicional](./1_introduccion_a_la_programacion/07_práctica_alternativa_condicional)
 1. [Variables y Procedimientos](./1_introduccion_a_la_programacion/08_variables_y_procedimientos)
 1. [Práctica Variables y Procedimientos](./1_introduccion_a_la_programacion/09_práctica_variables_y_procedimientos)
 1. [Listas](./1_introduccion_a_la_programacion/10_listas)
