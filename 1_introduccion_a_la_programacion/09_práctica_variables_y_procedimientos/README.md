@@ -124,3 +124,23 @@ Por una nueva reglamentación, todos pozos de dinero que tengan más de $15000, 
 > Modificá el procedimiento `aplicar_ivg` para que refleje estos cambios de reglamentación.
 >
 > 💡 Sugerencia: para poder hacer estos cambios en la aplicación del impuesto I.V.G., quizás te convenga agregar nuevas variables globales (_qué ironía 😜_).
+
+
+## 8. El delegado/a
+En la clase están votando al delagado que representará en el curso. Pero como esta es una clase de pensamiento computacional,vamos a crear un procedimiento escribir_delegado_a que escriba en la variable global delegado_a el nombre de la persona que tenga más votos:
+
+```python
+>>> escribir_delegado_a("Perla", 5, "Enzo", 2)
+>>> print(delegado_a)
+Perla 2022
+```
+
+## 9. Registro histórico
+En la comisión E están creando el registro histórico de delegados/as del curso. Para ello quieren retomar modificar el código desarrollado en el punto anterior para obtener un procedimiento que les permita registrar los/las delegados/as del curso en cada año en la variable global delegados_por_anio
+
+```python
+>>> registrar_delegado_a("Sol", 2021)
+>>> registrar_delegado_a("Perla", 2022)
+>>> print(delegados_por_anio)
+Sol 2021, Perla 2022
+```
