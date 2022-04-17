@@ -14,7 +14,7 @@ Definí una función `inversa`, que al aplicarla con un número cualquiera me de
 2.0
 ```
 
-⚠️ ¡Cuidado! Recordá que no se puede dividir por 0, así que la inversa de 0 no se puede calcular. En este ejercicios vamos a tomar la decisión (no muy correcta matemáticamente 😛) de devolver `0` en ese caso.
+⚠️ ¡Cuidado! Recordá que no se puede dividir por 0, así que la inversa de 0 no se puede calcular. En este ejercicio vamos a tomar la decisión (no muy correcta matemáticamente 😛) de devolver `0` en ese caso.
 
 ```python
 >> inversa(0)
