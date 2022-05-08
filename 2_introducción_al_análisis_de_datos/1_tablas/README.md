@@ -51,21 +51,23 @@ Dani,Lopez,32
 Juani,Vazquez,19
 ```
 
-
 > Para pensar 🤔: Y si ahora quisieras agregar la información de cuál es su gusto de helado favorito, ¿cómo harías?
 
 ## 4. Comerciando código
 
+Para poder trabajar con estas tablas en formato `csv` vamos a necesitar nuevas funciones, procedimientos, tipos de datos y otras yerbas 🧉, especialmente diseñadas para este fin. Y como no queremos gastar tiempo en escribirlas a mano, vamos a recurrir a una _biblioteca_: código que otras personas ya programaron y empaquetaron para que podamos incluirlo y usarlo en nuestros programas. Hay bibliotecas para miles de tareas diferentes: procesar imágenes, hacer cuentas sofisticadas, producir música, analizar textos, y mucho más 🤯.
 
-El primer paso es **cargar** la _biblioteca_ `pandas`, una herramienta poderosa para el lenguaje Python, que posibilita manipular datos de un lote de forma programática. En otras palabaras, va a permitirnos hacer las mismas operaciones que haríamos en una hoja de cálculos, pero utilizando código.
+En particular, la biblioteca que nos va a interesar ahora se llama `pandas`, una herramienta poderosa para el lenguaje Python, que posibilita manipular datos de un lote de forma programática. En otras palabaras, va a permitirnos hacer las mismas operaciones que haríamos en una hoja de cálculo, pero utilizando código.
 
-conjunto de funciones, procedimientos tipos de datos y otras yerbas)
+¡Carguemos a nuestra biblioteca de ositos 🐼!
 
 ```python
-# sentencia import
-# se lee como "andá a buscar la biblioteca pandas y nombrala como pd"
 import pandas as pd
 ```
+
+Con esta sentencia estamos cargando (o _importando_) en nuestro programa, y dejándola lista para ser utilizada, bajo el nombre `pd`. Podríamos leerlo como _"computadora: andá a buscar la biblioteca `pandas` y nombrala como `pd`"_.
+
+📝 Nota: El nombre `pd` es totalmente arbitrario y podríamos haberle dado cualquier otro. Pero casi todo el mundo que la usa (sobre todo en internet) en suele abreviar _pandas_ de esa forma 🤷.
 
 ## 5. A cargar, a cargar, cada tabla en su lugar
 
