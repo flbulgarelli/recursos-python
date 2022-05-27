@@ -40,12 +40,25 @@ Definí la función `mediana`, que devuelva la mediana de una lista (no vacía) 
 4
 ```
 
+## 4. `moda`
+
+Definí la función `moda`, que devuelva el elemento que más se repite en una lista (no vacía) de números. Si ninguno se repite, puede devolver un elemento cualquiera. Ejemplo:
+
+```python
+>>> moda([1, 2, 3, 4, 3, 20])
+3
+>>> moda([48, 2, 18, 2, 4])
+2
+>>> moda([48, 2, 18, 20, 4])
+4 # cualquier resultado sería correcto
+```
+
 ### Ayuda
 
 1. la mediana se obtiene obteniendo el elemento del medio tras ordenar la lista de menor a mayor.
 2. las siguientes funciones pueden ser útiles:  `int`, `rount`, `sorted`
 
-## 4. `cuantil`
+## 5. `cuantil`
 
 > Definí la función `cuantil`, que tome una lista y un número entre 0 y 1 y retorne el valor del cuantil correspondiente:
 
@@ -58,7 +71,7 @@ Definí la función `mediana`, que devuelva la mediana de una lista (no vacía) 
 18
 ```
 
-## 5. Brecha ecológica
+## 6. Brecha ecológica
 
 Vamos a definir como la _brecha ecológica_ de una ciudad a la diferencia entre la cantidad de árboles que hay entre el barrio que más tiene y el barrio que menos tiene.
 
