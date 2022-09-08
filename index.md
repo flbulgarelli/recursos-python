@@ -4,7 +4,10 @@ layout: default
 
 # Contenidos
 
-## Presentación General
+## Presentación general
+
+1. [Python en 20 ejercicios](./0_presentacion_general/1_python_en_20_ejercicios): una presentación súper rápida del lenguaje
+1. [Preparación de un entorno local](./0_presentacion_general/2_entorno_local)
 
 ## Introduccíón a la programación
 
@@ -35,7 +38,7 @@ layout: default
 1. [Práctica listas y tablas](./2_introducción_al_análisis_de_datos/4_práctica_listas_y_tablas)
 1. [Práctica agregaciones](./2_introducción_al_análisis_de_datos/5_práctica_agregaciones)
 
-
+<!--
 ## Ciencia de datos
 
 ## Programación con objetos
@@ -45,3 +48,4 @@ layout: default
 ## HTTP
 
 ## Frontend
+-->
