@@ -127,7 +127,7 @@ False # porque ni siquiera existe
 
 ### Parámetros opcionales
 
-Si cuando declarás una función, podés indicar un valor por defecto para su último o últimos parámetros. Por ejemplo:
+Cuando declarás una función, podés indicar un valor por defecto para su último o últimos parámetros. Por ejemplo:
 
 ```python
 def numero_magico(duplicar=False):
