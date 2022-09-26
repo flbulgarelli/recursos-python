@@ -112,7 +112,7 @@ Definí una función `sumar_seccion` que tome como argumento un lista de número
 >>> sumar_seccion([2, 2, 4, 3, 10, 20, 5], 2, 4)
 37 #(4 + 3 + 10 + 20 = 37)
 >>> sumar_seccion([2, 2, 4, 3, 10, 20, 5], 4, 1)
-3
+10
 ```
 
 ## 8. `es_subconjunto(subconjunto, conjunto)`
