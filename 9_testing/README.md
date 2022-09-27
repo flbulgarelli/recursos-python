@@ -1,9 +1,9 @@
 
 # Introducción al _testing_
 
-¡Hola! Hasta ahora venimos programando sin parar, y en mas de una ocasión nuestro código no ha funcionado como lo deseabamos. Quizás teníamos mal escrito el nombre de una función o una variable y se producía un `NameError`. O quizás, cometíamos un error de sintaxis y nos topabamos con un `SintaxError`. O peor aún: nuestro código no lanzaba ningún error, pero sin embargo no hacía lo que debía: una cuenta era incorrecta, faltaba o sobraba un elemento en una lista, y así.
+¡Hola! Hasta ahora venimos programando sin parar, y en más de una ocasión nuestro código no ha funcionado como lo deseábamos. Quizás teníamos mal escrito el nombre de una función o una variable y se producía un `NameError`. O quizás, cometíamos un error de sintaxis y nos topábamos con un `SyntaxError`. O peor aún: nuestro código no lanzaba ningún error, pero sin embargo no hacía lo que debía: una cuenta era incorrecta, faltaba o sobraba un elemento en una lista, y así.
 
-De hecho, es incluso posible que _rara vez_ nuestros programas hayan hecho lo que deben en el primer intento y hayamos tenido que escribirlo y reescribirlo varias veces hasta lograr el resultado deseado. En definitiva, _errar es humano_ y debemos preparanos para ello. ¡Por eso mismo siempre debemos probar nuestro código! Por ejemplo, si dentro de un archivo `descuento.py` tenemos una función como la siguiente...
+Es más: posiblemente _rara vez_ nuestros programas hayan hecho lo que deben en el primer intento y hayamos tenido que escribirlo y reescribirlo varias veces hasta lograr el resultado deseado 🔁. En definitiva, _errar es humano_ y debemos preparanos para ello. ¡Por eso mismo siempre debemos probar nuestro código! Por ejemplo, si dentro de un archivo `descuento.py` tenemos una función como la siguiente...
 
 ```python
 def aplicar_descuento_2x1(cantidad, precio_base):
@@ -45,7 +45,7 @@ En otras palabras, algunas pruebas arrojaron resultados correctos y otras, no:
   * ✔️ Si la cantidad es 4 y el precio base es $150, el precio final debería ser $300
   * ❌ Si la cantidad es 1 y el precio base es $200, el precio final debería ser $200 (no hubo descuento)
 
-¿Qué hacemos ahora? Deberíamos volver a nuestro código, revisarlo y descubrir el error. En nuestro caso, era la falta de un `+ 1`:
+¿Qué hacemos ahora que encontramos un _bug_? Deberíamos volver a nuestro código, revisarlo y descubrir el error. En nuestro caso, era la falta de un `+ 1`:
 
 ```python
 def aplicar_descuento_2x1(cantidad, precio_base):
@@ -83,13 +83,13 @@ Recién ahora podemos decir que hemos probado todo con resultados satisfactorios
   * ✔️ Si la cantidad es 4 y el precio base es $150, el precio final debería ser $300
   * ✔️ Si la cantidad es 1 y el precio base es $200, el precio final debería ser $200 (no hubo descuento)
 
-Como vemos, todo esto es tedioso y propenso a error. ¿Y que hacemos cuando algo es así? ¡Programamos!
+Como vemos, todo esto es tedioso y propenso a error. ¿Y qué hacemos cuando algo es así? ¡Programamos!
 
 ## Pruebas unitarias automatizadas
 
 Justamente porque probar es necesario, pero al mismo tiempo hacerlo correctamente y luego de cada cambio es muy molesto y aburrido, es que existen las pruebas unitarias automatizadas: se trata de _programar_ nuestras pruebas, usando una herramienta especializada.
 
-En Python usaremos `pytest`, la cual podemos instalar de la siguiente forma:
+En Python usaremos [`pytest`](https://docs.pytest.org/en/7.1.x/), la cual podemos instalar de la siguiente forma:
 
 ```bash
 $ pip install pytest
@@ -121,7 +121,7 @@ Como vemos, un test consiste simplemente en un procedimiento, con ciertas caract
   3. debe probar un escenario de nuestro interés, y realizar validaciones con el comando `assert`;
   4. y debe tener un nombre que exprese qué es lo que se está probando.
 
-Por ejemplo:
+En nuestro ejemplo:
 
   1. el test anterior no devuelve nada;
   2. su nombre empieza con `test`;
@@ -207,3 +207,14 @@ test_descuento.py ...                                                  [100%]
 
 ============================= 3 passed in 0.01s ==============================
 ```
+
+  ## Conclusiones
+
+  A modo de cierre, podemos sacar algunas conclusiones:
+
+    1. 🐞 Cometer errores es inevitable; más que tratar a toda costa que nuestro código sea "perfecto", preferiremos que nuestro código esté probado.
+    2. Cuando hacemos un cambio al código, aún cuando sea para realizar una corrección, es necesario volver a probarlo todo nuevamente para evitar errores de regresión.
+    3. Las pruebas manuales son muy importantes, pero son tediosas de hacer una y otra vez.
+    4. Las pruebas unitarias automatizadas requieren poner un poco más de esfuerzo, pero podemos reutilizarlas y ejecutarlas indefinidamente.
+    5. `pytest` es una herramienta que permite escribir pruebas unitarias automatizadas en Python.
+    6. 🧪 Los tests en `pytest` se escriben como procedimientos cuyo nombre empieza con `test` y tienen un `assert`.
