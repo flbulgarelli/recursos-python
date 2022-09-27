@@ -1,7 +1,7 @@
 
 # Introducción al _testing_
 
-¡Hola! Hasta ahora venimos programando sin parar, y en más de una ocasión nuestro código no ha funcionado como lo deseábamos. Quizás teníamos mal escrito el nombre de una función o una variable y se producía un `NameError`. O quizás, cometíamos un error de sintaxis y nos topábamos con un `SyntaxError`. O peor aún: nuestro código no lanzaba ningún error, pero sin embargo no hacía lo que debía: una cuenta era incorrecta, faltaba o sobraba un elemento en una lista, y así.
+¡Hola! Hasta ahora venimos programando sin parar, y en más de una ocasión nuestro código no ha funcionado como lo deseábamos. Quizás teníamos mal escrito el nombre de una función o una variable y se producía un `NameError`. O quizás, cometíamos un error de sintaxis y nos topábamos con un `SyntaxError`. O peor aún, teníamos un _bug_ (🐛 bicho, en inglés): nuestro código no lanzaba ningún error, pero sin embargo no hacía lo que debía: una cuenta era incorrecta, faltaba o sobraba un elemento en una lista, y así.
 
 Es más: posiblemente _rara vez_ nuestros programas hayan hecho lo que deben en el primer intento y hayamos tenido que escribirlo y reescribirlo varias veces hasta lograr el resultado deseado 🔁. En definitiva, _errar es humano_ y debemos preparanos para ello. ¡Por eso mismo siempre debemos probar nuestro código! Por ejemplo, si dentro de un archivo `descuento.py` tenemos una función como la siguiente...
 
