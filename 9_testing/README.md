@@ -208,13 +208,13 @@ test_descuento.py ...                                                  [100%]
 ============================= 3 passed in 0.01s ==============================
 ```
 
-  ## Conclusiones
+## Conclusiones
 
-  A modo de cierre, podemos sacar algunas conclusiones:
+A modo de cierre, podemos sacar algunas conclusiones:
 
-    1. 🐞 Cometer errores es inevitable; más que tratar a toda costa que nuestro código sea "perfecto", preferiremos que nuestro código esté probado.
-    2. Cuando hacemos un cambio al código, aún cuando sea para realizar una corrección, es necesario volver a probarlo todo nuevamente para evitar errores de regresión.
-    3. Las pruebas manuales son muy importantes, pero son tediosas de hacer una y otra vez.
-    4. Las pruebas unitarias automatizadas requieren poner un poco más de esfuerzo, pero podemos reutilizarlas y ejecutarlas indefinidamente.
-    5. `pytest` es una herramienta que permite escribir pruebas unitarias automatizadas en Python.
-    6. 🧪 Los tests en `pytest` se escriben como procedimientos cuyo nombre empieza con `test` y tienen un `assert`.
+  1. 🐞 Cometer errores es inevitable; más que tratar a toda costa que nuestro código sea "perfecto", preferiremos que nuestro código esté probado.
+  2. ↩️ Cuando hacemos un cambio al código, aún cuando sea para realizar una corrección, es necesario volver a probarlo todo nuevamente para evitar errores de regresión.
+  3. 🧑‍🔬 Las pruebas manuales son muy importantes, pero son tediosas de hacer una y otra vez.
+  4. 🤖 Las pruebas unitarias automatizadas requieren poner un poco más de esfuerzo, pero podemos reutilizarlas y ejecutarlas indefinidamente.
+  5. 🔨 `pytest` es una herramienta que permite escribir pruebas unitarias automatizadas en Python.
+  6. 🧪 Los tests en `pytest` se escriben como procedimientos cuyo nombre empieza con `test` y tienen un `assert`.
