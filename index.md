@@ -38,6 +38,12 @@ layout: default
 1. [Práctica listas y tablas](./2_introducción_al_análisis_de_datos/4_práctica_listas_y_tablas)
 1. [Práctica agregaciones](./2_introducción_al_análisis_de_datos/5_práctica_agregaciones)
 
+
+## Testing
+
+1. [Introducción a `pytest`](./9_testing)
+
+
 <!--
 ## Ciencia de datos
 
