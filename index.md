@@ -43,11 +43,13 @@ layout: default
 
 1. [Introducción a `pytest`](./9_testing)
 
+## Programación con objetos
+
+1. [Objetos, clases, polimorfismo, identidad y herencia](./4_programacion_con_objetos)
 
 <!--
 ## Ciencia de datos
 
-## Programación con objetos
 
 ## Entrada/Salida
 
