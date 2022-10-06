@@ -281,7 +281,18 @@ Ahora te toca a vos:
 
 ## Constructores
 
-Hacemos un alto en el camino para entender los constructores.
+Hacemos un alto en el camino para entender los constructores. Como habrás notado, nuestras clases tienen un método "raro", que se llama `__init__`:
+
+```python
+class Golondrina:
+  def __init__(self, energia):
+    self.energia = energia
+```
+
+Este método no tiene ese nombre exótico porque sí: se trata de uno muy especial, que, siempre que esté definido, Python ejecutará justo cuando _instanciemos_ un objeto de la clase correspondiente. Este método puede tomar cualquier cantidad de parámetros, los cuales se corresponderán con la cantidad de argumentos que tenemos que pasar al momento de crear a nuestro objeto.
+
+Este método especial, llamado constructor, se usa típicamente para darle valores iniciales a los atributos del objeto, ya sean predefinido o dependientes de lo que se pase como argumento.
+
 
 ## Herencia
 
