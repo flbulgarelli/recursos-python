@@ -11,6 +11,9 @@ class Golondrina:
   def volar(self, kms):
     self.energia -= 10 + kms
 
+  def __repr__(self) -> str:
+    return f"<🐦 at {hex(id(self))}>"
+
 class Dragon:
   def __init__(self, cantidad_dientes, energia):
     self.energia = energia
@@ -27,6 +30,9 @@ class Dragon:
 
   def volar(self, kms):
     self.energia -= 10 + kms/10
+
+  def __repr__(self) -> str:
+    return f"<🔥 at {hex(id(self))}>"
 
 pepita = Golondrina(100)
 anastasia = Golondrina(200)
