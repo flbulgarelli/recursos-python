@@ -27,14 +27,14 @@ Y ahora sí, los requerimientos:
       3. `actualizar_precios_por_categoria` siga funcionando adecuadamente.
   4. 🛍 Dado el éxito de nuestro sistema, múltiples sucursales de MacoWins solicitaron poder gestionar sus propios productos y stock. Modificar el código existente para que sea posible crear múltiples sucursales, y cada una pueda resolver los problemas originalmente planteados. Ejemplo:
 
-  ```python
-  sucursal_cabildo.registrar_producto(remera_talle_m)
-  sucursal_cabildo.recargar_stock(100, 10)
-  sucursal_cabildo.hay_stock(100) # True
+     ```python
+     sucursal_cabildo.registrar_producto(remera_talle_m)
+     sucursal_cabildo.recargar_stock(100, 10)
+     sucursal_cabildo.hay_stock(100) # True
+     
+     sucursal_avellaneda.hay_stock(100) # False
+     ```
   
-  sucursal_avellaneda.hay_stock(100) # False
-  ```
-
   5. 🤔 Luego de realizar el cambio anterior, responder: ¿qué objeto debería tener ahora la responsabilidad de resolver el problema de calcular el _precio final_ de un producto?
   6. 🌐 A la franquicia MacoWins se desea incorporar también una sucursal virtual, que es muy similar a las sucursales de siempre, pero tienen formas diferentes de calcular los _gastos del día_:
       1. Las sucursales comunes gastan diariamente un valor fijo, que cada una conoce.
