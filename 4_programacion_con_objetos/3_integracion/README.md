@@ -40,7 +40,7 @@ sucursal_avellaneda.hay_stock(100) # False
       1. Las sucursales comunes gastan diariamente un valor fijo, que cada una conoce.
       2. La sucursal virtual se comporta de igual forma forma, pero si supera las 100 ventas diarias, su gasto pasa a computarse como `cantidad de ventas del día × gasto variable`. Dicho gasto variable también es configurable.
   7. 🤑 Se desea poder saber la ganancia diaria de una sucursal, es decir, la diferencia entre las ventas del día y su gasto del día. Este comportamiento debe funcionar para los dos tipos de sucursales.
-  8. 📛 Además de poder actualizar precios según (alguna de las) categorías del producto, se desea contar con una funcionalidad similar, pero que aplique los cambios a los productos cuyo nombre coincide con una expresión regular.
+  8. 📛 Además de poder actualizar precios según (alguna de las) categorías del producto, se desea contar con una funcionalidad similar, pero que aplique los cambios a los productos cuyo nombre coincide con una [expresión regular](https://flbulgarelli.github.io/recursos-python/1_introduccion_a_la_programacion/16_expresiones_regulares/).
       1. Incorporar los métodos y/o clases necesarios para soportar este requerimiento.
       2. Responder: ¿puede este requerimiento ser resuelto sin repetir lógica y posibilitando agregar más formas de búsqueda en el futuro? ¿Cómo?
   9. 💡 Una vez resueltos los puntos anteriores, responder: ¿hay otros cambios que podríamos realizar a nuestra solución original desde los puntos de vista del encapsulamiento y la delegación?
