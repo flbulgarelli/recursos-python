@@ -189,11 +189,9 @@ def function_misteriosa():
 
 ## Modalidad de entrega
 
-Entregar como un archivo `.py`, el cual debe tener todas las funciones, procedimientos y datos de ejemplo necesarios para probar el código. Para transportar el código de una máquina a otra, recomendamos alguna de las siguientes opciones: 
+Entregar como un archivo `.py`, el cual debe tener todas las funciones, procedimientos y datos de ejemplo necesarios para probar el código. Para transportar el código de una máquina a otra, recomendamos alguna de las siguientes opciones:
 
   * Usar un pendrive
-  * Enviarlo por mail 
+  * Enviarlo por mail
   * Guardarlo en un archivo en Google Drive
-  * Guardarlo en un gist en https://gist.github.com/. Para ello es necesario hacer antes una cuenta. 
-
-
+  * Guardarlo en un gist en https://gist.github.com/. Para ello es necesario hacer antes una cuenta.
