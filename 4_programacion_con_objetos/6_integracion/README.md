@@ -2,8 +2,8 @@
 
 ¡MacoWins se sumó a la fiebre por las tarjetas 💳! Desde ahora, cuando se compre un producto, MacoWins ofrecerá 3 medios de pago diferentes:
 
-  1. Efectivo: al usar este medio, el precio de la venta es de lista
-  2. Tarjeta de crédito: aplica un 10% de recargo al precio de la prenda
+  1. Efectivo: al usar este medio, el precio de la venta es el precio de lista de la prenda, es decir, sin cambios.
+  2. Tarjeta de crédito: aplica un 10% de recargo al precio de la prenda.
   3. Tarjeta MacoWins: aplica un 10% de descuento sobre los productos de la marca Macowins.
 
 Además, la tarjeta MacoWins tiene un sistema de puntos y medallas: cada vez que alguien compra con una tarjeta MacoWins, la misma incrementa 1 punto. A medida que se van sumando puntos pasan cosas:
@@ -32,5 +32,5 @@ Se pide:
 🧪 Notas:
 
  1. Todos los requerimientos 1, 2, 3 y 4 tienen que estar adecuadamente probados con `pytest`. Todos los mismos deben estar en verde ✅.
- 2. Para el punto 3 se requiere integración con el módulo de [`persistencia`](https://gist.github.com/flbulgarelli/3b34f870783cba3d88c996da6acf773c).
+ 2. Para el punto 3 se requiere integración con [el módulo de `persistencia`](https://gist.github.com/flbulgarelli/3b34f870783cba3d88c996da6acf773c).
  3. Cada uno de los requerimientos debe ser integrado al proyecto usando Git, en múltiples commits con nombres representativos.
