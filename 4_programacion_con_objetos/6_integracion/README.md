@@ -34,3 +34,4 @@ Se pide:
  1. Todos los requerimientos 1, 2, 3 y 4 tienen que estar adecuadamente probados con `pytest`. Todos los mismos deben estar en verde ✅.
  2. Para el punto 3 se requiere integración con [el módulo de `persistencia`](https://gist.github.com/flbulgarelli/3b34f870783cba3d88c996da6acf773c).
  3. Cada uno de los requerimientos debe ser integrado al proyecto usando Git, en múltiples commits con nombres representativos.
+ 4. El código debe estar separado en múltiples archivos. Sin contar el archivo de pruebas, como mínimo el proyecto debe contar un archivo para el código de las sucursales, otro para los estados de prendas y otro para el código de las tarjetas.
