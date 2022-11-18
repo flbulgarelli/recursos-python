@@ -22,4 +22,7 @@ Consideraciones:
  2. La entrega debe ser completamente funcional y debe permitir navegar entre las pantallas.
  3. La aplicación debe ser integrada con [el módulo de `persistencia`](https://gist.github.com/flbulgarelli/3b34f870783cba3d88c996da6acf773c), si no lo fue hecho aún.
  4. Cada uno de los requerimientos debe ser integrado al proyecto usando Git, en múltiples commits con nombres representativos.
- 5. Antes de la entrega, los equipos deben entregar bosquejos (a mano alzada o usando una herramienta online como [moqups.com](https://moqups.com/) de cómo se verán las pantallas que implementarán.
+ 5. Antes de la entrega, los equipos deben entregar:
+  - los bosquejos (a mano alzada o usando una herramienta online como [moqups.com](https://moqups.com/) de cómo se verán las pantallas que implementarán.
+ 
+  - el detalle de las rutas que utilizarán para su aplicación, con los verbos HTTP asociados a dichas rutas
