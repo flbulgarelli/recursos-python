@@ -1,7 +1,5 @@
 # Integración
 
-## 1. Repaso
-
 🛑 Hagamos un alto en el camino. ¿Qué vimos hasta acá?
 
 * Herramientas de programación
@@ -48,7 +46,7 @@
 > * [otra de pandas](https://flbulgarelli.github.io/recursos-python/1_introduccion_a_la_programacion/15_integraci%C3%B3n/referencia_r%C3%A1pida_pandas/)
 >
 
-## 2. `anio`
+## 1. `anio`
 
 Definí la función `anio` que dado un string con una fecha (como por ejemplo `"30/11/2014"`) devuelva el año, como **un número**. La función tiene que andar tanto con si el string original completa los dígitos con cero como si no lo hace.
 
@@ -63,7 +61,7 @@ Por ejemplo:
 152
 ```
 
-## 3. Estadísticas del curso
+## 2. Estadísticas del curso
 
 Tenemos datos de un curso como el siguiente:
 
@@ -148,7 +146,7 @@ curso_ejemplo = [
 > ]
 > ```
 
-### 4. Zonas y legajos
+## 3. Zonas y legajos
 
 Ahora vamos a querer más estadísticas:
 
@@ -177,7 +175,7 @@ False # nadie tiene ese legajo
 
 > Definí las nuevas funciones.
 
-## 5. Estadísticas de estudiantes, recargada
+## 4. Estadísticas de estudiantes, recargada
 
 Usando `pandas`, Creá un `DataFrame` en pandas con los datos de ejercicio anterior ....
 
@@ -194,7 +192,7 @@ estudiantes = pd.DataFrame(curso_ejemplo)
 1. Generá una tabla con dos columnas: una con el legajo y otra con el nombre completo de cada estudiante
 1. Bonus: generá una tabla igual a la original pero que reemplace la columna de notas individuales de cada estudiante por otra con su nota promedio
 
-## 6. Tabla de emojis 😜
+## 5. Tabla de emojis 😜
 
 Cargá [este](https://raw.githubusercontent.com/github/gemoji/ce6c4ab12ae229be2b1089cbf7e85702fdc5552f/db/emoji.json) archivo en una tabla de `pandas`...
 
@@ -215,7 +213,7 @@ emojis
    * Bonus: Imprimí cada uno usando `print`
 1. ¿Cuántos y cuáles emojis se incorporaron entre la versión 13 y 14 de IOS?
 
-## 7. Banderas
+## 6. Banderas
 
 Usando la tabla `emojis` del ejercicio anterior, definí una función `bandera_de` que tome el nombre de un país (en inglés) y te de su bandera.
 
@@ -397,7 +395,7 @@ Definí una función `perdio`, que diga si un equipo perdió en un partido. **No
 
 > Cargá desde https://www.football-data.co.uk/new/ARG.csv una tabla de pandas y mirá qué contiene.
 
-## 13. No todo es información
+## 14. No todo es información
 
 Dado que no vamos a usar todas las columnas, vamos a quedarnos sólamente con las siquientes:
 
@@ -412,13 +410,13 @@ Dado que no vamos a usar todas las columnas, vamos a quedarnos sólamente con la
 
 > Recortá el dataframe para que contenga sólo las columnas mencionadas
 
-## 14. Es la misma columna, pero el nombre es nuevo
+## 15. Es la misma columna, pero el nombre es nuevo
 
 El problema es que las columnas tienen nombres difíciles de recordar, y no se parece mucho a lo que veníamos trabajando.
 
 > Renombrar las columnas para que sus nombres coincidan con lo que representan, en español. Inspirate en las estadísticas de ejemplo que usamos en los ejercicios anteriores.
 
-## 15. Cambiando el resultado
+## 16. Cambiando el resultado
 
 Ah, pero los valores de la columna `resultado` tampoco coinciden con los que veníamos trabajando.
 
@@ -433,7 +431,7 @@ Ah, pero los valores de la columna `resultado` tampoco coinciden con los que ven
 
 Podés transformar los valores de una columna usando `un_datagrame.una_columna.map(diccionario)`, donde las claves del diccionario son los valores originales, y los valores, los valores nuevos.
 
-## 16. Todo a su tiempo
+## 17. Todo a su tiempo
 
 Momento, ¿y de cuándo son estos datos? ¿Desde qué año hay registros?
 
@@ -443,26 +441,26 @@ Momento, ¿y de cuándo son estos datos? ¿Desde qué año hay registros?
 
 Te va a convenir usar la función `pd.to_datetime`.
 
-## 17. De visitante
+## 18. De visitante
 
 ¿Cuál es el promedio de goles visitante y local de cada año?
 
 > Hacé una tabla que contenga una fila por cada liga con sus resultados y un gráfico de barras donde se presente esta información
 
-## 18. Tantas estadísticas me dieron hambre
+## 19. Tantas estadísticas me dieron hambre
 
 ¿Cuál es la proporción de victorias de local, visitante y empates?
 
 > Calculá estas estadísticamente numéricamente y con ellas hacé un gráfico de torta 🥧.
 
-## 19. ¡Hay equipo(s)!
+## 20. ¡Hay equipo(s)!
 
 1. ¿Qué cantidad de equipos participaron?
 2. ¿Cuál es el promedio de goles que le hicieron a cada equipo siendo local? Hacé una tabla con una fila por cada partido que responda esta pregunta
 3. ¿Y cuál es la mayor cantidad de goles que le hicieron a un equipo siendo visitante? Hacé una tabla que responda ésto por cada equipo.
 4. Bonus: representalo también como un gráfico de barras horizontal, ordenado de mayor a menor
 
-## 20. Para cerrar
+## 21. Para cerrar
 
 Ahora que tenemos los datos reales, ¿podríamos usar nuestras primeras funciones con ellos?
 

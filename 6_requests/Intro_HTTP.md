@@ -9,9 +9,9 @@
 
 [1. Internet](#1-interntet)
 
-Internet se podría definir como la red de redes de computadoras, conectadas por medio de un cableado físico que permite intercambiar información entre todos sus usuarios. 
+Internet se podría definir como la red de redes de computadoras, conectadas por medio de un cableado físico que permite intercambiar información entre todos sus usuarios.
 
-Para acceder al servicio que ofrece la información, debemos tener dos programas que se ejecutan en dos computadoras diferentes y que nos permiten compartir recursos. 
+Para acceder al servicio que ofrece la información, debemos tener dos programas que se ejecutan en dos computadoras diferentes y que nos permiten compartir recursos.
 
 A la computadora que ejecuta el programa que proporciona el recurso o información se la denomina **servidor** y a la computadora que consume un recurso o información se la denomina **cliente**. En la computadora del cliente se ejecutará entonces el programa que le permite utilizar el recurso o leer la información.
 
@@ -24,7 +24,7 @@ Estas páginas web están pensadas para consumir contenido hipertextual, es deci
 
 [3. Introducción al concepto de CLoud Computing](#2-Cloud-computing)
 
-La computación en la nube o Cloud Computing es el consumo o prestación bajo demanda de recursos tecnologicos a través de Internet. 
+La computación en la nube o Cloud Computing es el consumo o prestación bajo demanda de recursos tecnologicos a través de Internet.
 
 En lugar de comprar y mantener servidores y centros de datos físicos(es decir una super duper máquina en tu casa), podés consumir los servicios tecnológicos, como potencia informática, almacenamiento y bases de datos, según te sea necesario, en el momento que te sea necesario, de un proveedor.
 
@@ -71,9 +71,9 @@ Este conjunto de reglas de comunicación, implícitas o explícitas, se denomina
 
 ## 1. Primeros pedidos
 
-Cada recurso de la web es localizable gracias a un identificador unívoco llamado URL, por las siglas en inglés de Localizador Uniforme de Recurso (Uniform Resource Locator). Las URL nos dan tanto la ubicación de un recurso como la manera de conseguirlo. 
+Cada recurso de la web es localizable gracias a un identificador unívoco llamado URL, por las siglas en inglés de Localizador Uniforme de Recurso (Uniform Resource Locator). Las URL nos dan tanto la ubicación de un recurso como la manera de conseguirlo.
 
-> 🤔 Para pensar: ¿a qué corresponde cada parte de una URL? 
+> 🤔 Para pensar: ¿a qué corresponde cada parte de una URL?
 
 Para empezar, intentemos establecer nuestra primera comunicación con un servidor, para romper el hielo de esta conversación 🤣
 
@@ -100,7 +100,7 @@ Luego desde el intérprete de python podremos hacer finalmente nuestro primer pe
 }
 ```
 
-Veremos que lo que nos devuelve no es HTML, sino un formato llamado JSON.  
+Veremos que lo que nos devuelve no es HTML, sino un formato llamado JSON.
 
 >
 >📚 Para indagar: ¿Sabés qué es HTML? Si aún no conoces este tipo de lenguaje hacé Ctr+u y observalo _in situ_
@@ -141,25 +141,25 @@ Veremos que lo que nos devuelve no es HTML, sino un formato llamado JSON.
 ```python
 >>> r.headers
 
-{'Server': 'Cowboy', 
-'Connection': 'keep-alive', 
-'X-Powered-By': 'Express', 
-'Expires': '-1', 
-'Content-Type': 'text/html; charset=utf-8', 
+{'Server': 'Cowboy',
+'Connection': 'keep-alive',
+'X-Powered-By': 'Express',
+'Expires': '-1',
+'Content-Type': 'text/html; charset=utf-8',
 'Content-Length': '0',
-'Etag': 'W/"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"', 
+'Etag': 'W/"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"',
 'Vary': 'Accept-Encoding',
-'Date': 'Sat, 27 Feb 2021 19:14:21 GMT', 
+'Date': 'Sat, 27 Feb 2021 19:14:21 GMT',
 'Via': '1.1 vegur'}
 ```
 
-Como dijimos antes, una conversación no se trata de la simple enunciación de palabras al azar. Existe un intercambio regulado o normado, donde es de esperar una estructura simple de enunciaciones/preguntas y respuestas. 
+Como dijimos antes, una conversación no se trata de la simple enunciación de palabras al azar. Existe un intercambio regulado o normado, donde es de esperar una estructura simple de enunciaciones/preguntas y respuestas.
 
 > En este caso ¿de qué tipo de respuesta se trata? Si tuvieras que expresarlo en emojis ¿Qué emoji es el 400?
 
-> ✍️ Autoevaluación: ¿Para qué sirve el método `headers`? ¿Que nos permitió? 
+> ✍️ Autoevaluación: ¿Para qué sirve el método `headers`? ¿Que nos permitió?
 
-> 🏅 Desafío III: contrastá con lo que sucede al hacer get de `'https://macowins-server.herokuapp.com/prendas/1'` ¿Qué te devuelve el método headers? 
+> 🏅 Desafío III: contrastá con lo que sucede al hacer get de `'https://macowins-server.herokuapp.com/prendas/1'` ¿Qué te devuelve el método headers?
 
 <details>
   <summary>Respuesta</summary>
@@ -169,13 +169,13 @@ Como dijimos antes, una conversación no se trata de la simple enunciación de p
   >>> r = requests.get('https://macowins-server.herokuapp.com/prendas/400')
   >>> r.headers
 
-{'Server': 'Cowboy', 
-'Connection': 'keep-alive', 
-'X-Powered-By': 'Express', 
-'Expires': '-1', 
-'Content-Type': 'application/json; charset=utf-8', 
-'Content-Length': '50', 
-'Etag': 'W/"32-i8e+gZ5GUBVXp/2hTq5pj1i9+f8"', 
+{'Server': 'Cowboy',
+'Connection': 'keep-alive',
+'X-Powered-By': 'Express',
+'Expires': '-1',
+'Content-Type': 'application/json; charset=utf-8',
+'Content-Length': '50',
+'Etag': 'W/"32-i8e+gZ5GUBVXp/2hTq5pj1i9+f8"',
 'Vary': 'Accept-Encoding', 'Date': 'Sat, 27 Feb 2021 18:11:12 GMT',
 'Via': '1.1 vegur'}
 ```
@@ -906,7 +906,6 @@ Formalización de REST: organizaremos nuestras rutas, tanto de una API como de *
 >   * Youtube
 >   * Facebook
 >   * Infobae, Pagina12, La Nacion
->   * UNQ, UCEMA
 >
 > 🏅 Desafío: si no se organizan de forma REST, ¿cómo se organizan sus rutas?
 
