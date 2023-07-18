@@ -1,0 +1,15 @@
+---
+---
+@import "{{ site.theme }}";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  header, section, footer {
+    float: none;
+    position: inherit;
+    width: 100%;
+  }
+}
