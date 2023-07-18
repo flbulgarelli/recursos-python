@@ -8,7 +8,7 @@ layout: default
 
 1. [Preparación de un entorno local](./0_presentacion_general/2_entorno_local)
 
-## 2. Introduccíón a la programación
+## 2. Introducción a la programación
 
 1. [Qué es la Programación](./1_introduccion_a_la_programacion/00_qué_es_la_programación)
 1. [Hola Python](./1_introduccion_a_la_programacion/01_hola_python)
